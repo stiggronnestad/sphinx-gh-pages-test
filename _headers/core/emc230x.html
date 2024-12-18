@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>emc230x.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="evert_hal.h" href="evert_hal.html" />
+    <link rel="prev" title="debugging.h" href="debugging.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/core/core.html">core</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/core/core-index.html">Index: core</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="can_handler.html">can_handler.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debugging.html">debugging.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">emc230x.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal.html">evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal_adc.html">evert_hal_adc.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal_dwt.html">evert_hal_dwt.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fz2812.html">fz2812.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpio_definition.html">gpio_definition.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="status_register.html">status_register.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="task_scheduler.html">task_scheduler.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/core/core-api.html">API Reference: core</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/core/core.html">core</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/core/core-index.html">Index: core</a></li>
+      <li class="breadcrumb-item active">emc230x.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/core/emc230x.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="emc230x-h">
+<h1>emc230x.h<a class="headerlink" href="#emc230x-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_ADDRESS">
+<span class="target" id="emc230x_8h_1a427b3cd01a3e46fa5ff87ed769a27991"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_ADDRESS</span></span></span><a class="headerlink" href="#c.EMC230X_ADDRESS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_500">
+<span class="target" id="emc230x_8h_1a137c6ce553e024ac0edad40a2c373c42"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_500</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_500" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_1000">
+<span class="target" id="emc230x_8h_1a9c39b3094b4abe5b3d15cf95c52b2678"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_1000</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_1000" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_2000">
+<span class="target" id="emc230x_8h_1a5a0d96ac53defa8699d8b40b7a52e640"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_2000</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_2000" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_4000">
+<span class="target" id="emc230x_8h_1accb3ca63f9a859f7411112462d34d02f"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_4000</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_4000" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_MASK">
+<span class="target" id="emc230x_8h_1a5cebb8d071a80591c22b9193c724ecb5"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_MASK</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_MASK" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_500_M">
+<span class="target" id="emc230x_8h_1a87cacbc415f634b74bd801486942ef52"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_500_M</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_500_M" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_1000_M">
+<span class="target" id="emc230x_8h_1a2ad83540b7b30156949d9a2f5acee48f"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_1000_M</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_1000_M" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_2000_M">
+<span class="target" id="emc230x_8h_1adca8f88b10fb938a24b3654031a0e5a2"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_2000_M</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_2000_M" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC2303_REG_CONFIG_RANGE_4000_M">
+<span class="target" id="emc230x_8h_1ad7d158e44eeed03c3d26e502a9fd0c4e"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC2303_REG_CONFIG_RANGE_4000_M</span></span></span><a class="headerlink" href="#c.EMC2303_REG_CONFIG_RANGE_4000_M" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN1_BASE">
+<span class="target" id="emc230x_8h_1ad96af36f6e939ef9459322bc91644501"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN1_BASE</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN1_BASE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN2_BASE">
+<span class="target" id="emc230x_8h_1a8cd43e8fb92834bac4c72c7d1f941f98"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN2_BASE</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN2_BASE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN3_BASE">
+<span class="target" id="emc230x_8h_1aa8675eea33374bec9808c3ab0ea0edc3"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN3_BASE</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN3_BASE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_GET_REGISTER">
+<span class="target" id="emc230x_8h_1a324d8f3668b63541bf4faf9827314eda"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_GET_REGISTER</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">base</span></span>, <span class="n"><span class="pre">offset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.EMC230X_GET_REGISTER" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FANX_SETTING">
+<span class="target" id="emc230x_8h_1a084674bc1471cf03f3ec2229256bd1f6"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FANX_SETTING</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">base</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.EMC230X_REG_FANX_SETTING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FANX_CONFIGURATION1">
+<span class="target" id="emc230x_8h_1abe840aa29055c58dd361740e3dc477e0"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FANX_CONFIGURATION1</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">base</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.EMC230X_REG_FANX_CONFIGURATION1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FANX_CONFIGURATION2">
+<span class="target" id="emc230x_8h_1a1ccad15ecfbd184cbcb5aa15bb72d953"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FANX_CONFIGURATION2</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">base</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.EMC230X_REG_FANX_CONFIGURATION2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FANX_TACH_HIGH">
+<span class="target" id="emc230x_8h_1ab6e5c726a74f4592796d655de4cccec1"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FANX_TACH_HIGH</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">base</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.EMC230X_REG_FANX_TACH_HIGH" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FANX_TACH_LOW">
+<span class="target" id="emc230x_8h_1ae6f6d56ef7f68e995aaf43d3896129e8"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FANX_TACH_LOW</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">base</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.EMC230X_REG_FANX_TACH_LOW" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN1_SETTING">
+<span class="target" id="emc230x_8h_1a5a19587d2ec7682eee964f188eb8c07d"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN1_SETTING</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN1_SETTING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN1_CONFIGURATION1">
+<span class="target" id="emc230x_8h_1a0045a6757d371a77686db3f367c555da"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN1_CONFIGURATION1</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN1_CONFIGURATION1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN1_CONFIGURATION2">
+<span class="target" id="emc230x_8h_1a4ad1252ee864fd70ec6a490dd6234fa9"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN1_CONFIGURATION2</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN1_CONFIGURATION2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN1_TACH_HIGH">
+<span class="target" id="emc230x_8h_1a3382646f95b35f36f8acf9bc0a866dba"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN1_TACH_HIGH</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN1_TACH_HIGH" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN1_TACH_LOW">
+<span class="target" id="emc230x_8h_1a4c9a08d62c22dde976a4141b66a48c64"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN1_TACH_LOW</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN1_TACH_LOW" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN2_SETTING">
+<span class="target" id="emc230x_8h_1ab3c3e13e24307f68c6196f592845f824"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN2_SETTING</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN2_SETTING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN2_CONFIGURATION1">
+<span class="target" id="emc230x_8h_1ad656879827ea6eeb23d84ab69bdf38fa"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN2_CONFIGURATION1</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN2_CONFIGURATION1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN2_CONFIGURATION2">
+<span class="target" id="emc230x_8h_1a1a06b9388c9e7e59fb1abdd18a3d7ff6"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN2_CONFIGURATION2</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN2_CONFIGURATION2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN2_TACH_HIGH">
+<span class="target" id="emc230x_8h_1ad7e4dda631438eb673f8901245cd1b97"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN2_TACH_HIGH</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN2_TACH_HIGH" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN2_TACH_LOW">
+<span class="target" id="emc230x_8h_1a53008c193ae65dd11efd8a214cf89c9b"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN2_TACH_LOW</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN2_TACH_LOW" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN3_SETTING">
+<span class="target" id="emc230x_8h_1abd3263c56b22f530ef885d37d5708909"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN3_SETTING</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN3_SETTING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN3_CONFIGURATION1">
+<span class="target" id="emc230x_8h_1ac2054cd8dcba4ce7207dd9066f757507"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN3_CONFIGURATION1</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN3_CONFIGURATION1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN3_CONFIGURATION2">
+<span class="target" id="emc230x_8h_1abe21aff61f8327c5668eb090a7138fb5"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN3_CONFIGURATION2</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN3_CONFIGURATION2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN3_TACH_HIGH">
+<span class="target" id="emc230x_8h_1a0f21b2b1458f5e26811a303eabce523d"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN3_TACH_HIGH</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN3_TACH_HIGH" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EMC230X_REG_FAN3_TACH_LOW">
+<span class="target" id="emc230x_8h_1a6c397d603182ef6cc5ca0a4df7679438"></span><span class="sig-name descname"><span class="n"><span class="pre">EMC230X_REG_FAN3_TACH_LOW</span></span></span><a class="headerlink" href="#c.EMC230X_REG_FAN3_TACH_LOW" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv417EVERT_EMC230X_Fan">
+<span id="_CPPv317EVERT_EMC230X_Fan"></span><span id="_CPPv217EVERT_EMC230X_Fan"></span><span class="target" id="emc230x_8h_1a2c6d47b762ab0f474855172823500cdf"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_Fan</span></span></span><a class="headerlink" href="#_CPPv417EVERT_EMC230X_Fan" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN1E">
+<span id="_CPPv3N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN1E"></span><span id="_CPPv2N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN1E"></span><span class="target" id="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfaf788fb7390696ce69a938f9d11e299c9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_FAN1</span></span></span><a class="headerlink" href="#_CPPv4N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN1E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN2E">
+<span id="_CPPv3N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN2E"></span><span id="_CPPv2N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN2E"></span><span class="target" id="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfadba7e88f013ed64a55a700136456eea4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_FAN2</span></span></span><a class="headerlink" href="#_CPPv4N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN2E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN3E">
+<span id="_CPPv3N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN3E"></span><span id="_CPPv2N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN3E"></span><span class="target" id="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfabcf997069f5e090b97792ed743335d84"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_FAN3</span></span></span><a class="headerlink" href="#_CPPv4N17EVERT_EMC230X_Fan18EVERT_EMC230X_FAN3E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv422EVERT_EMC230X_RxAction">
+<span id="_CPPv322EVERT_EMC230X_RxAction"></span><span id="_CPPv222EVERT_EMC230X_RxAction"></span><span class="target" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_RxAction</span></span></span><a class="headerlink" href="#_CPPv422EVERT_EMC230X_RxAction" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_RxAction28EVERT_EMC230X_RX_ACTION_NONEE">
+<span id="_CPPv3N22EVERT_EMC230X_RxAction28EVERT_EMC230X_RX_ACTION_NONEE"></span><span id="_CPPv2N22EVERT_EMC230X_RxAction28EVERT_EMC230X_RX_ACTION_NONEE"></span><span class="target" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a9f80cd25c3a10bedaa9d545f9e0f9876"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_RX_ACTION_NONE</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_RxAction28EVERT_EMC230X_RX_ACTION_NONEE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_HIGHE">
+<span id="_CPPv3N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_HIGHE"></span><span id="_CPPv2N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_HIGHE"></span><span class="target" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a97a938ffc3cccf75015703617e16067c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_HIGH</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_HIGHE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_LOWE">
+<span id="_CPPv3N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_LOWE"></span><span id="_CPPv2N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_LOWE"></span><span class="target" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a2b7fb049e806e97de1192019c537eb74"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_LOW</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_LOWE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_HIGHE">
+<span id="_CPPv3N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_HIGHE"></span><span id="_CPPv2N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_HIGHE"></span><span class="target" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a2f351c60476ed1e84a4c2257ad620a47"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_HIGH</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_HIGHE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_LOWE">
+<span id="_CPPv3N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_LOWE"></span><span id="_CPPv2N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_LOWE"></span><span class="target" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2ae68ee2f9f8c8e97f2a59c58d92988f63"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_LOW</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_LOWE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_HIGHE">
+<span id="_CPPv3N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_HIGHE"></span><span id="_CPPv2N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_HIGHE"></span><span class="target" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a09aeeeaf90a3fb2b4b8e6714ad2db28b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_HIGH</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_RxAction44EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_HIGHE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_LOWE">
+<span id="_CPPv3N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_LOWE"></span><span id="_CPPv2N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_LOWE"></span><span class="target" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a8f6daef84e35ccc7e12c42cba5dc91d1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_LOW</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_RxAction43EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_LOWE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv422EVERT_EMC230X_TxAction">
+<span id="_CPPv322EVERT_EMC230X_TxAction"></span><span id="_CPPv222EVERT_EMC230X_TxAction"></span><span class="target" id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_TxAction</span></span></span><a class="headerlink" href="#_CPPv422EVERT_EMC230X_TxAction" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_TxAction28EVERT_EMC230X_TX_ACTION_NONEE">
+<span id="_CPPv3N22EVERT_EMC230X_TxAction28EVERT_EMC230X_TX_ACTION_NONEE"></span><span id="_CPPv2N22EVERT_EMC230X_TxAction28EVERT_EMC230X_TX_ACTION_NONEE"></span><span class="target" id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a4ad295087a1447fcd6e40c6b193bd9ad"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_TX_ACTION_NONE</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_TxAction28EVERT_EMC230X_TX_ACTION_NONEE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_TxAction44EVERT_EMC230X_TX_ACTION_SET_SINGLE_FAN_SPEEDE">
+<span id="_CPPv3N22EVERT_EMC230X_TxAction44EVERT_EMC230X_TX_ACTION_SET_SINGLE_FAN_SPEEDE"></span><span id="_CPPv2N22EVERT_EMC230X_TxAction44EVERT_EMC230X_TX_ACTION_SET_SINGLE_FAN_SPEEDE"></span><span class="target" id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a0ab9b4c9395d78c8709afcd1b091b520"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_TX_ACTION_SET_SINGLE_FAN_SPEED</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_TxAction44EVERT_EMC230X_TX_ACTION_SET_SINGLE_FAN_SPEEDE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN1_SPEEDE">
+<span id="_CPPv3N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN1_SPEEDE"></span><span id="_CPPv2N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN1_SPEEDE"></span><span class="target" id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a163e1c51bce71984f1d9a9d2af9d2baf"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_TX_ACTION_SET_ALL_FAN1_SPEED</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN1_SPEEDE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN2_SPEEDE">
+<span id="_CPPv3N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN2_SPEEDE"></span><span id="_CPPv2N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN2_SPEEDE"></span><span class="target" id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0ac5e40740f8f420591e9dbf83f085eb3b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_TX_ACTION_SET_ALL_FAN2_SPEED</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN2_SPEEDE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN3_SPEEDE">
+<span id="_CPPv3N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN3_SPEEDE"></span><span id="_CPPv2N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN3_SPEEDE"></span><span class="target" id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a17ffa3d33bed08d5e1bd215110f2f941"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_TX_ACTION_SET_ALL_FAN3_SPEED</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_EMC230X_TxAction42EVERT_EMC230X_TX_ACTION_SET_ALL_FAN3_SPEEDE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418EVERT_EMC230X_Initv">
+<span id="_CPPv318EVERT_EMC230X_Initv"></span><span id="_CPPv218EVERT_EMC230X_Initv"></span><span id="EVERT_EMC230X_Init"></span><span class="target" id="emc230x_8h_1a9182993330258ecc19a1ed0f6826976b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_Init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418EVERT_EMC230X_Initv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_EMC230X_SetAllFanSpeeds_IT7uint8_t">
+<span id="_CPPv332EVERT_EMC230X_SetAllFanSpeeds_IT7uint8_t"></span><span id="_CPPv232EVERT_EMC230X_SetAllFanSpeeds_IT7uint8_t"></span><span id="EVERT_EMC230X_SetAllFanSpeeds_IT__uint8_t"></span><span class="target" id="emc230x_8h_1ac90cd98e4b1b042cf5e877a4f765b612"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_SetAllFanSpeeds_IT</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">speed</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432EVERT_EMC230X_SetAllFanSpeeds_IT7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv428EVERT_EMC230X_SetFanSpeed_ITK17EVERT_EMC230X_Fan7uint8_t">
+<span id="_CPPv328EVERT_EMC230X_SetFanSpeed_ITK17EVERT_EMC230X_Fan7uint8_t"></span><span id="_CPPv228EVERT_EMC230X_SetFanSpeed_ITK17EVERT_EMC230X_Fan7uint8_t"></span><span id="EVERT_EMC230X_SetFanSpeed_IT__EVERT_EMC230X_FanC.uint8_t"></span><span class="target" id="emc230x_8h_1a0d00359d4ee8e02b0e952898e3d6da7c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_SetFanSpeed_IT</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv417EVERT_EMC230X_Fan" title="EVERT_EMC230X_Fan"><span class="n"><span class="pre">EVERT_EMC230X_Fan</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">fan</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">speed</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv428EVERT_EMC230X_SetFanSpeed_ITK17EVERT_EMC230X_Fan7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv433EVERT_EMC230X_SetRangeRegister_ITK7uint8_t">
+<span id="_CPPv333EVERT_EMC230X_SetRangeRegister_ITK7uint8_t"></span><span id="_CPPv233EVERT_EMC230X_SetRangeRegister_ITK7uint8_t"></span><span id="EVERT_EMC230X_SetRangeRegister_IT__uint8_tC"></span><span class="target" id="emc230x_8h_1ad7b26d388a8c44ee490c77adb2c68ed0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_SetRangeRegister_IT</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">range</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv433EVERT_EMC230X_SetRangeRegister_ITK7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_EMC230X_SetRxActionK22EVERT_EMC230X_RxAction">
+<span id="_CPPv325EVERT_EMC230X_SetRxActionK22EVERT_EMC230X_RxAction"></span><span id="_CPPv225EVERT_EMC230X_SetRxActionK22EVERT_EMC230X_RxAction"></span><span id="EVERT_EMC230X_SetRxAction__EVERT_EMC230X_RxActionC"></span><span class="target" id="emc230x_8h_1a431d881f9de2971c30ddf00f831584a8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_SetRxAction</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv422EVERT_EMC230X_RxAction" title="EVERT_EMC230X_RxAction"><span class="n"><span class="pre">EVERT_EMC230X_RxAction</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">action</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425EVERT_EMC230X_SetRxActionK22EVERT_EMC230X_RxAction" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_EMC230X_SetTxActionK22EVERT_EMC230X_TxAction">
+<span id="_CPPv325EVERT_EMC230X_SetTxActionK22EVERT_EMC230X_TxAction"></span><span id="_CPPv225EVERT_EMC230X_SetTxActionK22EVERT_EMC230X_TxAction"></span><span id="EVERT_EMC230X_SetTxAction__EVERT_EMC230X_TxActionC"></span><span class="target" id="emc230x_8h_1a1552e51db4dd123bfa789114c2c027ad"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_SetTxAction</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv422EVERT_EMC230X_TxAction" title="EVERT_EMC230X_TxAction"><span class="n"><span class="pre">EVERT_EMC230X_TxAction</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">action</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425EVERT_EMC230X_SetTxActionK22EVERT_EMC230X_TxAction" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv426EVERT_EMC230X_ReadTachs_ITv">
+<span id="_CPPv326EVERT_EMC230X_ReadTachs_ITv"></span><span id="_CPPv226EVERT_EMC230X_ReadTachs_ITv"></span><span id="EVERT_EMC230X_ReadTachs_IT"></span><span class="target" id="emc230x_8h_1a021390b504955b720954bf1842d565b9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_ReadTachs_IT</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426EVERT_EMC230X_ReadTachs_ITv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv429EVERT_EMC230X_OnErrorReceivedv">
+<span id="_CPPv329EVERT_EMC230X_OnErrorReceivedv"></span><span id="_CPPv229EVERT_EMC230X_OnErrorReceivedv"></span><span id="EVERT_EMC230X_OnErrorReceived"></span><span class="target" id="emc230x_8h_1a02a4aa135e8fa80bb18c0e5bf54c29e8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_OnErrorReceived</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429EVERT_EMC230X_OnErrorReceivedv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv45hi2c1">
+<span id="_CPPv35hi2c1"></span><span id="_CPPv25hi2c1"></span><span id="hi2c1__I2C_HandleTypeDef"></span><span class="target" id="emc230x_8h_1af7b2c26e44dadaaa798a5c3d82914ba7"></span><span class="n"><span class="pre">I2C_HandleTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hi2c1</span></span></span><a class="headerlink" href="#_CPPv45hi2c1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_EMC230X_DataTypeDef">
+<span id="_CPPv325EVERT_EMC230X_DataTypeDef"></span><span id="_CPPv225EVERT_EMC230X_DataTypeDef"></span><span id="EVERT_EMC230X_DataTypeDef"></span><span class="target" id="structEVERT__EMC230X__DataTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_EMC230X_DataTypeDef</span></span></span><a class="headerlink" href="#_CPPv425EVERT_EMC230X_DataTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#emc230x_8h"><span class="std std-ref">emc230x.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N25EVERT_EMC230X_DataTypeDef9tach_highE">
+<span id="_CPPv3N25EVERT_EMC230X_DataTypeDef9tach_highE"></span><span id="_CPPv2N25EVERT_EMC230X_DataTypeDef9tach_highE"></span><span id="EVERT_EMC230X_DataTypeDef::tach_high__uint8_t"></span><span class="target" id="structEVERT__EMC230X__DataTypeDef_1a548c86f9a924f6fcbcdf92a6bdc9b3f6"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tach_high</span></span></span><a class="headerlink" href="#_CPPv4N25EVERT_EMC230X_DataTypeDef9tach_highE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N25EVERT_EMC230X_DataTypeDef8tach_lowE">
+<span id="_CPPv3N25EVERT_EMC230X_DataTypeDef8tach_lowE"></span><span id="_CPPv2N25EVERT_EMC230X_DataTypeDef8tach_lowE"></span><span id="EVERT_EMC230X_DataTypeDef::tach_low__uint8_t"></span><span class="target" id="structEVERT__EMC230X__DataTypeDef_1a23971cec8d86a83f8886492ecffbbff0"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tach_low</span></span></span><a class="headerlink" href="#_CPPv4N25EVERT_EMC230X_DataTypeDef8tach_lowE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N25EVERT_EMC230X_DataTypeDef4tachE">
+<span id="_CPPv3N25EVERT_EMC230X_DataTypeDef4tachE"></span><span id="_CPPv2N25EVERT_EMC230X_DataTypeDef4tachE"></span><span id="EVERT_EMC230X_DataTypeDef::tach__uint16_t"></span><span class="target" id="structEVERT__EMC230X__DataTypeDef_1ac817189d6726d33cbf4eabacce1bdda8"></span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tach</span></span></span><a class="headerlink" href="#_CPPv4N25EVERT_EMC230X_DataTypeDef4tachE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N25EVERT_EMC230X_DataTypeDef3rpmE">
+<span id="_CPPv3N25EVERT_EMC230X_DataTypeDef3rpmE"></span><span id="_CPPv2N25EVERT_EMC230X_DataTypeDef3rpmE"></span><span id="EVERT_EMC230X_DataTypeDef::rpm__uint16_t"></span><span class="target" id="structEVERT__EMC230X__DataTypeDef_1a275e3b635aef5e116c1b064a0737581c"></span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rpm</span></span></span><a class="headerlink" href="#_CPPv4N25EVERT_EMC230X_DataTypeDef3rpmE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N25EVERT_EMC230X_DataTypeDef5speedE">
+<span id="_CPPv3N25EVERT_EMC230X_DataTypeDef5speedE"></span><span id="_CPPv2N25EVERT_EMC230X_DataTypeDef5speedE"></span><span id="EVERT_EMC230X_DataTypeDef::speed__uint8_t"></span><span class="target" id="structEVERT__EMC230X__DataTypeDef_1a5e3559973deb649270f3aa6b64cd6617"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">speed</span></span></span><a class="headerlink" href="#_CPPv4N25EVERT_EMC230X_DataTypeDef5speedE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="debugging.html" class="btn btn-neutral float-left" title="debugging.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="evert_hal.html" class="btn btn-neutral float-right" title="evert_hal.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

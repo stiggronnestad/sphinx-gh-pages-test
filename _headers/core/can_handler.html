@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>can_handler.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="debugging.h" href="debugging.html" />
+    <link rel="prev" title="Index: core" href="../../_projects/core/core-index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/core/core.html">core</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/core/core-index.html">Index: core</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">can_handler.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debugging.html">debugging.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emc230x.html">emc230x.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal.html">evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal_adc.html">evert_hal_adc.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal_dwt.html">evert_hal_dwt.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fz2812.html">fz2812.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpio_definition.html">gpio_definition.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="status_register.html">status_register.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="task_scheduler.html">task_scheduler.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/core/core-api.html">API Reference: core</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/core/core.html">core</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/core/core-index.html">Index: core</a></li>
+      <li class="breadcrumb-item active">can_handler.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/core/can_handler.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="can-handler-h">
+<h1>can_handler.h<a class="headerlink" href="#can-handler-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv426EVERT_CAN_MessageIdTypeDef">
+<span id="_CPPv326EVERT_CAN_MessageIdTypeDef"></span><span id="_CPPv226EVERT_CAN_MessageIdTypeDef"></span><span class="target" id="can__handler_8h_1a7d9e44f4de0d76e5c01f50c66fb134de"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_MessageIdTypeDef</span></span></span><a class="headerlink" href="#_CPPv426EVERT_CAN_MessageIdTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_CAN_MessageIdTypeDef18CAN_MESSAGE_ID_MINE">
+<span id="_CPPv3N26EVERT_CAN_MessageIdTypeDef18CAN_MESSAGE_ID_MINE"></span><span id="_CPPv2N26EVERT_CAN_MessageIdTypeDef18CAN_MESSAGE_ID_MINE"></span><span class="target" id="can__handler_8h_1ga7d9e44f4de0d76e5c01f50c66fb134deadfdfac817c19a56cdeebd85a28b7af55"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_MESSAGE_ID_MIN</span></span></span><a class="headerlink" href="#_CPPv4N26EVERT_CAN_MessageIdTypeDef18CAN_MESSAGE_ID_MINE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_CAN_MessageIdTypeDef18CAN_MESSAGE_ID_MAXE">
+<span id="_CPPv3N26EVERT_CAN_MessageIdTypeDef18CAN_MESSAGE_ID_MAXE"></span><span id="_CPPv2N26EVERT_CAN_MessageIdTypeDef18CAN_MESSAGE_ID_MAXE"></span><span class="target" id="can__handler_8h_1ga7d9e44f4de0d76e5c01f50c66fb134dea8925484ab129807130c13c108c9d8193"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_MESSAGE_ID_MAX</span></span></span><a class="headerlink" href="#_CPPv4N26EVERT_CAN_MessageIdTypeDef18CAN_MESSAGE_ID_MAXE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv433EVERT_CAN_DeviceIdentifierTypeDef">
+<span id="_CPPv333EVERT_CAN_DeviceIdentifierTypeDef"></span><span id="_CPPv233EVERT_CAN_DeviceIdentifierTypeDef"></span><span class="target" id="can__handler_8h_1ab936e62725253b7ede3400546ce11457"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_DeviceIdentifierTypeDef</span></span></span><a class="headerlink" href="#_CPPv433EVERT_CAN_DeviceIdentifierTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N33EVERT_CAN_DeviceIdentifierTypeDef34CAN_DEVICE_IDENTIFIER_UNIDENTIFIEDE">
+<span id="_CPPv3N33EVERT_CAN_DeviceIdentifierTypeDef34CAN_DEVICE_IDENTIFIER_UNIDENTIFIEDE"></span><span id="_CPPv2N33EVERT_CAN_DeviceIdentifierTypeDef34CAN_DEVICE_IDENTIFIER_UNIDENTIFIEDE"></span><span class="target" id="can__handler_8h_1gab936e62725253b7ede3400546ce11457a0534502cb2c2007cfc9c7239153d1f91"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_DEVICE_IDENTIFIER_UNIDENTIFIED</span></span></span><a class="headerlink" href="#_CPPv4N33EVERT_CAN_DeviceIdentifierTypeDef34CAN_DEVICE_IDENTIFIER_UNIDENTIFIEDE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N33EVERT_CAN_DeviceIdentifierTypeDef38CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER1E">
+<span id="_CPPv3N33EVERT_CAN_DeviceIdentifierTypeDef38CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER1E"></span><span id="_CPPv2N33EVERT_CAN_DeviceIdentifierTypeDef38CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER1E"></span><span class="target" id="can__handler_8h_1gab936e62725253b7ede3400546ce11457af8052ed4c4c003cb59a03e52907d2156"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER1</span></span></span><a class="headerlink" href="#_CPPv4N33EVERT_CAN_DeviceIdentifierTypeDef38CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER1E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N33EVERT_CAN_DeviceIdentifierTypeDef38CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER2E">
+<span id="_CPPv3N33EVERT_CAN_DeviceIdentifierTypeDef38CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER2E"></span><span id="_CPPv2N33EVERT_CAN_DeviceIdentifierTypeDef38CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER2E"></span><span class="target" id="can__handler_8h_1gab936e62725253b7ede3400546ce11457a624d0fc13b48c075124b9378f3a84c0f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER2</span></span></span><a class="headerlink" href="#_CPPv4N33EVERT_CAN_DeviceIdentifierTypeDef38CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER2E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N33EVERT_CAN_DeviceIdentifierTypeDef25CAN_DEVICE_IDENTIFIER_MAXE">
+<span id="_CPPv3N33EVERT_CAN_DeviceIdentifierTypeDef25CAN_DEVICE_IDENTIFIER_MAXE"></span><span id="_CPPv2N33EVERT_CAN_DeviceIdentifierTypeDef25CAN_DEVICE_IDENTIFIER_MAXE"></span><span class="target" id="can__handler_8h_1gab936e62725253b7ede3400546ce11457a27e6b3354fd10c29dae2689b101e6dd9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_DEVICE_IDENTIFIER_MAX</span></span></span><a class="headerlink" href="#_CPPv4N33EVERT_CAN_DeviceIdentifierTypeDef25CAN_DEVICE_IDENTIFIER_MAXE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_CAN_MessagePriorityTypeDef">
+<span id="_CPPv332EVERT_CAN_MessagePriorityTypeDef"></span><span id="_CPPv232EVERT_CAN_MessagePriorityTypeDef"></span><span class="target" id="can__handler_8h_1ae522d613b11065ead12b4b1b3e8e642d"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_MessagePriorityTypeDef</span></span></span><a class="headerlink" href="#_CPPv432EVERT_CAN_MessagePriorityTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_CAN_MessagePriorityTypeDef29CAN_MESSAGE_PRIORITY_CRITICALE">
+<span id="_CPPv3N32EVERT_CAN_MessagePriorityTypeDef29CAN_MESSAGE_PRIORITY_CRITICALE"></span><span id="_CPPv2N32EVERT_CAN_MessagePriorityTypeDef29CAN_MESSAGE_PRIORITY_CRITICALE"></span><span class="target" id="can__handler_8h_1gae522d613b11065ead12b4b1b3e8e642da1d94ffc23ce12b936a444aa9d3e3f979"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_MESSAGE_PRIORITY_CRITICAL</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_CAN_MessagePriorityTypeDef29CAN_MESSAGE_PRIORITY_CRITICALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_CAN_MessagePriorityTypeDef25CAN_MESSAGE_PRIORITY_HIGHE">
+<span id="_CPPv3N32EVERT_CAN_MessagePriorityTypeDef25CAN_MESSAGE_PRIORITY_HIGHE"></span><span id="_CPPv2N32EVERT_CAN_MessagePriorityTypeDef25CAN_MESSAGE_PRIORITY_HIGHE"></span><span class="target" id="can__handler_8h_1gae522d613b11065ead12b4b1b3e8e642dac31eb2e5a6c5899d4d12aa331140ac8b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_MESSAGE_PRIORITY_HIGH</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_CAN_MessagePriorityTypeDef25CAN_MESSAGE_PRIORITY_HIGHE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_CAN_MessagePriorityTypeDef27CAN_MESSAGE_PRIORITY_NORMALE">
+<span id="_CPPv3N32EVERT_CAN_MessagePriorityTypeDef27CAN_MESSAGE_PRIORITY_NORMALE"></span><span id="_CPPv2N32EVERT_CAN_MessagePriorityTypeDef27CAN_MESSAGE_PRIORITY_NORMALE"></span><span class="target" id="can__handler_8h_1gae522d613b11065ead12b4b1b3e8e642da0873eb94bceedef02e915866b67ef784"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_MESSAGE_PRIORITY_NORMAL</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_CAN_MessagePriorityTypeDef27CAN_MESSAGE_PRIORITY_NORMALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_CAN_MessagePriorityTypeDef24CAN_MESSAGE_PRIORITY_LOWE">
+<span id="_CPPv3N32EVERT_CAN_MessagePriorityTypeDef24CAN_MESSAGE_PRIORITY_LOWE"></span><span id="_CPPv2N32EVERT_CAN_MessagePriorityTypeDef24CAN_MESSAGE_PRIORITY_LOWE"></span><span class="target" id="can__handler_8h_1gae522d613b11065ead12b4b1b3e8e642da19c71428c622f4941d08762f7320c453"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_MESSAGE_PRIORITY_LOW</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_CAN_MessagePriorityTypeDef24CAN_MESSAGE_PRIORITY_LOWE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_CAN_MessagePriorityTypeDef24CAN_MESSAGE_PRIORITY_MAXE">
+<span id="_CPPv3N32EVERT_CAN_MessagePriorityTypeDef24CAN_MESSAGE_PRIORITY_MAXE"></span><span id="_CPPv2N32EVERT_CAN_MessagePriorityTypeDef24CAN_MESSAGE_PRIORITY_MAXE"></span><span class="target" id="can__handler_8h_1gae522d613b11065ead12b4b1b3e8e642da3fbe78d50c55593e5c9d50e7ec700135"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_MESSAGE_PRIORITY_MAX</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_CAN_MessagePriorityTypeDef24CAN_MESSAGE_PRIORITY_MAXE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_CAN_FifoStatusTypeDef">
+<span id="_CPPv327EVERT_CAN_FifoStatusTypeDef"></span><span id="_CPPv227EVERT_CAN_FifoStatusTypeDef"></span><span class="target" id="group__EVERT_1gafea1e0456b43748ee85bf6515bf3efff"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_FifoStatusTypeDef</span></span></span><a class="headerlink" href="#_CPPv427EVERT_CAN_FifoStatusTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoStatusTypeDef9CAN_FS_OKE">
+<span id="_CPPv3N27EVERT_CAN_FifoStatusTypeDef9CAN_FS_OKE"></span><span id="_CPPv2N27EVERT_CAN_FifoStatusTypeDef9CAN_FS_OKE"></span><span class="target" id="group__EVERT_1ggafea1e0456b43748ee85bf6515bf3efffa0295f2b9af6e30d783cdea1e8d60b4e7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_FS_OK</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoStatusTypeDef9CAN_FS_OKE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoStatusTypeDef12CAN_FS_EMPTYE">
+<span id="_CPPv3N27EVERT_CAN_FifoStatusTypeDef12CAN_FS_EMPTYE"></span><span id="_CPPv2N27EVERT_CAN_FifoStatusTypeDef12CAN_FS_EMPTYE"></span><span class="target" id="group__EVERT_1ggafea1e0456b43748ee85bf6515bf3efffa16324db34b2a93919516e8df5689aa1c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_FS_EMPTY</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoStatusTypeDef12CAN_FS_EMPTYE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoStatusTypeDef11CAN_FS_FULLE">
+<span id="_CPPv3N27EVERT_CAN_FifoStatusTypeDef11CAN_FS_FULLE"></span><span id="_CPPv2N27EVERT_CAN_FifoStatusTypeDef11CAN_FS_FULLE"></span><span class="target" id="group__EVERT_1ggafea1e0456b43748ee85bf6515bf3efffa014982d8cd94c64fce72b6fed3e287e2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_FS_FULL</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoStatusTypeDef11CAN_FS_FULLE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoStatusTypeDef14CAN_FS_OVERRUNE">
+<span id="_CPPv3N27EVERT_CAN_FifoStatusTypeDef14CAN_FS_OVERRUNE"></span><span id="_CPPv2N27EVERT_CAN_FifoStatusTypeDef14CAN_FS_OVERRUNE"></span><span class="target" id="group__EVERT_1ggafea1e0456b43748ee85bf6515bf3efffa9f56b84b3ea94c4991d5c2ba771e1d65"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_FS_OVERRUN</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoStatusTypeDef14CAN_FS_OVERRUNE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoStatusTypeDef12CAN_FS_ERRORE">
+<span id="_CPPv3N27EVERT_CAN_FifoStatusTypeDef12CAN_FS_ERRORE"></span><span id="_CPPv2N27EVERT_CAN_FifoStatusTypeDef12CAN_FS_ERRORE"></span><span class="target" id="group__EVERT_1ggafea1e0456b43748ee85bf6515bf3efffa947c1636048c7edda894af7beab16028"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_FS_ERROR</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoStatusTypeDef12CAN_FS_ERRORE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv436EVERT_CAN_ProcessBufferStatusTypeDef">
+<span id="_CPPv336EVERT_CAN_ProcessBufferStatusTypeDef"></span><span id="_CPPv236EVERT_CAN_ProcessBufferStatusTypeDef"></span><span class="target" id="group__EVERT_1ga44baac42e67b4d52489d44054af436d8"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_ProcessBufferStatusTypeDef</span></span></span><a class="headerlink" href="#_CPPv436EVERT_CAN_ProcessBufferStatusTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_CAN_ProcessBufferStatusTypeDef10CAN_PBS_OKE">
+<span id="_CPPv3N36EVERT_CAN_ProcessBufferStatusTypeDef10CAN_PBS_OKE"></span><span id="_CPPv2N36EVERT_CAN_ProcessBufferStatusTypeDef10CAN_PBS_OKE"></span><span class="target" id="group__EVERT_1gga44baac42e67b4d52489d44054af436d8a700cc63929d94a606cda974df413f6cf"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_PBS_OK</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_CAN_ProcessBufferStatusTypeDef10CAN_PBS_OKE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_CAN_ProcessBufferStatusTypeDef12CAN_PBS_IDLEE">
+<span id="_CPPv3N36EVERT_CAN_ProcessBufferStatusTypeDef12CAN_PBS_IDLEE"></span><span id="_CPPv2N36EVERT_CAN_ProcessBufferStatusTypeDef12CAN_PBS_IDLEE"></span><span class="target" id="group__EVERT_1gga44baac42e67b4d52489d44054af436d8ae10aef3cb8e095ca0278eadaa950996d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_PBS_IDLE</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_CAN_ProcessBufferStatusTypeDef12CAN_PBS_IDLEE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_CAN_ProcessBufferStatusTypeDef32CAN_PBS_PROCESSING_RECEIVED_DATAE">
+<span id="_CPPv3N36EVERT_CAN_ProcessBufferStatusTypeDef32CAN_PBS_PROCESSING_RECEIVED_DATAE"></span><span id="_CPPv2N36EVERT_CAN_ProcessBufferStatusTypeDef32CAN_PBS_PROCESSING_RECEIVED_DATAE"></span><span class="target" id="group__EVERT_1gga44baac42e67b4d52489d44054af436d8a19cacfd9948a4e0471636bc55c1dea56"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_PBS_PROCESSING_RECEIVED_DATA</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_CAN_ProcessBufferStatusTypeDef32CAN_PBS_PROCESSING_RECEIVED_DATAE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_CAN_ProcessBufferStatusTypeDef35CAN_PBS_WAITING_FOR_INTERNAL_BUFFERE">
+<span id="_CPPv3N36EVERT_CAN_ProcessBufferStatusTypeDef35CAN_PBS_WAITING_FOR_INTERNAL_BUFFERE"></span><span id="_CPPv2N36EVERT_CAN_ProcessBufferStatusTypeDef35CAN_PBS_WAITING_FOR_INTERNAL_BUFFERE"></span><span class="target" id="group__EVERT_1gga44baac42e67b4d52489d44054af436d8a920cd3d949fa6b668a8d1e02c29fbc62"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CAN_PBS_WAITING_FOR_INTERNAL_BUFFER</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_CAN_ProcessBufferStatusTypeDef35CAN_PBS_WAITING_FOR_INTERNAL_BUFFERE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_CAN_Identifier_CreateNewP27EVERT_CAN_IdentifierTypeDef">
+<span id="_CPPv330EVERT_CAN_Identifier_CreateNewP27EVERT_CAN_IdentifierTypeDef"></span><span id="_CPPv230EVERT_CAN_Identifier_CreateNewP27EVERT_CAN_IdentifierTypeDef"></span><span id="EVERT_CAN_Identifier_CreateNew__EVERT_CAN_IdentifierTypeDefP"></span><span class="target" id="group__EVERT_1ga334d109100a60f7a85830f8d35292e6c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Identifier_CreateNew</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">identifier</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv430EVERT_CAN_Identifier_CreateNewP27EVERT_CAN_IdentifierTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv433EVERT_CAN_Identifier_SetMessageIdP27EVERT_CAN_IdentifierTypeDef26EVERT_CAN_MessageIdTypeDef">
+<span id="_CPPv333EVERT_CAN_Identifier_SetMessageIdP27EVERT_CAN_IdentifierTypeDef26EVERT_CAN_MessageIdTypeDef"></span><span id="_CPPv233EVERT_CAN_Identifier_SetMessageIdP27EVERT_CAN_IdentifierTypeDef26EVERT_CAN_MessageIdTypeDef"></span><span id="EVERT_CAN_Identifier_SetMessageId__EVERT_CAN_IdentifierTypeDefP.EVERT_CAN_MessageIdTypeDef"></span><span class="target" id="group__EVERT_1ga6f4cadfa10e42d9c80bbf7076dfdad9a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Identifier_SetMessageId</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">identifier</span></span>, <a class="reference internal" href="#_CPPv426EVERT_CAN_MessageIdTypeDef" title="EVERT_CAN_MessageIdTypeDef"><span class="n"><span class="pre">EVERT_CAN_MessageIdTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">message_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv433EVERT_CAN_Identifier_SetMessageIdP27EVERT_CAN_IdentifierTypeDef26EVERT_CAN_MessageIdTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_CAN_Identifier_SetSourceIdP27EVERT_CAN_IdentifierTypeDef33EVERT_CAN_DeviceIdentifierTypeDef">
+<span id="_CPPv332EVERT_CAN_Identifier_SetSourceIdP27EVERT_CAN_IdentifierTypeDef33EVERT_CAN_DeviceIdentifierTypeDef"></span><span id="_CPPv232EVERT_CAN_Identifier_SetSourceIdP27EVERT_CAN_IdentifierTypeDef33EVERT_CAN_DeviceIdentifierTypeDef"></span><span id="EVERT_CAN_Identifier_SetSourceId__EVERT_CAN_IdentifierTypeDefP.EVERT_CAN_DeviceIdentifierTypeDef"></span><span class="target" id="group__EVERT_1ga0af4f48c191a82dadfc995bceeb2a2d7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Identifier_SetSourceId</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">identifier</span></span>, <a class="reference internal" href="#_CPPv433EVERT_CAN_DeviceIdentifierTypeDef" title="EVERT_CAN_DeviceIdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_DeviceIdentifierTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">source_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432EVERT_CAN_Identifier_SetSourceIdP27EVERT_CAN_IdentifierTypeDef33EVERT_CAN_DeviceIdentifierTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_CAN_Identifier_SetTargetIdP27EVERT_CAN_IdentifierTypeDef33EVERT_CAN_DeviceIdentifierTypeDef">
+<span id="_CPPv332EVERT_CAN_Identifier_SetTargetIdP27EVERT_CAN_IdentifierTypeDef33EVERT_CAN_DeviceIdentifierTypeDef"></span><span id="_CPPv232EVERT_CAN_Identifier_SetTargetIdP27EVERT_CAN_IdentifierTypeDef33EVERT_CAN_DeviceIdentifierTypeDef"></span><span id="EVERT_CAN_Identifier_SetTargetId__EVERT_CAN_IdentifierTypeDefP.EVERT_CAN_DeviceIdentifierTypeDef"></span><span class="target" id="group__EVERT_1ga6004e50c30d0a8c44a6bb9dd3abc436a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Identifier_SetTargetId</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">identifier</span></span>, <a class="reference internal" href="#_CPPv433EVERT_CAN_DeviceIdentifierTypeDef" title="EVERT_CAN_DeviceIdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_DeviceIdentifierTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">target_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432EVERT_CAN_Identifier_SetTargetIdP27EVERT_CAN_IdentifierTypeDef33EVERT_CAN_DeviceIdentifierTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_CAN_Identifier_SetPriorityP27EVERT_CAN_IdentifierTypeDef32EVERT_CAN_MessagePriorityTypeDef">
+<span id="_CPPv332EVERT_CAN_Identifier_SetPriorityP27EVERT_CAN_IdentifierTypeDef32EVERT_CAN_MessagePriorityTypeDef"></span><span id="_CPPv232EVERT_CAN_Identifier_SetPriorityP27EVERT_CAN_IdentifierTypeDef32EVERT_CAN_MessagePriorityTypeDef"></span><span id="EVERT_CAN_Identifier_SetPriority__EVERT_CAN_IdentifierTypeDefP.EVERT_CAN_MessagePriorityTypeDef"></span><span class="target" id="group__EVERT_1ga21186dfa2a7810f82da66494b29777c6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Identifier_SetPriority</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">identifier</span></span>, <a class="reference internal" href="#_CPPv432EVERT_CAN_MessagePriorityTypeDef" title="EVERT_CAN_MessagePriorityTypeDef"><span class="n"><span class="pre">EVERT_CAN_MessagePriorityTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">priority</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432EVERT_CAN_Identifier_SetPriorityP27EVERT_CAN_IdentifierTypeDef32EVERT_CAN_MessagePriorityTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv431EVERT_CAN_Identifier_FromUint328uint32_tP27EVERT_CAN_IdentifierTypeDef">
+<span id="_CPPv331EVERT_CAN_Identifier_FromUint328uint32_tP27EVERT_CAN_IdentifierTypeDef"></span><span id="_CPPv231EVERT_CAN_Identifier_FromUint328uint32_tP27EVERT_CAN_IdentifierTypeDef"></span><span id="EVERT_CAN_Identifier_FromUint32__uint32_t.EVERT_CAN_IdentifierTypeDefP"></span><span class="target" id="group__EVERT_1ga56f9878c803efecad7b9c4c1dacbaaa7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Identifier_FromUint32</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">identifier</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv431EVERT_CAN_Identifier_FromUint328uint32_tP27EVERT_CAN_IdentifierTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv429EVERT_CAN_Identifier_ToUint32P27EVERT_CAN_IdentifierTypeDefP8uint32_t">
+<span id="_CPPv329EVERT_CAN_Identifier_ToUint32P27EVERT_CAN_IdentifierTypeDefP8uint32_t"></span><span id="_CPPv229EVERT_CAN_Identifier_ToUint32P27EVERT_CAN_IdentifierTypeDefP8uint32_t"></span><span id="EVERT_CAN_Identifier_ToUint32__EVERT_CAN_IdentifierTypeDefP.uint32_tP"></span><span class="target" id="group__EVERT_1ga210a149f25fe51d0a78bf2a09746ca60"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Identifier_ToUint32</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">identifier</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429EVERT_CAN_Identifier_ToUint32P27EVERT_CAN_IdentifierTypeDefP8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_CAN_Frame_CreateNewP22EVERT_CAN_FrameTypeDef">
+<span id="_CPPv325EVERT_CAN_Frame_CreateNewP22EVERT_CAN_FrameTypeDef"></span><span id="_CPPv225EVERT_CAN_Frame_CreateNewP22EVERT_CAN_FrameTypeDef"></span><span id="EVERT_CAN_Frame_CreateNew__EVERT_CAN_FrameTypeDefP"></span><span class="target" id="group__EVERT_1ga6ffc034b024525914ed4492b26658639"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Frame_CreateNew</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425EVERT_CAN_Frame_CreateNewP22EVERT_CAN_FrameTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv420EVERT_CAN_Frame_CopyP22EVERT_CAN_FrameTypeDefP22EVERT_CAN_FrameTypeDef">
+<span id="_CPPv320EVERT_CAN_Frame_CopyP22EVERT_CAN_FrameTypeDefP22EVERT_CAN_FrameTypeDef"></span><span id="_CPPv220EVERT_CAN_Frame_CopyP22EVERT_CAN_FrameTypeDefP22EVERT_CAN_FrameTypeDef"></span><span id="EVERT_CAN_Frame_Copy__EVERT_CAN_FrameTypeDefP.EVERT_CAN_FrameTypeDefP"></span><span class="target" id="group__EVERT_1gacee9b477702cb39a3f14f89f61996a9d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Frame_Copy</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">frame</span></span>, <a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">frame_copy</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420EVERT_CAN_Frame_CopyP22EVERT_CAN_FrameTypeDefP22EVERT_CAN_FrameTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv423EVERT_CAN_Frame_SetDataP22EVERT_CAN_FrameTypeDefK7uint8_tPK7uint8_t">
+<span id="_CPPv323EVERT_CAN_Frame_SetDataP22EVERT_CAN_FrameTypeDefK7uint8_tPK7uint8_t"></span><span id="_CPPv223EVERT_CAN_Frame_SetDataP22EVERT_CAN_FrameTypeDefK7uint8_tPK7uint8_t"></span><span id="EVERT_CAN_Frame_SetData__EVERT_CAN_FrameTypeDefP.uint8_tC.uint8_tCP"></span><span class="target" id="group__EVERT_1ga9ea0165de5db7caf391bf799a1c907aa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Frame_SetData</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423EVERT_CAN_Frame_SetDataP22EVERT_CAN_FrameTypeDefK7uint8_tPK7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv429EVERT_CAN_Frame_SetIdentifierP22EVERT_CAN_FrameTypeDefK27EVERT_CAN_IdentifierTypeDef">
+<span id="_CPPv329EVERT_CAN_Frame_SetIdentifierP22EVERT_CAN_FrameTypeDefK27EVERT_CAN_IdentifierTypeDef"></span><span id="_CPPv229EVERT_CAN_Frame_SetIdentifierP22EVERT_CAN_FrameTypeDefK27EVERT_CAN_IdentifierTypeDef"></span><span id="EVERT_CAN_Frame_SetIdentifier__EVERT_CAN_FrameTypeDefP.EVERT_CAN_IdentifierTypeDefC"></span><span class="target" id="group__EVERT_1ga5a2da00dc21657e907f6071b3e2e2885"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Frame_SetIdentifier</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">identifier</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429EVERT_CAN_Frame_SetIdentifierP22EVERT_CAN_FrameTypeDefK27EVERT_CAN_IdentifierTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_CAN_FifoBuffer_InitP27EVERT_CAN_FifoBufferTypeDefP31EVERT_CAN_FifoBufferItemTypeDef8uint32_t">
+<span id="_CPPv325EVERT_CAN_FifoBuffer_InitP27EVERT_CAN_FifoBufferTypeDefP31EVERT_CAN_FifoBufferItemTypeDef8uint32_t"></span><span id="_CPPv225EVERT_CAN_FifoBuffer_InitP27EVERT_CAN_FifoBufferTypeDefP31EVERT_CAN_FifoBufferItemTypeDef8uint32_t"></span><span id="EVERT_CAN_FifoBuffer_Init__EVERT_CAN_FifoBufferTypeDefP.EVERT_CAN_FifoBufferItemTypeDefP.uint32_t"></span><span class="target" id="group__EVERT_1gaa8e85b8ba6538ca28dacc5cfc9150813"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_FifoBuffer_Init</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoBufferTypeDef" title="EVERT_CAN_FifoBufferTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <a class="reference internal" href="#_CPPv431EVERT_CAN_FifoBufferItemTypeDef" title="EVERT_CAN_FifoBufferItemTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferItemTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer_items</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425EVERT_CAN_FifoBuffer_InitP27EVERT_CAN_FifoBufferTypeDefP31EVERT_CAN_FifoBufferItemTypeDef8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_CAN_FifoBuffer_PushP27EVERT_CAN_FifoBufferTypeDefK22EVERT_CAN_FrameTypeDef">
+<span id="_CPPv325EVERT_CAN_FifoBuffer_PushP27EVERT_CAN_FifoBufferTypeDefK22EVERT_CAN_FrameTypeDef"></span><span id="_CPPv225EVERT_CAN_FifoBuffer_PushP27EVERT_CAN_FifoBufferTypeDefK22EVERT_CAN_FrameTypeDef"></span><span id="EVERT_CAN_FifoBuffer_Push__EVERT_CAN_FifoBufferTypeDefP.EVERT_CAN_FrameTypeDefC"></span><span class="target" id="group__EVERT_1ga13bbae8b2ee1c539c1a6bc85eeba8839"></span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoStatusTypeDef" title="EVERT_CAN_FifoStatusTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_FifoBuffer_Push</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoBufferTypeDef" title="EVERT_CAN_FifoBufferTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425EVERT_CAN_FifoBuffer_PushP27EVERT_CAN_FifoBufferTypeDefK22EVERT_CAN_FrameTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv424EVERT_CAN_FifoBuffer_PopP27EVERT_CAN_FifoBufferTypeDefP22EVERT_CAN_FrameTypeDef">
+<span id="_CPPv324EVERT_CAN_FifoBuffer_PopP27EVERT_CAN_FifoBufferTypeDefP22EVERT_CAN_FrameTypeDef"></span><span id="_CPPv224EVERT_CAN_FifoBuffer_PopP27EVERT_CAN_FifoBufferTypeDefP22EVERT_CAN_FrameTypeDef"></span><span id="EVERT_CAN_FifoBuffer_Pop__EVERT_CAN_FifoBufferTypeDefP.EVERT_CAN_FrameTypeDefP"></span><span class="target" id="group__EVERT_1gac6a035098a76fa3eefdb36859149963a"></span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoStatusTypeDef" title="EVERT_CAN_FifoStatusTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_FifoBuffer_Pop</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoBufferTypeDef" title="EVERT_CAN_FifoBufferTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424EVERT_CAN_FifoBuffer_PopP27EVERT_CAN_FifoBufferTypeDefP22EVERT_CAN_FrameTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv422EVERT_CAN_Handler_InitP19FDCAN_HandleTypeDefP24EVERT_CAN_HandlerTypeDef33EVERT_CAN_DeviceIdentifierTypeDefP31EVERT_CAN_FifoBufferItemTypeDefP31EVERT_CAN_FifoBufferItemTypeDef8uint32_t">
+<span id="_CPPv322EVERT_CAN_Handler_InitP19FDCAN_HandleTypeDefP24EVERT_CAN_HandlerTypeDef33EVERT_CAN_DeviceIdentifierTypeDefP31EVERT_CAN_FifoBufferItemTypeDefP31EVERT_CAN_FifoBufferItemTypeDef8uint32_t"></span><span id="_CPPv222EVERT_CAN_Handler_InitP19FDCAN_HandleTypeDefP24EVERT_CAN_HandlerTypeDef33EVERT_CAN_DeviceIdentifierTypeDefP31EVERT_CAN_FifoBufferItemTypeDefP31EVERT_CAN_FifoBufferItemTypeDef8uint32_t"></span><span id="EVERT_CAN_Handler_Init__FDCAN_HandleTypeDefP.EVERT_CAN_HandlerTypeDefP.EVERT_CAN_DeviceIdentifierTypeDef.EVERT_CAN_FifoBufferItemTypeDefP.EVERT_CAN_FifoBufferItemTypeDefP.uint32_t"></span><span class="target" id="group__EVERT_1gac34e2e4554d2086891441898e7321dd7"></span><span class="n"><span class="pre">HAL_StatusTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Handler_Init</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">FDCAN_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hfdcan</span></span>, <a class="reference internal" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="EVERT_CAN_HandlerTypeDef"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">handler</span></span>, <a class="reference internal" href="#_CPPv433EVERT_CAN_DeviceIdentifierTypeDef" title="EVERT_CAN_DeviceIdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_DeviceIdentifierTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">device_id</span></span>, <a class="reference internal" href="#_CPPv431EVERT_CAN_FifoBufferItemTypeDef" title="EVERT_CAN_FifoBufferItemTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferItemTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rx_fifo_items</span></span>, <a class="reference internal" href="#_CPPv431EVERT_CAN_FifoBufferItemTypeDef" title="EVERT_CAN_FifoBufferItemTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferItemTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">tx_fifo_items</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422EVERT_CAN_Handler_InitP19FDCAN_HandleTypeDefP24EVERT_CAN_HandlerTypeDef33EVERT_CAN_DeviceIdentifierTypeDefP31EVERT_CAN_FifoBufferItemTypeDefP31EVERT_CAN_FifoBufferItemTypeDef8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_CAN_Handler_ReceiveP24EVERT_CAN_HandlerTypeDefK8uint32_t">
+<span id="_CPPv325EVERT_CAN_Handler_ReceiveP24EVERT_CAN_HandlerTypeDefK8uint32_t"></span><span id="_CPPv225EVERT_CAN_Handler_ReceiveP24EVERT_CAN_HandlerTypeDefK8uint32_t"></span><span id="EVERT_CAN_Handler_Receive__EVERT_CAN_HandlerTypeDefP.uint32_tC"></span><span class="target" id="group__EVERT_1gabe249ed4ca4d4c2737e62a1e382167ea"></span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoStatusTypeDef" title="EVERT_CAN_FifoStatusTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Handler_Receive</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="EVERT_CAN_HandlerTypeDef"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">RxFifo0ITs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425EVERT_CAN_Handler_ReceiveP24EVERT_CAN_HandlerTypeDefK8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv426EVERT_CAN_Handler_TransmitP24EVERT_CAN_HandlerTypeDefK7uint8_tPK7uint8_t">
+<span id="_CPPv326EVERT_CAN_Handler_TransmitP24EVERT_CAN_HandlerTypeDefK7uint8_tPK7uint8_t"></span><span id="_CPPv226EVERT_CAN_Handler_TransmitP24EVERT_CAN_HandlerTypeDefK7uint8_tPK7uint8_t"></span><span id="EVERT_CAN_Handler_Transmit__EVERT_CAN_HandlerTypeDefP.uint8_tC.uint8_tCP"></span><span class="target" id="group__EVERT_1ga6e965768ca73ef5cdc384d9698f0d082"></span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoStatusTypeDef" title="EVERT_CAN_FifoStatusTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Handler_Transmit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="EVERT_CAN_HandlerTypeDef"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426EVERT_CAN_Handler_TransmitP24EVERT_CAN_HandlerTypeDefK7uint8_tPK7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv433EVERT_CAN_Handler_ProcessRxBufferP24EVERT_CAN_HandlerTypeDef">
+<span id="_CPPv333EVERT_CAN_Handler_ProcessRxBufferP24EVERT_CAN_HandlerTypeDef"></span><span id="_CPPv233EVERT_CAN_Handler_ProcessRxBufferP24EVERT_CAN_HandlerTypeDef"></span><span id="EVERT_CAN_Handler_ProcessRxBuffer__EVERT_CAN_HandlerTypeDefP"></span><span class="target" id="group__EVERT_1ga8dd5745f0257716e09a6010b5e17d999"></span><a class="reference internal" href="#_CPPv436EVERT_CAN_ProcessBufferStatusTypeDef" title="EVERT_CAN_ProcessBufferStatusTypeDef"><span class="n"><span class="pre">EVERT_CAN_ProcessBufferStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Handler_ProcessRxBuffer</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="EVERT_CAN_HandlerTypeDef"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv433EVERT_CAN_Handler_ProcessRxBufferP24EVERT_CAN_HandlerTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv433EVERT_CAN_Handler_ProcessTxBufferP24EVERT_CAN_HandlerTypeDef">
+<span id="_CPPv333EVERT_CAN_Handler_ProcessTxBufferP24EVERT_CAN_HandlerTypeDef"></span><span id="_CPPv233EVERT_CAN_Handler_ProcessTxBufferP24EVERT_CAN_HandlerTypeDef"></span><span id="EVERT_CAN_Handler_ProcessTxBuffer__EVERT_CAN_HandlerTypeDefP"></span><span class="target" id="group__EVERT_1gac7b08e20e4211643e8d0b9f4bed5c88d"></span><a class="reference internal" href="#_CPPv436EVERT_CAN_ProcessBufferStatusTypeDef" title="EVERT_CAN_ProcessBufferStatusTypeDef"><span class="n"><span class="pre">EVERT_CAN_ProcessBufferStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_Handler_ProcessTxBuffer</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="EVERT_CAN_HandlerTypeDef"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv433EVERT_CAN_Handler_ProcessTxBufferP24EVERT_CAN_HandlerTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_CAN_OnErrorReceivedP24EVERT_CAN_HandlerTypeDef">
+<span id="_CPPv325EVERT_CAN_OnErrorReceivedP24EVERT_CAN_HandlerTypeDef"></span><span id="_CPPv225EVERT_CAN_OnErrorReceivedP24EVERT_CAN_HandlerTypeDef"></span><span id="EVERT_CAN_OnErrorReceived__EVERT_CAN_HandlerTypeDefP"></span><span class="target" id="group__EVERT_1gae3d7730911952188754acc2e3fcb2b0b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_OnErrorReceived</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="EVERT_CAN_HandlerTypeDef"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">handler</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425EVERT_CAN_OnErrorReceivedP24EVERT_CAN_HandlerTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_CAN_OnMessageReceivedP24EVERT_CAN_HandlerTypeDefK22EVERT_CAN_FrameTypeDef">
+<span id="_CPPv327EVERT_CAN_OnMessageReceivedP24EVERT_CAN_HandlerTypeDefK22EVERT_CAN_FrameTypeDef"></span><span id="_CPPv227EVERT_CAN_OnMessageReceivedP24EVERT_CAN_HandlerTypeDefK22EVERT_CAN_FrameTypeDef"></span><span id="EVERT_CAN_OnMessageReceived__EVERT_CAN_HandlerTypeDefP.EVERT_CAN_FrameTypeDefC"></span><span class="target" id="group__EVERT_1ga65818296c18bfda108851fb9f7122d86"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_OnMessageReceived</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="EVERT_CAN_HandlerTypeDef"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv427EVERT_CAN_OnMessageReceivedP24EVERT_CAN_HandlerTypeDefK22EVERT_CAN_FrameTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_CAN_OnMessageTransmittedP24EVERT_CAN_HandlerTypeDefK22EVERT_CAN_FrameTypeDef">
+<span id="_CPPv330EVERT_CAN_OnMessageTransmittedP24EVERT_CAN_HandlerTypeDefK22EVERT_CAN_FrameTypeDef"></span><span id="_CPPv230EVERT_CAN_OnMessageTransmittedP24EVERT_CAN_HandlerTypeDefK22EVERT_CAN_FrameTypeDef"></span><span id="EVERT_CAN_OnMessageTransmitted__EVERT_CAN_HandlerTypeDefP.EVERT_CAN_FrameTypeDefC"></span><span class="target" id="group__EVERT_1gabe6da111b17dc4919e7cb97602a78e9a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_OnMessageTransmitted</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="EVERT_CAN_HandlerTypeDef"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">handler</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv430EVERT_CAN_OnMessageTransmittedP24EVERT_CAN_HandlerTypeDefK22EVERT_CAN_FrameTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_CAN_IdentifierTypeDef">
+<span id="_CPPv327EVERT_CAN_IdentifierTypeDef"></span><span id="_CPPv227EVERT_CAN_IdentifierTypeDef"></span><span id="EVERT_CAN_IdentifierTypeDef"></span><span class="target" id="structEVERT__CAN__IdentifierTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></span><a class="headerlink" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#can__handler_8h"><span class="std std-ref">can_handler.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_IdentifierTypeDef10message_idE">
+<span id="_CPPv3N27EVERT_CAN_IdentifierTypeDef10message_idE"></span><span id="_CPPv2N27EVERT_CAN_IdentifierTypeDef10message_idE"></span><span id="EVERT_CAN_IdentifierTypeDef::message_id__EVERT_CAN_MessageIdTypeDef"></span><span class="target" id="group__EVERT_1ga842c568d25131430064abf63414f5286"></span><a class="reference internal" href="#_CPPv426EVERT_CAN_MessageIdTypeDef" title="EVERT_CAN_MessageIdTypeDef"><span class="n"><span class="pre">EVERT_CAN_MessageIdTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">message_id</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_IdentifierTypeDef10message_idE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_IdentifierTypeDef9source_idE">
+<span id="_CPPv3N27EVERT_CAN_IdentifierTypeDef9source_idE"></span><span id="_CPPv2N27EVERT_CAN_IdentifierTypeDef9source_idE"></span><span id="EVERT_CAN_IdentifierTypeDef::source_id__EVERT_CAN_DeviceIdentifierTypeDef"></span><span class="target" id="group__EVERT_1ga004047877255e5a01bf02d55e3128123"></span><a class="reference internal" href="#_CPPv433EVERT_CAN_DeviceIdentifierTypeDef" title="EVERT_CAN_DeviceIdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_DeviceIdentifierTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">source_id</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_IdentifierTypeDef9source_idE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_IdentifierTypeDef9target_idE">
+<span id="_CPPv3N27EVERT_CAN_IdentifierTypeDef9target_idE"></span><span id="_CPPv2N27EVERT_CAN_IdentifierTypeDef9target_idE"></span><span id="EVERT_CAN_IdentifierTypeDef::target_id__EVERT_CAN_DeviceIdentifierTypeDef"></span><span class="target" id="group__EVERT_1ga53001e10702cfef7a9f818cadba2ab8a"></span><a class="reference internal" href="#_CPPv433EVERT_CAN_DeviceIdentifierTypeDef" title="EVERT_CAN_DeviceIdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_DeviceIdentifierTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">target_id</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_IdentifierTypeDef9target_idE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_IdentifierTypeDef10evert_flagE">
+<span id="_CPPv3N27EVERT_CAN_IdentifierTypeDef10evert_flagE"></span><span id="_CPPv2N27EVERT_CAN_IdentifierTypeDef10evert_flagE"></span><span id="EVERT_CAN_IdentifierTypeDef::evert_flag__uint8_t"></span><span class="target" id="group__EVERT_1ga320439a2cc2a36f099aa1f4ec295872e"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evert_flag</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_IdentifierTypeDef10evert_flagE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_IdentifierTypeDef8priorityE">
+<span id="_CPPv3N27EVERT_CAN_IdentifierTypeDef8priorityE"></span><span id="_CPPv2N27EVERT_CAN_IdentifierTypeDef8priorityE"></span><span id="EVERT_CAN_IdentifierTypeDef::priority__EVERT_CAN_MessagePriorityTypeDef"></span><span class="target" id="group__EVERT_1gaf4d6a156da848d0320a9469b735ab900"></span><a class="reference internal" href="#_CPPv432EVERT_CAN_MessagePriorityTypeDef" title="EVERT_CAN_MessagePriorityTypeDef"><span class="n"><span class="pre">EVERT_CAN_MessagePriorityTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">priority</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_IdentifierTypeDef8priorityE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_IdentifierTypeDef12zero_paddingE">
+<span id="_CPPv3N27EVERT_CAN_IdentifierTypeDef12zero_paddingE"></span><span id="_CPPv2N27EVERT_CAN_IdentifierTypeDef12zero_paddingE"></span><span id="EVERT_CAN_IdentifierTypeDef::zero_padding__uint16_t"></span><span class="target" id="group__EVERT_1ga75767e1354652fc6dea655fa84978484"></span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zero_padding</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_IdentifierTypeDef12zero_paddingE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv426EVERT_CAN_FrameDataTypeDef">
+<span id="_CPPv326EVERT_CAN_FrameDataTypeDef"></span><span id="_CPPv226EVERT_CAN_FrameDataTypeDef"></span><span id="EVERT_CAN_FrameDataTypeDef"></span><span class="target" id="structEVERT__CAN__FrameDataTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_FrameDataTypeDef</span></span></span><a class="headerlink" href="#_CPPv426EVERT_CAN_FrameDataTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#can__handler_8h"><span class="std std-ref">can_handler.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_CAN_FrameDataTypeDef6lengthE">
+<span id="_CPPv3N26EVERT_CAN_FrameDataTypeDef6lengthE"></span><span id="_CPPv2N26EVERT_CAN_FrameDataTypeDef6lengthE"></span><span id="EVERT_CAN_FrameDataTypeDef::length__uint8_t"></span><span class="target" id="group__EVERT_1ga5ae4b85cd2531f498f943b627db97fe2"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">length</span></span></span><a class="headerlink" href="#_CPPv4N26EVERT_CAN_FrameDataTypeDef6lengthE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_CAN_FrameDataTypeDef4dataE">
+<span id="_CPPv3N26EVERT_CAN_FrameDataTypeDef4dataE"></span><span id="_CPPv2N26EVERT_CAN_FrameDataTypeDef4dataE"></span><span id="EVERT_CAN_FrameDataTypeDef::data__uint8_tA"></span><span class="target" id="group__EVERT_1ga8a6607ecd684e543c835370061ebb883"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">7</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N26EVERT_CAN_FrameDataTypeDef4dataE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv422EVERT_CAN_FrameTypeDef">
+<span id="_CPPv322EVERT_CAN_FrameTypeDef"></span><span id="_CPPv222EVERT_CAN_FrameTypeDef"></span><span id="EVERT_CAN_FrameTypeDef"></span><span class="target" id="structEVERT__CAN__FrameTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></span><a class="headerlink" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#can__handler_8h"><span class="std std-ref">can_handler.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_CAN_FrameTypeDef10identifierE">
+<span id="_CPPv3N22EVERT_CAN_FrameTypeDef10identifierE"></span><span id="_CPPv2N22EVERT_CAN_FrameTypeDef10identifierE"></span><span id="EVERT_CAN_FrameTypeDef::identifier__EVERT_CAN_IdentifierTypeDef"></span><span class="target" id="group__EVERT_1gab0cf3f073de93e507b7fe6ef746ba391"></span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">identifier</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_CAN_FrameTypeDef10identifierE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22EVERT_CAN_FrameTypeDef4dataE">
+<span id="_CPPv3N22EVERT_CAN_FrameTypeDef4dataE"></span><span id="_CPPv2N22EVERT_CAN_FrameTypeDef4dataE"></span><span id="EVERT_CAN_FrameTypeDef::data__EVERT_CAN_FrameDataTypeDef"></span><span class="target" id="group__EVERT_1ga49270152b64b0d71d2afb2ea2f4f5f51"></span><a class="reference internal" href="#_CPPv426EVERT_CAN_FrameDataTypeDef" title="EVERT_CAN_FrameDataTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameDataTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#_CPPv4N22EVERT_CAN_FrameTypeDef4dataE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv431EVERT_CAN_FifoBufferItemTypeDef">
+<span id="_CPPv331EVERT_CAN_FifoBufferItemTypeDef"></span><span id="_CPPv231EVERT_CAN_FifoBufferItemTypeDef"></span><span id="EVERT_CAN_FifoBufferItemTypeDef"></span><span class="target" id="structEVERT__CAN__FifoBufferItemTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_FifoBufferItemTypeDef</span></span></span><a class="headerlink" href="#_CPPv431EVERT_CAN_FifoBufferItemTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#can__handler_8h"><span class="std std-ref">can_handler.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N31EVERT_CAN_FifoBufferItemTypeDef5frameE">
+<span id="_CPPv3N31EVERT_CAN_FifoBufferItemTypeDef5frameE"></span><span id="_CPPv2N31EVERT_CAN_FifoBufferItemTypeDef5frameE"></span><span id="EVERT_CAN_FifoBufferItemTypeDef::frame__EVERT_CAN_FrameTypeDef"></span><span class="target" id="group__EVERT_1ga9fe00a8e242c9c54bae02e6553113759"></span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">frame</span></span></span><a class="headerlink" href="#_CPPv4N31EVERT_CAN_FifoBufferItemTypeDef5frameE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_CAN_FifoBufferTypeDef">
+<span id="_CPPv327EVERT_CAN_FifoBufferTypeDef"></span><span id="_CPPv227EVERT_CAN_FifoBufferTypeDef"></span><span id="EVERT_CAN_FifoBufferTypeDef"></span><span class="target" id="structEVERT__CAN__FifoBufferTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_FifoBufferTypeDef</span></span></span><a class="headerlink" href="#_CPPv427EVERT_CAN_FifoBufferTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#can__handler_8h"><span class="std std-ref">can_handler.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoBufferTypeDef6bufferE">
+<span id="_CPPv3N27EVERT_CAN_FifoBufferTypeDef6bufferE"></span><span id="_CPPv2N27EVERT_CAN_FifoBufferTypeDef6bufferE"></span><span id="EVERT_CAN_FifoBufferTypeDef::buffer__EVERT_CAN_FifoBufferItemTypeDefP"></span><span class="target" id="group__EVERT_1ga0e9e69c39d2c6f82530567a1bb4e4d01"></span><a class="reference internal" href="#_CPPv431EVERT_CAN_FifoBufferItemTypeDef" title="EVERT_CAN_FifoBufferItemTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferItemTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">buffer</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoBufferTypeDef6bufferE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoBufferTypeDef4headE">
+<span id="_CPPv3N27EVERT_CAN_FifoBufferTypeDef4headE"></span><span id="_CPPv2N27EVERT_CAN_FifoBufferTypeDef4headE"></span><span id="EVERT_CAN_FifoBufferTypeDef::head__uint32_t"></span><span class="target" id="group__EVERT_1ga260ec7f161f4e5ae7b21e5709e8cd491"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">head</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoBufferTypeDef4headE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoBufferTypeDef4tailE">
+<span id="_CPPv3N27EVERT_CAN_FifoBufferTypeDef4tailE"></span><span id="_CPPv2N27EVERT_CAN_FifoBufferTypeDef4tailE"></span><span id="EVERT_CAN_FifoBufferTypeDef::tail__uint32_t"></span><span class="target" id="group__EVERT_1gaf8b405efcb78e5f825557e0e86a7f77a"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tail</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoBufferTypeDef4tailE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoBufferTypeDef4sizeE">
+<span id="_CPPv3N27EVERT_CAN_FifoBufferTypeDef4sizeE"></span><span id="_CPPv2N27EVERT_CAN_FifoBufferTypeDef4sizeE"></span><span id="EVERT_CAN_FifoBufferTypeDef::size__uint32_t"></span><span class="target" id="group__EVERT_1ga6c2b0e89e52c05dfbe76f46a08729561"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoBufferTypeDef4sizeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27EVERT_CAN_FifoBufferTypeDef5countE">
+<span id="_CPPv3N27EVERT_CAN_FifoBufferTypeDef5countE"></span><span id="_CPPv2N27EVERT_CAN_FifoBufferTypeDef5countE"></span><span id="EVERT_CAN_FifoBufferTypeDef::count__uint32_t"></span><span class="target" id="group__EVERT_1gae29a51973b5b39f0aef2ecc4e6cff82c"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">count</span></span></span><a class="headerlink" href="#_CPPv4N27EVERT_CAN_FifoBufferTypeDef5countE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv424EVERT_CAN_HandlerTypeDef">
+<span id="_CPPv324EVERT_CAN_HandlerTypeDef"></span><span id="_CPPv224EVERT_CAN_HandlerTypeDef"></span><span id="EVERT_CAN_HandlerTypeDef"></span><span class="target" id="structEVERT__CAN__HandlerTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CAN_HandlerTypeDef</span></span></span><a class="headerlink" href="#_CPPv424EVERT_CAN_HandlerTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#can__handler_8h"><span class="std std-ref">can_handler.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef15OnErrorReceivedE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef15OnErrorReceivedE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef15OnErrorReceivedE"></span><span class="target" id="group__EVERT_1ga974b3f500aa5c00319b9cd716b597191"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">OnErrorReceived</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef15OnErrorReceivedE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef17OnMessageReceivedE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef17OnMessageReceivedE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef17OnMessageReceivedE"></span><span class="target" id="group__EVERT_1gaffae2ceaba39a22acd6823f5476025b5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">OnMessageReceived</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="n"><span class="pre">frame</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef17OnMessageReceivedE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef20OnMessageTransmittedE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef20OnMessageTransmittedE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef20OnMessageTransmittedE"></span><span class="target" id="group__EVERT_1ga08a95d378de93f37bd0771bb144c84e2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">OnMessageTransmitted</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv422EVERT_CAN_FrameTypeDef" title="EVERT_CAN_FrameTypeDef"><span class="n"><span class="pre">EVERT_CAN_FrameTypeDef</span></span></a><span class="w"> </span><span class="n"><span class="pre">frame</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef20OnMessageTransmittedE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef6hfdcanE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef6hfdcanE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef6hfdcanE"></span><span id="EVERT_CAN_HandlerTypeDef::hfdcan__FDCAN_HandleTypeDefP"></span><span class="target" id="group__EVERT_1gabf40475e1f6bc4d95c64ace1cb8c8e78"></span><span class="n"><span class="pre">FDCAN_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">hfdcan</span></span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef6hfdcanE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef10identifierE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef10identifierE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef10identifierE"></span><span id="EVERT_CAN_HandlerTypeDef::identifier__EVERT_CAN_IdentifierTypeDef"></span><span class="target" id="group__EVERT_1ga83f82545e2ca6f1d82bd5864bc8635de"></span><a class="reference internal" href="#_CPPv427EVERT_CAN_IdentifierTypeDef" title="EVERT_CAN_IdentifierTypeDef"><span class="n"><span class="pre">EVERT_CAN_IdentifierTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">identifier</span></span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef10identifierE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef14rx_fifo_bufferE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef14rx_fifo_bufferE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef14rx_fifo_bufferE"></span><span id="EVERT_CAN_HandlerTypeDef::rx_fifo_buffer__EVERT_CAN_FifoBufferTypeDef"></span><span class="target" id="group__EVERT_1gaaa7e1b908a5cc665c274d4ea63a6e242"></span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoBufferTypeDef" title="EVERT_CAN_FifoBufferTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rx_fifo_buffer</span></span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef14rx_fifo_bufferE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef14tx_fifo_bufferE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef14tx_fifo_bufferE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef14tx_fifo_bufferE"></span><span id="EVERT_CAN_HandlerTypeDef::tx_fifo_buffer__EVERT_CAN_FifoBufferTypeDef"></span><span class="target" id="group__EVERT_1ga1afe8e34668f7aad889a39a9270d9154"></span><a class="reference internal" href="#_CPPv427EVERT_CAN_FifoBufferTypeDef" title="EVERT_CAN_FifoBufferTypeDef"><span class="n"><span class="pre">EVERT_CAN_FifoBufferTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tx_fifo_buffer</span></span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef14tx_fifo_bufferE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef9rx_headerE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef9rx_headerE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef9rx_headerE"></span><span id="EVERT_CAN_HandlerTypeDef::rx_header__FDCAN_RxHeaderTypeDef"></span><span class="target" id="group__EVERT_1ga5b58ad18463f9693a48fcd886c40872d"></span><span class="n"><span class="pre">FDCAN_RxHeaderTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rx_header</span></span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef9rx_headerE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef9tx_headerE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef9tx_headerE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef9tx_headerE"></span><span id="EVERT_CAN_HandlerTypeDef::tx_header__FDCAN_TxHeaderTypeDef"></span><span class="target" id="group__EVERT_1ga107a135f4aaea9e4eb4335ffb7ead05a"></span><span class="n"><span class="pre">FDCAN_TxHeaderTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tx_header</span></span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef9tx_headerE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef7rx_dataE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef7rx_dataE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef7rx_dataE"></span><span id="EVERT_CAN_HandlerTypeDef::rx_data__uint8_tA"></span><span class="target" id="group__EVERT_1ga745831d71efc87758bd2294ba20d6678"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rx_data</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">8</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef7rx_dataE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef7tx_dataE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef7tx_dataE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef7tx_dataE"></span><span id="EVERT_CAN_HandlerTypeDef::tx_data__uint8_tA"></span><span class="target" id="group__EVERT_1gaf21c2e5db22496763da3d13cd07748f2"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tx_data</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">8</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef7tx_dataE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef9rx_statusE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef9rx_statusE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef9rx_statusE"></span><span id="EVERT_CAN_HandlerTypeDef::rx_status__EVERT_CAN_ProcessBufferStatusTypeDef"></span><span class="target" id="group__EVERT_1ga1794093e7da2db19b30866cd37e9fdc3"></span><a class="reference internal" href="#_CPPv436EVERT_CAN_ProcessBufferStatusTypeDef" title="EVERT_CAN_ProcessBufferStatusTypeDef"><span class="n"><span class="pre">EVERT_CAN_ProcessBufferStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rx_status</span></span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef9rx_statusE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24EVERT_CAN_HandlerTypeDef9tx_statusE">
+<span id="_CPPv3N24EVERT_CAN_HandlerTypeDef9tx_statusE"></span><span id="_CPPv2N24EVERT_CAN_HandlerTypeDef9tx_statusE"></span><span id="EVERT_CAN_HandlerTypeDef::tx_status__EVERT_CAN_ProcessBufferStatusTypeDef"></span><span class="target" id="group__EVERT_1gab84bcf06652d9da77d6610199bd8245e"></span><a class="reference internal" href="#_CPPv436EVERT_CAN_ProcessBufferStatusTypeDef" title="EVERT_CAN_ProcessBufferStatusTypeDef"><span class="n"><span class="pre">EVERT_CAN_ProcessBufferStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tx_status</span></span></span><a class="headerlink" href="#_CPPv4N24EVERT_CAN_HandlerTypeDef9tx_statusE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../_projects/core/core-index.html" class="btn btn-neutral float-left" title="Index: core" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="debugging.html" class="btn btn-neutral float-right" title="debugging.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

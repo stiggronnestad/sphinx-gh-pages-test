@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>inverter.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="inverter_alarm_index.h" href="inverter_alarm_index.html" />
+    <link rel="prev" title="Index: inverter" href="../../_projects/inverter/inverter-index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/inverter/inverter-index.html">Index: inverter</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">inverter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_alarm_index.html">inverter_alarm_index.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_calibration.html">inverter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_constraints.html">inverter_constraints.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_grid.html">inverter_grid.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_math.html">inverter_math.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_readings.html">inverter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_transforms.html">inverter_transforms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_inverter.html">_conf_evert_inverter.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/inverter/inverter-api.html">API Reference: inverter</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter.html">inverter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter-index.html">Index: inverter</a></li>
+      <li class="breadcrumb-item active">inverter.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/inverter/inverter.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="inverter-h">
+<h1>inverter.h<a class="headerlink" href="#inverter-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.DEVICE_VERSION_MAJOR">
+<span class="target" id="inverter_8h_1a61597dbfbda8133df775d6830893cc16"></span><span class="sig-name descname"><span class="n"><span class="pre">DEVICE_VERSION_MAJOR</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.DEVICE_VERSION_MINOR">
+<span class="target" id="inverter_8h_1a2019997aedeec5f1d97c8b65e8a0579b"></span><span class="sig-name descname"><span class="n"><span class="pre">DEVICE_VERSION_MINOR</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.DEVICE_VERSION_PATCH">
+<span class="target" id="inverter_8h_1abd80e2fa8bcb8c6fc6a5c6384ceb6827"></span><span class="sig-name descname"><span class="n"><span class="pre">DEVICE_VERSION_PATCH</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419EVERT_INVERTER_mainv">
+<span id="_CPPv319EVERT_INVERTER_mainv"></span><span id="_CPPv219EVERT_INVERTER_mainv"></span><span id="EVERT_INVERTER_main"></span><span class="target" id="inverter_8h_1a9581aa1e954a0290efba60fb91ea54b0"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_main</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419EVERT_INVERTER_mainv" title="Link to this definition"></a><br /></dt>
+<dd><p>Device Emergency Shutdown Alarms. </p>
+<p>Device Non-Operational Alarms</p>
+<p>Device Operational Warning Alarms </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419EVERT_INVERTER_loopv">
+<span id="_CPPv319EVERT_INVERTER_loopv"></span><span id="_CPPv219EVERT_INVERTER_loopv"></span><span id="EVERT_INVERTER_loop"></span><span class="target" id="inverter_8h_1a2bea1ea30d69e76f7f40bc00db9f2669"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_loop</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419EVERT_INVERTER_loopv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413GetDutyCyclesP9float32_tP9float32_tP9float32_t">
+<span id="_CPPv313GetDutyCyclesP9float32_tP9float32_tP9float32_t"></span><span id="_CPPv213GetDutyCyclesP9float32_tP9float32_tP9float32_t"></span><span id="GetDutyCycles__float32_tP.float32_tP.float32_tP"></span><span class="target" id="inverter_8h_1a88ad5a68953568f2f25a70a9a666aa21"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDutyCycles</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">duty_u</span></span>, <span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">duty_v</span></span>, <span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">duty_w</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413GetDutyCyclesP9float32_tP9float32_tP9float32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv442EVERT_INVERTER_GetDutyCycleCcrByPercentageK9float32_t">
+<span id="_CPPv342EVERT_INVERTER_GetDutyCycleCcrByPercentageK9float32_t"></span><span id="_CPPv242EVERT_INVERTER_GetDutyCycleCcrByPercentageK9float32_t"></span><span id="EVERT_INVERTER_GetDutyCycleCcrByPercentage__float32_tC"></span><span class="target" id="inverter_8h_1a685925106ddade5f4fc939367ef9871b"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GetDutyCycleCcrByPercentage</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">percentage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv442EVERT_INVERTER_GetDutyCycleCcrByPercentageK9float32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv426EVERT_INVERTER_SetDeadtimeK8uint32_t8uint16_t">
+<span id="_CPPv326EVERT_INVERTER_SetDeadtimeK8uint32_t8uint16_t"></span><span id="_CPPv226EVERT_INVERTER_SetDeadtimeK8uint32_t8uint16_t"></span><span id="EVERT_INVERTER_SetDeadtime__uint32_tC.uint16_t"></span><span class="target" id="inverter_8h_1a9660595b101a140bfea31b072ecd0198"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_SetDeadtime</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">timer_index</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">deadtime</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426EVERT_INVERTER_SetDeadtimeK8uint32_t8uint16_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_INVERTER_SetDutyCycleK9float32_tK9float32_tK9float32_t">
+<span id="_CPPv327EVERT_INVERTER_SetDutyCycleK9float32_tK9float32_tK9float32_t"></span><span id="_CPPv227EVERT_INVERTER_SetDutyCycleK9float32_tK9float32_tK9float32_t"></span><span id="EVERT_INVERTER_SetDutyCycle__float32_tC.float32_tC.float32_tC"></span><span class="target" id="inverter_8h_1a7e85a0bc55fc40a6f7a4497f4ac61d65"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_SetDutyCycle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">duty_cycle_u</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">duty_cycle_v</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">duty_cycle_w</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv427EVERT_INVERTER_SetDutyCycleK9float32_tK9float32_tK9float32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv428EVERT_INVERTER_SetPwmEnabledKb">
+<span id="_CPPv328EVERT_INVERTER_SetPwmEnabledKb"></span><span id="_CPPv228EVERT_INVERTER_SetPwmEnabledKb"></span><span id="EVERT_INVERTER_SetPwmEnabled__bC"></span><span class="target" id="inverter_8h_1a5b5f2288cf0f2a58068551dd67054947"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_SetPwmEnabled</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">enabled</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv428EVERT_INVERTER_SetPwmEnabledKb" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_INVERTER_SetStatusLedK7uint8_tK8uint32_tK8uint32_tK8uint32_t">
+<span id="_CPPv327EVERT_INVERTER_SetStatusLedK7uint8_tK8uint32_tK8uint32_tK8uint32_t"></span><span id="_CPPv227EVERT_INVERTER_SetStatusLedK7uint8_tK8uint32_tK8uint32_tK8uint32_t"></span><span id="EVERT_INVERTER_SetStatusLed__uint8_tC.uint32_tC.uint32_tC.uint32_tC"></span><span class="target" id="inverter_8h_1afe15320dfd5d1128e7fb7d99117b8332"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_SetStatusLed</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">time_on</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">time_off</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv427EVERT_INVERTER_SetStatusLedK7uint8_tK8uint32_tK8uint32_tK8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter_8h_1af10d97892d8e74a32604474a09e2ab39"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">__overrides</span> <span class="pre">EVERT_DEVICE_Derived_OnDeviceStateChange</span> <span class="pre">(const</span> <span class="pre">EVERT_DEVICE_StateTypeDef</span> <span class="pre">new_state,</span> <span class="pre">const</span> <span class="pre">EVERT_DEVICE_StateTypeDef</span> <span class="pre">old_state)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter_8h_1a78595f7eb043517735afc6b712a3963c"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">__overrides</span> <span class="pre">EVERT_DEVICE_Derived_OnEnterState_BootingComms</span> <span class="pre">()</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter_8h_1a9670a702d2a1694a69b1dc8ae5fcb43a"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">__overrides</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</span> <span class="pre">()</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter_8h_1a0f64a9cba8edec1f08d7478843caec25"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">__overrides</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendData</span> <span class="pre">()</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter_8h_1a51a6905b0d3b1d2167fb08e105c2fc59"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">__overrides</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</span> <span class="pre">()</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter_8h_1af443672014219cd68adabc9dcd23d92c"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">__overrides</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendPing</span> <span class="pre">()</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv435EVERT_INVERTER_ISR_25KHZ_IRQHandlerv">
+<span id="_CPPv335EVERT_INVERTER_ISR_25KHZ_IRQHandlerv"></span><span id="_CPPv235EVERT_INVERTER_ISR_25KHZ_IRQHandlerv"></span><span id="EVERT_INVERTER_ISR_25KHZ_IRQHandler"></span><span class="target" id="inverter_8h_1ab50233798a72bd889bfcdcd56c0f8f49"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ISR_25KHZ_IRQHandler</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv435EVERT_INVERTER_ISR_25KHZ_IRQHandlerv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv435EVERT_INVERTER_ISR_100HZ_IRQHandlerv">
+<span id="_CPPv335EVERT_INVERTER_ISR_100HZ_IRQHandlerv"></span><span id="_CPPv235EVERT_INVERTER_ISR_100HZ_IRQHandlerv"></span><span id="EVERT_INVERTER_ISR_100HZ_IRQHandler"></span><span class="target" id="inverter_8h_1a9f72506966d5162e749a51569f03ee4f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ISR_100HZ_IRQHandler</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv435EVERT_INVERTER_ISR_100HZ_IRQHandlerv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter_8h_1a5d70e6c586583a61f870041852eb6fff"></span><span class="sig-name descname"><span class="pre">void</span> <span class="pre">__overrides</span> <span class="pre">HAL_ADC_ConvCpltCallback</span> <span class="pre">(ADC_HandleTypeDef</span> <span class="pre">*hadc)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv424EVERT_INVERTER_hal_errorPc">
+<span id="_CPPv324EVERT_INVERTER_hal_errorPc"></span><span id="_CPPv224EVERT_INVERTER_hal_errorPc"></span><span id="EVERT_INVERTER_hal_error__cP"></span><span class="target" id="inverter_8h_1a523ffcc5a1b7d101f9b988bdeffc94e4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_hal_error</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">error_message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424EVERT_INVERTER_hal_errorPc" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv421HAL_ADC_ErrorCallbackP17ADC_HandleTypeDef">
+<span id="_CPPv321HAL_ADC_ErrorCallbackP17ADC_HandleTypeDef"></span><span id="_CPPv221HAL_ADC_ErrorCallbackP17ADC_HandleTypeDef"></span><span id="HAL_ADC_ErrorCallback__ADC_HandleTypeDefP"></span><span class="target" id="inverter_8h_1adea1a55c5199d5cb4cfc1fdcd32be1b2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HAL_ADC_ErrorCallback</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ADC_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hadc</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv421HAL_DMA_ErrorCallbackP17DMA_HandleTypeDef">
+<span id="_CPPv321HAL_DMA_ErrorCallbackP17DMA_HandleTypeDef"></span><span id="_CPPv221HAL_DMA_ErrorCallbackP17DMA_HandleTypeDef"></span><span id="HAL_DMA_ErrorCallback__DMA_HandleTypeDefP"></span><span class="target" id="inverter_8h_1a54fa82723126f06e24a65e0afdbb9db4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HAL_DMA_ErrorCallback</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">DMA_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hdma</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv423HAL_FDCAN_ErrorCallbackP19FDCAN_HandleTypeDef">
+<span id="_CPPv323HAL_FDCAN_ErrorCallbackP19FDCAN_HandleTypeDef"></span><span id="_CPPv223HAL_FDCAN_ErrorCallbackP19FDCAN_HandleTypeDef"></span><span id="HAL_FDCAN_ErrorCallback__FDCAN_HandleTypeDefP"></span><span class="target" id="inverter_8h_1a778a484ceadc26552fd553c8dbf005d0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HAL_FDCAN_ErrorCallback</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">FDCAN_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hfdcan</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432HAL_FLASH_OperationErrorCallback8uint32_t">
+<span id="_CPPv332HAL_FLASH_OperationErrorCallback8uint32_t"></span><span id="_CPPv232HAL_FLASH_OperationErrorCallback8uint32_t"></span><span id="HAL_FLASH_OperationErrorCallback__uint32_t"></span><span class="target" id="inverter_8h_1a237e17bd9b1d257bd8e2880227b8484e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HAL_FLASH_OperationErrorCallback</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ReturnValue</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv421HAL_I2C_ErrorCallbackP17I2C_HandleTypeDef">
+<span id="_CPPv321HAL_I2C_ErrorCallbackP17I2C_HandleTypeDef"></span><span id="_CPPv221HAL_I2C_ErrorCallbackP17I2C_HandleTypeDef"></span><span id="HAL_I2C_ErrorCallback__I2C_HandleTypeDefP"></span><span class="target" id="inverter_8h_1a4d5338cd64a656dfdc4154773bc4f05d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HAL_I2C_ErrorCallback</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">I2C_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hi2c</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv421HAL_TIM_ErrorCallbackP17TIM_HandleTypeDef">
+<span id="_CPPv321HAL_TIM_ErrorCallbackP17TIM_HandleTypeDef"></span><span id="_CPPv221HAL_TIM_ErrorCallbackP17TIM_HandleTypeDef"></span><span id="HAL_TIM_ErrorCallback__TIM_HandleTypeDefP"></span><span class="target" id="inverter_8h_1a6f0868af383d592940700dbb52fac016"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HAL_TIM_ErrorCallback</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">TIM_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">htim</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv434EVERT_INVERTER_CommonErrorCallbackPc">
+<span id="_CPPv334EVERT_INVERTER_CommonErrorCallbackPc"></span><span id="_CPPv234EVERT_INVERTER_CommonErrorCallbackPc"></span><span id="EVERT_INVERTER_CommonErrorCallback__cP"></span><span class="target" id="inverter_8h_1aa594519f1ed9dd80018ee7554740952d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_CommonErrorCallback</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">error_message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv434EVERT_INVERTER_CommonErrorCallbackPc" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv44time">
+<span id="_CPPv34time"></span><span id="_CPPv24time"></span><span id="time__EVERT_INVERTER_TimeTypeDef"></span><span class="target" id="inverter_8h_1a775185b72428a856764a7c7889d6776c"></span><a class="reference internal" href="#_CPPv426EVERT_INVERTER_TimeTypeDef" title="EVERT_INVERTER_TimeTypeDef"><span class="n"><span class="pre">EVERT_INVERTER_TimeTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">time</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv48io_state">
+<span id="_CPPv38io_state"></span><span id="_CPPv28io_state"></span><span id="io_state__EVERT_INVERTER_IoStateTypeDef"></span><span class="target" id="inverter_8h_1a07508774104cf590077cd9c77c4828f9"></span><a class="reference internal" href="#_CPPv429EVERT_INVERTER_IoStateTypeDef" title="EVERT_INVERTER_IoStateTypeDef"><span class="n"><span class="pre">EVERT_INVERTER_IoStateTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">io_state</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv434EVERT_INVERTER_GPIO_DEF_PWM_ENABLE">
+<span id="_CPPv334EVERT_INVERTER_GPIO_DEF_PWM_ENABLE"></span><span id="_CPPv234EVERT_INVERTER_GPIO_DEF_PWM_ENABLE"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_ENABLE__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1aa3c3c611bc70d82bff3209a876c86761"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_ENABLE</span></span></span><a class="headerlink" href="#_CPPv434EVERT_INVERTER_GPIO_DEF_PWM_ENABLE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv433EVERT_INVERTER_GPIO_DEF_PWM_RESET">
+<span id="_CPPv333EVERT_INVERTER_GPIO_DEF_PWM_RESET"></span><span id="_CPPv233EVERT_INVERTER_GPIO_DEF_PWM_RESET"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_RESET__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1a84b95b193bcfa87cb69683f1c9309da2"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_RESET</span></span></span><a class="headerlink" href="#_CPPv433EVERT_INVERTER_GPIO_DEF_PWM_RESET" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP1">
+<span id="_CPPv338EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP1"></span><span id="_CPPv238EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP1"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP1__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1a0a50fd73971f70f1c7ff1d0668a652b4"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP1</span></span></span><a class="headerlink" href="#_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP2">
+<span id="_CPPv338EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP2"></span><span id="_CPPv238EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP2"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP2__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1a2634665e4d489faf3d1e28eb769cf2d3"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP2</span></span></span><a class="headerlink" href="#_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP3">
+<span id="_CPPv338EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP3"></span><span id="_CPPv238EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP3"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP3__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1a0568d21537c51dbd973a7389724e59f2"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP3</span></span></span><a class="headerlink" href="#_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_TOP3" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT1">
+<span id="_CPPv338EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT1"></span><span id="_CPPv238EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT1"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT1__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1aaee647f5c7f0c63e0630b844bb44064e"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT1</span></span></span><a class="headerlink" href="#_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT2">
+<span id="_CPPv338EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT2"></span><span id="_CPPv238EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT2"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT2__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1a57e15f07e7fb154c62b98ed9f52bd36b"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT2</span></span></span><a class="headerlink" href="#_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT3">
+<span id="_CPPv338EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT3"></span><span id="_CPPv238EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT3"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT3__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1ac7c11269078f8036bb72c56c772d7c03"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT3</span></span></span><a class="headerlink" href="#_CPPv438EVERT_INVERTER_GPIO_DEF_PWM_READY_BOT3" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv433EVERT_INVERTER_GPIO_DEF_PWM_FAULT">
+<span id="_CPPv333EVERT_INVERTER_GPIO_DEF_PWM_FAULT"></span><span id="_CPPv233EVERT_INVERTER_GPIO_DEF_PWM_FAULT"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_FAULT__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1a5561afb1fabf5cb5032d55cc76487c91"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_FAULT</span></span></span><a class="headerlink" href="#_CPPv433EVERT_INVERTER_GPIO_DEF_PWM_FAULT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv437EVERT_INVERTER_GPIO_DEF_PWM_FAN_FAULT">
+<span id="_CPPv337EVERT_INVERTER_GPIO_DEF_PWM_FAN_FAULT"></span><span id="_CPPv237EVERT_INVERTER_GPIO_DEF_PWM_FAN_FAULT"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_FAN_FAULT__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1a5c994ec4e81edda0260fb6bbb8a7bd06"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_FAN_FAULT</span></span></span><a class="headerlink" href="#_CPPv437EVERT_INVERTER_GPIO_DEF_PWM_FAN_FAULT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv439EVERT_INVERTER_GPIO_DEF_PWM_FDCAN_FAULT">
+<span id="_CPPv339EVERT_INVERTER_GPIO_DEF_PWM_FDCAN_FAULT"></span><span id="_CPPv239EVERT_INVERTER_GPIO_DEF_PWM_FDCAN_FAULT"></span><span id="EVERT_INVERTER_GPIO_DEF_PWM_FDCAN_FAULT__EVERT_HAL_GpioDefinitionTypeDef"></span><span class="target" id="inverter_8h_1a88f3d564ea3e4ee11ab359d6acd6bedc"></span><a class="reference internal" href="../core/gpio_definition.html#_CPPv431EVERT_HAL_GpioDefinitionTypeDef" title="EVERT_HAL_GpioDefinitionTypeDef"><span class="n"><span class="pre">EVERT_HAL_GpioDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GPIO_DEF_PWM_FDCAN_FAULT</span></span></span><a class="headerlink" href="#_CPPv439EVERT_INVERTER_GPIO_DEF_PWM_FDCAN_FAULT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv426EVERT_INVERTER_TimeTypeDef">
+<span id="_CPPv326EVERT_INVERTER_TimeTypeDef"></span><span id="_CPPv226EVERT_INVERTER_TimeTypeDef"></span><span id="EVERT_INVERTER_TimeTypeDef"></span><span class="target" id="structEVERT__INVERTER__TimeTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_TimeTypeDef</span></span></span><a class="headerlink" href="#_CPPv426EVERT_INVERTER_TimeTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#inverter_8h"><span class="std std-ref">inverter.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_INVERTER_TimeTypeDef10start_timeE">
+<span id="_CPPv3N26EVERT_INVERTER_TimeTypeDef10start_timeE"></span><span id="_CPPv2N26EVERT_INVERTER_TimeTypeDef10start_timeE"></span><span id="EVERT_INVERTER_TimeTypeDef::start_time__uint32_t"></span><span class="target" id="structEVERT__INVERTER__TimeTypeDef_1a4108cb35354aa0e496fafa3ec609e722"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">start_time</span></span></span><a class="headerlink" href="#_CPPv4N26EVERT_INVERTER_TimeTypeDef10start_timeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_INVERTER_TimeTypeDef12current_timeE">
+<span id="_CPPv3N26EVERT_INVERTER_TimeTypeDef12current_timeE"></span><span id="_CPPv2N26EVERT_INVERTER_TimeTypeDef12current_timeE"></span><span id="EVERT_INVERTER_TimeTypeDef::current_time__uint32_t"></span><span class="target" id="structEVERT__INVERTER__TimeTypeDef_1adf52466697cec3dc133a8ad50bba3c83"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_time</span></span></span><a class="headerlink" href="#_CPPv4N26EVERT_INVERTER_TimeTypeDef12current_timeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_INVERTER_TimeTypeDef12elapsed_timeE">
+<span id="_CPPv3N26EVERT_INVERTER_TimeTypeDef12elapsed_timeE"></span><span id="_CPPv2N26EVERT_INVERTER_TimeTypeDef12elapsed_timeE"></span><span id="EVERT_INVERTER_TimeTypeDef::elapsed_time__uint32_t"></span><span class="target" id="structEVERT__INVERTER__TimeTypeDef_1af485e2ee2ee023a5a1eb2de29cf80d9c"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">elapsed_time</span></span></span><a class="headerlink" href="#_CPPv4N26EVERT_INVERTER_TimeTypeDef12elapsed_timeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_INVERTER_TimeTypeDef9last_timeE">
+<span id="_CPPv3N26EVERT_INVERTER_TimeTypeDef9last_timeE"></span><span id="_CPPv2N26EVERT_INVERTER_TimeTypeDef9last_timeE"></span><span id="EVERT_INVERTER_TimeTypeDef::last_time__uint32_t"></span><span class="target" id="structEVERT__INVERTER__TimeTypeDef_1a05cae7cde1c7b22d554b7ab107c391db"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_time</span></span></span><a class="headerlink" href="#_CPPv4N26EVERT_INVERTER_TimeTypeDef9last_timeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26EVERT_INVERTER_TimeTypeDef10delta_timeE">
+<span id="_CPPv3N26EVERT_INVERTER_TimeTypeDef10delta_timeE"></span><span id="_CPPv2N26EVERT_INVERTER_TimeTypeDef10delta_timeE"></span><span id="EVERT_INVERTER_TimeTypeDef::delta_time__uint32_t"></span><span class="target" id="structEVERT__INVERTER__TimeTypeDef_1a14d7161de1b9ef0d45ab3e4b4039a3cc"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">delta_time</span></span></span><a class="headerlink" href="#_CPPv4N26EVERT_INVERTER_TimeTypeDef10delta_timeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv429EVERT_INVERTER_IoStateTypeDef">
+<span id="_CPPv329EVERT_INVERTER_IoStateTypeDef"></span><span id="_CPPv229EVERT_INVERTER_IoStateTypeDef"></span><span id="EVERT_INVERTER_IoStateTypeDef"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_IoStateTypeDef</span></span></span><a class="headerlink" href="#_CPPv429EVERT_INVERTER_IoStateTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#inverter_8h"><span class="std std-ref">inverter.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top1E">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top1E"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top1E"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_ready_top1__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1a0fe0b932b3fe8d81ea20822dc4fbd3fe"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_ready_top1</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top1E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top2E">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top2E"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top2E"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_ready_top2__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1af142ba93f0e7193e1c875cad07a206c5"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_ready_top2</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top2E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top3E">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top3E"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top3E"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_ready_top3__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1a195ceccfd75f8197fe7ae96ae3e12c7f"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_ready_top3</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_top3E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot1E">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot1E"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot1E"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_ready_bot1__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1ad47b3da0d5bf5181be5ce13749527e7f"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_ready_bot1</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot1E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot2E">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot2E"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot2E"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_ready_bot2__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1adcd274fdb9e4d3ac30d9bbcdbf68e2ef"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_ready_bot2</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot2E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot3E">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot3E"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot3E"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_ready_bot3__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1ae0ca3a2efac456f9f3774c39c6c3a352"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_ready_bot3</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef14pwm_ready_bot3E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef9pwm_faultE">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef9pwm_faultE"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef9pwm_faultE"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_fault__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1aaacbac35a2255e59afc8bcc6465dd9eb"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_fault</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef9pwm_faultE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef13pwm_fan_faultE">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef13pwm_fan_faultE"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef13pwm_fan_faultE"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_fan_fault__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1adc393853b456fb0b794a8273e1450479"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_fan_fault</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef13pwm_fan_faultE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N29EVERT_INVERTER_IoStateTypeDef15pwm_fdcan_faultE">
+<span id="_CPPv3N29EVERT_INVERTER_IoStateTypeDef15pwm_fdcan_faultE"></span><span id="_CPPv2N29EVERT_INVERTER_IoStateTypeDef15pwm_fdcan_faultE"></span><span id="EVERT_INVERTER_IoStateTypeDef::pwm_fdcan_fault__GPIO_PinState"></span><span class="target" id="structEVERT__INVERTER__IoStateTypeDef_1a53cb3637befdd8a57972268b9d6ea998"></span><span class="n"><span class="pre">GPIO_PinState</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pwm_fdcan_fault</span></span></span><a class="headerlink" href="#_CPPv4N29EVERT_INVERTER_IoStateTypeDef15pwm_fdcan_faultE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../_projects/inverter/inverter-index.html" class="btn btn-neutral float-left" title="Index: inverter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="inverter_alarm_index.html" class="btn btn-neutral float-right" title="inverter_alarm_index.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

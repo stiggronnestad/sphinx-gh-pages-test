@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>boost_converter_alarms.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="boost_converter_mppt.h" href="boost_converter_mppt.html" />
+    <link rel="prev" title="boost_converter_calibration.h" href="boost_converter_calibration.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/examples.html">Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_readings.html">boost_converter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter.html">boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_boost_converter.html">_conf_evert_boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_constraints.html">boost_converter_constraints.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_calibration.html">boost_converter_calibration.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">boost_converter_alarms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_mppt.html">boost_converter_mppt.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-api.html">API Reference: boost-converter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a></li>
+      <li class="breadcrumb-item active">boost_converter_alarms.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/boost-converter/boost_converter_alarms.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="boost-converter-alarms-h">
+<h1>boost_converter_alarms.h<a class="headerlink" href="#boost-converter-alarms-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv439EVERT_BOOST_CONVERTER_AlarmIndexTypeDef">
+<span id="_CPPv339EVERT_BOOST_CONVERTER_AlarmIndexTypeDef"></span><span id="_CPPv239EVERT_BOOST_CONVERTER_AlarmIndexTypeDef"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</span></span></span><a class="headerlink" href="#_CPPv439EVERT_BOOST_CONVERTER_AlarmIndexTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_IN_CRITICALE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_IN_CRITICALE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_IN_CRITICALE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6edaf4d7a42891cefc5b414352601ffb2746"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_OVERVOLTAGE_IN_CRITICAL</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_IN_CRITICALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef27BCAI_OVERVOLTAGE_IN_WARNINGE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef27BCAI_OVERVOLTAGE_IN_WARNINGE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef27BCAI_OVERVOLTAGE_IN_WARNINGE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda4adbc37a0b4d7a17812c594c8d5a433c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_OVERVOLTAGE_IN_WARNING</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef27BCAI_OVERVOLTAGE_IN_WARNINGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_UNDERVOLTAGE_IN_WARNINGE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_UNDERVOLTAGE_IN_WARNINGE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_UNDERVOLTAGE_IN_WARNINGE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda3c2711a823a271bc1a7494be69a62824"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_UNDERVOLTAGE_IN_WARNING</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_UNDERVOLTAGE_IN_WARNINGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_UNDERVOLTAGE_IN_CRITICALE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_UNDERVOLTAGE_IN_CRITICALE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_UNDERVOLTAGE_IN_CRITICALE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda6fcc758803fe640b61190c2cf5c5105f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_UNDERVOLTAGE_IN_CRITICAL</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_UNDERVOLTAGE_IN_CRITICALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_OUT_WARNINGE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_OUT_WARNINGE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_OUT_WARNINGE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda2cb49a53af8378646b402ab7e586c71c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_OVERVOLTAGE_OUT_WARNING</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_OUT_WARNINGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_OVERVOLTAGE_OUT_CRITICALE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_OVERVOLTAGE_OUT_CRITICALE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_OVERVOLTAGE_OUT_CRITICALE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda9aa3017e508241c9d09becfc06a234de"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_OVERVOLTAGE_OUT_CRITICAL</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_OVERVOLTAGE_OUT_CRITICALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef24BCAI_OVERCURRENT_WARNINGE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef24BCAI_OVERCURRENT_WARNINGE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef24BCAI_OVERCURRENT_WARNINGE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda629b10732e9bda22f90c3fa50cd5b11a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_OVERCURRENT_WARNING</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef24BCAI_OVERCURRENT_WARNINGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef25BCAI_OVERCURRENT_CRITICALE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef25BCAI_OVERCURRENT_CRITICALE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef25BCAI_OVERCURRENT_CRITICALE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6edaaa4793369efda18a801ea58009685de5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_OVERCURRENT_CRITICAL</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef25BCAI_OVERCURRENT_CRITICALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_TEMPERATURE_COIL_WARNINGE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_TEMPERATURE_COIL_WARNINGE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_TEMPERATURE_COIL_WARNINGE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6edac595ca2a539051bba45b75af3203435a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_TEMPERATURE_COIL_WARNING</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_TEMPERATURE_COIL_WARNINGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef30BCAI_TEMPERATURE_COIL_CRITICALE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef30BCAI_TEMPERATURE_COIL_CRITICALE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef30BCAI_TEMPERATURE_COIL_CRITICALE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6edab94648d3ae069a140901b9754fa3314d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_TEMPERATURE_COIL_CRITICAL</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef30BCAI_TEMPERATURE_COIL_CRITICALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef33BCAI_TEMPERATURE_SCHOTTKY_WARNINGE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef33BCAI_TEMPERATURE_SCHOTTKY_WARNINGE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef33BCAI_TEMPERATURE_SCHOTTKY_WARNINGE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6edaf7880fdb768e7c782f1e4865a2694707"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_TEMPERATURE_SCHOTTKY_WARNING</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef33BCAI_TEMPERATURE_SCHOTTKY_WARNINGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef34BCAI_TEMPERATURE_SCHOTTKY_CRITICALE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef34BCAI_TEMPERATURE_SCHOTTKY_CRITICALE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef34BCAI_TEMPERATURE_SCHOTTKY_CRITICALE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda7f1995d52fe5ad527b4e4cf592d72cc8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_TEMPERATURE_SCHOTTKY_CRITICAL</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef34BCAI_TEMPERATURE_SCHOTTKY_CRITICALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef31BCAI_TEMPERATURE_MOSFET_WARNINGE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef31BCAI_TEMPERATURE_MOSFET_WARNINGE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef31BCAI_TEMPERATURE_MOSFET_WARNINGE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda7cfbeee9a51b98532405b34c37593299"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_TEMPERATURE_MOSFET_WARNING</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef31BCAI_TEMPERATURE_MOSFET_WARNINGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef32BCAI_TEMPERATURE_MOSFET_CRITICALE">
+<span id="_CPPv3N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef32BCAI_TEMPERATURE_MOSFET_CRITICALE"></span><span id="_CPPv2N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef32BCAI_TEMPERATURE_MOSFET_CRITICALE"></span><span class="target" id="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6edafa132c0a17712be7f25ece8a4068877a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BCAI_TEMPERATURE_MOSFET_CRITICAL</span></span></span><a class="headerlink" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef32BCAI_TEMPERATURE_MOSFET_CRITICALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv439EVERT_BOOST_CONVERTER_InitAlarmRegisterv">
+<span id="_CPPv339EVERT_BOOST_CONVERTER_InitAlarmRegisterv"></span><span id="_CPPv239EVERT_BOOST_CONVERTER_InitAlarmRegisterv"></span><span id="EVERT_BOOST_CONVERTER_InitAlarmRegister"></span><span class="target" id="boost__converter__alarms_8h_1aa6ce1f4a12e54326fc93086576d41790"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_InitAlarmRegister</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv439EVERT_BOOST_CONVERTER_InitAlarmRegisterv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_BOOST_CONVERTER_AlarmCheckv">
+<span id="_CPPv332EVERT_BOOST_CONVERTER_AlarmCheckv"></span><span id="_CPPv232EVERT_BOOST_CONVERTER_AlarmCheckv"></span><span id="EVERT_BOOST_CONVERTER_AlarmCheck"></span><span class="target" id="boost__converter__alarms_8h_1acc1383dfcd8bde283188c38898068761"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_AlarmCheck</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv432EVERT_BOOST_CONVERTER_AlarmCheckv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv439EVERT_BOOST_CONVERTER_AlarmChangedState39EVERT_BOOST_CONVERTER_AlarmIndexTypeDefb">
+<span id="_CPPv339EVERT_BOOST_CONVERTER_AlarmChangedState39EVERT_BOOST_CONVERTER_AlarmIndexTypeDefb"></span><span id="_CPPv239EVERT_BOOST_CONVERTER_AlarmChangedState39EVERT_BOOST_CONVERTER_AlarmIndexTypeDefb"></span><span id="EVERT_BOOST_CONVERTER_AlarmChangedState__EVERT_BOOST_CONVERTER_AlarmIndexTypeDef.b"></span><span class="target" id="boost__converter__alarms_8h_1a4148e57edb5cb8a0055df7233e063fc7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_AlarmChangedState</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv439EVERT_BOOST_CONVERTER_AlarmIndexTypeDef" title="EVERT_BOOST_CONVERTER_AlarmIndexTypeDef"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">alarm_index</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">is_set</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv439EVERT_BOOST_CONVERTER_AlarmChangedState39EVERT_BOOST_CONVERTER_AlarmIndexTypeDefb" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414alarm_register">
+<span id="_CPPv314alarm_register"></span><span id="_CPPv214alarm_register"></span><span id="alarm_register__EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span class="target" id="boost__converter__alarms_8h_1a2d67d5cd7c513aa1e5355cc68add2041"></span><a class="reference internal" href="../core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">alarm_register</span></span></span><a class="headerlink" href="#_CPPv414alarm_register" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413fi_voltage_in">
+<span id="_CPPv313fi_voltage_in"></span><span id="_CPPv213fi_voltage_in"></span><span id="fi_voltage_in__float32_t"></span><span class="target" id="boost__converter__alarms_8h_1af61b6af9e488d93a1ec95c8e3f5a7cfd"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_in</span></span></span><a class="headerlink" href="#_CPPv413fi_voltage_in" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414fi_voltage_out">
+<span id="_CPPv314fi_voltage_out"></span><span id="_CPPv214fi_voltage_out"></span><span id="fi_voltage_out__float32_t"></span><span class="target" id="boost__converter__alarms_8h_1a05aa48cb325d02a499cfb2a0a0025317"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_out</span></span></span><a class="headerlink" href="#_CPPv414fi_voltage_out" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413fi_current_in">
+<span id="_CPPv313fi_current_in"></span><span id="_CPPv213fi_current_in"></span><span id="fi_current_in__float32_t"></span><span class="target" id="boost__converter__alarms_8h_1a4f11ea4411e41fa79a74c8413f79c6b3"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_current_in</span></span></span><a class="headerlink" href="#_CPPv413fi_current_in" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv435BOOST_CONVERTER_ALARMS_ThrottleDown">
+<span id="_CPPv335BOOST_CONVERTER_ALARMS_ThrottleDown"></span><span id="_CPPv235BOOST_CONVERTER_ALARMS_ThrottleDown"></span><span id="BOOST_CONVERTER_ALARMS_ThrottleDown__EVERT_BOOST_CONVERTER_AlarmIndexTypeDefCA"></span><span class="target" id="boost__converter__alarms_8h_1a2bbb9e7b274d702ca0db051d53558e44"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv439EVERT_BOOST_CONVERTER_AlarmIndexTypeDef" title="EVERT_BOOST_CONVERTER_AlarmIndexTypeDef"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BOOST_CONVERTER_ALARMS_ThrottleDown</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">7</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef27BCAI_OVERVOLTAGE_IN_WARNINGE" title="BCAI_OVERVOLTAGE_IN_WARNING"><span class="n"><span class="pre">BCAI_OVERVOLTAGE_IN_WARNING</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_UNDERVOLTAGE_IN_WARNINGE" title="BCAI_UNDERVOLTAGE_IN_WARNING"><span class="n"><span class="pre">BCAI_UNDERVOLTAGE_IN_WARNING</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_OUT_WARNINGE" title="BCAI_OVERVOLTAGE_OUT_WARNING"><span class="n"><span class="pre">BCAI_OVERVOLTAGE_OUT_WARNING</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef24BCAI_OVERCURRENT_WARNINGE" title="BCAI_OVERCURRENT_WARNING"><span class="n"><span class="pre">BCAI_OVERCURRENT_WARNING</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_TEMPERATURE_COIL_WARNINGE" title="BCAI_TEMPERATURE_COIL_WARNING"><span class="n"><span class="pre">BCAI_TEMPERATURE_COIL_WARNING</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef33BCAI_TEMPERATURE_SCHOTTKY_WARNINGE" title="BCAI_TEMPERATURE_SCHOTTKY_WARNING"><span class="n"><span class="pre">BCAI_TEMPERATURE_SCHOTTKY_WARNING</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef31BCAI_TEMPERATURE_MOSFET_WARNINGE" title="BCAI_TEMPERATURE_MOSFET_WARNING"><span class="n"><span class="pre">BCAI_TEMPERATURE_MOSFET_WARNING</span></span></a><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv435BOOST_CONVERTER_ALARMS_ThrottleDown" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv430BOOST_CONVERTER_ALARMS_Standby">
+<span id="_CPPv330BOOST_CONVERTER_ALARMS_Standby"></span><span id="_CPPv230BOOST_CONVERTER_ALARMS_Standby"></span><span id="BOOST_CONVERTER_ALARMS_Standby__EVERT_BOOST_CONVERTER_AlarmIndexTypeDefCA"></span><span class="target" id="boost__converter__alarms_8h_1af7bae44496040a0245aed798ec8defaf"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv439EVERT_BOOST_CONVERTER_AlarmIndexTypeDef" title="EVERT_BOOST_CONVERTER_AlarmIndexTypeDef"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BOOST_CONVERTER_ALARMS_Standby</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">7</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef28BCAI_OVERVOLTAGE_IN_CRITICALE" title="BCAI_OVERVOLTAGE_IN_CRITICAL"><span class="n"><span class="pre">BCAI_OVERVOLTAGE_IN_CRITICAL</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_UNDERVOLTAGE_IN_CRITICALE" title="BCAI_UNDERVOLTAGE_IN_CRITICAL"><span class="n"><span class="pre">BCAI_UNDERVOLTAGE_IN_CRITICAL</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef29BCAI_OVERVOLTAGE_OUT_CRITICALE" title="BCAI_OVERVOLTAGE_OUT_CRITICAL"><span class="n"><span class="pre">BCAI_OVERVOLTAGE_OUT_CRITICAL</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef25BCAI_OVERCURRENT_CRITICALE" title="BCAI_OVERCURRENT_CRITICAL"><span class="n"><span class="pre">BCAI_OVERCURRENT_CRITICAL</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef30BCAI_TEMPERATURE_COIL_CRITICALE" title="BCAI_TEMPERATURE_COIL_CRITICAL"><span class="n"><span class="pre">BCAI_TEMPERATURE_COIL_CRITICAL</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef34BCAI_TEMPERATURE_SCHOTTKY_CRITICALE" title="BCAI_TEMPERATURE_SCHOTTKY_CRITICAL"><span class="n"><span class="pre">BCAI_TEMPERATURE_SCHOTTKY_CRITICAL</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N39EVERT_BOOST_CONVERTER_AlarmIndexTypeDef32BCAI_TEMPERATURE_MOSFET_CRITICALE" title="BCAI_TEMPERATURE_MOSFET_CRITICAL"><span class="n"><span class="pre">BCAI_TEMPERATURE_MOSFET_CRITICAL</span></span></a><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv430BOOST_CONVERTER_ALARMS_Standby" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="boost_converter_calibration.html" class="btn btn-neutral float-left" title="boost_converter_calibration.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="boost_converter_mppt.html" class="btn btn-neutral float-right" title="boost_converter_mppt.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

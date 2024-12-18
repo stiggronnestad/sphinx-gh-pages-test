@@ -1,0 +1,645 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>_conf_evert_inverter.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="API Reference: inverter" href="../../_projects/inverter/inverter-api.html" />
+    <link rel="prev" title="_conf_evert_hal.h" href="_conf_evert_hal.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/inverter/inverter-index.html">Index: inverter</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="inverter.html">inverter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_alarm_index.html">inverter_alarm_index.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_calibration.html">inverter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_constraints.html">inverter_constraints.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_grid.html">inverter_grid.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_math.html">inverter_math.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_readings.html">inverter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_transforms.html">inverter_transforms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">_conf_evert_inverter.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/inverter/inverter-api.html">API Reference: inverter</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter.html">inverter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter-index.html">Index: inverter</a></li>
+      <li class="breadcrumb-item active">_conf_evert_inverter.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/inverter/_conf_evert_inverter.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="conf-evert-inverter-h">
+<h1>_conf_evert_inverter.h<a class="headerlink" href="#conf-evert-inverter-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_PWM_PERIOD">
+<span class="target" id="__conf__evert__inverter_8h_1a537006ff1daac21a11dffff74f344188"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_PWM_PERIOD</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_PWM_PERIOD" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_CONVERSION_COUNT">
+<span class="target" id="__conf__evert__inverter_8h_1a122d3aef4d29f5a6be65e221e1710ce4"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_CONVERSION_COUNT</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_CONVERSION_COUNT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_TEMPERATURE">
+<span class="target" id="__conf__evert__inverter_8h_1a78f7bc7cbc55c09cac66172a8a9d7558"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_TEMPERATURE</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_TEMPERATURE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_VREF_INT">
+<span class="target" id="__conf__evert__inverter_8h_1a2bf3aa0737f0dd08a76c1107d5e89ad6"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_VREF_INT</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_VREF_INT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS">
+<span class="target" id="__conf__evert__inverter_8h_1aab291a2e93fdc6bc0676016d966e2829"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS_MID">
+<span class="target" id="__conf__evert__inverter_8h_1a94131f882ddf4f1764bb85dce83c09af"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS_MID</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS_MID" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_U">
+<span class="target" id="__conf__evert__inverter_8h_1a3974971cb9f66883920ce12f8bba2444"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_U</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_U" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_V">
+<span class="target" id="__conf__evert__inverter_8h_1af0c00d0131587ac2e283f3dba2606b05"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_V</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_V" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_W">
+<span class="target" id="__conf__evert__inverter_8h_1a754cc27a208f2fb99dc4f423143cc99d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_W</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_W" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_U">
+<span class="target" id="__conf__evert__inverter_8h_1aab9cf111584a72f641349909780a8958"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_U</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_U" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_V">
+<span class="target" id="__conf__evert__inverter_8h_1a6cd5f86d1dd28487a72d33e62d099163"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_V</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_V" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC2_CONVERSION_COUNT">
+<span class="target" id="__conf__evert__inverter_8h_1a52a7c7612265aecd1067d5fcb5aed5c3"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC2_CONVERSION_COUNT</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC2_CONVERSION_COUNT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC2_RANK_VOLTAGE_W">
+<span class="target" id="__conf__evert__inverter_8h_1a2bd7606e78323ecc1215a5d2459ff44b"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC2_RANK_VOLTAGE_W</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC2_RANK_VOLTAGE_W" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_U">
+<span class="target" id="__conf__evert__inverter_8h_1a3fcfcf0b5ff0cc7388d3cfc233b2fd1a"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_U</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_U" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_V">
+<span class="target" id="__conf__evert__inverter_8h_1a72afce21d79b6b609f6c4cb33a9e4820"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_V</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_V" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_W">
+<span class="target" id="__conf__evert__inverter_8h_1a0b59dd38530c249ae820c9f8d808142d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_W</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_W" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC2_RANK_TEMPERATURE_U">
+<span class="target" id="__conf__evert__inverter_8h_1a8a30952f006e19938665fd88599bd9a0"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC2_RANK_TEMPERATURE_U</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC2_RANK_TEMPERATURE_U" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_CONVERSION_COUNT">
+<span class="target" id="__conf__evert__inverter_8h_1ae93176cac92eff5641fce82875457281"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_CONVERSION_COUNT</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_CONVERSION_COUNT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_V">
+<span class="target" id="__conf__evert__inverter_8h_1aa83327f54aa694cebc9593f4d66a394a"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_V</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_V" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_W">
+<span class="target" id="__conf__evert__inverter_8h_1a12dfd7fe5731f2b3b7414b05cefc1808"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_W</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_W" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_U">
+<span class="target" id="__conf__evert__inverter_8h_1a6f6bb138815c52f31c1953e852b534b4"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_U</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_U" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_V">
+<span class="target" id="__conf__evert__inverter_8h_1ac36ac097a35e15fe8e1d2c3abc9fe690"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_V</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_V" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_W">
+<span class="target" id="__conf__evert__inverter_8h_1a075393813d2ae1008d348b6f40476ed6"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_W</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_W" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_TEMP_AMBIENT">
+<span class="target" id="__conf__evert__inverter_8h_1a8c40aaa0ab005dd30c61fd8bbc6e1327"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_TEMP_AMBIENT</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_TEMP_AMBIENT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_2">
+<span class="target" id="__conf__evert__inverter_8h_1a155cf23d1d8cc6ecb6491a098902ed53"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_RESERVE_2</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_3">
+<span class="target" id="__conf__evert__inverter_8h_1ab282df5a4964f8a266d57c5d8fe2e5fa"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_RESERVE_3</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_3" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_4">
+<span class="target" id="__conf__evert__inverter_8h_1aa96385a73295e656a36d4d3a9b19d4db"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_RESERVE_4</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_ADC3_RESERVE_4" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a39b29317d5fb475b9d201afec349a19e"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a628c86940171bc18963a11caef60eb8d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a6ec45eac09b9b705f9cbb2d453e940fd"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a6cb467ef983a3761020322d45c6fe2c1"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a83785723d1f8c608e70a68d8fec83ca2"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1ab83afcbe32f074065effa7adb38648ae"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1ab5f54949b02a0f753d0387730343e252"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a57980cacfedacfe10c5c1dac9b4cd19a"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1af9cb3e10781f97a6fbcf620dfa01c946"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a4dd44115614ef3767e94cdda75f4cf81"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a3b41efa130cc303aed1d5ec21ada4436"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a6d41a6a669642e02692c5e981a99791a"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a1fea9642e3c3f9044ea7e57f7878a706"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1ab3b5b05ebcf1b36ad786362f28a5df7b"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a22b79623fd96b6e6ad7e856135f0fceb"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a4e3cad51abc3dd081ff246dca9c89279"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_CURRENT_U_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1af329ad97e9031e0332fa1df94d77a9ff"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_CURRENT_U_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_CURRENT_U_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_CURRENT_U_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a375895b5f81d780f370d61dc8da866e8"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_CURRENT_U_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_CURRENT_U_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_CURRENT_V_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1abcfe27876054ebc744f4f1265875c698"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_CURRENT_V_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_CURRENT_V_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_CURRENT_V_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a560abf0b4889255ff2c88d7eba73b58a"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_CURRENT_V_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_CURRENT_V_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_CURRENT_W_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a6523817c456adaeb4975911e7a0912ea"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_CURRENT_W_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_CURRENT_W_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_CURRENT_W_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a508f5b7ba89fa2ff4dbc70c9db28af08"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_CURRENT_W_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_CURRENT_W_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a69a8bcaf7cb1db853ddad686e11ce19a"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1af4b09fa894ae639fa1df4e352b91a2da"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a485a197c331a0a3aeb111c808ec545ec"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a37d50bdb7cb6102093b853290d9a156d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a34961e7c2861ed040e232482f883a32e"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a87a0430da76245dc2468bb828af1be66"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1afc6d75c285290c27b25276d2e3e2e811"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1ae3139a08f4baa5b7a5cc273519e2b8fd"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a3fd8c25963d031d86581ad17e495f3a3"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a2ee608c992228fff4c9ea588d285e384"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1aa70402d67d362634b532095569231e7e"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a724ade98ba8f5a1c526cc0f3d68ae4ac"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_SLOPE">
+<span class="target" id="__conf__evert__inverter_8h_1a052c78b0ba36b8cb4b8e527ae5396ebe"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_INTERCEPT">
+<span class="target" id="__conf__evert__inverter_8h_1a3a495471dde1c47447776718aab81982"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_BOOTING">
+<span class="target" id="__conf__evert__inverter_8h_1a4c7b98765f11ffaa0e5d8d47f58f8bc8"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_BOOTING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_BOOTING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_OK">
+<span class="target" id="__conf__evert__inverter_8h_1aeb125763c237529abf083e462c1db2ed"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_OK</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_OK" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_WARNING">
+<span class="target" id="__conf__evert__inverter_8h_1a79c723492acc82852006fb303fed3783"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_ERROR">
+<span class="target" id="__conf__evert__inverter_8h_1a4eee369e090bff8022d60f0a730a5bda"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_ERROR</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_ERROR" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_ON">
+<span class="target" id="__conf__evert__inverter_8h_1a341bb85667e6caea8d9573a66d96d80a"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_ON</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_ON" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_OFF">
+<span class="target" id="__conf__evert__inverter_8h_1a8d2425367451ef10780aaa0ad4eb8147"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_OFF</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_OFF" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_ON">
+<span class="target" id="__conf__evert__inverter_8h_1a9f91516a5d3b542929074cb9eafa5f28"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_ON</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_ON" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_OFF">
+<span class="target" id="__conf__evert__inverter_8h_1a82183df38fdbfcd56503973c88267799"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_OFF</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_OFF" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_ON">
+<span class="target" id="__conf__evert__inverter_8h_1ac87a94e0e020fe16f77034020ead37d4"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_ON</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_ON" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_OFF">
+<span class="target" id="__conf__evert__inverter_8h_1ac78455b19dcfee336927422cac466560"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_OFF</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_OFF" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_ON">
+<span class="target" id="__conf__evert__inverter_8h_1aaae4ad3ba18363093540ec7327d66f03"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_ON</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_ON" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_OFF">
+<span class="target" id="__conf__evert__inverter_8h_1afc294f2c5a2991bde90c1c838eb69feb"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_OFF</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_OFF" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_BOOTING">
+<span class="target" id="__conf__evert__inverter_8h_1a297aa867135f10a9e48b452f072a05b5"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_BOOTING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_BOOTING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_OK">
+<span class="target" id="__conf__evert__inverter_8h_1a14e79f704dfa1d5dd64e2d3e6d4a812c"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_OK</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_OK" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_WARNING">
+<span class="target" id="__conf__evert__inverter_8h_1a84074e4e51d2a33e8cf02342a29607a1"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_ERROR">
+<span class="target" id="__conf__evert__inverter_8h_1a769b97ff6ae0a1249e7a96b79b12b95f"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_ERROR</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_ERROR" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_ON">
+<span class="target" id="__conf__evert__inverter_8h_1a17745061648a1f63db21b158294fbef1"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_ON</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_ON" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_OFF">
+<span class="target" id="__conf__evert__inverter_8h_1ac4d2ef339a7dce6f94c6bd8849114635"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_OFF</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_OFF" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_ON">
+<span class="target" id="__conf__evert__inverter_8h_1aeb2ac8e136ee5310b0c1d7302547b054"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_ON</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_ON" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_OFF">
+<span class="target" id="__conf__evert__inverter_8h_1ad1d12a0d24d8153e974d6069177e7998"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_OFF</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_OFF" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_ON">
+<span class="target" id="__conf__evert__inverter_8h_1a9793fa83d02c6cc9aa9c9907649ba652"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_ON</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_ON" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_OFF">
+<span class="target" id="__conf__evert__inverter_8h_1adcb05234eedb956b5bbc952c3aa29e27"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_OFF</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_OFF" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_ON">
+<span class="target" id="__conf__evert__inverter_8h_1ae426fec5344ba932470616518da6d855"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_ON</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_ON" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_OFF">
+<span class="target" id="__conf__evert__inverter_8h_1ad4315d0f114ce2d3812588c5c72f60b2"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_OFF</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_OFF" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_INVERTER_L_INDUCTOR_VALUE">
+<span class="target" id="__conf__evert__inverter_8h_1ab6c17f4577f3ef24c5cd37ad061b873c"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_L_INDUCTOR_VALUE</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_INVERTER_L_INDUCTOR_VALUE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_CURRENT_RMS_MAX">
+<span class="target" id="__conf__evert__inverter_8h_1ab9107d4a172885782ddf37b38e0a90d3"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_CURRENT_RMS_MAX</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_CURRENT_RMS_MAX" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_CURRENT_INSTANTANEOUS_MAX">
+<span class="target" id="__conf__evert__inverter_8h_1a06f12c633e4f8093df1891ae4b6b2cf6"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_CURRENT_INSTANTANEOUS_MAX</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_CURRENT_INSTANTANEOUS_MAX" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_BUS_NOMINAL">
+<span class="target" id="__conf__evert__inverter_8h_1a1598b9fb266bbbc73e54c7bc72360aaf"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_BUS_NOMINAL</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_BUS_NOMINAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL">
+<span class="target" id="__conf__evert__inverter_8h_1ac22290c77da663eb20b3768905d4bea9"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX">
+<span class="target" id="__conf__evert__inverter_8h_1a5549fee284e37b6509c5770093e0b6de"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_BUS_MIN">
+<span class="target" id="__conf__evert__inverter_8h_1a10026f58f1a997d0eb8b5f8110256b87"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MIN</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_BUS_MIN" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY">
+<span class="target" id="__conf__evert__inverter_8h_1ac6cd37da4f9d75eaaca45dd4467cb43b"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY_DEVIATION">
+<span class="target" id="__conf__evert__inverter_8h_1ab1d179aba89dc5d2527836e56bfbad14"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY_DEVIATION</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY_DEVIATION" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL">
+<span class="target" id="__conf__evert__inverter_8h_1addcb9f97e46c8760dcbad8a6b4f0f04e"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX">
+<span class="target" id="__conf__evert__inverter_8h_1af43faee784da56070ed025b1512ce026"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN">
+<span class="target" id="__conf__evert__inverter_8h_1a503809023c5055ec6ab9ca1514406184"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MAX">
+<span class="target" id="__conf__evert__inverter_8h_1acf9cadda6bafdef5d4e0625e90c63573"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MAX</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MAX" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MIN">
+<span class="target" id="__conf__evert__inverter_8h_1ad67c9211fa8be25f8409b1cce6023b8d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MIN</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MIN" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_INVERTER_PLL_DECOUPLING_FACTOR">
+<span class="target" id="__conf__evert__inverter_8h_1a8f2a02e8d2abd7f2fe50e2d9ab83c8d0"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_INVERTER_PLL_DECOUPLING_FACTOR</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_INVERTER_PLL_DECOUPLING_FACTOR" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="_conf_evert_hal.html" class="btn btn-neutral float-left" title="_conf_evert_hal.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../_projects/inverter/inverter-api.html" class="btn btn-neutral float-right" title="API Reference: inverter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

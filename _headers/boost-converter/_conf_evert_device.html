@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>_conf_evert_device.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="_conf_evert_hal.h" href="_conf_evert_hal.html" />
+    <link rel="prev" title="boost_converter.h" href="boost_converter.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/examples.html">Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_readings.html">boost_converter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter.html">boost_converter.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_boost_converter.html">_conf_evert_boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_constraints.html">boost_converter_constraints.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_calibration.html">boost_converter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_alarms.html">boost_converter_alarms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_mppt.html">boost_converter_mppt.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-api.html">API Reference: boost-converter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a></li>
+      <li class="breadcrumb-item active">_conf_evert_device.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/boost-converter/_conf_evert_device.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="conf-evert-device-h">
+<h1>_conf_evert_device.h<a class="headerlink" href="#conf-evert-device-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_DEVICE_FREQUENCY_HRCK">
+<span class="target" id="__conf__evert__device_8h_1ae0a251de8081b084f1f6286f10023767"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_DEVICE_FREQUENCY_HRCK</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_DEVICE_FREQUENCY_HRCK" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_DEVICE_MCU_VOLTAGE">
+<span class="target" id="__conf__evert__device_8h_1aa9aaae8d9f6bcbff48bc877744af286d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_DEVICE_MCU_VOLTAGE</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_DEVICE_MCU_VOLTAGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_DEVICE_ADC_BOOT_TIME">
+<span class="target" id="__conf__evert__device_8h_1a2818280093c9d4073f087f1be8d4a829"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_DEVICE_ADC_BOOT_TIME</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_DEVICE_ADC_BOOT_TIME" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_DEVICE_TASK_SEND_ANNOUNCEMENT_INTERVAL">
+<span class="target" id="__conf__evert__device_8h_1a54ace51741770598f6cc7e2174e3e405"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_DEVICE_TASK_SEND_ANNOUNCEMENT_INTERVAL</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_DEVICE_TASK_SEND_ANNOUNCEMENT_INTERVAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_DEVICE_TASK_SEND_DATA_INTERVAL">
+<span class="target" id="__conf__evert__device_8h_1a0867a747384aa7a7cf8f33fb805fe082"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_DEVICE_TASK_SEND_DATA_INTERVAL</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_DEVICE_TASK_SEND_DATA_INTERVAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_DEVICE_TASK_SEND_PING_INTERVAL">
+<span class="target" id="__conf__evert__device_8h_1a64422834d7b810d56c7d31f6e6d8b17e"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_DEVICE_TASK_SEND_PING_INTERVAL</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_DEVICE_TASK_SEND_PING_INTERVAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_SETTING_DEVICE_TASK_SEND_STATUS_INTERVAL">
+<span class="target" id="__conf__evert__device_8h_1a35104460988d9f213e14d3f303bc41b6"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SETTING_DEVICE_TASK_SEND_STATUS_INTERVAL</span></span></span><a class="headerlink" href="#c.EVERT_SETTING_DEVICE_TASK_SEND_STATUS_INTERVAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HYSTERESIS">
+<span class="target" id="__conf__evert__device_8h_1ae3ef6f6563f36f3a3ba4943703d273c1"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HYSTERESIS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HYSTERESIS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HIGH_WARNING">
+<span class="target" id="__conf__evert__device_8h_1a4de8ab173802b4f2c42ea60b91b7e7c8"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HIGH_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HIGH_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HIGH_CRITICAL">
+<span class="target" id="__conf__evert__device_8h_1a31ef0a9e9ca65bbd7fa0a24f3c5821ab"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HIGH_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_HIGH_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_LOW_WARNING">
+<span class="target" id="__conf__evert__device_8h_1a7c5b90c99edd8c1c0f31bb9ee0470f7d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_CPU_TEMP_LOW_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_LOW_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_LOW_CRITICAL">
+<span class="target" id="__conf__evert__device_8h_1af21af019abc145e67f751d03f4080a0b"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_CPU_TEMP_LOW_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_CPU_TEMP_LOW_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_VREF_NOMINAL">
+<span class="target" id="__conf__evert__device_8h_1a114bc7879db71687703d09792bb77cc4"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_VREF_NOMINAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_VREF_NOMINAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_VREF_HYSTERESIS">
+<span class="target" id="__conf__evert__device_8h_1a776b56478e4a3367014e80c71f1e8b4a"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_VREF_HYSTERESIS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_VREF_HYSTERESIS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_VREF_INT_HIGH_WARNING">
+<span class="target" id="__conf__evert__device_8h_1a4ea6a19aa686d43bf0d9e849bc3d1f3d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_VREF_INT_HIGH_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_VREF_INT_HIGH_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_VREF_INT_HIGH_CRITICAL">
+<span class="target" id="__conf__evert__device_8h_1af4a2b4bfd9d83d3a4d9988066e496420"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_VREF_INT_HIGH_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_VREF_INT_HIGH_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_VREF_INT_LOW_WARNING">
+<span class="target" id="__conf__evert__device_8h_1a7dc2a68f40ddd41d862132c406c564b3"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_VREF_INT_LOW_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_VREF_INT_LOW_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_DEVICE_VREF_INT_LOW_CRITICAL">
+<span class="target" id="__conf__evert__device_8h_1a297877a847a51627ffb4d6a54e557eea"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_DEVICE_VREF_INT_LOW_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_DEVICE_VREF_INT_LOW_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="boost_converter.html" class="btn btn-neutral float-left" title="boost_converter.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="_conf_evert_hal.html" class="btn btn-neutral float-right" title="_conf_evert_hal.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

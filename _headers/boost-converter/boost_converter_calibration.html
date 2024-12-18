@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>boost_converter_calibration.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="boost_converter_alarms.h" href="boost_converter_alarms.html" />
+    <link rel="prev" title="boost_converter_constraints.h" href="boost_converter_constraints.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/examples.html">Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_readings.html">boost_converter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter.html">boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_boost_converter.html">_conf_evert_boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_constraints.html">boost_converter_constraints.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">boost_converter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_alarms.html">boost_converter_alarms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_mppt.html">boost_converter_mppt.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-api.html">API Reference: boost-converter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a></li>
+      <li class="breadcrumb-item active">boost_converter_calibration.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/boost-converter/boost_converter_calibration.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="boost-converter-calibration-h">
+<h1>boost_converter_calibration.h<a class="headerlink" href="#boost-converter-calibration-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv438EVERT_BOOST_CONVERTER_InitCalibrationsv">
+<span id="_CPPv338EVERT_BOOST_CONVERTER_InitCalibrationsv"></span><span id="_CPPv238EVERT_BOOST_CONVERTER_InitCalibrationsv"></span><span id="EVERT_BOOST_CONVERTER_InitCalibrations"></span><span class="target" id="boost__converter__calibration_8h_1ac75fc116358bc10ed816316e87e9fab7"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_InitCalibrations</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv438EVERT_BOOST_CONVERTER_InitCalibrationsv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419calibration_current">
+<span id="_CPPv319calibration_current"></span><span id="_CPPv219calibration_current"></span><span id="calibration_current__EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef"></span><span class="target" id="boost__converter__calibration_8h_1af671f4f913dde825f2789e079e398494"></span><a class="reference internal" href="#_CPPv453EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef" title="EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calibration_current</span></span></span><a class="headerlink" href="#_CPPv419calibration_current" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419calibration_voltage">
+<span id="_CPPv319calibration_voltage"></span><span id="_CPPv219calibration_voltage"></span><span id="calibration_voltage__EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef"></span><span class="target" id="boost__converter__calibration_8h_1a1ef692420461fcb824132901edc1b04e"></span><a class="reference internal" href="#_CPPv453EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef" title="EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calibration_voltage</span></span></span><a class="headerlink" href="#_CPPv419calibration_voltage" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv453EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef">
+<span id="_CPPv353EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef"></span><span id="_CPPv253EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef"></span><span id="EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef"></span><span class="target" id="structEVERT__BOOST__CONVERTER__ConfigCurrentCalibrationTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef</span></span></span><a class="headerlink" href="#_CPPv453EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/boost-converter/boost-converter-api.html#boost__converter__calibration_8h"><span class="std std-ref">boost_converter_calibration.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N53EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef16current_in_slopeE">
+<span id="_CPPv3N53EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef16current_in_slopeE"></span><span id="_CPPv2N53EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef16current_in_slopeE"></span><span id="EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef::current_in_slope__float32_t"></span><span class="target" id="structEVERT__BOOST__CONVERTER__ConfigCurrentCalibrationTypeDef_1a11cf85f4c300ccb8f4034c9165765b5f"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_in_slope</span></span></span><a class="headerlink" href="#_CPPv4N53EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef16current_in_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N53EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef20current_in_interceptE">
+<span id="_CPPv3N53EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef20current_in_interceptE"></span><span id="_CPPv2N53EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef20current_in_interceptE"></span><span id="EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef::current_in_intercept__float32_t"></span><span class="target" id="structEVERT__BOOST__CONVERTER__ConfigCurrentCalibrationTypeDef_1a0934e07eb68e86fc2f9a788272b48e76"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_in_intercept</span></span></span><a class="headerlink" href="#_CPPv4N53EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef20current_in_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv453EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef">
+<span id="_CPPv353EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef"></span><span id="_CPPv253EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef"></span><span id="EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef"></span><span class="target" id="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef</span></span></span><a class="headerlink" href="#_CPPv453EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/boost-converter/boost-converter-api.html#boost__converter__calibration_8h"><span class="std std-ref">boost_converter_calibration.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef16voltage_in_slopeE">
+<span id="_CPPv3N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef16voltage_in_slopeE"></span><span id="_CPPv2N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef16voltage_in_slopeE"></span><span id="EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef::voltage_in_slope__float32_t"></span><span class="target" id="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef_1ac1dc805b348db5b1036dadafcda0550c"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_in_slope</span></span></span><a class="headerlink" href="#_CPPv4N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef16voltage_in_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef20voltage_in_interceptE">
+<span id="_CPPv3N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef20voltage_in_interceptE"></span><span id="_CPPv2N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef20voltage_in_interceptE"></span><span id="EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef::voltage_in_intercept__float32_t"></span><span class="target" id="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef_1a726c408afc37ae85e3615426a06436db"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_in_intercept</span></span></span><a class="headerlink" href="#_CPPv4N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef20voltage_in_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef17voltage_out_slopeE">
+<span id="_CPPv3N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef17voltage_out_slopeE"></span><span id="_CPPv2N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef17voltage_out_slopeE"></span><span id="EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef::voltage_out_slope__float32_t"></span><span class="target" id="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef_1a0ae2527f2224948eabf4e57298a886b7"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_out_slope</span></span></span><a class="headerlink" href="#_CPPv4N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef17voltage_out_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef21voltage_out_interceptE">
+<span id="_CPPv3N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef21voltage_out_interceptE"></span><span id="_CPPv2N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef21voltage_out_interceptE"></span><span id="EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef::voltage_out_intercept__float32_t"></span><span class="target" id="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef_1a048a90868fcf5fb2b04f10fb8d1d083d"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_out_intercept</span></span></span><a class="headerlink" href="#_CPPv4N53EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef21voltage_out_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="boost_converter_constraints.html" class="btn btn-neutral float-left" title="boost_converter_constraints.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="boost_converter_alarms.html" class="btn btn-neutral float-right" title="boost_converter_alarms.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

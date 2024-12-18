@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>boost_converter_readings.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="boost_converter.h" href="boost_converter.html" />
+    <link rel="prev" title="Index: boost-converter" href="../../_projects/boost-converter/boost-converter-index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/examples.html">Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">boost_converter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter.html">boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_boost_converter.html">_conf_evert_boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_constraints.html">boost_converter_constraints.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_calibration.html">boost_converter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_alarms.html">boost_converter_alarms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_mppt.html">boost_converter_mppt.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-api.html">API Reference: boost-converter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a></li>
+      <li class="breadcrumb-item active">boost_converter_readings.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/boost-converter/boost_converter_readings.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="boost-converter-readings-h">
+<h1>boost_converter_readings.h<a class="headerlink" href="#boost-converter-readings-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.FIR_NUM_TAPS">
+<span class="target" id="boost__converter__readings_8h_1a4d21dc287cdb0661fa4137bb08a004c8"></span><span class="sig-name descname"><span class="n"><span class="pre">FIR_NUM_TAPS</span></span></span><a class="headerlink" href="#c.FIR_NUM_TAPS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.FIR_BLOCK_SIZE">
+<span class="target" id="boost__converter__readings_8h_1a81ae9a726b73b4d8a139a7fab252e230"></span><span class="sig-name descname"><span class="n"><span class="pre">FIR_BLOCK_SIZE</span></span></span><a class="headerlink" href="#c.FIR_BLOCK_SIZE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv433EVERT_BOOST_CONVERTER_InitFiltersv">
+<span id="_CPPv333EVERT_BOOST_CONVERTER_InitFiltersv"></span><span id="_CPPv233EVERT_BOOST_CONVERTER_InitFiltersv"></span><span id="EVERT_BOOST_CONVERTER_InitFilters__void"></span><span class="target" id="boost__converter__readings_8h_1a8a6e2bf6a5784a2560f470ceec41e2b4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_InitFilters</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv433EVERT_BOOST_CONVERTER_InitFiltersv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_BOOST_CONVERTER_Readingsv">
+<span id="_CPPv330EVERT_BOOST_CONVERTER_Readingsv"></span><span id="_CPPv230EVERT_BOOST_CONVERTER_Readingsv"></span><span id="EVERT_BOOST_CONVERTER_Readings__void"></span><span class="target" id="boost__converter__readings_8h_1a1afe244c945db4a660f75fa220a2c2c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_BOOST_CONVERTER_Readings</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv430EVERT_BOOST_CONVERTER_Readingsv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411adc1_buffer">
+<span id="_CPPv311adc1_buffer"></span><span id="_CPPv211adc1_buffer"></span><span id="adc1_buffer__uint16_tA"></span><span class="target" id="boost__converter__readings_8h_1a5f20ab1faad53cf3a899ef2df5421d05"></span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc1_buffer</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv411adc1_buffer" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419adc_mcu_temperature">
+<span id="_CPPv319adc_mcu_temperature"></span><span id="_CPPv219adc_mcu_temperature"></span><span id="adc_mcu_temperature__uint32_t"></span><span class="target" id="boost__converter__readings_8h_1a1efe29602e522dddbfc1b720ceeb400a"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_mcu_temperature</span></span></span><a class="headerlink" href="#_CPPv419adc_mcu_temperature" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416adc_mcu_vref_int">
+<span id="_CPPv316adc_mcu_vref_int"></span><span id="_CPPv216adc_mcu_vref_int"></span><span id="adc_mcu_vref_int__uint32_t"></span><span class="target" id="boost__converter__readings_8h_1aa27d012776be05aeee7ef3d53445a38e"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_mcu_vref_int</span></span></span><a class="headerlink" href="#_CPPv416adc_mcu_vref_int" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414adc_voltage_in">
+<span id="_CPPv314adc_voltage_in"></span><span id="_CPPv214adc_voltage_in"></span><span id="adc_voltage_in__uint32_t"></span><span class="target" id="boost__converter__readings_8h_1acf510012be7b09bc553f32a792beedec"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_in</span></span></span><a class="headerlink" href="#_CPPv414adc_voltage_in" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv415adc_voltage_out">
+<span id="_CPPv315adc_voltage_out"></span><span id="_CPPv215adc_voltage_out"></span><span id="adc_voltage_out__uint32_t"></span><span class="target" id="boost__converter__readings_8h_1ad54cc60a8122bbf66d26a8cd6b0bbf82"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_out</span></span></span><a class="headerlink" href="#_CPPv415adc_voltage_out" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414adc_current_in">
+<span id="_CPPv314adc_current_in"></span><span id="_CPPv214adc_current_in"></span><span id="adc_current_in__uint32_t"></span><span class="target" id="boost__converter__readings_8h_1a981585c676e493d6dcbd82933f9bed4f"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_current_in</span></span></span><a class="headerlink" href="#_CPPv414adc_current_in" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418uf_mcu_temperature">
+<span id="_CPPv318uf_mcu_temperature"></span><span id="_CPPv218uf_mcu_temperature"></span><span id="uf_mcu_temperature__float32_t"></span><span class="target" id="boost__converter__readings_8h_1ae95bfbd1682841eba5045c799e6eb711"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_mcu_temperature</span></span></span><a class="headerlink" href="#_CPPv418uf_mcu_temperature" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv415uf_mcu_vref_int">
+<span id="_CPPv315uf_mcu_vref_int"></span><span id="_CPPv215uf_mcu_vref_int"></span><span id="uf_mcu_vref_int__float32_t"></span><span class="target" id="boost__converter__readings_8h_1a900cec7b237219e599dbff5d8fc20672"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_mcu_vref_int</span></span></span><a class="headerlink" href="#_CPPv415uf_mcu_vref_int" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413uf_voltage_in">
+<span id="_CPPv313uf_voltage_in"></span><span id="_CPPv213uf_voltage_in"></span><span id="uf_voltage_in__float32_t"></span><span class="target" id="boost__converter__readings_8h_1ac1d5c73dbb7dea06a8aa53706274e1f0"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_voltage_in</span></span></span><a class="headerlink" href="#_CPPv413uf_voltage_in" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414uf_voltage_out">
+<span id="_CPPv314uf_voltage_out"></span><span id="_CPPv214uf_voltage_out"></span><span id="uf_voltage_out__float32_t"></span><span class="target" id="boost__converter__readings_8h_1af2fbf08a94de3b22f62d6f9f9975cd45"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_voltage_out</span></span></span><a class="headerlink" href="#_CPPv414uf_voltage_out" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413uf_current_in">
+<span id="_CPPv313uf_current_in"></span><span id="_CPPv213uf_current_in"></span><span id="uf_current_in__float32_t"></span><span class="target" id="boost__converter__readings_8h_1a74a3a53a69acb8bf4b8cdc80529d6744"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_current_in</span></span></span><a class="headerlink" href="#_CPPv413uf_current_in" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418fi_mcu_temperature">
+<span id="_CPPv318fi_mcu_temperature"></span><span id="_CPPv218fi_mcu_temperature"></span><span id="fi_mcu_temperature__float32_t"></span><span class="target" id="boost__converter__readings_8h_1af41d80652ee335b39548f38b345d2e79"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_mcu_temperature</span></span></span><a class="headerlink" href="#_CPPv418fi_mcu_temperature" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv415fi_mcu_vref_int">
+<span id="_CPPv315fi_mcu_vref_int"></span><span id="_CPPv215fi_mcu_vref_int"></span><span id="fi_mcu_vref_int__float32_t"></span><span class="target" id="boost__converter__readings_8h_1af5785c6dc468e3b09838a66e32fbf69a"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_mcu_vref_int</span></span></span><a class="headerlink" href="#_CPPv415fi_mcu_vref_int" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413fi_voltage_in">
+<span id="_CPPv313fi_voltage_in"></span><span id="_CPPv213fi_voltage_in"></span><span id="fi_voltage_in__float32_t"></span><span class="target" id="boost__converter__readings_8h_1af61b6af9e488d93a1ec95c8e3f5a7cfd"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_in</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414fi_voltage_out">
+<span id="_CPPv314fi_voltage_out"></span><span id="_CPPv214fi_voltage_out"></span><span id="fi_voltage_out__float32_t"></span><span class="target" id="boost__converter__readings_8h_1a05aa48cb325d02a499cfb2a0a0025317"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_out</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413fi_current_in">
+<span id="_CPPv313fi_current_in"></span><span id="_CPPv213fi_current_in"></span><span id="fi_current_in__float32_t"></span><span class="target" id="boost__converter__readings_8h_1a4f11ea4411e41fa79a74c8413f79c6b3"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_current_in</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411fi_power_in">
+<span id="_CPPv311fi_power_in"></span><span id="_CPPv211fi_power_in"></span><span id="fi_power_in__float32_t"></span><span class="target" id="boost__converter__readings_8h_1a4c818f8538f60e7a17cba08d5865745e"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_power_in</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../_projects/boost-converter/boost-converter-index.html" class="btn btn-neutral float-left" title="Index: boost-converter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="boost_converter.html" class="btn btn-neutral float-right" title="boost_converter.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

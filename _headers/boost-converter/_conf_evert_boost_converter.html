@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>_conf_evert_boost_converter.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="boost_converter_constraints.h" href="boost_converter_constraints.html" />
+    <link rel="prev" title="_conf_evert_hal.h" href="_conf_evert_hal.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/examples.html">Examples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_readings.html">boost_converter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter.html">boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">_conf_evert_boost_converter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_constraints.html">boost_converter_constraints.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_calibration.html">boost_converter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_alarms.html">boost_converter_alarms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boost_converter_mppt.html">boost_converter_mppt.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/boost-converter/boost-converter-api.html">API Reference: boost-converter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/boost-converter/boost-converter-index.html">Index: boost-converter</a></li>
+      <li class="breadcrumb-item active">_conf_evert_boost_converter.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/boost-converter/_conf_evert_boost_converter.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="conf-evert-boost-converter-h">
+<h1>_conf_evert_boost_converter.h<a class="headerlink" href="#conf-evert-boost-converter-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT">
+<span class="target" id="__conf__evert__boost__converter_8h_1a7b80a881c0743220fb3102596f1b50a9"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_BC_ADC1_RANK_MCU_TEMPERATURE">
+<span class="target" id="__conf__evert__boost__converter_8h_1ae0f0bc42d8ee92e3b03dc01921f92535"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_BC_ADC1_RANK_MCU_TEMPERATURE</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_BC_ADC1_RANK_MCU_TEMPERATURE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_BC_ADC1_RANK_MCU_VREF_INT">
+<span class="target" id="__conf__evert__boost__converter_8h_1aa36e2238781a685a1b3b8852062ab471"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_BC_ADC1_RANK_MCU_VREF_INT</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_BC_ADC1_RANK_MCU_VREF_INT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_IN">
+<span class="target" id="__conf__evert__boost__converter_8h_1a1cf81531c0591a8260d66868cfa65bcb"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_IN</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_IN" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_OUT">
+<span class="target" id="__conf__evert__boost__converter_8h_1a84a0a034adfa5563bfff6333f8a7f6de"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_OUT</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_OUT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTANT_BC_ADC1_RANK_CURRENT_IN">
+<span class="target" id="__conf__evert__boost__converter_8h_1af279693f99b4ba4d9ca6b50cd8f6c4fa"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTANT_BC_ADC1_RANK_CURRENT_IN</span></span></span><a class="headerlink" href="#c.EVERT_CONSTANT_BC_ADC1_RANK_CURRENT_IN" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_SLOPE">
+<span class="target" id="__conf__evert__boost__converter_8h_1adc63a3d0db0cf909604ab1fa0211959d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_INTERCEPT">
+<span class="target" id="__conf__evert__boost__converter_8h_1aecb1cb1b581482b528da2d73587bfa43"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_SLOPE">
+<span class="target" id="__conf__evert__boost__converter_8h_1ac622554d48873f191c6db7ade70b57d8"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_INTERCEPT">
+<span class="target" id="__conf__evert__boost__converter_8h_1a9366762964158df6c074fd5113ac4ba7"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_BC_ADC_CURRENT_IN_SLOPE">
+<span class="target" id="__conf__evert__boost__converter_8h_1aa3759a25f59cd728e0e3fce69d2bcb74"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_BC_ADC_CURRENT_IN_SLOPE</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_BC_ADC_CURRENT_IN_SLOPE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CALIBRATION_BC_ADC_CURRENT_IN_INTERCEPT">
+<span class="target" id="__conf__evert__boost__converter_8h_1af6f9588cc9f0d1015a51e4db6892caa8"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CALIBRATION_BC_ADC_CURRENT_IN_INTERCEPT</span></span></span><a class="headerlink" href="#c.EVERT_CALIBRATION_BC_ADC_CURRENT_IN_INTERCEPT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_DUTY_CYCLE_MIN">
+<span class="target" id="__conf__evert__boost__converter_8h_1a4c701e5b84152e38a9dc155ae9f2941c"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MIN</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_DUTY_CYCLE_MIN" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_DUTY_CYCLE_MAX">
+<span class="target" id="__conf__evert__boost__converter_8h_1a4a455cf9e1e5516804fb480a94bf6808"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MAX</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_DUTY_CYCLE_MAX" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MIN">
+<span class="target" id="__conf__evert__boost__converter_8h_1aada3fc5a3df8e39c12798473f7e2326d"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MIN</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MIN" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MAX">
+<span class="target" id="__conf__evert__boost__converter_8h_1aa5dd5b19289eb492d94e80240a33e48c"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MAX</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MAX" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HYSTERESIS">
+<span class="target" id="__conf__evert__boost__converter_8h_1a06163995ff54d06e5dd1977884596958"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HYSTERESIS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HYSTERESIS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_CRITICAL">
+<span class="target" id="__conf__evert__boost__converter_8h_1a31c39f280a89d471156b56438e655dab"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_WARNING">
+<span class="target" id="__conf__evert__boost__converter_8h_1ab489d7a0155d3b146f87c6ef774aa4b3"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_HYSTERESIS">
+<span class="target" id="__conf__evert__boost__converter_8h_1ad31a4f818d93cbe99f48a63986afbb47"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_VOLTAGE_IN_HYSTERESIS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_HYSTERESIS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_CRITICAL">
+<span class="target" id="__conf__evert__boost__converter_8h_1a7d46b06d35b6ad7cef4803433d8a8fd6"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_WARNING">
+<span class="target" id="__conf__evert__boost__converter_8h_1acd21cb9240a18666250905adafaaa822"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_WARNING">
+<span class="target" id="__conf__evert__boost__converter_8h_1a954ece8c087c06d0c3c7b0989dc01911"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_CRITICAL">
+<span class="target" id="__conf__evert__boost__converter_8h_1a4609fbea6c84d6c50f93c89e1636a0c6"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_CURRENT_HYSTERESIS">
+<span class="target" id="__conf__evert__boost__converter_8h_1a43f4305f593381affd642b97e92f22a6"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_CURRENT_HYSTERESIS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_CURRENT_HYSTERESIS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_CURRENT_HIGH_CRITICAL">
+<span class="target" id="__conf__evert__boost__converter_8h_1a412a188ac62c0ada109b23f329ea4ed7"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_CURRENT_HIGH_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_CURRENT_HIGH_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_CURRENT_HIGH_WARNING">
+<span class="target" id="__conf__evert__boost__converter_8h_1a704473f23c9c455e4ecbb9d8f4a39a55"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_CURRENT_HIGH_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_CURRENT_HIGH_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_COIL_TEMP_HYSTERESIS">
+<span class="target" id="__conf__evert__boost__converter_8h_1ab61af46cf7b36a3289acf11e09aabc9f"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_COIL_TEMP_HYSTERESIS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_COIL_TEMP_HYSTERESIS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_COIL_TEMP_WARNING">
+<span class="target" id="__conf__evert__boost__converter_8h_1a353d63434cb6ea38df9259f712200c70"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_COIL_TEMP_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_COIL_TEMP_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_COIL_TEMP_CRITICAL">
+<span class="target" id="__conf__evert__boost__converter_8h_1a2de2c3ccc3977ea6b4e0bd963e19a475"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_COIL_TEMP_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_COIL_TEMP_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_HYSTERESIS">
+<span class="target" id="__conf__evert__boost__converter_8h_1a75d38525025d46a7113be6ad2cf830e4"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_HYSTERESIS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_HYSTERESIS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_WARNING">
+<span class="target" id="__conf__evert__boost__converter_8h_1a54640e9417e2dce8555b02b690ee2d33"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_CRITICAL">
+<span class="target" id="__conf__evert__boost__converter_8h_1a813f4f7d9d2feda4c05244943fdbf168"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_MOSFET_TEMP_HYSTERESIS">
+<span class="target" id="__conf__evert__boost__converter_8h_1afd66d02d4a98a2ee5562d5135080f92b"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_MOSFET_TEMP_HYSTERESIS</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_MOSFET_TEMP_HYSTERESIS" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_MOSFET_TEMP_WARNING">
+<span class="target" id="__conf__evert__boost__converter_8h_1a28dc782400890f09b923e465ff1f498f"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_MOSFET_TEMP_WARNING</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_MOSFET_TEMP_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_CONSTRAINT_BC_MOSFET_TEMP_CRITICAL">
+<span class="target" id="__conf__evert__boost__converter_8h_1ae3205706b0ec66cfd6dba8819a839ab7"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_CONSTRAINT_BC_MOSFET_TEMP_CRITICAL</span></span></span><a class="headerlink" href="#c.EVERT_CONSTRAINT_BC_MOSFET_TEMP_CRITICAL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="_conf_evert_hal.html" class="btn btn-neutral float-left" title="_conf_evert_hal.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="boost_converter_constraints.html" class="btn btn-neutral float-right" title="boost_converter_constraints.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
