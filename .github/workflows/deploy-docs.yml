@@ -16,10 +16,10 @@ jobs:
       
       - name: Install dependencies
         run: |
-          apt-get update
-          apt-get install -y --no-install-recommends doxygen graphviz build-essential
-          pip install --no-cache-dir --upgrade pip setuptools wheel
-          pip install --no-cache-dir sphinx breathe sphinx-rtd-theme myst-parser
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends doxygen graphviz build-essential
+          sudo pip install --no-cache-dir --upgrade pip setuptools wheel
+          sudo pip install --no-cache-dir sphinx breathe sphinx-rtd-theme myst-parser
       
       - name: Build HTML
         run: |
