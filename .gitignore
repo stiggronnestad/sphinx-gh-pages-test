@@ -455,3 +455,16 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+docs/build/*
+doxygen-*/*
+docs/doxygen-boost-converter/
+docs/doxygen-ccu/
+docs/doxygen-core/
+docs/doxygen-dcdc/
+docs/doxygen-device/
+docs/doxygen-inverter/
+docs/source/_headers/
+docs/source/_projects/
+docs/source/index.md
+docs/build/
