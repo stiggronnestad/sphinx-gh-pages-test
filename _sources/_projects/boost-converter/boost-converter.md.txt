@@ -3,6 +3,7 @@
 :caption: Contents:
 :maxdepth: 5
 examples.md
+examples2.md
 boost-converter-index
 boost-converter-api
 ```
