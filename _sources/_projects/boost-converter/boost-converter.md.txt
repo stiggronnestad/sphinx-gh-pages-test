@@ -2,6 +2,7 @@
 ```{toctree}
 :caption: Contents:
 :maxdepth: 5
+examples3.md
 examples.md
 examples2.md
 boost-converter-index
