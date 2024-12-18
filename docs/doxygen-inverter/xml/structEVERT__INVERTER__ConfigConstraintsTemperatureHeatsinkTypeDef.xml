@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</compoundname>
+    <includes refid="inverter__constraints_8h" local="no">inverter_constraints.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1afa80eefce37add5682bc6becb1ebf07d" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_u_hysteresis</definition>
+        <argsstring></argsstring>
+        <name>heatsink_u_hysteresis</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_u_hysteresis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="42" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a01d22f906a8c46d8c332c0e1121125a8" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_u_critical</definition>
+        <argsstring></argsstring>
+        <name>heatsink_u_critical</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_u_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="43" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ad3a927fa356029ca53e778b3f77242a8" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_u_warning</definition>
+        <argsstring></argsstring>
+        <name>heatsink_u_warning</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_u_warning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="44" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ab137bc298a4f7ee585844608656c2b91" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_v_hysteresis</definition>
+        <argsstring></argsstring>
+        <name>heatsink_v_hysteresis</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_v_hysteresis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="45" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a83fd58e14dff94c0b6cfde6e9b64fddd" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_v_critical</definition>
+        <argsstring></argsstring>
+        <name>heatsink_v_critical</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_v_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="46" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1abefbcdb1cc9936f32b72921076ac7c3d" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_v_warning</definition>
+        <argsstring></argsstring>
+        <name>heatsink_v_warning</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_v_warning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="47" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a0b16b1bff098e3e912634b9609042d49" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_w_hysteresis</definition>
+        <argsstring></argsstring>
+        <name>heatsink_w_hysteresis</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_w_hysteresis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="48" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a06952572e9064d92db44cb1f5dea6ad8" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_w_critical</definition>
+        <argsstring></argsstring>
+        <name>heatsink_w_critical</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_w_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="49" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a37e0da9c17f16ca4d5e84b5049410135" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_w_warning</definition>
+        <argsstring></argsstring>
+        <name>heatsink_w_warning</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef::heatsink_w_warning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="50" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="40" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="41" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a01d22f906a8c46d8c332c0e1121125a8" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_u_critical</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1afa80eefce37add5682bc6becb1ebf07d" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_u_hysteresis</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ad3a927fa356029ca53e778b3f77242a8" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_u_warning</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a83fd58e14dff94c0b6cfde6e9b64fddd" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_v_critical</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ab137bc298a4f7ee585844608656c2b91" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_v_hysteresis</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1abefbcdb1cc9936f32b72921076ac7c3d" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_v_warning</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a06952572e9064d92db44cb1f5dea6ad8" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_w_critical</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a0b16b1bff098e3e912634b9609042d49" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_w_hysteresis</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a37e0da9c17f16ca4d5e84b5049410135" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</scope><name>heatsink_w_warning</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

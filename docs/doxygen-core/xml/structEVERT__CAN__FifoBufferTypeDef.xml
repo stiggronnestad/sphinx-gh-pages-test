@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__CAN__FifoBufferTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_CAN_FifoBufferTypeDef</compoundname>
+    <includes refid="can__handler_8h" local="no">can_handler.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group__EVERT_1ga0e9e69c39d2c6f82530567a1bb4e4d01" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__CAN__FifoBufferItemTypeDef" kindref="compound">EVERT_CAN_FifoBufferItemTypeDef</ref> *</type>
+        <definition>EVERT_CAN_FifoBufferItemTypeDef* EVERT_CAN_FifoBufferTypeDef::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <qualifiedname>EVERT_CAN_FifoBufferTypeDef::buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" line="102" column="37" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="group__EVERT_1gaa8e85b8ba6538ca28dacc5cfc9150813" compoundref="can__handler_8c" startline="112" endline="119">EVERT_CAN_FifoBuffer_Init</referencedby>
+        <referencedby refid="group__EVERT_1gac6a035098a76fa3eefdb36859149963a" compoundref="can__handler_8c" startline="136" endline="148">EVERT_CAN_FifoBuffer_Pop</referencedby>
+        <referencedby refid="group__EVERT_1ga13bbae8b2ee1c539c1a6bc85eeba8839" compoundref="can__handler_8c" startline="121" endline="134">EVERT_CAN_FifoBuffer_Push</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group__EVERT_1ga260ec7f161f4e5ae7b21e5709e8cd491" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_CAN_FifoBufferTypeDef::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <qualifiedname>EVERT_CAN_FifoBufferTypeDef::head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" line="103" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="group__EVERT_1gaa8e85b8ba6538ca28dacc5cfc9150813" compoundref="can__handler_8c" startline="112" endline="119">EVERT_CAN_FifoBuffer_Init</referencedby>
+        <referencedby refid="group__EVERT_1ga13bbae8b2ee1c539c1a6bc85eeba8839" compoundref="can__handler_8c" startline="121" endline="134">EVERT_CAN_FifoBuffer_Push</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group__EVERT_1gaf8b405efcb78e5f825557e0e86a7f77a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_CAN_FifoBufferTypeDef::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <qualifiedname>EVERT_CAN_FifoBufferTypeDef::tail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" line="104" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="group__EVERT_1gaa8e85b8ba6538ca28dacc5cfc9150813" compoundref="can__handler_8c" startline="112" endline="119">EVERT_CAN_FifoBuffer_Init</referencedby>
+        <referencedby refid="group__EVERT_1gac6a035098a76fa3eefdb36859149963a" compoundref="can__handler_8c" startline="136" endline="148">EVERT_CAN_FifoBuffer_Pop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group__EVERT_1ga6c2b0e89e52c05dfbe76f46a08729561" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_CAN_FifoBufferTypeDef::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>EVERT_CAN_FifoBufferTypeDef::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" line="105" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="group__EVERT_1gaa8e85b8ba6538ca28dacc5cfc9150813" compoundref="can__handler_8c" startline="112" endline="119">EVERT_CAN_FifoBuffer_Init</referencedby>
+        <referencedby refid="group__EVERT_1gac6a035098a76fa3eefdb36859149963a" compoundref="can__handler_8c" startline="136" endline="148">EVERT_CAN_FifoBuffer_Pop</referencedby>
+        <referencedby refid="group__EVERT_1ga13bbae8b2ee1c539c1a6bc85eeba8839" compoundref="can__handler_8c" startline="121" endline="134">EVERT_CAN_FifoBuffer_Push</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group__EVERT_1gae29a51973b5b39f0aef2ecc4e6cff82c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_CAN_FifoBufferTypeDef::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>EVERT_CAN_FifoBufferTypeDef::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" line="106" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="group__EVERT_1gaa8e85b8ba6538ca28dacc5cfc9150813" compoundref="can__handler_8c" startline="112" endline="119">EVERT_CAN_FifoBuffer_Init</referencedby>
+        <referencedby refid="group__EVERT_1gac6a035098a76fa3eefdb36859149963a" compoundref="can__handler_8c" startline="136" endline="148">EVERT_CAN_FifoBuffer_Pop</referencedby>
+        <referencedby refid="group__EVERT_1ga13bbae8b2ee1c539c1a6bc85eeba8839" compoundref="can__handler_8c" startline="121" endline="134">EVERT_CAN_FifoBuffer_Push</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>EVERT_CAN_FifoBufferItemTypeDef</label>
+        <link refid="structEVERT__CAN__FifoBufferItemTypeDef"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>EVERT_CAN_FifoBufferTypeDef</label>
+        <link refid="structEVERT__CAN__FifoBufferTypeDef"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>EVERT_CAN_FrameDataTypeDef</label>
+        <link refid="structEVERT__CAN__FrameDataTypeDef"/>
+      </node>
+      <node id="3">
+        <label>EVERT_CAN_FrameTypeDef</label>
+        <link refid="structEVERT__CAN__FrameTypeDef"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>identifier</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>EVERT_CAN_IdentifierTypeDef</label>
+        <link refid="structEVERT__CAN__IdentifierTypeDef"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" line="100" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/can_handler.h" bodystart="101" bodyend="107"/>
+    <listofallmembers>
+      <member refid="group__EVERT_1ga0e9e69c39d2c6f82530567a1bb4e4d01" prot="public" virt="non-virtual"><scope>EVERT_CAN_FifoBufferTypeDef</scope><name>buffer</name></member>
+      <member refid="group__EVERT_1gae29a51973b5b39f0aef2ecc4e6cff82c" prot="public" virt="non-virtual"><scope>EVERT_CAN_FifoBufferTypeDef</scope><name>count</name></member>
+      <member refid="group__EVERT_1ga260ec7f161f4e5ae7b21e5709e8cd491" prot="public" virt="non-virtual"><scope>EVERT_CAN_FifoBufferTypeDef</scope><name>head</name></member>
+      <member refid="group__EVERT_1ga6c2b0e89e52c05dfbe76f46a08729561" prot="public" virt="non-virtual"><scope>EVERT_CAN_FifoBufferTypeDef</scope><name>size</name></member>
+      <member refid="group__EVERT_1gaf8b405efcb78e5f825557e0e86a7f77a" prot="public" virt="non-virtual"><scope>EVERT_CAN_FifoBufferTypeDef</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

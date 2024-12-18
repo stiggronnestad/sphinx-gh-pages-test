@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>inverter_grid.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=86f27845" />
+
+  
+  
+        <script src="../../_static/jquery.js?v=8dae8fb0"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="inverter_math.h" href="inverter_math.html" />
+    <link rel="prev" title="inverter_constraints.h" href="inverter_constraints.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/inverter/inverter-index.html">Index: inverter</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="inverter.html">inverter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_alarm_index.html">inverter_alarm_index.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_calibration.html">inverter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_constraints.html">inverter_constraints.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">inverter_grid.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_math.html">inverter_math.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_readings.html">inverter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_transforms.html">inverter_transforms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_inverter.html">_conf_evert_inverter.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/inverter/inverter-api.html">API Reference: inverter</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter.html">inverter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter-index.html">Index: inverter</a></li>
+      <li class="breadcrumb-item active">inverter_grid.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/inverter/inverter_grid.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="inverter-grid-h">
+<h1>inverter_grid.h<a class="headerlink" href="#inverter-grid-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.VD_VQ_SCALING_FACTOR">
+<span class="target" id="inverter__grid_8h_1ae5a82c1bbb27af1bbb4b29894c610efe"></span><span class="sig-name descname"><span class="n"><span class="pre">VD_VQ_SCALING_FACTOR</span></span></span><a class="headerlink" href="#c.VD_VQ_SCALING_FACTOR" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.VD_DQ_FACTOR2">
+<span class="target" id="inverter__grid_8h_1a6fa00e03e813066e65f6ce41fe0de41e"></span><span class="sig-name descname"><span class="n"><span class="pre">VD_DQ_FACTOR2</span></span></span><a class="headerlink" href="#c.VD_DQ_FACTOR2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter__grid_8h_1a8c569f5c7e310846759a3e5fea3041eb"></span><span class="sig-name descname"><span class="pre">struct</span> <span class="pre">__attribute__</span> <span class="pre">((aligned(4)))</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_INVERTER_GridFormingInitK9float32_tK9float32_tK9float32_tK9float32_t">
+<span id="_CPPv330EVERT_INVERTER_GridFormingInitK9float32_tK9float32_tK9float32_tK9float32_t"></span><span id="_CPPv230EVERT_INVERTER_GridFormingInitK9float32_tK9float32_tK9float32_tK9float32_t"></span><span id="EVERT_INVERTER_GridFormingInit__float32_tC.float32_tC.float32_tC.float32_tC"></span><span class="target" id="inverter__grid_8h_1a96e0b1bb7ae657c0310bccaff1a0b828"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GridFormingInit</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">kp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ki</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coeff_b0</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coeff_b1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv430EVERT_INVERTER_GridFormingInitK9float32_tK9float32_tK9float32_tK9float32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv437EVERT_INVERTER_GridFormingPiStateInitP33EVERT_INVERTER_SpllPiStateTypeDefK9float32_tK9float32_t">
+<span id="_CPPv337EVERT_INVERTER_GridFormingPiStateInitP33EVERT_INVERTER_SpllPiStateTypeDefK9float32_tK9float32_t"></span><span id="_CPPv237EVERT_INVERTER_GridFormingPiStateInitP33EVERT_INVERTER_SpllPiStateTypeDefK9float32_tK9float32_t"></span><span id="EVERT_INVERTER_GridFormingPiStateInit__EVERT_INVERTER_SpllPiStateTypeDefP.float32_tC.float32_tC"></span><span class="target" id="inverter__grid_8h_1ad0a998fae54bab6637f8b66f6ae106a3"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GridFormingPiStateInit</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">EVERT_INVERTER_SpllPiStateTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pi_state</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">kp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ki</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv437EVERT_INVERTER_GridFormingPiStateInitP33EVERT_INVERTER_SpllPiStateTypeDefK9float32_tK9float32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv435EVERT_INVERTER_GridFormingPiControlP33EVERT_INVERTER_SpllPiStateTypeDef9float32_t9float32_t">
+<span id="_CPPv335EVERT_INVERTER_GridFormingPiControlP33EVERT_INVERTER_SpllPiStateTypeDef9float32_t9float32_t"></span><span id="_CPPv235EVERT_INVERTER_GridFormingPiControlP33EVERT_INVERTER_SpllPiStateTypeDef9float32_t9float32_t"></span><span id="EVERT_INVERTER_GridFormingPiControl__EVERT_INVERTER_SpllPiStateTypeDefP.float32_t.float32_t"></span><span class="target" id="inverter__grid_8h_1a07f0f04ba4709070aa8d24097aab43ec"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GridFormingPiControl</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">EVERT_INVERTER_SpllPiStateTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pi_state</span></span>, <span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">setpoint_reference</span></span>, <span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">feedback_value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv435EVERT_INVERTER_GridFormingPiControlP33EVERT_INVERTER_SpllPiStateTypeDef9float32_t9float32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv443EVERT_INVERTER_GridFormingClosedCurrentLoopv">
+<span id="_CPPv343EVERT_INVERTER_GridFormingClosedCurrentLoopv"></span><span id="_CPPv243EVERT_INVERTER_GridFormingClosedCurrentLoopv"></span><span id="EVERT_INVERTER_GridFormingClosedCurrentLoop"></span><span class="target" id="inverter__grid_8h_1ae438368a4f1421b635ee87ada3aed177"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GridFormingClosedCurrentLoop</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv443EVERT_INVERTER_GridFormingClosedCurrentLoopv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv440EVERT_INVERTER_GridFormingSpllSrfControlv">
+<span id="_CPPv340EVERT_INVERTER_GridFormingSpllSrfControlv"></span><span id="_CPPv240EVERT_INVERTER_GridFormingSpllSrfControlv"></span><span id="EVERT_INVERTER_GridFormingSpllSrfControl"></span><span class="target" id="inverter__grid_8h_1a326545559a16a74c453b782b601cb1f2"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GridFormingSpllSrfControl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv440EVERT_INVERTER_GridFormingSpllSrfControlv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv450EVERT_INVERTER_GridFormingSpllCheckSynchronizationv">
+<span id="_CPPv350EVERT_INVERTER_GridFormingSpllCheckSynchronizationv"></span><span id="_CPPv250EVERT_INVERTER_GridFormingSpllCheckSynchronizationv"></span><span id="EVERT_INVERTER_GridFormingSpllCheckSynchronization"></span><span class="target" id="inverter__grid_8h_1a12ae773201ecd6f0dbb5e0d9d62729d3"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_GridFormingSpllCheckSynchronization</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv450EVERT_INVERTER_GridFormingSpllCheckSynchronizationv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="inverter__grid_8h_1a4cc1f59ecff1e728d880fe20233e1ece"></span><span class="sig-name descname"><span class="pre">EVERT_INVERTER_SpllPiStateTypeDef</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv423gf_inverter_current_dq0">
+<span id="_CPPv323gf_inverter_current_dq0"></span><span id="_CPPv223gf_inverter_current_dq0"></span><span id="gf_inverter_current_dq0__EVERT_INVERTER_AbcDq0TypeDef"></span><span class="target" id="inverter__grid_8h_1a6db874751aa24ff4c2225fe96b646a75"></span><a class="reference internal" href="inverter_transforms.html#_CPPv428EVERT_INVERTER_AbcDq0TypeDef" title="EVERT_INVERTER_AbcDq0TypeDef"><span class="n"><span class="pre">EVERT_INVERTER_AbcDq0TypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_inverter_current_dq0</span></span></span><a class="headerlink" href="#_CPPv423gf_inverter_current_dq0" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419gf_grid_voltage_dq0">
+<span id="_CPPv319gf_grid_voltage_dq0"></span><span id="_CPPv219gf_grid_voltage_dq0"></span><span id="gf_grid_voltage_dq0__EVERT_INVERTER_AbcDq0TypeDef"></span><span class="target" id="inverter__grid_8h_1ad292089058e85f21d75d78906703e197"></span><a class="reference internal" href="inverter_transforms.html#_CPPv428EVERT_INVERTER_AbcDq0TypeDef" title="EVERT_INVERTER_AbcDq0TypeDef"><span class="n"><span class="pre">EVERT_INVERTER_AbcDq0TypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_grid_voltage_dq0</span></span></span><a class="headerlink" href="#_CPPv419gf_grid_voltage_dq0" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv423gf_inverter_voltage_abc">
+<span id="_CPPv323gf_inverter_voltage_abc"></span><span id="_CPPv223gf_inverter_voltage_abc"></span><span id="gf_inverter_voltage_abc__EVERT_INVERTER_Dq0AbcTypeDef"></span><span class="target" id="inverter__grid_8h_1af885b1f9c262245b5a199395b4edc3af"></span><a class="reference internal" href="inverter_transforms.html#_CPPv428EVERT_INVERTER_Dq0AbcTypeDef" title="EVERT_INVERTER_Dq0AbcTypeDef"><span class="n"><span class="pre">EVERT_INVERTER_Dq0AbcTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_inverter_voltage_abc</span></span></span><a class="headerlink" href="#_CPPv423gf_inverter_voltage_abc" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413gf_pi_state_d">
+<span id="_CPPv313gf_pi_state_d"></span><span id="_CPPv213gf_pi_state_d"></span><span id="gf_pi_state_d__EVERT_INVERTER_SpllPiStateTypeDef"></span><span class="target" id="inverter__grid_8h_1ab7f6b3861ecc6c4a1df937a5ba23772a"></span><span class="n"><span class="pre">EVERT_INVERTER_SpllPiStateTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_pi_state_d</span></span></span><a class="headerlink" href="#_CPPv413gf_pi_state_d" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413gf_pi_state_q">
+<span id="_CPPv313gf_pi_state_q"></span><span id="_CPPv213gf_pi_state_q"></span><span id="gf_pi_state_q__EVERT_INVERTER_SpllPiStateTypeDef"></span><span class="target" id="inverter__grid_8h_1a112c62a613eee90d5c9103b3bf7c18de"></span><span class="n"><span class="pre">EVERT_INVERTER_SpllPiStateTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_pi_state_q</span></span></span><a class="headerlink" href="#_CPPv413gf_pi_state_q" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419gf_start_pwm_output">
+<span id="_CPPv319gf_start_pwm_output"></span><span id="_CPPv219gf_start_pwm_output"></span><span id="gf_start_pwm_output__b"></span><span class="target" id="inverter__grid_8h_1a1566f884c287fd1b9898988f375b1aed"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_start_pwm_output</span></span></span><a class="headerlink" href="#_CPPv419gf_start_pwm_output" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422gf_closed_current_loop">
+<span id="_CPPv322gf_closed_current_loop"></span><span id="_CPPv222gf_closed_current_loop"></span><span id="gf_closed_current_loop__b"></span><span class="target" id="inverter__grid_8h_1a98fd8a244557a5637a46825f330f7d0f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_closed_current_loop</span></span></span><a class="headerlink" href="#_CPPv422gf_closed_current_loop" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv426gf_voltage_grid_a_previous">
+<span id="_CPPv326gf_voltage_grid_a_previous"></span><span id="_CPPv226gf_voltage_grid_a_previous"></span><span id="gf_voltage_grid_a_previous__float32_t"></span><span class="target" id="inverter__grid_8h_1a5231a734eb2804f1176e2b543dd7e7dc"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_voltage_grid_a_previous</span></span></span><a class="headerlink" href="#_CPPv426gf_voltage_grid_a_previous" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412gf_id_ref_pu">
+<span id="_CPPv312gf_id_ref_pu"></span><span id="_CPPv212gf_id_ref_pu"></span><span id="gf_id_ref_pu__float32_t"></span><span class="target" id="inverter__grid_8h_1a350bda271c162db6d6f7231f913404e2"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_id_ref_pu</span></span></span><a class="headerlink" href="#_CPPv412gf_id_ref_pu" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412gf_iq_ref_pu">
+<span id="_CPPv312gf_iq_ref_pu"></span><span id="_CPPv212gf_iq_ref_pu"></span><span id="gf_iq_ref_pu__float32_t"></span><span class="target" id="inverter__grid_8h_1af471178c19b22bf6ddc0a6e2790a622c"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_iq_ref_pu</span></span></span><a class="headerlink" href="#_CPPv412gf_iq_ref_pu" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv49gf_id_out">
+<span id="_CPPv39gf_id_out"></span><span id="_CPPv29gf_id_out"></span><span id="gf_id_out__float32_t"></span><span class="target" id="inverter__grid_8h_1a4129b19cf930c905b386123c8f644687"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_id_out</span></span></span><a class="headerlink" href="#_CPPv49gf_id_out" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv49gf_iq_out">
+<span id="_CPPv39gf_iq_out"></span><span id="_CPPv29gf_iq_out"></span><span id="gf_iq_out__float32_t"></span><span class="target" id="inverter__grid_8h_1a6a65245f929ee872d64b5af4cebd3594"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_iq_out</span></span></span><a class="headerlink" href="#_CPPv49gf_iq_out" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv417gf_vd_inverter_pu">
+<span id="_CPPv317gf_vd_inverter_pu"></span><span id="_CPPv217gf_vd_inverter_pu"></span><span id="gf_vd_inverter_pu__float32_t"></span><span class="target" id="inverter__grid_8h_1a80280774c54f21a5c08e280c89a58e53"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_vd_inverter_pu</span></span></span><a class="headerlink" href="#_CPPv417gf_vd_inverter_pu" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv417gf_vq_inverter_pu">
+<span id="_CPPv317gf_vq_inverter_pu"></span><span id="_CPPv217gf_vq_inverter_pu"></span><span id="gf_vq_inverter_pu__float32_t"></span><span class="target" id="inverter__grid_8h_1af5a8ed7091614f4e1cf77148b5743758"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_vq_inverter_pu</span></span></span><a class="headerlink" href="#_CPPv417gf_vq_inverter_pu" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418gf_duty_cycle_a_pu">
+<span id="_CPPv318gf_duty_cycle_a_pu"></span><span id="_CPPv218gf_duty_cycle_a_pu"></span><span id="gf_duty_cycle_a_pu__float32_t"></span><span class="target" id="inverter__grid_8h_1a4fa4faead751637f192cfb93e9e6bb80"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_duty_cycle_a_pu</span></span></span><a class="headerlink" href="#_CPPv418gf_duty_cycle_a_pu" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418gf_duty_cycle_b_pu">
+<span id="_CPPv318gf_duty_cycle_b_pu"></span><span id="_CPPv218gf_duty_cycle_b_pu"></span><span id="gf_duty_cycle_b_pu__float32_t"></span><span class="target" id="inverter__grid_8h_1a9e36b4a70522464d8fc7bc82be2e69a8"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_duty_cycle_b_pu</span></span></span><a class="headerlink" href="#_CPPv418gf_duty_cycle_b_pu" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418gf_duty_cycle_c_pu">
+<span id="_CPPv318gf_duty_cycle_c_pu"></span><span id="_CPPv218gf_duty_cycle_c_pu"></span><span id="gf_duty_cycle_c_pu__float32_t"></span><span class="target" id="inverter__grid_8h_1a9dc8868e023c8029b1ec47a29c99204e"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_duty_cycle_c_pu</span></span></span><a class="headerlink" href="#_CPPv418gf_duty_cycle_c_pu" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416gf_angle_radians">
+<span id="_CPPv316gf_angle_radians"></span><span id="_CPPv216gf_angle_radians"></span><span id="gf_angle_radians__float32_t"></span><span class="target" id="inverter__grid_8h_1a7dec7b9d4e6fc89fbfb2af93bae4b811"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_angle_radians</span></span></span><a class="headerlink" href="#_CPPv416gf_angle_radians" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47gf_sine">
+<span id="_CPPv37gf_sine"></span><span id="_CPPv27gf_sine"></span><span id="gf_sine__float32_t"></span><span class="target" id="inverter__grid_8h_1a8c2c33b730d238b76e433b1e538acf02"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_sine</span></span></span><a class="headerlink" href="#_CPPv47gf_sine" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv49gf_cosine">
+<span id="_CPPv39gf_cosine"></span><span id="_CPPv29gf_cosine"></span><span id="gf_cosine__float32_t"></span><span class="target" id="inverter__grid_8h_1a036f3aa03010be24aabce4f9f30e08f6"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_cosine</span></span></span><a class="headerlink" href="#_CPPv49gf_cosine" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416gf_srf_voltage_q">
+<span id="_CPPv316gf_srf_voltage_q"></span><span id="_CPPv216gf_srf_voltage_q"></span><span id="gf_srf_voltage_q__float32_tA"></span><span class="target" id="inverter__grid_8h_1a41388e383d7caad520de511e4b849d17"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_srf_voltage_q</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">2</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv416gf_srf_voltage_q" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv425gf_srf_loop_filter_output">
+<span id="_CPPv325gf_srf_loop_filter_output"></span><span id="_CPPv225gf_srf_loop_filter_output"></span><span id="gf_srf_loop_filter_output__float32_tA"></span><span class="target" id="inverter__grid_8h_1adaeb5ea3b723cc61aba7da1b713659f4"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_srf_loop_filter_output</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">2</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv425gf_srf_loop_filter_output" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv423gf_srf_output_frequency">
+<span id="_CPPv323gf_srf_output_frequency"></span><span id="_CPPv223gf_srf_output_frequency"></span><span id="gf_srf_output_frequency__float32_t"></span><span class="target" id="inverter__grid_8h_1a2613808266218aac167a9a09d51c5ce7"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_srf_output_frequency</span></span></span><a class="headerlink" href="#_CPPv423gf_srf_output_frequency" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv424gf_srf_nominal_frequency">
+<span id="_CPPv324gf_srf_nominal_frequency"></span><span id="_CPPv224gf_srf_nominal_frequency"></span><span id="gf_srf_nominal_frequency__float32_t"></span><span class="target" id="inverter__grid_8h_1a968134c1b33a53bcb5a782976d45aead"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_srf_nominal_frequency</span></span></span><a class="headerlink" href="#_CPPv424gf_srf_nominal_frequency" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412gf_srf_theta">
+<span id="_CPPv312gf_srf_theta"></span><span id="_CPPv212gf_srf_theta"></span><span id="gf_srf_theta__float32_tA"></span><span class="target" id="inverter__grid_8h_1a5440b91f22b6d91af655b462975fd7c6"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_srf_theta</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">2</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv412gf_srf_theta" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414gf_srf_delta_t">
+<span id="_CPPv314gf_srf_delta_t"></span><span id="_CPPv214gf_srf_delta_t"></span><span id="gf_srf_delta_t__float32_t"></span><span class="target" id="inverter__grid_8h_1a3caea492936048264d05462db4dbf328"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_srf_delta_t</span></span></span><a class="headerlink" href="#_CPPv414gf_srf_delta_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422gf_srf_filter_coeff_b0">
+<span id="_CPPv322gf_srf_filter_coeff_b0"></span><span id="_CPPv222gf_srf_filter_coeff_b0"></span><span id="gf_srf_filter_coeff_b0__float32_t"></span><span class="target" id="inverter__grid_8h_1a17f21d686d472dba465026c6d76382bc"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_srf_filter_coeff_b0</span></span></span><a class="headerlink" href="#_CPPv422gf_srf_filter_coeff_b0" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422gf_srf_filter_coeff_b1">
+<span id="_CPPv322gf_srf_filter_coeff_b1"></span><span id="_CPPv222gf_srf_filter_coeff_b1"></span><span id="gf_srf_filter_coeff_b1__float32_t"></span><span class="target" id="inverter__grid_8h_1a8fd6b6bd2557b96153539bf4c4e9f002"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gf_srf_filter_coeff_b1</span></span></span><a class="headerlink" href="#_CPPv422gf_srf_filter_coeff_b1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="inverter_constraints.html" class="btn btn-neutral float-left" title="inverter_constraints.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="inverter_math.html" class="btn btn-neutral float-right" title="inverter_math.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

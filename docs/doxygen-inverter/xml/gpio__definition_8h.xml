@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="gpio__definition_8h" kind="file" language="C++">
+    <compoundname>gpio_definition.h</compoundname>
+    <includes local="no">stm32g4xx_hal.h</includes>
+    <includedby refid="inverter_8c" local="yes">/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c</includedby>
+    <includedby refid="inverter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/gpio_definition.h</label>
+        <link refid="gpio__definition_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stm32g4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c</label>
+        <link refid="inverter_8c"/>
+      </node>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</label>
+        <link refid="inverter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_readings.c</label>
+        <link refid="inverter__readings_8c"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/gpio_definition.h</label>
+        <link refid="gpio__definition_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structEVERT__HAL__GpioDefinitionTypeDef" prot="public">EVERT_HAL_GpioDefinitionTypeDef</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_HAL_GPIO_DEFINITION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_GPIO_DEFINITION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stm32g4xx_hal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structEVERT__HAL__GpioDefinitionTypeDef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="structEVERT__HAL__GpioDefinitionTypeDef_1ac1f732f67081cf9b338607b65ca1e33f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_TypeDef<sp/>*<ref refid="structEVERT__HAL__GpioDefinitionTypeDef_1ac1f732f67081cf9b338607b65ca1e33f" kindref="member">port</ref>;</highlight></codeline>
+<codeline lineno="9" refid="structEVERT__HAL__GpioDefinitionTypeDef_1abe7f713c695afec4326064c5ce3b3a9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="structEVERT__HAL__GpioDefinitionTypeDef_1abe7f713c695afec4326064c5ce3b3a9f" kindref="member">pin</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}<sp/><ref refid="structEVERT__HAL__GpioDefinitionTypeDef" kindref="compound">EVERT_HAL_GpioDefinitionTypeDef</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_HAL_GPIO_DEFINITION_H_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/gpio_definition.h"/>
+  </compounddef>
+</doxygen>

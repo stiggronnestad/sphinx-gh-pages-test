@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__DEVICE__StateGroupTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_DEVICE_StateGroupTypeDef</compoundname>
+    <includes refid="evert__device_8h" local="no">evert_device.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__DEVICE__StateGroupTypeDef_1a7f002141c5c8655d06ed9ba7301d8f41" prot="public" static="no" mutable="no">
+        <type><ref refid="evert__device__state_8h_1ad6937e27baba5a090a36488b0e69b1b1" kindref="member">EVERT_DEVICE_StateTypeDef</ref></type>
+        <definition>EVERT_DEVICE_StateTypeDef EVERT_DEVICE_StateGroupTypeDef::Internal</definition>
+        <argsstring></argsstring>
+        <name>Internal</name>
+        <qualifiedname>EVERT_DEVICE_StateGroupTypeDef::Internal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/evert_device.h" line="27" column="31" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/evert_device.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__DEVICE__StateGroupTypeDef_1af73c4848f514fee176a25758bc6339b7" prot="public" static="no" mutable="no">
+        <type><ref refid="evert__device__state_8h_1ad6937e27baba5a090a36488b0e69b1b1" kindref="member">EVERT_DEVICE_StateTypeDef</ref></type>
+        <definition>EVERT_DEVICE_StateTypeDef EVERT_DEVICE_StateGroupTypeDef::Propagated</definition>
+        <argsstring></argsstring>
+        <name>Propagated</name>
+        <qualifiedname>EVERT_DEVICE_StateGroupTypeDef::Propagated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/evert_device.h" line="28" column="31" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/evert_device.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__DEVICE__StateGroupTypeDef_1a0de28f44ab5b36bcba709b999ea447f7" prot="public" static="no" mutable="no">
+        <type><ref refid="evert__device__state_8h_1ad6937e27baba5a090a36488b0e69b1b1" kindref="member">EVERT_DEVICE_StateTypeDef</ref></type>
+        <definition>EVERT_DEVICE_StateTypeDef EVERT_DEVICE_StateGroupTypeDef::Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <qualifiedname>EVERT_DEVICE_StateGroupTypeDef::Result</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/evert_device.h" line="29" column="31" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/evert_device.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Device State Group Definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/evert_device.h" line="25" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/evert_device.h" bodystart="26" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structEVERT__DEVICE__StateGroupTypeDef_1a7f002141c5c8655d06ed9ba7301d8f41" prot="public" virt="non-virtual"><scope>EVERT_DEVICE_StateGroupTypeDef</scope><name>Internal</name></member>
+      <member refid="structEVERT__DEVICE__StateGroupTypeDef_1af73c4848f514fee176a25758bc6339b7" prot="public" virt="non-virtual"><scope>EVERT_DEVICE_StateGroupTypeDef</scope><name>Propagated</name></member>
+      <member refid="structEVERT__DEVICE__StateGroupTypeDef_1a0de28f44ab5b36bcba709b999ea447f7" prot="public" virt="non-virtual"><scope>EVERT_DEVICE_StateGroupTypeDef</scope><name>Result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

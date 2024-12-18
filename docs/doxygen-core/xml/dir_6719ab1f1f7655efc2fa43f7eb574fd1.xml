@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_6719ab1f1f7655efc2fa43f7eb574fd1" kind="dir">
+    <compoundname>/mnt/c/dev/evert-firmware-pmu/libs</compoundname>
+    <innerdir refid="dir_6f77a39b07c019ccd7492ea87272f732">/mnt/c/dev/evert-firmware-pmu/libs/core</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/"/>
+  </compounddef>
+</doxygen>

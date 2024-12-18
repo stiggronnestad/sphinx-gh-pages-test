@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="evert__hal__dwt_8h" kind="file" language="C++">
+    <compoundname>evert_hal_dwt.h</compoundname>
+    <includedby refid="evert__hal_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal.h</includedby>
+    <includedby refid="evert__hal__dwt_8c" local="yes">/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.c</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal.c</label>
+        <link refid="evert__hal_8c"/>
+      </node>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal.h</label>
+        <link refid="evert__hal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.c</label>
+        <link refid="evert__hal__dwt_8c"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h</label>
+        <link refid="evert__hal__dwt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="evert__hal__dwt_8h_1a9fe596701a280fcc2f37f999eac6752f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DwtCycleCounterResult</definition>
+        <argsstring></argsstring>
+        <name>DwtCycleCounterResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h" line="4" column="17" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.c" bodystart="4" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h" declline="4" declcolumn="17"/>
+        <referencedby refid="evert__hal__dwt_8c_1a8eae88cbcd9953bc14ec9a6dc4affbf9" compoundref="evert__hal__dwt_8c" startline="20" endline="24">EVERT_HAL_DWT_Stop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="evert__hal__dwt_8h_1a6db7c112b407b7af5fbbcd0f64b84f5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_HAL_DWT_EnableCycleCounter</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_HAL_DWT_EnableCycleCounter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h" line="6" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.c" bodystart="7" bodyend="13" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h" declline="6" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="evert__hal__dwt_8h_1af344ef72842c285ad92b34c60fb0d127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_HAL_DWT_Start</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_HAL_DWT_Start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h" line="7" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.c" bodystart="15" bodyend="18" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h" declline="7" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="evert__hal__dwt_8h_1a8eae88cbcd9953bc14ec9a6dc4affbf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_HAL_DWT_Stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_HAL_DWT_Stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h" line="8" column="10" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.c" bodystart="20" bodyend="24" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h" declline="8" declcolumn="10"/>
+        <references refid="evert__hal__dwt_8c_1a9fe596701a280fcc2f37f999eac6752f" compoundref="evert__hal__dwt_8c" startline="4">DwtCycleCounterResult</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_HAL_DWT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_DWT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="evert__hal__dwt_8h_1a9fe596701a280fcc2f37f999eac6752f" kindref="member">DwtCycleCounterResult</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="evert__hal__dwt_8h_1a6db7c112b407b7af5fbbcd0f64b84f5b" kindref="member">EVERT_HAL_DWT_EnableCycleCounter</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="evert__hal__dwt_8h_1af344ef72842c285ad92b34c60fb0d127" kindref="member">EVERT_HAL_DWT_Start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">uint32_t<sp/><ref refid="evert__hal__dwt_8h_1a8eae88cbcd9953bc14ec9a6dc4affbf9" kindref="member">EVERT_HAL_DWT_Stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_HAL_DWT_H_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal_dwt.h"/>
+  </compounddef>
+</doxygen>

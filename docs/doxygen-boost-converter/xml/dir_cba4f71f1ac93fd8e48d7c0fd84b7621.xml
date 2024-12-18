@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_cba4f71f1ac93fd8e48d7c0fd84b7621" kind="dir">
+    <compoundname>/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src</compoundname>
+    <innerfile refid="evert__device_8c">evert_device.c</innerfile>
+    <innerfile refid="evert__device_8h">evert_device.h</innerfile>
+    <innerfile refid="evert__device__alarm__register1__index_8h">evert_device_alarm_register1_index.h</innerfile>
+    <innerfile refid="evert__device__mode_8h">evert_device_mode.h</innerfile>
+    <innerfile refid="evert__device__state_8h">evert_device_state.h</innerfile>
+    <innerfile refid="evert__device__version__info_8h">evert_device_version_info.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-device/src/"/>
+  </compounddef>
+</doxygen>

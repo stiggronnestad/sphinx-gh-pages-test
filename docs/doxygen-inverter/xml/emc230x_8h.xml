@@ -1,0 +1,908 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="emc230x_8h" kind="file" language="C++">
+    <compoundname>emc230x.h</compoundname>
+    <includes refid="__conf__evert__hal_8h" local="yes">_conf_evert_hal.h</includes>
+    <includes local="no">stm32g4xx_hal.h</includes>
+    <includedby refid="emc230x_8c" local="yes">/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>_conf_evert_hal.h</label>
+        <link refid="__conf__evert__hal_8h"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h</label>
+        <link refid="emc230x_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stm32g4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c</label>
+        <link refid="emc230x_8c"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h</label>
+        <link refid="emc230x_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structEVERT__EMC230X__DataTypeDef" prot="public">EVERT_EMC230X_DataTypeDef</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="emc230x_8h_1a427b3cd01a3e46fa5ff87ed769a27991" prot="public" static="no">
+        <name>EMC230X_ADDRESS</name>
+        <initializer>(0x002C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="14" column="10" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a137c6ce553e024ac0edad40a2c373c42" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_500</name>
+        <initializer>(0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="27" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a9c39b3094b4abe5b3d15cf95c52b2678" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_1000</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="28" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a5a0d96ac53defa8699d8b40b7a52e640" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_2000</name>
+        <initializer>(0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="29" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1accb3ca63f9a859f7411112462d34d02f" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_4000</name>
+        <initializer>(0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="30" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a5cebb8d071a80591c22b9193c724ecb5" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_MASK</name>
+        <initializer>(0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="31" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a87cacbc415f634b74bd801486942ef52" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_500_M</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="33" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a2ad83540b7b30156949d9a2f5acee48f" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_1000_M</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="34" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1adca8f88b10fb938a24b3654031a0e5a2" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_2000_M</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="35" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1ad7d158e44eeed03c3d26e502a9fd0c4e" prot="public" static="no">
+        <name>EMC2303_REG_CONFIG_RANGE_4000_M</name>
+        <initializer>(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="36" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1ad96af36f6e939ef9459322bc91644501" prot="public" static="no">
+        <name>EMC230X_REG_FAN1_BASE</name>
+        <initializer>(0x30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="39" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a8cd43e8fb92834bac4c72c7d1f941f98" prot="public" static="no">
+        <name>EMC230X_REG_FAN2_BASE</name>
+        <initializer>(0x40)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="40" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1aa8675eea33374bec9808c3ab0ea0edc3" prot="public" static="no">
+        <name>EMC230X_REG_FAN3_BASE</name>
+        <initializer>(0x50)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="41" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a324d8f3668b63541bf4faf9827314eda" prot="public" static="no">
+        <name>EMC230X_GET_REGISTER</name>
+        <param><defname>base</defname></param>
+        <param><defname>offset</defname></param>
+        <initializer>(base + offset)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="46" column="10" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a084674bc1471cf03f3ec2229256bd1f6" prot="public" static="no">
+        <name>EMC230X_REG_FANX_SETTING</name>
+        <param><defname>base</defname></param>
+        <initializer><ref refid="emc230x_8h_1a324d8f3668b63541bf4faf9827314eda" kindref="member">EMC230X_GET_REGISTER</ref>(base, 0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="48" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1abe840aa29055c58dd361740e3dc477e0" prot="public" static="no">
+        <name>EMC230X_REG_FANX_CONFIGURATION1</name>
+        <param><defname>base</defname></param>
+        <initializer><ref refid="emc230x_8h_1a324d8f3668b63541bf4faf9827314eda" kindref="member">EMC230X_GET_REGISTER</ref>(base, 0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="49" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a1ccad15ecfbd184cbcb5aa15bb72d953" prot="public" static="no">
+        <name>EMC230X_REG_FANX_CONFIGURATION2</name>
+        <param><defname>base</defname></param>
+        <initializer><ref refid="emc230x_8h_1a324d8f3668b63541bf4faf9827314eda" kindref="member">EMC230X_GET_REGISTER</ref>(base, 0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="50" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1ab6e5c726a74f4592796d655de4cccec1" prot="public" static="no">
+        <name>EMC230X_REG_FANX_TACH_HIGH</name>
+        <param><defname>base</defname></param>
+        <initializer><ref refid="emc230x_8h_1a324d8f3668b63541bf4faf9827314eda" kindref="member">EMC230X_GET_REGISTER</ref>(<ref refid="emc230x_8h_1a084674bc1471cf03f3ec2229256bd1f6" kindref="member">EMC230X_REG_FANX_SETTING</ref>(base), 0x0E)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="51" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1ae6f6d56ef7f68e995aaf43d3896129e8" prot="public" static="no">
+        <name>EMC230X_REG_FANX_TACH_LOW</name>
+        <param><defname>base</defname></param>
+        <initializer><ref refid="emc230x_8h_1a324d8f3668b63541bf4faf9827314eda" kindref="member">EMC230X_GET_REGISTER</ref>(<ref refid="emc230x_8h_1a084674bc1471cf03f3ec2229256bd1f6" kindref="member">EMC230X_REG_FANX_SETTING</ref>(base), 0x0F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="52" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a5a19587d2ec7682eee964f188eb8c07d" prot="public" static="no">
+        <name>EMC230X_REG_FAN1_SETTING</name>
+        <initializer><ref refid="emc230x_8h_1a084674bc1471cf03f3ec2229256bd1f6" kindref="member">EMC230X_REG_FANX_SETTING</ref>(<ref refid="emc230x_8h_1ad96af36f6e939ef9459322bc91644501" kindref="member">EMC230X_REG_FAN1_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="55" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a0045a6757d371a77686db3f367c555da" prot="public" static="no">
+        <name>EMC230X_REG_FAN1_CONFIGURATION1</name>
+        <initializer><ref refid="emc230x_8h_1abe840aa29055c58dd361740e3dc477e0" kindref="member">EMC230X_REG_FANX_CONFIGURATION1</ref>(<ref refid="emc230x_8h_1ad96af36f6e939ef9459322bc91644501" kindref="member">EMC230X_REG_FAN1_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="56" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a4ad1252ee864fd70ec6a490dd6234fa9" prot="public" static="no">
+        <name>EMC230X_REG_FAN1_CONFIGURATION2</name>
+        <initializer><ref refid="emc230x_8h_1a1ccad15ecfbd184cbcb5aa15bb72d953" kindref="member">EMC230X_REG_FANX_CONFIGURATION2</ref>(<ref refid="emc230x_8h_1ad96af36f6e939ef9459322bc91644501" kindref="member">EMC230X_REG_FAN1_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="57" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a3382646f95b35f36f8acf9bc0a866dba" prot="public" static="no">
+        <name>EMC230X_REG_FAN1_TACH_HIGH</name>
+        <initializer><ref refid="emc230x_8h_1ab6e5c726a74f4592796d655de4cccec1" kindref="member">EMC230X_REG_FANX_TACH_HIGH</ref>(<ref refid="emc230x_8h_1ad96af36f6e939ef9459322bc91644501" kindref="member">EMC230X_REG_FAN1_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="58" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a4c9a08d62c22dde976a4141b66a48c64" prot="public" static="no">
+        <name>EMC230X_REG_FAN1_TACH_LOW</name>
+        <initializer><ref refid="emc230x_8h_1ae6f6d56ef7f68e995aaf43d3896129e8" kindref="member">EMC230X_REG_FANX_TACH_LOW</ref>(<ref refid="emc230x_8h_1ad96af36f6e939ef9459322bc91644501" kindref="member">EMC230X_REG_FAN1_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="59" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1ab3c3e13e24307f68c6196f592845f824" prot="public" static="no">
+        <name>EMC230X_REG_FAN2_SETTING</name>
+        <initializer><ref refid="emc230x_8h_1a084674bc1471cf03f3ec2229256bd1f6" kindref="member">EMC230X_REG_FANX_SETTING</ref>(<ref refid="emc230x_8h_1a8cd43e8fb92834bac4c72c7d1f941f98" kindref="member">EMC230X_REG_FAN2_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="62" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1ad656879827ea6eeb23d84ab69bdf38fa" prot="public" static="no">
+        <name>EMC230X_REG_FAN2_CONFIGURATION1</name>
+        <initializer><ref refid="emc230x_8h_1abe840aa29055c58dd361740e3dc477e0" kindref="member">EMC230X_REG_FANX_CONFIGURATION1</ref>(<ref refid="emc230x_8h_1a8cd43e8fb92834bac4c72c7d1f941f98" kindref="member">EMC230X_REG_FAN2_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="63" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a1a06b9388c9e7e59fb1abdd18a3d7ff6" prot="public" static="no">
+        <name>EMC230X_REG_FAN2_CONFIGURATION2</name>
+        <initializer><ref refid="emc230x_8h_1a1ccad15ecfbd184cbcb5aa15bb72d953" kindref="member">EMC230X_REG_FANX_CONFIGURATION2</ref>(<ref refid="emc230x_8h_1a8cd43e8fb92834bac4c72c7d1f941f98" kindref="member">EMC230X_REG_FAN2_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="64" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1ad7e4dda631438eb673f8901245cd1b97" prot="public" static="no">
+        <name>EMC230X_REG_FAN2_TACH_HIGH</name>
+        <initializer><ref refid="emc230x_8h_1ab6e5c726a74f4592796d655de4cccec1" kindref="member">EMC230X_REG_FANX_TACH_HIGH</ref>(<ref refid="emc230x_8h_1a8cd43e8fb92834bac4c72c7d1f941f98" kindref="member">EMC230X_REG_FAN2_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="65" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a53008c193ae65dd11efd8a214cf89c9b" prot="public" static="no">
+        <name>EMC230X_REG_FAN2_TACH_LOW</name>
+        <initializer><ref refid="emc230x_8h_1ae6f6d56ef7f68e995aaf43d3896129e8" kindref="member">EMC230X_REG_FANX_TACH_LOW</ref>(<ref refid="emc230x_8h_1a8cd43e8fb92834bac4c72c7d1f941f98" kindref="member">EMC230X_REG_FAN2_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="66" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1abd3263c56b22f530ef885d37d5708909" prot="public" static="no">
+        <name>EMC230X_REG_FAN3_SETTING</name>
+        <initializer><ref refid="emc230x_8h_1a084674bc1471cf03f3ec2229256bd1f6" kindref="member">EMC230X_REG_FANX_SETTING</ref>(<ref refid="emc230x_8h_1aa8675eea33374bec9808c3ab0ea0edc3" kindref="member">EMC230X_REG_FAN3_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="69" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1ac2054cd8dcba4ce7207dd9066f757507" prot="public" static="no">
+        <name>EMC230X_REG_FAN3_CONFIGURATION1</name>
+        <initializer><ref refid="emc230x_8h_1abe840aa29055c58dd361740e3dc477e0" kindref="member">EMC230X_REG_FANX_CONFIGURATION1</ref>(<ref refid="emc230x_8h_1aa8675eea33374bec9808c3ab0ea0edc3" kindref="member">EMC230X_REG_FAN3_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="70" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1abe21aff61f8327c5668eb090a7138fb5" prot="public" static="no">
+        <name>EMC230X_REG_FAN3_CONFIGURATION2</name>
+        <initializer><ref refid="emc230x_8h_1a1ccad15ecfbd184cbcb5aa15bb72d953" kindref="member">EMC230X_REG_FANX_CONFIGURATION2</ref>(<ref refid="emc230x_8h_1aa8675eea33374bec9808c3ab0ea0edc3" kindref="member">EMC230X_REG_FAN3_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="71" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a0f21b2b1458f5e26811a303eabce523d" prot="public" static="no">
+        <name>EMC230X_REG_FAN3_TACH_HIGH</name>
+        <initializer><ref refid="emc230x_8h_1ab6e5c726a74f4592796d655de4cccec1" kindref="member">EMC230X_REG_FANX_TACH_HIGH</ref>(<ref refid="emc230x_8h_1aa8675eea33374bec9808c3ab0ea0edc3" kindref="member">EMC230X_REG_FAN3_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="72" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="emc230x_8h_1a6c397d603182ef6cc5ca0a4df7679438" prot="public" static="no">
+        <name>EMC230X_REG_FAN3_TACH_LOW</name>
+        <initializer><ref refid="emc230x_8h_1ae6f6d56ef7f68e995aaf43d3896129e8" kindref="member">EMC230X_REG_FANX_TACH_LOW</ref>(<ref refid="emc230x_8h_1aa8675eea33374bec9808c3ab0ea0edc3" kindref="member">EMC230X_REG_FAN3_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="73" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="emc230x_8h_1a2c6d47b762ab0f474855172823500cdf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>EVERT_EMC230X_Fan</name>
+        <enumvalue id="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfaf788fb7390696ce69a938f9d11e299c9" prot="public">
+          <name>EVERT_EMC230X_FAN1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfadba7e88f013ed64a55a700136456eea4" prot="public">
+          <name>EVERT_EMC230X_FAN2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfabcf997069f5e090b97792ed743335d84" prot="public">
+          <name>EVERT_EMC230X_FAN3</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="93" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="94" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="enum" id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>EVERT_EMC230X_RxAction</name>
+        <enumvalue id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a9f80cd25c3a10bedaa9d545f9e0f9876" prot="public">
+          <name>EVERT_EMC230X_RX_ACTION_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a97a938ffc3cccf75015703617e16067c" prot="public">
+          <name>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_HIGH</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a2b7fb049e806e97de1192019c537eb74" prot="public">
+          <name>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_LOW</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a2f351c60476ed1e84a4c2257ad620a47" prot="public">
+          <name>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_HIGH</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2ae68ee2f9f8c8e97f2a59c58d92988f63" prot="public">
+          <name>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_LOW</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a09aeeeaf90a3fb2b4b8e6714ad2db28b" prot="public">
+          <name>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_HIGH</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a8f6daef84e35ccc7e12c42cba5dc91d1" prot="public">
+          <name>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_LOW</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="105" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="106" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="enum" id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>EVERT_EMC230X_TxAction</name>
+        <enumvalue id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a4ad295087a1447fcd6e40c6b193bd9ad" prot="public">
+          <name>EVERT_EMC230X_TX_ACTION_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a0ab9b4c9395d78c8709afcd1b091b520" prot="public">
+          <name>EVERT_EMC230X_TX_ACTION_SET_SINGLE_FAN_SPEED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a163e1c51bce71984f1d9a9d2af9d2baf" prot="public">
+          <name>EVERT_EMC230X_TX_ACTION_SET_ALL_FAN1_SPEED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0ac5e40740f8f420591e9dbf83f085eb3b" prot="public">
+          <name>EVERT_EMC230X_TX_ACTION_SET_ALL_FAN2_SPEED</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a17ffa3d33bed08d5e1bd215110f2f941" prot="public">
+          <name>EVERT_EMC230X_TX_ACTION_SET_ALL_FAN3_SPEED</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="123" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" bodystart="124" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="emc230x_8h_1af7b2c26e44dadaaa798a5c3d82914ba7" prot="public" static="no" mutable="no">
+        <type>I2C_HandleTypeDef</type>
+        <definition>I2C_HandleTypeDef hi2c1</definition>
+        <argsstring></argsstring>
+        <name>hi2c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="146" column="26" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="146" declcolumn="26"/>
+        <referencedby refid="emc230x_8c_1a021390b504955b720954bf1842d565b9" compoundref="emc230x_8c" startline="162" endline="171">EVERT_EMC230X_ReadTachs_IT</referencedby>
+        <referencedby refid="emc230x_8c_1ac90cd98e4b1b042cf5e877a4f765b612" compoundref="emc230x_8c" startline="38" endline="56">EVERT_EMC230X_SetAllFanSpeeds_IT</referencedby>
+        <referencedby refid="emc230x_8c_1a0d00359d4ee8e02b0e952898e3d6da7c" compoundref="emc230x_8c" startline="58" endline="110">EVERT_EMC230X_SetFanSpeed_IT</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="emc230x_8h_1a9182993330258ecc19a1ed0f6826976b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_EMC230X_Init</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_EMC230X_Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="148" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c" bodystart="29" bodyend="36" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="148" declcolumn="6"/>
+        <references refid="emc230x_8h_1a9c39b3094b4abe5b3d15cf95c52b2678" compoundref="emc230x_8h" startline="28">EMC2303_REG_CONFIG_RANGE_1000</references>
+        <references refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a9f80cd25c3a10bedaa9d545f9e0f9876" compoundref="emc230x_8h" startline="107">EVERT_EMC230X_RX_ACTION_NONE</references>
+        <references refid="emc230x_8c_1ad7b26d388a8c44ee490c77adb2c68ed0" compoundref="emc230x_8c" startline="112" endline="150">EVERT_EMC230X_SetRangeRegister_IT</references>
+        <references refid="emc230x_8c_1a431d881f9de2971c30ddf00f831584a8" compoundref="emc230x_8c" startline="152" endline="155">EVERT_EMC230X_SetRxAction</references>
+        <references refid="emc230x_8c_1a1552e51db4dd123bfa789114c2c027ad" compoundref="emc230x_8c" startline="157" endline="160">EVERT_EMC230X_SetTxAction</references>
+        <references refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a4ad295087a1447fcd6e40c6b193bd9ad" compoundref="emc230x_8h" startline="125">EVERT_EMC230X_TX_ACTION_NONE</references>
+      </memberdef>
+      <memberdef kind="function" id="emc230x_8h_1ac90cd98e4b1b042cf5e877a4f765b612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_EMC230X_SetAllFanSpeeds_IT</definition>
+        <argsstring>(uint8_t speed)</argsstring>
+        <name>EVERT_EMC230X_SetAllFanSpeeds_IT</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="149" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c" bodystart="38" bodyend="56" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="149" declcolumn="6"/>
+        <references refid="emc230x_8h_1af7b2c26e44dadaaa798a5c3d82914ba7">hi2c1</references>
+      </memberdef>
+      <memberdef kind="function" id="emc230x_8h_1a0d00359d4ee8e02b0e952898e3d6da7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_EMC230X_SetFanSpeed_IT</definition>
+        <argsstring>(const EVERT_EMC230X_Fan fan, uint8_t speed)</argsstring>
+        <name>EVERT_EMC230X_SetFanSpeed_IT</name>
+        <param>
+          <type>const <ref refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdf" kindref="member">EVERT_EMC230X_Fan</ref></type>
+          <declname>fan</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="150" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c" bodystart="58" bodyend="110" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="150" declcolumn="6"/>
+        <references refid="emc230x_8h_1a5a19587d2ec7682eee964f188eb8c07d" compoundref="emc230x_8h" startline="55">EMC230X_REG_FAN1_SETTING</references>
+        <references refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfaf788fb7390696ce69a938f9d11e299c9" compoundref="emc230x_8h" startline="95">EVERT_EMC230X_FAN1</references>
+        <references refid="emc230x_8h_1af7b2c26e44dadaaa798a5c3d82914ba7">hi2c1</references>
+      </memberdef>
+      <memberdef kind="function" id="emc230x_8h_1ad7b26d388a8c44ee490c77adb2c68ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_EMC230X_SetRangeRegister_IT</definition>
+        <argsstring>(const uint8_t range)</argsstring>
+        <name>EVERT_EMC230X_SetRangeRegister_IT</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="151" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c" bodystart="112" bodyend="150" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="151" declcolumn="6"/>
+        <referencedby refid="emc230x_8c_1a9182993330258ecc19a1ed0f6826976b" compoundref="emc230x_8c" startline="29" endline="36">EVERT_EMC230X_Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="emc230x_8h_1a431d881f9de2971c30ddf00f831584a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_EMC230X_SetRxAction</definition>
+        <argsstring>(const EVERT_EMC230X_RxAction action)</argsstring>
+        <name>EVERT_EMC230X_SetRxAction</name>
+        <param>
+          <type>const <ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2" kindref="member">EVERT_EMC230X_RxAction</ref></type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="152" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c" bodystart="152" bodyend="155" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="152" declcolumn="6"/>
+        <referencedby refid="emc230x_8c_1a9182993330258ecc19a1ed0f6826976b" compoundref="emc230x_8c" startline="29" endline="36">EVERT_EMC230X_Init</referencedby>
+        <referencedby refid="emc230x_8c_1a021390b504955b720954bf1842d565b9" compoundref="emc230x_8c" startline="162" endline="171">EVERT_EMC230X_ReadTachs_IT</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="emc230x_8h_1a1552e51db4dd123bfa789114c2c027ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_EMC230X_SetTxAction</definition>
+        <argsstring>(const EVERT_EMC230X_TxAction action)</argsstring>
+        <name>EVERT_EMC230X_SetTxAction</name>
+        <param>
+          <type>const <ref refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0" kindref="member">EVERT_EMC230X_TxAction</ref></type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="153" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c" bodystart="157" bodyend="160" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="153" declcolumn="6"/>
+        <referencedby refid="emc230x_8c_1a9182993330258ecc19a1ed0f6826976b" compoundref="emc230x_8c" startline="29" endline="36">EVERT_EMC230X_Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="emc230x_8h_1a021390b504955b720954bf1842d565b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_EMC230X_ReadTachs_IT</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_EMC230X_ReadTachs_IT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="154" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c" bodystart="162" bodyend="171" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="154" declcolumn="6"/>
+        <references refid="emc230x_8h_1a427b3cd01a3e46fa5ff87ed769a27991" compoundref="emc230x_8h" startline="14">EMC230X_ADDRESS</references>
+        <references refid="emc230x_8h_1a3382646f95b35f36f8acf9bc0a866dba" compoundref="emc230x_8h" startline="58">EMC230X_REG_FAN1_TACH_HIGH</references>
+        <references refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a97a938ffc3cccf75015703617e16067c" compoundref="emc230x_8h" startline="108">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_HIGH</references>
+        <references refid="emc230x_8c_1a431d881f9de2971c30ddf00f831584a8" compoundref="emc230x_8c" startline="152" endline="155">EVERT_EMC230X_SetRxAction</references>
+        <references refid="emc230x_8h_1af7b2c26e44dadaaa798a5c3d82914ba7">hi2c1</references>
+      </memberdef>
+      <memberdef kind="function" id="emc230x_8h_1a02a4aa135e8fa80bb18c0e5bf54c29e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_EMC230X_OnErrorReceived</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_EMC230X_OnErrorReceived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" line="155" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.c" bodystart="173" bodyend="175" declfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h" declline="155" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EMC2303/5<sp/>Fan<sp/>Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>https://www.microchip.com/en-us/product/EMC2303#document-table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EVERT_CORE_EMC230X_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CORE_EMC230X_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="__conf__evert__hal_8h" kindref="compound">_conf_evert_hal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EVERT_HAL_CONF_EMC230X_ADDRESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_ADDRESS<sp/>EVERT_HAL_CONF_EMC230X_ADDRESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="emc230x_8h_1a427b3cd01a3e46fa5ff87ed769a27991" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_ADDRESS<sp/>(0x002C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EVERT_HAL_CONF_EMC230x_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>EVERT_HAL_CONF_EMC230x_TYPE<sp/>==<sp/>2303</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_TYPE_2303</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>EVERT_HAL_CONF_EMC230x_TYPE<sp/>==<sp/>2305</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_TYPE_2305</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_TYPE_2303</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="emc230x_8h_1a137c6ce553e024ac0edad40a2c373c42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_500<sp/>(0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="emc230x_8h_1a9c39b3094b4abe5b3d15cf95c52b2678" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_1000<sp/>(0x01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="emc230x_8h_1a5a0d96ac53defa8699d8b40b7a52e640" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_2000<sp/>(0x02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="emc230x_8h_1accb3ca63f9a859f7411112462d34d02f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_4000<sp/>(0x03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="emc230x_8h_1a5cebb8d071a80591c22b9193c724ecb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_MASK<sp/>(0x03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="emc230x_8h_1a87cacbc415f634b74bd801486942ef52" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_500_M<sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="emc230x_8h_1a2ad83540b7b30156949d9a2f5acee48f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_1000_M<sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="emc230x_8h_1adca8f88b10fb938a24b3654031a0e5a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_2000_M<sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="emc230x_8h_1ad7d158e44eeed03c3d26e502a9fd0c4e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC2303_REG_CONFIG_RANGE_4000_M<sp/>(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Base<sp/>addresses<sp/>for<sp/>each<sp/>fan</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="emc230x_8h_1ad96af36f6e939ef9459322bc91644501" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN1_BASE<sp/>(0x30)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="emc230x_8h_1a8cd43e8fb92834bac4c72c7d1f941f98" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN2_BASE<sp/>(0x40)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="emc230x_8h_1aa8675eea33374bec9808c3ab0ea0edc3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN3_BASE<sp/>(0x50)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EMC230X_TYPE_2305</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN4_BASE<sp/>(0x60)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN5_BASE<sp/>(0x70)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="emc230x_8h_1a324d8f3668b63541bf4faf9827314eda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_GET_REGISTER(base,<sp/>offset)<sp/>(base<sp/>+<sp/>offset)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="emc230x_8h_1a084674bc1471cf03f3ec2229256bd1f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FANX_SETTING(base)<sp/>EMC230X_GET_REGISTER(base,<sp/>0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="emc230x_8h_1abe840aa29055c58dd361740e3dc477e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FANX_CONFIGURATION1(base)<sp/>EMC230X_GET_REGISTER(base,<sp/>0x02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="emc230x_8h_1a1ccad15ecfbd184cbcb5aa15bb72d953" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FANX_CONFIGURATION2(base)<sp/>EMC230X_GET_REGISTER(base,<sp/>0x03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="emc230x_8h_1ab6e5c726a74f4592796d655de4cccec1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FANX_TACH_HIGH(base)<sp/>EMC230X_GET_REGISTER(EMC230X_REG_FANX_SETTING(base),<sp/>0x0E)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="emc230x_8h_1ae6f6d56ef7f68e995aaf43d3896129e8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FANX_TACH_LOW(base)<sp/>EMC230X_GET_REGISTER(EMC230X_REG_FANX_SETTING(base),<sp/>0x0F)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fan<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="emc230x_8h_1a5a19587d2ec7682eee964f188eb8c07d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN1_SETTING<sp/>EMC230X_REG_FANX_SETTING(EMC230X_REG_FAN1_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="emc230x_8h_1a0045a6757d371a77686db3f367c555da" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN1_CONFIGURATION1<sp/>EMC230X_REG_FANX_CONFIGURATION1(EMC230X_REG_FAN1_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="emc230x_8h_1a4ad1252ee864fd70ec6a490dd6234fa9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN1_CONFIGURATION2<sp/>EMC230X_REG_FANX_CONFIGURATION2(EMC230X_REG_FAN1_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="emc230x_8h_1a3382646f95b35f36f8acf9bc0a866dba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN1_TACH_HIGH<sp/>EMC230X_REG_FANX_TACH_HIGH(EMC230X_REG_FAN1_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="emc230x_8h_1a4c9a08d62c22dde976a4141b66a48c64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN1_TACH_LOW<sp/>EMC230X_REG_FANX_TACH_LOW(EMC230X_REG_FAN1_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fan<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="emc230x_8h_1ab3c3e13e24307f68c6196f592845f824" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN2_SETTING<sp/>EMC230X_REG_FANX_SETTING(EMC230X_REG_FAN2_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="emc230x_8h_1ad656879827ea6eeb23d84ab69bdf38fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN2_CONFIGURATION1<sp/>EMC230X_REG_FANX_CONFIGURATION1(EMC230X_REG_FAN2_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="emc230x_8h_1a1a06b9388c9e7e59fb1abdd18a3d7ff6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN2_CONFIGURATION2<sp/>EMC230X_REG_FANX_CONFIGURATION2(EMC230X_REG_FAN2_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="emc230x_8h_1ad7e4dda631438eb673f8901245cd1b97" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN2_TACH_HIGH<sp/>EMC230X_REG_FANX_TACH_HIGH(EMC230X_REG_FAN2_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="emc230x_8h_1a53008c193ae65dd11efd8a214cf89c9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN2_TACH_LOW<sp/>EMC230X_REG_FANX_TACH_LOW(EMC230X_REG_FAN2_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fan<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="emc230x_8h_1abd3263c56b22f530ef885d37d5708909" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN3_SETTING<sp/>EMC230X_REG_FANX_SETTING(EMC230X_REG_FAN3_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="emc230x_8h_1ac2054cd8dcba4ce7207dd9066f757507" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN3_CONFIGURATION1<sp/>EMC230X_REG_FANX_CONFIGURATION1(EMC230X_REG_FAN3_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="emc230x_8h_1abe21aff61f8327c5668eb090a7138fb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN3_CONFIGURATION2<sp/>EMC230X_REG_FANX_CONFIGURATION2(EMC230X_REG_FAN3_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="emc230x_8h_1a0f21b2b1458f5e26811a303eabce523d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN3_TACH_HIGH<sp/>EMC230X_REG_FANX_TACH_HIGH(EMC230X_REG_FAN3_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="emc230x_8h_1a6c397d603182ef6cc5ca0a4df7679438" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN3_TACH_LOW<sp/>EMC230X_REG_FANX_TACH_LOW(EMC230X_REG_FAN3_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EMC230X_TYPE_2305</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fan<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN4_SETTING<sp/>EMC230X_REG_FANX_SETTING(EMC230X_REG_FAN4_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN4_CONFIGURATION1<sp/>EMC230X_REG_FANX_CONFIGURATION1(EMC230X_REG_FAN4_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN4_CONFIGURATION2<sp/>EMC230X_REG_FANX_CONFIGURATION2(EMC230X_REG_FAN4_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN4_TACH_HIGH<sp/>EMC230X_REG_FANX_TACH_HIGH(EMC230X_REG_FAN4_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN4_TACH_LOW<sp/>EMC230X_REG_FANX_TACH_LOW(EMC230X_REG_FAN4_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fan<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN5_SETTING<sp/>EMC230X_REG_FANX_SETTING(EMC230X_REG_FAN5_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN5_CONFIGURATION1<sp/>EMC230X_REG_FANX_CONFIGURATION1(EMC230X_REG_FAN5_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN5_CONFIGURATION2<sp/>EMC230X_REG_FANX_CONFIGURATION2(EMC230X_REG_FAN5_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN5_TACH_HIGH<sp/>EMC230X_REG_FANX_TACH_HIGH(EMC230X_REG_FAN5_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC230X_REG_FAN5_TACH_LOW<sp/>EMC230X_REG_FANX_TACH_LOW(EMC230X_REG_FAN5_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stm32g4xx_hal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95" refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfaf788fb7390696ce69a938f9d11e299c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfaf788fb7390696ce69a938f9d11e299c9" kindref="member">EVERT_EMC230X_FAN1</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="96" refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfadba7e88f013ed64a55a700136456eea4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfadba7e88f013ed64a55a700136456eea4" kindref="member">EVERT_EMC230X_FAN2</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfabcf997069f5e090b97792ed743335d84" kindref="member">EVERT_EMC230X_FAN3</ref><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EMC230X_TYPE_2305</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_EMC230X_FAN4<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_EMC230X_FAN5<sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdfabcf997069f5e090b97792ed743335d84" refkind="member"><highlight class="normal">}<sp/><ref refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdf" kindref="member">EVERT_EMC230X_Fan</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107" refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a9f80cd25c3a10bedaa9d545f9e0f9876" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a9f80cd25c3a10bedaa9d545f9e0f9876" kindref="member">EVERT_EMC230X_RX_ACTION_NONE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="108" refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a97a938ffc3cccf75015703617e16067c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a97a938ffc3cccf75015703617e16067c" kindref="member">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_HIGH</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="109" refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a2b7fb049e806e97de1192019c537eb74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a2b7fb049e806e97de1192019c537eb74" kindref="member">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN1_LOW</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="110" refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a2f351c60476ed1e84a4c2257ad620a47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a2f351c60476ed1e84a4c2257ad620a47" kindref="member">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_HIGH</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="111" refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2ae68ee2f9f8c8e97f2a59c58d92988f63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2ae68ee2f9f8c8e97f2a59c58d92988f63" kindref="member">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN2_LOW</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="112" refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a09aeeeaf90a3fb2b4b8e6714ad2db28b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a09aeeeaf90a3fb2b4b8e6714ad2db28b" kindref="member">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_HIGH</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a8f6daef84e35ccc7e12c42cba5dc91d1" kindref="member">EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN3_LOW</ref><sp/>=<sp/>6</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EMC230X_TYPE_2305</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN4_HIGH<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN4_LOW<sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN5_HIGH<sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_EMC230X_RX_ACTION_READ_TACHS_FAN5_LOW<sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2a8f6daef84e35ccc7e12c42cba5dc91d1" refkind="member"><highlight class="normal">}<sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2" kindref="member">EVERT_EMC230X_RxAction</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125" refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a4ad295087a1447fcd6e40c6b193bd9ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a4ad295087a1447fcd6e40c6b193bd9ad" kindref="member">EVERT_EMC230X_TX_ACTION_NONE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="126" refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a0ab9b4c9395d78c8709afcd1b091b520" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a0ab9b4c9395d78c8709afcd1b091b520" kindref="member">EVERT_EMC230X_TX_ACTION_SET_SINGLE_FAN_SPEED</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="127" refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a163e1c51bce71984f1d9a9d2af9d2baf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a163e1c51bce71984f1d9a9d2af9d2baf" kindref="member">EVERT_EMC230X_TX_ACTION_SET_ALL_FAN1_SPEED</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="128" refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0ac5e40740f8f420591e9dbf83f085eb3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0ac5e40740f8f420591e9dbf83f085eb3b" kindref="member">EVERT_EMC230X_TX_ACTION_SET_ALL_FAN2_SPEED</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a17ffa3d33bed08d5e1bd215110f2f941" kindref="member">EVERT_EMC230X_TX_ACTION_SET_ALL_FAN3_SPEED</ref><sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>EMC230X_TYPE_2305</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_EMC230X_TX_ACTION_SET_ALL_FAN4_SPEED<sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_EMC230X_TX_ACTION_SET_ALL_FAN5_SPEED<sp/>=<sp/>6</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0a17ffa3d33bed08d5e1bd215110f2f941" refkind="member"><highlight class="normal">}<sp/><ref refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0" kindref="member">EVERT_EMC230X_TxAction</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="structEVERT__EMC230X__DataTypeDef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139" refid="structEVERT__EMC230X__DataTypeDef_1a548c86f9a924f6fcbcdf92a6bdc9b3f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structEVERT__EMC230X__DataTypeDef_1a548c86f9a924f6fcbcdf92a6bdc9b3f6" kindref="member">tach_high</ref>;</highlight></codeline>
+<codeline lineno="140" refid="structEVERT__EMC230X__DataTypeDef_1a23971cec8d86a83f8886492ecffbbff0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structEVERT__EMC230X__DataTypeDef_1a23971cec8d86a83f8886492ecffbbff0" kindref="member">tach_low</ref>;</highlight></codeline>
+<codeline lineno="141" refid="structEVERT__EMC230X__DataTypeDef_1ac817189d6726d33cbf4eabacce1bdda8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEVERT__EMC230X__DataTypeDef_1ac817189d6726d33cbf4eabacce1bdda8" kindref="member">tach</ref>;</highlight></codeline>
+<codeline lineno="142" refid="structEVERT__EMC230X__DataTypeDef_1a275e3b635aef5e116c1b064a0737581c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structEVERT__EMC230X__DataTypeDef_1a275e3b635aef5e116c1b064a0737581c" kindref="member">rpm</ref>;</highlight></codeline>
+<codeline lineno="143" refid="structEVERT__EMC230X__DataTypeDef_1a5e3559973deb649270f3aa6b64cd6617" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structEVERT__EMC230X__DataTypeDef_1a5e3559973deb649270f3aa6b64cd6617" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}<sp/><ref refid="structEVERT__EMC230X__DataTypeDef" kindref="compound">EVERT_EMC230X_DataTypeDef</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>I2C_HandleTypeDef<sp/><ref refid="emc230x_8h_1af7b2c26e44dadaaa798a5c3d82914ba7" kindref="member">hi2c1</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1a9182993330258ecc19a1ed0f6826976b" kindref="member">EVERT_EMC230X_Init</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1ac90cd98e4b1b042cf5e877a4f765b612" kindref="member">EVERT_EMC230X_SetAllFanSpeeds_IT</ref>(uint8_t<sp/>speed);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1a0d00359d4ee8e02b0e952898e3d6da7c" kindref="member">EVERT_EMC230X_SetFanSpeed_IT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1a2c6d47b762ab0f474855172823500cdf" kindref="member">EVERT_EMC230X_Fan</ref><sp/>fan,<sp/>uint8_t<sp/>speed);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1ad7b26d388a8c44ee490c77adb2c68ed0" kindref="member">EVERT_EMC230X_SetRangeRegister_IT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>range);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1a431d881f9de2971c30ddf00f831584a8" kindref="member">EVERT_EMC230X_SetRxAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1a362dced8fa627f121736da69de05b1d2" kindref="member">EVERT_EMC230X_RxAction</ref><sp/>action);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1a1552e51db4dd123bfa789114c2c027ad" kindref="member">EVERT_EMC230X_SetTxAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1ab3d18809feae84b425778d6fa05615a0" kindref="member">EVERT_EMC230X_TxAction</ref><sp/>action);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1a021390b504955b720954bf1842d565b9" kindref="member">EVERT_EMC230X_ReadTachs_IT</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="emc230x_8h_1a02a4aa135e8fa80bb18c0e5bf54c29e8" kindref="member">EVERT_EMC230X_OnErrorReceived</ref>();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_CORE_EMC230X_H_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/emc230x.h"/>
+  </compounddef>
+</doxygen>

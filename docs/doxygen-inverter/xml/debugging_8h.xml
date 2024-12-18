@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="debugging_8h" kind="file" language="C++">
+    <compoundname>debugging.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="__conf__evert__hal_8h" local="yes">_conf_evert_hal.h</includes>
+    <includedby refid="debugging_8c" local="yes">/mnt/c/dev/evert-firmware-pmu/libs/core/src/debugging.c</includedby>
+    <includedby refid="evert__hal_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>_conf_evert_hal.h</label>
+        <link refid="__conf__evert__hal_8h"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/debugging.h</label>
+        <link refid="debugging_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c</label>
+        <link refid="inverter_8c"/>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</label>
+        <link refid="inverter_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_readings.c</label>
+        <link refid="inverter__readings_8c"/>
+      </node>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/debugging.c</label>
+        <link refid="debugging_8c"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/debugging.h</label>
+        <link refid="debugging_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal.c</label>
+        <link refid="evert__hal_8c"/>
+      </node>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/evert_hal.h</label>
+        <link refid="evert__hal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="debugging_8h_1a5f4a367496ccc60405ad71df942dbd30" prot="public" static="no">
+        <name>EVERT_HAL_BreakPoint</name>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>void</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/debugging.h" line="12" column="10" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/debugging.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DEBUGGING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUGGING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="__conf__evert__hal_8h" kindref="compound">_conf_evert_hal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>EVERT_HAL_CONF_DEBUGGING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>break_points;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="__conf__evert__hal_8h_1adbf7c034448e6114f52003d7f06de0ee" kindref="member">__noopt</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="debugging_8h_1a5f4a367496ccc60405ad71df942dbd30" kindref="member">EVERT_HAL_BreakPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="debugging_8h_1a5f4a367496ccc60405ad71df942dbd30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_BreakPoint(format,<sp/>...)<sp/>void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/debugging.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__DEVICE__BaseDeviceTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_DEVICE_BaseDeviceTypeDef</compoundname>
+    <includes refid="evert__device_8h" local="no">evert_device.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__DEVICE__BaseDeviceTypeDef_1a467bc046a4786a2224274bf68b4cde63" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__DEVICE__VersionInfoTypeDef" kindref="compound">EVERT_DEVICE_VersionInfoTypeDef</ref></type>
+        <definition>EVERT_DEVICE_VersionInfoTypeDef EVERT_DEVICE_BaseDeviceTypeDef::DeviceVersionInfo</definition>
+        <argsstring></argsstring>
+        <name>DeviceVersionInfo</name>
+        <qualifiedname>EVERT_DEVICE_BaseDeviceTypeDef::DeviceVersionInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" line="88" column="37" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__DEVICE__BaseDeviceTypeDef_1a54f1529a05fb67065166048ba7af9050" prot="public" static="no" mutable="no">
+        <type>EVERT_SR_RegisterTypeDefinitionTypeDef</type>
+        <definition>EVERT_SR_RegisterTypeDefinitionTypeDef EVERT_DEVICE_BaseDeviceTypeDef::AlarmRegister1</definition>
+        <argsstring></argsstring>
+        <name>AlarmRegister1</name>
+        <qualifiedname>EVERT_DEVICE_BaseDeviceTypeDef::AlarmRegister1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" line="89" column="44" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__DEVICE__BaseDeviceTypeDef_1a5f7e03d4394e86d107de2ddf2f4bb355" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__DEVICE__PeripheralStatusTypeDef" kindref="compound">EVERT_DEVICE_PeripheralStatusTypeDef</ref></type>
+        <definition>EVERT_DEVICE_PeripheralStatusTypeDef EVERT_DEVICE_BaseDeviceTypeDef::PeripheralStatus</definition>
+        <argsstring></argsstring>
+        <name>PeripheralStatus</name>
+        <qualifiedname>EVERT_DEVICE_BaseDeviceTypeDef::PeripheralStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" line="90" column="42" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__DEVICE__BaseDeviceTypeDef_1a0f86adc7c027aa502127da19b17d3504" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__DEVICE__StateGroupTypeDef" kindref="compound">EVERT_DEVICE_StateGroupTypeDef</ref></type>
+        <definition>EVERT_DEVICE_StateGroupTypeDef EVERT_DEVICE_BaseDeviceTypeDef::StateGroup</definition>
+        <argsstring></argsstring>
+        <name>StateGroup</name>
+        <qualifiedname>EVERT_DEVICE_BaseDeviceTypeDef::StateGroup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" line="91" column="36" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base Device Type Definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>EVERT_DEVICE_BaseDeviceTypeDef</label>
+        <link refid="structEVERT__DEVICE__BaseDeviceTypeDef"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>DeviceVersionInfo</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>PeripheralStatus</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>StateGroup</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EVERT_DEVICE_PeripheralStatusTypeDef</label>
+        <link refid="structEVERT__DEVICE__PeripheralStatusTypeDef"/>
+      </node>
+      <node id="4">
+        <label>EVERT_DEVICE_StateGroupTypeDef</label>
+        <link refid="structEVERT__DEVICE__StateGroupTypeDef"/>
+      </node>
+      <node id="2">
+        <label>EVERT_DEVICE_VersionInfoTypeDef</label>
+        <link refid="structEVERT__DEVICE__VersionInfoTypeDef"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" line="86" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/device/src/evert_device.h" bodystart="87" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structEVERT__DEVICE__BaseDeviceTypeDef_1a54f1529a05fb67065166048ba7af9050" prot="public" virt="non-virtual"><scope>EVERT_DEVICE_BaseDeviceTypeDef</scope><name>AlarmRegister1</name></member>
+      <member refid="structEVERT__DEVICE__BaseDeviceTypeDef_1a467bc046a4786a2224274bf68b4cde63" prot="public" virt="non-virtual"><scope>EVERT_DEVICE_BaseDeviceTypeDef</scope><name>DeviceVersionInfo</name></member>
+      <member refid="structEVERT__DEVICE__BaseDeviceTypeDef_1a5f7e03d4394e86d107de2ddf2f4bb355" prot="public" virt="non-virtual"><scope>EVERT_DEVICE_BaseDeviceTypeDef</scope><name>PeripheralStatus</name></member>
+      <member refid="structEVERT__DEVICE__BaseDeviceTypeDef_1a0f86adc7c027aa502127da19b17d3504" prot="public" virt="non-virtual"><scope>EVERT_DEVICE_BaseDeviceTypeDef</scope><name>StateGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

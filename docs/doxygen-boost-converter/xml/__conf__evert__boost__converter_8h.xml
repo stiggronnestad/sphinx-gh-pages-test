@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="__conf__evert__boost__converter_8h" kind="file" language="C++">
+    <compoundname>_conf_evert_boost_converter.h</compoundname>
+    <includedby refid="boost__converter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h</includedby>
+    <includedby refid="boost__converter__alarms_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.h</includedby>
+    <includedby refid="boost__converter__calibration_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_calibration.h</includedby>
+    <includedby refid="boost__converter__constraints_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h</includedby>
+    <includedby refid="boost__converter__readings_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h</label>
+        <link refid="__conf__evert__boost__converter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c</label>
+        <link refid="boost__converter_8c"/>
+      </node>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h</label>
+        <link refid="boost__converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c</label>
+        <link refid="boost__converter__alarms_8c"/>
+      </node>
+      <node id="7">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.h</label>
+        <link refid="boost__converter__alarms_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_calibration.h</label>
+        <link refid="boost__converter__calibration_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h</label>
+        <link refid="boost__converter__constraints_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.c</label>
+        <link refid="boost__converter__mppt_8c"/>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h</label>
+        <link refid="boost__converter__mppt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c</label>
+        <link refid="boost__converter__readings_8c"/>
+      </node>
+      <node id="6">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h</label>
+        <link refid="boost__converter__readings_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a7b80a881c0743220fb3102596f1b50a9" prot="public" static="no">
+        <name>EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="4" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1ae0f0bc42d8ee92e3b03dc01921f92535" prot="public" static="no">
+        <name>EVERT_CONSTANT_BC_ADC1_RANK_MCU_TEMPERATURE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="5" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1aa36e2238781a685a1b3b8852062ab471" prot="public" static="no">
+        <name>EVERT_CONSTANT_BC_ADC1_RANK_MCU_VREF_INT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="6" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a1cf81531c0591a8260d66868cfa65bcb" prot="public" static="no">
+        <name>EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_IN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="7" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a84a0a034adfa5563bfff6333f8a7f6de" prot="public" static="no">
+        <name>EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_OUT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="8" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1af279693f99b4ba4d9ca6b50cd8f6c4fa" prot="public" static="no">
+        <name>EVERT_CONSTANT_BC_ADC1_RANK_CURRENT_IN</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="9" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1adc63a3d0db0cf909604ab1fa0211959d" prot="public" static="no">
+        <name>EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_SLOPE</name>
+        <initializer>(-0.056102362f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="11" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1aecb1cb1b581482b528da2d73587bfa43" prot="public" static="no">
+        <name>EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_INTERCEPT</name>
+        <initializer>(114.2244094f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="12" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1ac622554d48873f191c6db7ade70b57d8" prot="public" static="no">
+        <name>EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_SLOPE</name>
+        <initializer>(-0.056102362f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="13" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a9366762964158df6c074fd5113ac4ba7" prot="public" static="no">
+        <name>EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_INTERCEPT</name>
+        <initializer>(114.2244094f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="14" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1aa3759a25f59cd728e0e3fce69d2bcb74" prot="public" static="no">
+        <name>EVERT_CALIBRATION_BC_ADC_CURRENT_IN_SLOPE</name>
+        <initializer>(-0.008923077f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="15" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1af6f9588cc9f0d1015a51e4db6892caa8" prot="public" static="no">
+        <name>EVERT_CALIBRATION_BC_ADC_CURRENT_IN_INTERCEPT</name>
+        <initializer>(18.33692308f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="16" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a4c701e5b84152e38a9dc155ae9f2941c" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_DUTY_CYCLE_MIN</name>
+        <initializer>0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="18" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a4a455cf9e1e5516804fb480a94bf6808" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_DUTY_CYCLE_MAX</name>
+        <initializer>1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="19" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1aada3fc5a3df8e39c12798473f7e2326d" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MIN</name>
+        <initializer>0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="20" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1aa5dd5b19289eb492d94e80240a33e48c" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MAX</name>
+        <initializer>0.8f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="21" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a06163995ff54d06e5dd1977884596958" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HYSTERESIS</name>
+        <initializer>50.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="23" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a31c39f280a89d471156b56438e655dab" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_CRITICAL</name>
+        <initializer>900.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="24" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1ab489d7a0155d3b146f87c6ef774aa4b3" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_WARNING</name>
+        <initializer>800.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="25" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1ad31a4f818d93cbe99f48a63986afbb47" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_VOLTAGE_IN_HYSTERESIS</name>
+        <initializer>15.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="26" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a7d46b06d35b6ad7cef4803433d8a8fd6" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_CRITICAL</name>
+        <initializer>250.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="27" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1acd21cb9240a18666250905adafaaa822" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_WARNING</name>
+        <initializer>220.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="28" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a954ece8c087c06d0c3c7b0989dc01911" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_WARNING</name>
+        <initializer>175.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="29" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a4609fbea6c84d6c50f93c89e1636a0c6" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_CRITICAL</name>
+        <initializer>150.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="30" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a43f4305f593381affd642b97e92f22a6" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_CURRENT_HYSTERESIS</name>
+        <initializer>2.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="31" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a412a188ac62c0ada109b23f329ea4ed7" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_CURRENT_HIGH_CRITICAL</name>
+        <initializer>15.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="32" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a704473f23c9c455e4ecbb9d8f4a39a55" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_CURRENT_HIGH_WARNING</name>
+        <initializer>12.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="33" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1ab61af46cf7b36a3289acf11e09aabc9f" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_COIL_TEMP_HYSTERESIS</name>
+        <initializer>2.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="34" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a353d63434cb6ea38df9259f712200c70" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_COIL_TEMP_WARNING</name>
+        <initializer>70.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="35" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a2de2c3ccc3977ea6b4e0bd963e19a475" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_COIL_TEMP_CRITICAL</name>
+        <initializer>90.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="36" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a75d38525025d46a7113be6ad2cf830e4" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_HYSTERESIS</name>
+        <initializer>2.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="37" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a54640e9417e2dce8555b02b690ee2d33" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_WARNING</name>
+        <initializer>70.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="38" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a813f4f7d9d2feda4c05244943fdbf168" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_CRITICAL</name>
+        <initializer>90.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="39" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1afd66d02d4a98a2ee5562d5135080f92b" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_MOSFET_TEMP_HYSTERESIS</name>
+        <initializer>2.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="40" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1a28dc782400890f09b923e465ff1f498f" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_MOSFET_TEMP_WARNING</name>
+        <initializer>70.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="41" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__boost__converter_8h_1ae3205706b0ec66cfd6dba8819a839ab7" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_BC_MOSFET_TEMP_CRITICAL</name>
+        <initializer>90.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" line="42" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_BOOST_CONVERTER_CONF_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_BOOST_CONVERTER_CONF_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="__conf__evert__boost__converter_8h_1a7b80a881c0743220fb3102596f1b50a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="__conf__evert__boost__converter_8h_1ae0f0bc42d8ee92e3b03dc01921f92535" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_BC_ADC1_RANK_MCU_TEMPERATURE<sp/>0<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="__conf__evert__boost__converter_8h_1aa36e2238781a685a1b3b8852062ab471" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_BC_ADC1_RANK_MCU_VREF_INT<sp/>1<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="__conf__evert__boost__converter_8h_1a1cf81531c0591a8260d66868cfa65bcb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_IN<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="__conf__evert__boost__converter_8h_1a84a0a034adfa5563bfff6333f8a7f6de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_OUT<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="__conf__evert__boost__converter_8h_1af279693f99b4ba4d9ca6b50cd8f6c4fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_BC_ADC1_RANK_CURRENT_IN<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="__conf__evert__boost__converter_8h_1adc63a3d0db0cf909604ab1fa0211959d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_SLOPE<sp/>(-0.056102362f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="__conf__evert__boost__converter_8h_1aecb1cb1b581482b528da2d73587bfa43" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_BC_ADC_VOLTAGE_IN_INTERCEPT<sp/>(114.2244094f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="__conf__evert__boost__converter_8h_1ac622554d48873f191c6db7ade70b57d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_SLOPE<sp/>(-0.056102362f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="__conf__evert__boost__converter_8h_1a9366762964158df6c074fd5113ac4ba7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_BC_ADC_VOLTAGE_OUT_INTERCEPT<sp/>(114.2244094f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="__conf__evert__boost__converter_8h_1aa3759a25f59cd728e0e3fce69d2bcb74" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_BC_ADC_CURRENT_IN_SLOPE<sp/>(-0.008923077f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="__conf__evert__boost__converter_8h_1af6f9588cc9f0d1015a51e4db6892caa8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_BC_ADC_CURRENT_IN_INTERCEPT<sp/>(18.33692308f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="__conf__evert__boost__converter_8h_1a4c701e5b84152e38a9dc155ae9f2941c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_DUTY_CYCLE_MIN<sp/>0.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="__conf__evert__boost__converter_8h_1a4a455cf9e1e5516804fb480a94bf6808" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_DUTY_CYCLE_MAX<sp/>1.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="__conf__evert__boost__converter_8h_1aada3fc5a3df8e39c12798473f7e2326d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MIN<sp/>0.1f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="__conf__evert__boost__converter_8h_1aa5dd5b19289eb492d94e80240a33e48c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_DUTY_CYCLE_MPPT_MAX<sp/>0.8f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="__conf__evert__boost__converter_8h_1a06163995ff54d06e5dd1977884596958" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HYSTERESIS<sp/>50.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="__conf__evert__boost__converter_8h_1a31c39f280a89d471156b56438e655dab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_CRITICAL<sp/>900.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="__conf__evert__boost__converter_8h_1ab489d7a0155d3b146f87c6ef774aa4b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_WARNING<sp/>800.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="__conf__evert__boost__converter_8h_1ad31a4f818d93cbe99f48a63986afbb47" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_VOLTAGE_IN_HYSTERESIS<sp/>15.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="__conf__evert__boost__converter_8h_1a7d46b06d35b6ad7cef4803433d8a8fd6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_CRITICAL<sp/>250.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="__conf__evert__boost__converter_8h_1acd21cb9240a18666250905adafaaa822" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_WARNING<sp/>220.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="__conf__evert__boost__converter_8h_1a954ece8c087c06d0c3c7b0989dc01911" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_WARNING<sp/>175.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="__conf__evert__boost__converter_8h_1a4609fbea6c84d6c50f93c89e1636a0c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_CRITICAL<sp/>150.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="__conf__evert__boost__converter_8h_1a43f4305f593381affd642b97e92f22a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_CURRENT_HYSTERESIS<sp/>2.5f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="__conf__evert__boost__converter_8h_1a412a188ac62c0ada109b23f329ea4ed7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_CURRENT_HIGH_CRITICAL<sp/>15.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="__conf__evert__boost__converter_8h_1a704473f23c9c455e4ecbb9d8f4a39a55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_CURRENT_HIGH_WARNING<sp/>12.5f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="__conf__evert__boost__converter_8h_1ab61af46cf7b36a3289acf11e09aabc9f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_COIL_TEMP_HYSTERESIS<sp/>2.5f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="__conf__evert__boost__converter_8h_1a353d63434cb6ea38df9259f712200c70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_COIL_TEMP_WARNING<sp/>70.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="__conf__evert__boost__converter_8h_1a2de2c3ccc3977ea6b4e0bd963e19a475" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_COIL_TEMP_CRITICAL<sp/>90.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="__conf__evert__boost__converter_8h_1a75d38525025d46a7113be6ad2cf830e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_HYSTERESIS<sp/>2.5f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="__conf__evert__boost__converter_8h_1a54640e9417e2dce8555b02b690ee2d33" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_WARNING<sp/>70.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="__conf__evert__boost__converter_8h_1a813f4f7d9d2feda4c05244943fdbf168" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_SCHOTTKY_TEMP_CRITICAL<sp/>90.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="__conf__evert__boost__converter_8h_1afd66d02d4a98a2ee5562d5135080f92b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_MOSFET_TEMP_HYSTERESIS<sp/>2.5f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="__conf__evert__boost__converter_8h_1a28dc782400890f09b923e465ff1f498f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_MOSFET_TEMP_WARNING<sp/>70.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="__conf__evert__boost__converter_8h_1ae3205706b0ec66cfd6dba8819a839ab7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_BC_MOSFET_TEMP_CRITICAL<sp/>90.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_BOOST_CONVERTER_CONF_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_boost_converter.h"/>
+  </compounddef>
+</doxygen>

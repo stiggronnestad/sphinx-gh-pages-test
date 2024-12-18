@@ -1,0 +1,1335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="__conf__evert__inverter_8h" kind="file" language="C++">
+    <compoundname>_conf_evert_inverter.h</compoundname>
+    <includes refid="inverter__math_8h" local="yes">inverter_math.h</includes>
+    <includedby refid="inverter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</includedby>
+    <includedby refid="inverter__readings_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_readings.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h</label>
+        <link refid="__conf__evert__inverter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>inverter_math.h</label>
+        <link refid="inverter__math_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h</label>
+        <link refid="__conf__evert__inverter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c</label>
+        <link refid="inverter_8c"/>
+      </node>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</label>
+        <link refid="inverter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_grid.c</label>
+        <link refid="inverter__grid_8c"/>
+      </node>
+      <node id="7">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_grid.h</label>
+        <link refid="inverter__grid_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_readings.c</label>
+        <link refid="inverter__readings_8c"/>
+      </node>
+      <node id="5">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_readings.h</label>
+        <link refid="inverter__readings_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a537006ff1daac21a11dffff74f344188" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_PWM_PERIOD</name>
+        <initializer>(27200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="6" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a122d3aef4d29f5a6be65e221e1710ce4" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_CONVERSION_COUNT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="9" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a78f7bc7cbc55c09cac66172a8a9d7558" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_TEMPERATURE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="10" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a2bf3aa0737f0dd08a76c1107d5e89ad6" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_VREF_INT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="11" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1aab291a2e93fdc6bc0676016d966e2829" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="12" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a94131f882ddf4f1764bb85dce83c09af" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS_MID</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="13" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a3974971cb9f66883920ce12f8bba2444" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_U</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="14" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1af0c00d0131587ac2e283f3dba2606b05" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_V</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="15" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a754cc27a208f2fb99dc4f423143cc99d" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_W</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="16" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1aab9cf111584a72f641349909780a8958" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_U</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="17" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a6cd5f86d1dd28487a72d33e62d099163" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_V</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="18" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a52a7c7612265aecd1067d5fcb5aed5c3" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC2_CONVERSION_COUNT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="21" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a2bd7606e78323ecc1215a5d2459ff44b" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC2_RANK_VOLTAGE_W</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="22" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a3fcfcf0b5ff0cc7388d3cfc233b2fd1a" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_U</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="23" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a72afce21d79b6b609f6c4cb33a9e4820" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_V</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="24" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a0b59dd38530c249ae820c9f8d808142d" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_W</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="25" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a8a30952f006e19938665fd88599bd9a0" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC2_RANK_TEMPERATURE_U</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="26" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ae93176cac92eff5641fce82875457281" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_CONVERSION_COUNT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="29" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1aa83327f54aa694cebc9593f4d66a394a" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_V</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="30" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a12dfd7fe5731f2b3b7414b05cefc1808" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_W</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="31" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a6f6bb138815c52f31c1953e852b534b4" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_U</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="32" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ac36ac097a35e15fe8e1d2c3abc9fe690" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_V</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="33" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a075393813d2ae1008d348b6f40476ed6" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_W</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="34" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a8c40aaa0ab005dd30c61fd8bbc6e1327" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_TEMP_AMBIENT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="35" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a155cf23d1d8cc6ecb6491a098902ed53" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_2</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="36" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ab282df5a4964f8a266d57c5d8fe2e5fa" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_3</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="37" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1aa96385a73295e656a36d4d3a9b19d4db" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_4</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="38" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a39b29317d5fb475b9d201afec349a19e" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_SLOPE</name>
+        <initializer>0.31609195f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="41" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a628c86940171bc18963a11caef60eb8d" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_INTERCEPT</name>
+        <initializer>-0.0804598f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="42" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a6ec45eac09b9b705f9cbb2d453e940fd" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_SLOPE</name>
+        <initializer>0.16216216f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="43" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a6cb467ef983a3761020322d45c6fe2c1" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_INTERCEPT</name>
+        <initializer>-0.5810811f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="44" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a83785723d1f8c608e70a68d8fec83ca2" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_SLOPE</name>
+        <initializer>0.16278487f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="45" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ab83afcbe32f074065effa7adb38648ae" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_INTERCEPT</name>
+        <initializer>-341.60406f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="46" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ab5f54949b02a0f753d0387730343e252" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_SLOPE</name>
+        <initializer>0.16278487f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="47" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a57980cacfedacfe10c5c1dac9b4cd19a" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_INTERCEPT</name>
+        <initializer>-341.60406f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="48" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1af9cb3e10781f97a6fbcf620dfa01c946" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_SLOPE</name>
+        <initializer>0.16278487f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="49" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a4dd44115614ef3767e94cdda75f4cf81" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_INTERCEPT</name>
+        <initializer>-341.60406f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="50" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a3b41efa130cc303aed1d5ec21ada4436" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_SLOPE</name>
+        <initializer>0.16278487f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="51" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a6d41a6a669642e02692c5e981a99791a" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_INTERCEPT</name>
+        <initializer>-341.60406f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="52" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a1fea9642e3c3f9044ea7e57f7878a706" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_SLOPE</name>
+        <initializer>0.16278487f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="53" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ab3b5b05ebcf1b36ad786362f28a5df7b" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_INTERCEPT</name>
+        <initializer>-341.60406f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="54" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a22b79623fd96b6e6ad7e856135f0fceb" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_SLOPE</name>
+        <initializer>0.16278487f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="55" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a4e3cad51abc3dd081ff246dca9c89279" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_INTERCEPT</name>
+        <initializer>-341.60406f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="56" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1af329ad97e9031e0332fa1df94d77a9ff" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_CURRENT_U_SLOPE</name>
+        <initializer>0.004884f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="57" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a375895b5f81d780f370d61dc8da866e8" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_CURRENT_U_INTERCEPT</name>
+        <initializer>-10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="58" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1abcfe27876054ebc744f4f1265875c698" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_CURRENT_V_SLOPE</name>
+        <initializer>0.004884f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="59" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a560abf0b4889255ff2c88d7eba73b58a" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_CURRENT_V_INTERCEPT</name>
+        <initializer>-10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="60" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a6523817c456adaeb4975911e7a0912ea" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_CURRENT_W_SLOPE</name>
+        <initializer>0.004884f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="61" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a508f5b7ba89fa2ff4dbc70c9db28af08" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_CURRENT_W_INTERCEPT</name>
+        <initializer>-10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="62" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a69a8bcaf7cb1db853ddad686e11ce19a" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_SLOPE</name>
+        <initializer>0.02442002f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="63" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1af4b09fa894ae639fa1df4e352b91a2da" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_INTERCEPT</name>
+        <initializer>0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="64" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a485a197c331a0a3aeb111c808ec545ec" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_SLOPE</name>
+        <initializer>0.02442002f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="65" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a37d50bdb7cb6102093b853290d9a156d" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_INTERCEPT</name>
+        <initializer>0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="66" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a34961e7c2861ed040e232482f883a32e" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_SLOPE</name>
+        <initializer>0.02442002f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="67" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a87a0430da76245dc2468bb828af1be66" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_INTERCEPT</name>
+        <initializer>0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="68" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1afc6d75c285290c27b25276d2e3e2e811" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_SLOPE</name>
+        <initializer>0.02442002f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="69" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ae3139a08f4baa5b7a5cc273519e2b8fd" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_INTERCEPT</name>
+        <initializer>0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="70" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a3fd8c25963d031d86581ad17e495f3a3" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_SLOPE</name>
+        <initializer>0.02442002f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="71" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a2ee608c992228fff4c9ea588d285e384" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_INTERCEPT</name>
+        <initializer>0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="72" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1aa70402d67d362634b532095569231e7e" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_SLOPE</name>
+        <initializer>0.02442002f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="73" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a724ade98ba8f5a1c526cc0f3d68ae4ac" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_INTERCEPT</name>
+        <initializer>0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="74" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a052c78b0ba36b8cb4b8e527ae5396ebe" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_SLOPE</name>
+        <initializer>(-0.058843432f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="75" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a3a495471dde1c47447776718aab81982" prot="public" static="no">
+        <name>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_INTERCEPT</name>
+        <initializer>(189.2844104f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="76" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a4c7b98765f11ffaa0e5d8d47f58f8bc8" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_BOOTING</name>
+        <initializer>((uint32_t)(EVERT_FZ2812_RGB_TO_GRB(0x0000FF)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="90" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1aeb125763c237529abf083e462c1db2ed" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_OK</name>
+        <initializer>((uint32_t)(EVERT_FZ2812_RGB_TO_GRB(0x00FF00)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="91" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a79c723492acc82852006fb303fed3783" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_WARNING</name>
+        <initializer>((uint32_t)(EVERT_FZ2812_RGB_TO_GRB(0xFFFF00)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="92" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a4eee369e090bff8022d60f0a730a5bda" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_ERROR</name>
+        <initializer>((uint32_t)(EVERT_FZ2812_RGB_TO_GRB(0xFF0000)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="93" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a341bb85667e6caea8d9573a66d96d80a" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_ON</name>
+        <initializer>(200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="94" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a8d2425367451ef10780aaa0ad4eb8147" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_OFF</name>
+        <initializer>(200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="95" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a9f91516a5d3b542929074cb9eafa5f28" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_ON</name>
+        <initializer>(1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="96" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a82183df38fdbfcd56503973c88267799" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_OFF</name>
+        <initializer>(200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="97" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ac87a94e0e020fe16f77034020ead37d4" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_ON</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="98" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ac78455b19dcfee336927422cac466560" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_OFF</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="99" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1aaae4ad3ba18363093540ec7327d66f03" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_ON</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="100" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1afc294f2c5a2991bde90c1c838eb69feb" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_OFF</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="101" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a297aa867135f10a9e48b452f072a05b5" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_BOOTING</name>
+        <initializer>(EVERT_FZ2812_RGB_TO_GRB(0x0000FF))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="103" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a14e79f704dfa1d5dd64e2d3e6d4a812c" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_OK</name>
+        <initializer>(EVERT_FZ2812_RGB_TO_GRB(0x00FF00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="104" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a84074e4e51d2a33e8cf02342a29607a1" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_WARNING</name>
+        <initializer>(EVERT_FZ2812_RGB_TO_GRB(0xFFFF00))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="105" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a769b97ff6ae0a1249e7a96b79b12b95f" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_ERROR</name>
+        <initializer>(EVERT_FZ2812_RGB_TO_GRB(0xFF0000))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="106" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a17745061648a1f63db21b158294fbef1" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_ON</name>
+        <initializer>(200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="107" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ac4d2ef339a7dce6f94c6bd8849114635" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_OFF</name>
+        <initializer>(200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="108" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1aeb2ac8e136ee5310b0c1d7302547b054" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_ON</name>
+        <initializer>(1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="109" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ad1d12a0d24d8153e974d6069177e7998" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_OFF</name>
+        <initializer>(200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="110" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a9793fa83d02c6cc9aa9c9907649ba652" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_ON</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="111" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1adcb05234eedb956b5bbc952c3aa29e27" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_OFF</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="112" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ae426fec5344ba932470616518da6d855" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_ON</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="113" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ad4315d0f114ce2d3812588c5c72f60b2" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_OFF</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="114" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ab6c17f4577f3ef24c5cd37ad061b873c" prot="public" static="no">
+        <name>EVERT_CONSTANT_INVERTER_L_INDUCTOR_VALUE</name>
+        <initializer>((float32_t)(0.000340f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="117" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ab9107d4a172885782ddf37b38e0a90d3" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_CURRENT_RMS_MAX</name>
+        <initializer>((float32_t)(10.0f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="118" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a06f12c633e4f8093df1891ae4b6b2cf6" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_CURRENT_INSTANTANEOUS_MAX</name>
+        <initializer>((float32_t)(<ref refid="__conf__evert__inverter_8h_1ab9107d4a172885782ddf37b38e0a90d3" kindref="member">EVERT_SETTING_INVERTER_CURRENT_RMS_MAX</ref> * M_SQRT2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="119" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a1598b9fb266bbbc73e54c7bc72360aaf" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_BUS_NOMINAL</name>
+        <initializer>((float32_t)(800.0f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="120" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ac22290c77da663eb20b3768905d4bea9" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL</name>
+        <initializer>((float32_t)(<ref refid="__conf__evert__inverter_8h_1a1598b9fb266bbbc73e54c7bc72360aaf" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_NOMINAL</ref> / 2.0f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="121" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a5549fee284e37b6509c5770093e0b6de" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX</name>
+        <initializer>((float32_t)(950.0f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="122" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a10026f58f1a997d0eb8b5f8110256b87" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_BUS_MIN</name>
+        <initializer>((float32_t)(650.0f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="123" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ac6cd37da4f9d75eaaca45dd4467cb43b" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY</name>
+        <initializer>((float32_t)(50.0f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="124" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ab1d179aba89dc5d2527836e56bfbad14" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY_DEVIATION</name>
+        <initializer>((float32_t)(5.0f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="125" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1addcb9f97e46c8760dcbad8a6b4f0f04e" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL</name>
+        <initializer>((float32_t)(230.0f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="126" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1af43faee784da56070ed025b1512ce026" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX</name>
+        <initializer>((float32_t)(<ref refid="__conf__evert__inverter_8h_1addcb9f97e46c8760dcbad8a6b4f0f04e" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL</ref> * 1.05f))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="127" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a503809023c5055ec6ab9ca1514406184" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN</name>
+        <initializer>((float32_t)(<ref refid="__conf__evert__inverter_8h_1addcb9f97e46c8760dcbad8a6b4f0f04e" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL</ref> - (<ref refid="__conf__evert__inverter_8h_1addcb9f97e46c8760dcbad8a6b4f0f04e" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL</ref> * 1.1f)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="128" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1acf9cadda6bafdef5d4e0625e90c63573" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MAX</name>
+        <initializer>((float32_t)(<ref refid="__conf__evert__inverter_8h_1af43faee784da56070ed025b1512ce026" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX</ref> * M_SQRT2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="129" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1ad67c9211fa8be25f8409b1cce6023b8d" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MIN</name>
+        <initializer>((float32_t)(-<ref refid="__conf__evert__inverter_8h_1acf9cadda6bafdef5d4e0625e90c63573" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MAX</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="130" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__inverter_8h_1a8f2a02e8d2abd7f2fe50e2d9ab83c8d0" prot="public" static="no">
+        <name>EVERT_SETTING_INVERTER_PLL_DECOUPLING_FACTOR</name>
+        <initializer>((float32_t)(2.0f * M_PI * <ref refid="__conf__evert__inverter_8h_1ab6c17f4577f3ef24c5cd37ad061b873c" kindref="member">EVERT_CONSTANT_INVERTER_L_INDUCTOR_VALUE</ref> * <ref refid="__conf__evert__inverter_8h_1a06f12c633e4f8093df1891ae4b6b2cf6" kindref="member">EVERT_SETTING_INVERTER_CURRENT_INSTANTANEOUS_MAX</ref> / <ref refid="__conf__evert__inverter_8h_1a5549fee284e37b6509c5770093e0b6de" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" line="131" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_INVERTER_CONF_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_CONF_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="inverter__math_8h" kindref="compound">inverter_math.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="__conf__evert__inverter_8h_1a537006ff1daac21a11dffff74f344188" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_PWM_PERIOD<sp/>(27200)<sp/></highlight><highlight class="comment">//<sp/>-<sp/>1<sp/>-<sp/>96<sp/>//<sp/>Period<sp/>-<sp/>1<sp/>-<sp/>min</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ADC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="__conf__evert__inverter_8h_1a122d3aef4d29f5a6be65e221e1710ce4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_CONVERSION_COUNT<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="__conf__evert__inverter_8h_1a78f7bc7cbc55c09cac66172a8a9d7558" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_TEMPERATURE<sp/>0<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="__conf__evert__inverter_8h_1a2bf3aa0737f0dd08a76c1107d5e89ad6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_MCU_VREF_INT<sp/>1<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="__conf__evert__inverter_8h_1aab291a2e93fdc6bc0676016d966e2829" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS<sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PA0<sp/>Channel<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="__conf__evert__inverter_8h_1a94131f882ddf4f1764bb85dce83c09af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_V_BUS_MID<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PA1<sp/>Channel<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="__conf__evert__inverter_8h_1a3974971cb9f66883920ce12f8bba2444" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_U<sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PA2<sp/>Channel<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="__conf__evert__inverter_8h_1af0c00d0131587ac2e283f3dba2606b05" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_V<sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PC2<sp/>Channel<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="__conf__evert__inverter_8h_1a754cc27a208f2fb99dc4f423143cc99d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_CURRENT_W<sp/>6<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PB1<sp/>Channel<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="__conf__evert__inverter_8h_1aab9cf111584a72f641349909780a8958" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_U<sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PB11<sp/>Channel<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="__conf__evert__inverter_8h_1a6cd5f86d1dd28487a72d33e62d099163" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC1_RANK_VOLTAGE_V<sp/>8<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PB0<sp/>Channel<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ADC<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="__conf__evert__inverter_8h_1a52a7c7612265aecd1067d5fcb5aed5c3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC2_CONVERSION_COUNT<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="__conf__evert__inverter_8h_1a2bd7606e78323ecc1215a5d2459ff44b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC2_RANK_VOLTAGE_W<sp/>0<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PA6<sp/>Channel<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="__conf__evert__inverter_8h_1a3fcfcf0b5ff0cc7388d3cfc233b2fd1a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_U<sp/>1<sp/></highlight><highlight class="comment">//<sp/>PA7<sp/>Channel<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="__conf__evert__inverter_8h_1a72afce21d79b6b609f6c4cb33a9e4820" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_V<sp/>2<sp/></highlight><highlight class="comment">//<sp/>PC5<sp/>Channel<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="__conf__evert__inverter_8h_1a0b59dd38530c249ae820c9f8d808142d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC2_RANK_GRID_VOLTAGE_W<sp/>3<sp/></highlight><highlight class="comment">//<sp/>PB2<sp/>Channel<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="__conf__evert__inverter_8h_1a8a30952f006e19938665fd88599bd9a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC2_RANK_TEMPERATURE_U<sp/>4<sp/><sp/></highlight><highlight class="comment">//<sp/>PA4<sp/>Channel<sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ADC<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="__conf__evert__inverter_8h_1ae93176cac92eff5641fce82875457281" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_CONVERSION_COUNT<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="__conf__evert__inverter_8h_1aa83327f54aa694cebc9593f4d66a394a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_V<sp/>0<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PE9<sp/>Channel<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="__conf__evert__inverter_8h_1a12dfd7fe5731f2b3b7414b05cefc1808" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_RANK_TEMPERATURE_W<sp/>1<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PE13<sp/>Channel<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="__conf__evert__inverter_8h_1a6f6bb138815c52f31c1953e852b534b4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_U<sp/>2<sp/></highlight><highlight class="comment">//<sp/>PE8<sp/>Channel<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="__conf__evert__inverter_8h_1ac36ac097a35e15fe8e1d2c3abc9fe690" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_V<sp/>3<sp/></highlight><highlight class="comment">//<sp/>PD10<sp/>Channel<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="__conf__evert__inverter_8h_1a075393813d2ae1008d348b6f40476ed6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_FILTER_TEMP_W<sp/>4<sp/></highlight><highlight class="comment">//<sp/>PD11<sp/>Channel<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="__conf__evert__inverter_8h_1a8c40aaa0ab005dd30c61fd8bbc6e1327" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_TEMP_AMBIENT<sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PD13<sp/>Channel<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="__conf__evert__inverter_8h_1a155cf23d1d8cc6ecb6491a098902ed53" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_2<sp/>6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PE10<sp/>Channel<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="__conf__evert__inverter_8h_1ab282df5a4964f8a266d57c5d8fe2e5fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_3<sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PE11<sp/>Channel<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="__conf__evert__inverter_8h_1aa96385a73295e656a36d4d3a9b19d4db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_ADC3_RESERVE_4<sp/>8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PE12<sp/>Channel<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Calibrations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="__conf__evert__inverter_8h_1a39b29317d5fb475b9d201afec349a19e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_SLOPE<sp/>0.31609195f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="__conf__evert__inverter_8h_1a628c86940171bc18963a11caef60eb8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_INTERCEPT<sp/>-0.0804598f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="__conf__evert__inverter_8h_1a6ec45eac09b9b705f9cbb2d453e940fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_SLOPE<sp/>0.16216216f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="__conf__evert__inverter_8h_1a6cb467ef983a3761020322d45c6fe2c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_BUS_MIDDLE_INTERCEPT<sp/>-0.5810811f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="__conf__evert__inverter_8h_1a83785723d1f8c608e70a68d8fec83ca2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_SLOPE<sp/>0.16278487f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="__conf__evert__inverter_8h_1ab83afcbe32f074065effa7adb38648ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_U_INTERCEPT<sp/>-341.60406f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="__conf__evert__inverter_8h_1ab5f54949b02a0f753d0387730343e252" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_SLOPE<sp/>0.16278487f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="__conf__evert__inverter_8h_1a57980cacfedacfe10c5c1dac9b4cd19a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_V_INTERCEPT<sp/>-341.60406f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="__conf__evert__inverter_8h_1af9cb3e10781f97a6fbcf620dfa01c946" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_SLOPE<sp/>0.16278487f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="__conf__evert__inverter_8h_1a4dd44115614ef3767e94cdda75f4cf81" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_W_INTERCEPT<sp/>-341.60406f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="__conf__evert__inverter_8h_1a3b41efa130cc303aed1d5ec21ada4436" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_SLOPE<sp/>0.16278487f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="__conf__evert__inverter_8h_1a6d41a6a669642e02692c5e981a99791a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_U_INTERCEPT<sp/>-341.60406f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="__conf__evert__inverter_8h_1a1fea9642e3c3f9044ea7e57f7878a706" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_SLOPE<sp/>0.16278487f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="__conf__evert__inverter_8h_1ab3b5b05ebcf1b36ad786362f28a5df7b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_V_INTERCEPT<sp/>-341.60406f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="__conf__evert__inverter_8h_1a22b79623fd96b6e6ad7e856135f0fceb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_SLOPE<sp/>0.16278487f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="__conf__evert__inverter_8h_1a4e3cad51abc3dd081ff246dca9c89279" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_VOLTAGE_GRID_W_INTERCEPT<sp/>-341.60406f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="__conf__evert__inverter_8h_1af329ad97e9031e0332fa1df94d77a9ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_CURRENT_U_SLOPE<sp/>0.004884f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="__conf__evert__inverter_8h_1a375895b5f81d780f370d61dc8da866e8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_CURRENT_U_INTERCEPT<sp/>-10.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="__conf__evert__inverter_8h_1abcfe27876054ebc744f4f1265875c698" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_CURRENT_V_SLOPE<sp/>0.004884f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="__conf__evert__inverter_8h_1a560abf0b4889255ff2c88d7eba73b58a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_CURRENT_V_INTERCEPT<sp/>-10.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="__conf__evert__inverter_8h_1a6523817c456adaeb4975911e7a0912ea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_CURRENT_W_SLOPE<sp/>0.004884f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="__conf__evert__inverter_8h_1a508f5b7ba89fa2ff4dbc70c9db28af08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_CURRENT_W_INTERCEPT<sp/>-10.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="__conf__evert__inverter_8h_1a69a8bcaf7cb1db853ddad686e11ce19a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_SLOPE<sp/>0.02442002f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="__conf__evert__inverter_8h_1af4b09fa894ae639fa1df4e352b91a2da" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_U_INTERCEPT<sp/>0.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="__conf__evert__inverter_8h_1a485a197c331a0a3aeb111c808ec545ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_SLOPE<sp/>0.02442002f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="__conf__evert__inverter_8h_1a37d50bdb7cb6102093b853290d9a156d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_V_INTERCEPT<sp/>0.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="__conf__evert__inverter_8h_1a34961e7c2861ed040e232482f883a32e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_SLOPE<sp/>0.02442002f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="__conf__evert__inverter_8h_1a87a0430da76245dc2468bb828af1be66" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_HEATSINK_W_INTERCEPT<sp/>0.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="__conf__evert__inverter_8h_1afc6d75c285290c27b25276d2e3e2e811" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_SLOPE<sp/>0.02442002f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="__conf__evert__inverter_8h_1ae3139a08f4baa5b7a5cc273519e2b8fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_U_INTERCEPT<sp/>0.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="__conf__evert__inverter_8h_1a3fd8c25963d031d86581ad17e495f3a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_SLOPE<sp/>0.02442002f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="__conf__evert__inverter_8h_1a2ee608c992228fff4c9ea588d285e384" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_V_INTERCEPT<sp/>0.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="__conf__evert__inverter_8h_1aa70402d67d362634b532095569231e7e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_SLOPE<sp/>0.02442002f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="__conf__evert__inverter_8h_1a724ade98ba8f5a1c526cc0f3d68ae4ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_FILTER_COIL_W_INTERCEPT<sp/>0.0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="__conf__evert__inverter_8h_1a052c78b0ba36b8cb4b8e527ae5396ebe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_SLOPE<sp/>(-0.058843432f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="__conf__evert__inverter_8h_1a3a495471dde1c47447776718aab81982" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CALIBRATION_INV_ADC_TEMPERATURE_AMBIENT_INTERCEPT<sp/>(189.2844104f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STATUS<sp/>LEDS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>/<sp/>--</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>/<sp/><sp/><sp/><sp/>/<sp/>--</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>/<sp/><sp/><sp/><sp/>/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[1]<sp/>[0]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_______</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[<sp/><sp/><sp/><sp/><sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[<sp/>MCU<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[<sp/><sp/><sp/><sp/><sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="__conf__evert__inverter_8h_1a4c7b98765f11ffaa0e5d8d47f58f8bc8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_BOOTING<sp/>((uint32_t)(EVERT_FZ2812_RGB_TO_GRB(0x0000FF)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="__conf__evert__inverter_8h_1aeb125763c237529abf083e462c1db2ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_OK<sp/>((uint32_t)(EVERT_FZ2812_RGB_TO_GRB(0x00FF00)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="__conf__evert__inverter_8h_1a79c723492acc82852006fb303fed3783" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_WARNING<sp/>((uint32_t)(EVERT_FZ2812_RGB_TO_GRB(0xFFFF00)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="__conf__evert__inverter_8h_1a4eee369e090bff8022d60f0a730a5bda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_COLOR_ERROR<sp/>((uint32_t)(EVERT_FZ2812_RGB_TO_GRB(0xFF0000)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="__conf__evert__inverter_8h_1a341bb85667e6caea8d9573a66d96d80a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_ON<sp/>(200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="__conf__evert__inverter_8h_1a8d2425367451ef10780aaa0ad4eb8147" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_BOOTING_OFF<sp/>(200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="__conf__evert__inverter_8h_1a9f91516a5d3b542929074cb9eafa5f28" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_ON<sp/>(1000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="__conf__evert__inverter_8h_1a82183df38fdbfcd56503973c88267799" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_OK_OFF<sp/>(200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="__conf__evert__inverter_8h_1ac87a94e0e020fe16f77034020ead37d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_ON<sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="__conf__evert__inverter_8h_1ac78455b19dcfee336927422cac466560" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_WARNING_OFF<sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="__conf__evert__inverter_8h_1aaae4ad3ba18363093540ec7327d66f03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_ON<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="__conf__evert__inverter_8h_1afc294f2c5a2991bde90c1c838eb69feb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED0_TIME_ERROR_OFF<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="__conf__evert__inverter_8h_1a297aa867135f10a9e48b452f072a05b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_BOOTING<sp/>(EVERT_FZ2812_RGB_TO_GRB(0x0000FF))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="__conf__evert__inverter_8h_1a14e79f704dfa1d5dd64e2d3e6d4a812c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_OK<sp/>(EVERT_FZ2812_RGB_TO_GRB(0x00FF00))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="__conf__evert__inverter_8h_1a84074e4e51d2a33e8cf02342a29607a1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_WARNING<sp/>(EVERT_FZ2812_RGB_TO_GRB(0xFFFF00))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="__conf__evert__inverter_8h_1a769b97ff6ae0a1249e7a96b79b12b95f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_COLOR_ERROR<sp/>(EVERT_FZ2812_RGB_TO_GRB(0xFF0000))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="__conf__evert__inverter_8h_1a17745061648a1f63db21b158294fbef1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_ON<sp/>(200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="__conf__evert__inverter_8h_1ac4d2ef339a7dce6f94c6bd8849114635" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_BOOTING_OFF<sp/>(200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="__conf__evert__inverter_8h_1aeb2ac8e136ee5310b0c1d7302547b054" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_ON<sp/>(1000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="__conf__evert__inverter_8h_1ad1d12a0d24d8153e974d6069177e7998" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_OK_OFF<sp/>(200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="__conf__evert__inverter_8h_1a9793fa83d02c6cc9aa9c9907649ba652" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_ON<sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="__conf__evert__inverter_8h_1adcb05234eedb956b5bbc952c3aa29e27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_WARNING_OFF<sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="__conf__evert__inverter_8h_1ae426fec5344ba932470616518da6d855" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_ON<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="__conf__evert__inverter_8h_1ad4315d0f114ce2d3812588c5c72f60b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_STATUS_LED1_TIME_ERROR_OFF<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Grid<sp/>Forming</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="__conf__evert__inverter_8h_1ab6c17f4577f3ef24c5cd37ad061b873c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTANT_INVERTER_L_INDUCTOR_VALUE<sp/>((float32_t)(0.000340f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="__conf__evert__inverter_8h_1ab9107d4a172885782ddf37b38e0a90d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_CURRENT_RMS_MAX<sp/>((float32_t)(10.0f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="__conf__evert__inverter_8h_1a06f12c633e4f8093df1891ae4b6b2cf6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_CURRENT_INSTANTANEOUS_MAX<sp/>((float32_t)(EVERT_SETTING_INVERTER_CURRENT_RMS_MAX<sp/>*<sp/>M_SQRT2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="__conf__evert__inverter_8h_1a1598b9fb266bbbc73e54c7bc72360aaf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_BUS_NOMINAL<sp/>((float32_t)(800.0f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="__conf__evert__inverter_8h_1ac22290c77da663eb20b3768905d4bea9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL<sp/>((float32_t)(EVERT_SETTING_INVERTER_VOLTAGE_BUS_NOMINAL<sp/>/<sp/>2.0f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="__conf__evert__inverter_8h_1a5549fee284e37b6509c5770093e0b6de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX<sp/>((float32_t)(950.0f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="__conf__evert__inverter_8h_1a10026f58f1a997d0eb8b5f8110256b87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_BUS_MIN<sp/>((float32_t)(650.0f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="__conf__evert__inverter_8h_1ac6cd37da4f9d75eaaca45dd4467cb43b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY<sp/>((float32_t)(50.0f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="__conf__evert__inverter_8h_1ab1d179aba89dc5d2527836e56bfbad14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_GRID_NOMINAL_FREQUENCY_DEVIATION<sp/>((float32_t)(5.0f))<sp/></highlight><highlight class="comment">//<sp/>+-<sp/>5Hz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="__conf__evert__inverter_8h_1addcb9f97e46c8760dcbad8a6b4f0f04e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL<sp/>((float32_t)(230.0f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="__conf__evert__inverter_8h_1af43faee784da56070ed025b1512ce026" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX<sp/>((float32_t)(EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL<sp/>*<sp/>1.05f))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="__conf__evert__inverter_8h_1a503809023c5055ec6ab9ca1514406184" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN<sp/>((float32_t)(EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL<sp/>-<sp/>(EVERT_SETTING_INVERTER_VOLTAGE_RMS_NOMINAL<sp/>*<sp/>1.1f)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="__conf__evert__inverter_8h_1acf9cadda6bafdef5d4e0625e90c63573" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MAX<sp/>((float32_t)(EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX<sp/>*<sp/>M_SQRT2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="__conf__evert__inverter_8h_1ad67c9211fa8be25f8409b1cce6023b8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MIN<sp/>((float32_t)(-EVERT_SETTING_INVERTER_VOLTAGE_INSTANTANEOUS_MAX))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="__conf__evert__inverter_8h_1a8f2a02e8d2abd7f2fe50e2d9ab83c8d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_SETTING_INVERTER_PLL_DECOUPLING_FACTOR<sp/>((float32_t)(2.0f<sp/>*<sp/>M_PI<sp/>*<sp/>EVERT_CONSTANT_INVERTER_L_INDUCTOR_VALUE<sp/>*<sp/>EVERT_SETTING_INVERTER_CURRENT_INSTANTANEOUS_MAX<sp/>/<sp/>EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_INVERTER_CONF_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__INVERTER__TimeTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_INVERTER_TimeTypeDef</compoundname>
+    <includes refid="inverter_8h" local="no">inverter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__INVERTER__TimeTypeDef_1a4108cb35354aa0e496fafa3ec609e722" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_INVERTER_TimeTypeDef::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <qualifiedname>EVERT_INVERTER_TimeTypeDef::start_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" line="38" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="inverter_8c_1a2bea1ea30d69e76f7f40bc00db9f2669" compoundref="inverter_8c" startline="133" endline="143">EVERT_INVERTER_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__TimeTypeDef_1adf52466697cec3dc133a8ad50bba3c83" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_INVERTER_TimeTypeDef::current_time</definition>
+        <argsstring></argsstring>
+        <name>current_time</name>
+        <qualifiedname>EVERT_INVERTER_TimeTypeDef::current_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" line="39" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="inverter_8c_1a2bea1ea30d69e76f7f40bc00db9f2669" compoundref="inverter_8c" startline="133" endline="143">EVERT_INVERTER_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__TimeTypeDef_1af485e2ee2ee023a5a1eb2de29cf80d9c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_INVERTER_TimeTypeDef::elapsed_time</definition>
+        <argsstring></argsstring>
+        <name>elapsed_time</name>
+        <qualifiedname>EVERT_INVERTER_TimeTypeDef::elapsed_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" line="40" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="inverter_8c_1a2bea1ea30d69e76f7f40bc00db9f2669" compoundref="inverter_8c" startline="133" endline="143">EVERT_INVERTER_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__TimeTypeDef_1a05cae7cde1c7b22d554b7ab107c391db" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_INVERTER_TimeTypeDef::last_time</definition>
+        <argsstring></argsstring>
+        <name>last_time</name>
+        <qualifiedname>EVERT_INVERTER_TimeTypeDef::last_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" line="41" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="inverter_8c_1a2bea1ea30d69e76f7f40bc00db9f2669" compoundref="inverter_8c" startline="133" endline="143">EVERT_INVERTER_loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__TimeTypeDef_1a14d7161de1b9ef0d45ab3e4b4039a3cc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_INVERTER_TimeTypeDef::delta_time</definition>
+        <argsstring></argsstring>
+        <name>delta_time</name>
+        <qualifiedname>EVERT_INVERTER_TimeTypeDef::delta_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" line="42" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="inverter_8c_1a2bea1ea30d69e76f7f40bc00db9f2669" compoundref="inverter_8c" startline="133" endline="143">EVERT_INVERTER_loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" line="36" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h" bodystart="37" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structEVERT__INVERTER__TimeTypeDef_1adf52466697cec3dc133a8ad50bba3c83" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_TimeTypeDef</scope><name>current_time</name></member>
+      <member refid="structEVERT__INVERTER__TimeTypeDef_1a14d7161de1b9ef0d45ab3e4b4039a3cc" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_TimeTypeDef</scope><name>delta_time</name></member>
+      <member refid="structEVERT__INVERTER__TimeTypeDef_1af485e2ee2ee023a5a1eb2de29cf80d9c" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_TimeTypeDef</scope><name>elapsed_time</name></member>
+      <member refid="structEVERT__INVERTER__TimeTypeDef_1a05cae7cde1c7b22d554b7ab107c391db" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_TimeTypeDef</scope><name>last_time</name></member>
+      <member refid="structEVERT__INVERTER__TimeTypeDef_1a4108cb35354aa0e496fafa3ec609e722" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_TimeTypeDef</scope><name>start_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

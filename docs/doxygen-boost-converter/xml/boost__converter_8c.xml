@@ -1,0 +1,1290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="boost__converter_8c" kind="file" language="C++">
+    <compoundname>boost_converter.c</compoundname>
+    <includes local="yes">stm32g4xx_hal.h</includes>
+    <includes local="yes">stm32g4xx_hal_hrtim.h</includes>
+    <includes local="yes">gpio_definition.h</includes>
+    <includes local="yes">status_register.h</includes>
+    <includes refid="boost__converter_8h" local="yes">boost_converter.h</includes>
+    <incdepgraph>
+      <node id="24">
+        <label>_conf_evert_boost_converter.h</label>
+        <link refid="__conf__evert__boost__converter_8h"/>
+      </node>
+      <node id="22">
+        <label>_conf_evert_device.h</label>
+        <link refid="__conf__evert__device_8h"/>
+      </node>
+      <node id="23">
+        <label>_conf_evert_hal.h</label>
+        <link refid="__conf__evert__hal_8h"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c</label>
+        <link refid="boost__converter_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>boost_converter.h</label>
+        <link refid="boost__converter_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>boost_converter_alarms.h</label>
+        <link refid="boost__converter__alarms_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>boost_converter_calibration.h</label>
+        <link refid="boost__converter__calibration_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>boost_converter_constraints.h</label>
+        <link refid="boost__converter__constraints_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>boost_converter_mppt.h</label>
+        <link refid="boost__converter__mppt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>boost_converter_readings.h</label>
+        <link refid="boost__converter__readings_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>adc.h</label>
+      </node>
+      <node id="27">
+        <label>arm_math.h</label>
+      </node>
+      <node id="18">
+        <label>can_handler.h</label>
+      </node>
+      <node id="10">
+        <label>cordic.h</label>
+      </node>
+      <node id="11">
+        <label>dma.h</label>
+      </node>
+      <node id="19">
+        <label>evert_device.h</label>
+      </node>
+      <node id="20">
+        <label>evert_hal.h</label>
+      </node>
+      <node id="12">
+        <label>fdcan.h</label>
+      </node>
+      <node id="13">
+        <label>gpio.h</label>
+      </node>
+      <node id="4">
+        <label>gpio_definition.h</label>
+      </node>
+      <node id="14">
+        <label>hrtim.h</label>
+      </node>
+      <node id="15">
+        <label>i2c.h</label>
+      </node>
+      <node id="5">
+        <label>status_register.h</label>
+      </node>
+      <node id="7">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2">
+        <label>stm32g4xx_hal.h</label>
+      </node>
+      <node id="3">
+        <label>stm32g4xx_hal_hrtim.h</label>
+      </node>
+      <node id="8">
+        <label>stm32g4xx_ll_cordic.h</label>
+      </node>
+      <node id="21">
+        <label>task_scheduler.h</label>
+      </node>
+      <node id="16">
+        <label>tim.h</label>
+      </node>
+      <node id="17">
+        <label>usart.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="boost__converter_8c_1a6206b4b9ef01aab88e62332a6e308d16" prot="public" static="no">
+        <name>EVERT_CONSTRAINT_CAN_BUFFER_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="45" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="boost__converter_8c_1af671f4f913dde825f2789e079e398494" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__BOOST__CONVERTER__ConfigCurrentCalibrationTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef</ref></type>
+        <definition>EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef calibration_current</definition>
+        <argsstring></argsstring>
+        <name>calibration_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="29" column="55" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="29" bodyend="-1"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a1ef692420461fcb824132901edc1b04e" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef</ref></type>
+        <definition>EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef calibration_voltage</definition>
+        <argsstring></argsstring>
+        <name>calibration_voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="30" column="55" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="30" bodyend="-1"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a89e90f1d12cebc72591f734ca64fd8e4" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef</ref></type>
+        <definition>EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef constraints_current</definition>
+        <argsstring></argsstring>
+        <name>constraints_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="33" column="55" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1ae3c1b2950d99b8bce0bf213f0c032cb2" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__BOOST__CONVERTER__ConfigTemperatureConstraintsTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigTemperatureConstraintsTypeDef</ref></type>
+        <definition>EVERT_BOOST_CONVERTER_ConfigTemperatureConstraintsTypeDef constraints_temperature</definition>
+        <argsstring></argsstring>
+        <name>constraints_temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="34" column="59" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a1b9519f3662f0c89e3bd72266b69a080" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__BOOST__CONVERTER__ConfigVoltageConstraintsTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigVoltageConstraintsTypeDef</ref></type>
+        <definition>EVERT_BOOST_CONVERTER_ConfigVoltageConstraintsTypeDef constraints_voltage</definition>
+        <argsstring></argsstring>
+        <name>constraints_voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="35" column="55" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1afdd7a664bd794bb1286d565d71d42dbe" prot="public" static="no" mutable="no">
+        <type>EVERT_HAL_GpioDefinitionTypeDef</type>
+        <definition>EVERT_HAL_GpioDefinitionTypeDef EVERT_BOOST_CONVERTER_GPIO_DEF_ID_SELECTION</definition>
+        <argsstring></argsstring>
+        <name>EVERT_BOOST_CONVERTER_GPIO_DEF_ID_SELECTION</name>
+        <initializer>= {GPIOB, GPIO_PIN_5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="37" column="33" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="37" bodyend="-1"/>
+        <referencedby refid="boost__converter_8c_1a549452f780cdc6fb2a2a0883fb5c27ff" compoundref="boost__converter_8c" startline="63" endline="100">EVERT_BOOST_CONVERTER_main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_TimeTypeDef</ref></type>
+        <definition>EVERT_BOOST_CONVERTER_TimeTypeDef time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="40" column="35" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="40" bodyend="-1"/>
+        <referencedby refid="boost__converter_8c_1ac47ee3b6d47949914c07c3f55417d206" compoundref="boost__converter_8c" startline="104" endline="128">EVERT_BOOST_CONVERTER_loop</referencedby>
+        <referencedby refid="boost__converter_8c_1a549452f780cdc6fb2a2a0883fb5c27ff" compoundref="boost__converter_8c" startline="63" endline="100">EVERT_BOOST_CONVERTER_main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1aeb8494ca7fb92be83676bcf524050c8c" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__BOOST__CONVERTER__IoStateTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_IoStateTypeDef</ref></type>
+        <definition>EVERT_BOOST_CONVERTER_IoStateTypeDef io_state</definition>
+        <argsstring></argsstring>
+        <name>io_state</name>
+        <initializer>= {GPIO_PIN_RESET}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="41" column="38" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="41" bodyend="-1"/>
+        <referencedby refid="boost__converter_8c_1a549452f780cdc6fb2a2a0883fb5c27ff" compoundref="boost__converter_8c" startline="63" endline="100">EVERT_BOOST_CONVERTER_main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" prot="public" static="no" mutable="no">
+        <type>volatile <ref refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_MpptStateTypeDef</ref></type>
+        <definition>volatile EVERT_BOOST_CONVERTER_MpptStateTypeDef mppt_state</definition>
+        <argsstring></argsstring>
+        <name>mppt_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="42" column="49" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="42" bodyend="-1"/>
+        <referencedby refid="boost__converter_8c_1a4c572f884f8239ad55ece449ec1f953d" compoundref="boost__converter_8c" startline="169" endline="189">EVERT_BOOST_CONVERTER_AlarmChangedState</referencedby>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+        <referencedby refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" compoundref="boost__converter__mppt_8c" startline="20" endline="44">EVERT_BOOST_CONVERTER_MpptRun</referencedby>
+        <referencedby refid="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" compoundref="boost__converter_8c" startline="130" endline="166">EVERT_BOOST_CONVERTER_SetDutyCycle</referencedby>
+        <referencedby refid="boost__converter_8c_1a743d2481e17055c63c2dcd95fa0f2db1" compoundref="boost__converter_8c" startline="192" endline="212">EVERT_CAN_OnMessageReceived</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" prot="public" static="no" mutable="no">
+        <type>EVERT_CAN_HandlerTypeDef</type>
+        <definition>EVERT_CAN_HandlerTypeDef can_handler</definition>
+        <argsstring></argsstring>
+        <name>can_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="46" column="26" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="46" bodyend="-1"/>
+        <referencedby refid="boost__converter_8c_1ac47ee3b6d47949914c07c3f55417d206" compoundref="boost__converter_8c" startline="104" endline="128">EVERT_BOOST_CONVERTER_loop</referencedby>
+        <referencedby refid="boost__converter_8c_1a2ef6cdb96128b36ddbf5418b436d6e2f" compoundref="boost__converter_8c" startline="289" endline="293">EVERT_INVERTER_FDCAN_RxFifo0Callback</referencedby>
+        <referencedby refid="boost__converter_8c_1aa894c6a73ce22318ac9e83a40fc2f7c0" compoundref="boost__converter_8c" startline="243" endline="256">EVERT_TASK_SCHEDULER_OnTaskSendPing</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1ad9b9ddaa8a38b96ca81c684f453f8322" prot="public" static="no" mutable="no">
+        <type>EVERT_CAN_FifoBufferItemTypeDef</type>
+        <definition>EVERT_CAN_FifoBufferItemTypeDef rx_fifo_items[EVERT_CONSTRAINT_CAN_BUFFER_SIZE]</definition>
+        <argsstring>[EVERT_CONSTRAINT_CAN_BUFFER_SIZE]</argsstring>
+        <name>rx_fifo_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="47" column="33" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1af79a006e98b49bdc96b154b2722f52cf" prot="public" static="no" mutable="no">
+        <type>EVERT_CAN_FifoBufferItemTypeDef</type>
+        <definition>EVERT_CAN_FifoBufferItemTypeDef tx_fifo_items[EVERT_CONSTRAINT_CAN_BUFFER_SIZE]</definition>
+        <argsstring>[EVERT_CONSTRAINT_CAN_BUFFER_SIZE]</argsstring>
+        <name>tx_fifo_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="48" column="33" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a22b804736f5648d52f639b2647d4ed13" prot="public" static="no" mutable="no">
+        <type>ADC_HandleTypeDef</type>
+        <definition>ADC_HandleTypeDef hadc1</definition>
+        <argsstring></argsstring>
+        <name>hadc1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="51" column="26" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" declline="51" declcolumn="26"/>
+        <referencedby refid="boost__converter_8c_1a5d70e6c586583a61f870041852eb6fff" compoundref="boost__converter_8c" startline="281" endline="287">HAL_ADC_ConvCpltCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a1c126854bb1813d31ab4776b21dcc51f" prot="public" static="no" mutable="no">
+        <type>DMA_HandleTypeDef</type>
+        <definition>DMA_HandleTypeDef hdma_adc1</definition>
+        <argsstring></argsstring>
+        <name>hdma_adc1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="52" column="26" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" declline="52" declcolumn="26"/>
+        <referencedby refid="boost__converter_8c_1a549452f780cdc6fb2a2a0883fb5c27ff" compoundref="boost__converter_8c" startline="63" endline="100">EVERT_BOOST_CONVERTER_main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a7e870132380038c7b0e226a8c78d3461" prot="public" static="no" mutable="no">
+        <type>FDCAN_HandleTypeDef</type>
+        <definition>FDCAN_HandleTypeDef hfdcan1</definition>
+        <argsstring></argsstring>
+        <name>hfdcan1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="53" column="28" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" declline="53" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a44943263f7e1cd04f86903320b61859b" prot="public" static="no" mutable="no">
+        <type>HRTIM_HandleTypeDef</type>
+        <definition>HRTIM_HandleTypeDef hhrtim1</definition>
+        <argsstring></argsstring>
+        <name>hhrtim1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="54" column="28" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" declline="54" declcolumn="28"/>
+        <referencedby refid="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" compoundref="boost__converter_8c" startline="130" endline="166">EVERT_BOOST_CONVERTER_SetDutyCycle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a2c80fd5510e2990a59a5c90d745c716c" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim2</definition>
+        <argsstring></argsstring>
+        <name>htim2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="55" column="26" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" declline="55" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim3</definition>
+        <argsstring></argsstring>
+        <name>htim3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="56" column="26" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" declline="56" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter_8c_1a9df6921ec12400da62f5eb5ff246ebd7" prot="public" static="yes" mutable="no">
+        <type>volatile bool</type>
+        <definition>volatile bool adc_completed[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>adc_completed</name>
+        <initializer>= {false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="58" column="22" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="boost__converter_8c_1a549452f780cdc6fb2a2a0883fb5c27ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EVERT_BOOST_CONVERTER_main</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_BOOST_CONVERTER_main</name>
+        <briefdescription>
+<para>Main function for the boost converter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the boost converter and starts the main loop <simplesect kind="return"><para>0 if successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="63" column="5" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="63" bodyend="100"/>
+        <references refid="boost__converter_8c_1afdd7a664bd794bb1286d565d71d42dbe" compoundref="boost__converter_8c" startline="37">EVERT_BOOST_CONVERTER_GPIO_DEF_ID_SELECTION</references>
+        <references refid="boost__converter_8c_1a54fa82723126f06e24a65e0afdbb9db4" compoundref="boost__converter_8c" startline="307" endline="311">HAL_DMA_ErrorCallback</references>
+        <references refid="boost__converter_8c_1a1c126854bb1813d31ab4776b21dcc51f">hdma_adc1</references>
+        <references refid="structEVERT__BOOST__CONVERTER__IoStateTypeDef_1a8a5ef59c1c82e0113e1068a23aac308e" compoundref="boost__converter_8h" startline="77">EVERT_BOOST_CONVERTER_IoStateTypeDef::id_selection</references>
+        <references refid="boost__converter_8c_1aeb8494ca7fb92be83676bcf524050c8c" compoundref="boost__converter_8c" startline="41">io_state</references>
+        <references refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ad34ff7ee472675da37c924d061fbf078" compoundref="boost__converter_8h" startline="66">EVERT_BOOST_CONVERTER_TimeTypeDef::start_time</references>
+        <references refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" compoundref="boost__converter_8c" startline="40">time</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1ac47ee3b6d47949914c07c3f55417d206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_loop</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_BOOST_CONVERTER_loop</name>
+        <briefdescription>
+<para>Main loop for the boost converter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Runs the main loop for the boost converter </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="104" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="104" bodyend="128"/>
+        <references refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" compoundref="boost__converter_8c" startline="46">can_handler</references>
+        <references refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ab4670aa8b0ce46a87b1f1d1ca1a0166e" compoundref="boost__converter_8h" startline="67">EVERT_BOOST_CONVERTER_TimeTypeDef::current_time</references>
+        <references refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1a42b708c7b3b8b08850cc95e92abc08e3" compoundref="boost__converter_8h" startline="70">EVERT_BOOST_CONVERTER_TimeTypeDef::delta_time</references>
+        <references refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1afe184626b788b62088703f2f819c87d7" compoundref="boost__converter_8h" startline="68">EVERT_BOOST_CONVERTER_TimeTypeDef::elapsed_time</references>
+        <references refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1a706c35c83fa1d2607808ad16d8cf8716" compoundref="boost__converter_8h" startline="69">EVERT_BOOST_CONVERTER_TimeTypeDef::last_time</references>
+        <references refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ad34ff7ee472675da37c924d061fbf078" compoundref="boost__converter_8h" startline="66">EVERT_BOOST_CONVERTER_TimeTypeDef::start_time</references>
+        <references refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" compoundref="boost__converter_8c" startline="40">time</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_SetDutyCycle</definition>
+        <argsstring>(float32_t duty_cycle)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_SetDutyCycle</name>
+        <param>
+          <type>float32_t</type>
+          <declname>duty_cycle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="130" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="130" bodyend="166"/>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ac1fdc481c2092319c14f5a3a7ee5077c" compoundref="boost__converter_8h" startline="94">EVERT_BOOST_CONVERTER_MpptStateTypeDef::duty_cycle</references>
+        <references refid="__conf__evert__boost__converter_8h_1a4a455cf9e1e5516804fb480a94bf6808" compoundref="__conf__evert__boost__converter_8h" startline="19">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MAX</references>
+        <references refid="__conf__evert__boost__converter_8h_1a4c701e5b84152e38a9dc155ae9f2941c" compoundref="__conf__evert__boost__converter_8h" startline="18">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MIN</references>
+        <references refid="boost__converter_8c_1a44943263f7e1cd04f86903320b61859b">hhrtim1</references>
+        <references refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" compoundref="boost__converter_8c" startline="42">mppt_state</references>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+        <referencedby refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" compoundref="boost__converter__mppt_8c" startline="20" endline="44">EVERT_BOOST_CONVERTER_MpptRun</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a4c572f884f8239ad55ece449ec1f953d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_BOOST_CONVERTER_AlarmChangedState</definition>
+        <argsstring>(EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index, bool is_set)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_AlarmChangedState</name>
+        <param>
+          <type><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="169" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="169" bodyend="189"/>
+        <references refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" compoundref="boost__converter__alarms_8c" startline="3">alarm_register</references>
+        <references refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820baf71834617eecbcf65aab3a1ffed61d21" compoundref="boost__converter_8h" startline="85">BCS_RUNNING</references>
+        <references refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" compoundref="boost__converter_8c" startline="42">mppt_state</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" compoundref="boost__converter_8h" startline="93">EVERT_BOOST_CONVERTER_MpptStateTypeDef::status</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a743d2481e17055c63c2dcd95fa0f2db1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_CAN_OnMessageReceived</definition>
+        <argsstring>(EVERT_CAN_HandlerTypeDef *handler, const EVERT_CAN_FrameTypeDef frame)</argsstring>
+        <name>EVERT_CAN_OnMessageReceived</name>
+        <param>
+          <type>EVERT_CAN_HandlerTypeDef *</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>const EVERT_CAN_FrameTypeDef</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="192" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="192" bodyend="212"/>
+        <references refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820baf71834617eecbcf65aab3a1ffed61d21" compoundref="boost__converter_8h" startline="85">BCS_RUNNING</references>
+        <references refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820ba78ce83213aef9e7336b40c33b89207a2" compoundref="boost__converter_8h" startline="84">BCS_STANDBY</references>
+        <references refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" compoundref="boost__converter_8c" startline="42">mppt_state</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" compoundref="boost__converter_8h" startline="93">EVERT_BOOST_CONVERTER_MpptStateTypeDef::status</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1ab2ee62b9bb7cfb443747de046cf75a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_CAN_OnErrorReceived</definition>
+        <argsstring>(EVERT_CAN_HandlerTypeDef *handler)</argsstring>
+        <name>EVERT_CAN_OnErrorReceived</name>
+        <param>
+          <type>EVERT_CAN_HandlerTypeDef *</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="214" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="214" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1af10d97892d8e74a32604474a09e2ab39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_DEVICE_Derived_OnDeviceStateChange</definition>
+        <argsstring>(const EVERT_DEVICE_StateTypeDef new_state, const EVERT_DEVICE_StateTypeDef old_state)</argsstring>
+        <name>EVERT_DEVICE_Derived_OnDeviceStateChange</name>
+        <param>
+          <type>const EVERT_DEVICE_StateTypeDef</type>
+          <declname>new_state</declname>
+        </param>
+        <param>
+          <type>const EVERT_DEVICE_StateTypeDef</type>
+          <declname>old_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="222" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="222" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a78595f7eb043517735afc6b712a3963c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_DEVICE_Derived_OnEnterState_BootingComms</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_DEVICE_Derived_OnEnterState_BootingComms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="228" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="228" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1ac4dc571095d6cf4226b0abf48fb923f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="234" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="234" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a3de365472b80a014b6b03ad450ac6d36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_TASK_SCHEDULER_OnTaskSendData</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_TASK_SCHEDULER_OnTaskSendData</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="237" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a1c79b46de524d93eafac400b8731a3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="240" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="240" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1aa894c6a73ce22318ac9e83a40fc2f7c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_TASK_SCHEDULER_OnTaskSendPing</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_TASK_SCHEDULER_OnTaskSendPing</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="243" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="243" bodyend="256"/>
+        <references refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" compoundref="boost__converter_8c" startline="46">can_handler</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a7da2e3db107fb1b653328017b8390a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_ISR_10KHZ_IRQHandler</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_BOOST_CONVERTER_ISR_10KHZ_IRQHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="259" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="259" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1ae7aba523008dd9c1d22dfe3fbf4ec04c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_ISR_100HZ_IRQHandler</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_BOOST_CONVERTER_ISR_100HZ_IRQHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="272" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="272" bodyend="279"/>
+        <references refid="boost__converter__alarms_8c_1acc1383dfcd8bde283188c38898068761" compoundref="boost__converter__alarms_8c" startline="101" endline="118">EVERT_BOOST_CONVERTER_AlarmCheck</references>
+        <references refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" compoundref="boost__converter__mppt_8c" startline="20" endline="44">EVERT_BOOST_CONVERTER_MpptRun</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a5d70e6c586583a61f870041852eb6fff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides HAL_ADC_ConvCpltCallback</definition>
+        <argsstring>(ADC_HandleTypeDef *hadc)</argsstring>
+        <name>HAL_ADC_ConvCpltCallback</name>
+        <param>
+          <type>ADC_HandleTypeDef *</type>
+          <declname>hadc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="281" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="281" bodyend="287"/>
+        <references refid="boost__converter_8c_1a22b804736f5648d52f639b2647d4ed13">hadc1</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a2ef6cdb96128b36ddbf5418b436d6e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void <ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref></type>
+        <definition>void __overrides EVERT_INVERTER_FDCAN_RxFifo0Callback</definition>
+        <argsstring>(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)</argsstring>
+        <name>EVERT_INVERTER_FDCAN_RxFifo0Callback</name>
+        <param>
+          <type>FDCAN_HandleTypeDef *</type>
+          <declname>hfdcan</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>RxFifo0ITs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="289" column="18" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="289" bodyend="293"/>
+        <references refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" compoundref="boost__converter_8c" startline="46">can_handler</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a5b06ee28ef220cf3771247cc65b9120d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_hal_error</definition>
+        <argsstring>(char *error_message)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_hal_error</name>
+        <param>
+          <type>char *</type>
+          <declname>error_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="296" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="296" bodyend="299"/>
+        <references refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" compoundref="boost__converter_8c" startline="337" endline="346">EVERT_BOOST_CONVERTER_CommonErrorCallback</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1adea1a55c5199d5cb4cfc1fdcd32be1b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_ADC_ErrorCallback</definition>
+        <argsstring>(ADC_HandleTypeDef *hadc)</argsstring>
+        <name>HAL_ADC_ErrorCallback</name>
+        <param>
+          <type>ADC_HandleTypeDef *</type>
+          <declname>hadc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="301" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="301" bodyend="305"/>
+        <references refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" compoundref="boost__converter_8c" startline="337" endline="346">EVERT_BOOST_CONVERTER_CommonErrorCallback</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a54fa82723126f06e24a65e0afdbb9db4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_DMA_ErrorCallback</definition>
+        <argsstring>(DMA_HandleTypeDef *hdma)</argsstring>
+        <name>HAL_DMA_ErrorCallback</name>
+        <param>
+          <type>DMA_HandleTypeDef *</type>
+          <declname>hdma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="307" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="307" bodyend="311"/>
+        <references refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" compoundref="boost__converter_8c" startline="337" endline="346">EVERT_BOOST_CONVERTER_CommonErrorCallback</references>
+        <referencedby refid="boost__converter_8c_1a549452f780cdc6fb2a2a0883fb5c27ff" compoundref="boost__converter_8c" startline="63" endline="100">EVERT_BOOST_CONVERTER_main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a778a484ceadc26552fd553c8dbf005d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_FDCAN_ErrorCallback</definition>
+        <argsstring>(FDCAN_HandleTypeDef *hfdcan)</argsstring>
+        <name>HAL_FDCAN_ErrorCallback</name>
+        <param>
+          <type>FDCAN_HandleTypeDef *</type>
+          <declname>hfdcan</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="313" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="313" bodyend="317"/>
+        <references refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" compoundref="boost__converter_8c" startline="337" endline="346">EVERT_BOOST_CONVERTER_CommonErrorCallback</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a237e17bd9b1d257bd8e2880227b8484e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_FLASH_OperationErrorCallback</definition>
+        <argsstring>(uint32_t ReturnValue)</argsstring>
+        <name>HAL_FLASH_OperationErrorCallback</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ReturnValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="319" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="319" bodyend="323"/>
+        <references refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" compoundref="boost__converter_8c" startline="337" endline="346">EVERT_BOOST_CONVERTER_CommonErrorCallback</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a4d5338cd64a656dfdc4154773bc4f05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_I2C_ErrorCallback</definition>
+        <argsstring>(I2C_HandleTypeDef *hi2c)</argsstring>
+        <name>HAL_I2C_ErrorCallback</name>
+        <param>
+          <type>I2C_HandleTypeDef *</type>
+          <declname>hi2c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="325" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="325" bodyend="329"/>
+        <references refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" compoundref="boost__converter_8c" startline="337" endline="346">EVERT_BOOST_CONVERTER_CommonErrorCallback</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1a6f0868af383d592940700dbb52fac016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_TIM_ErrorCallback</definition>
+        <argsstring>(TIM_HandleTypeDef *htim)</argsstring>
+        <name>HAL_TIM_ErrorCallback</name>
+        <param>
+          <type>TIM_HandleTypeDef *</type>
+          <declname>htim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="331" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="331" bodyend="335"/>
+        <references refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" compoundref="boost__converter_8c" startline="337" endline="346">EVERT_BOOST_CONVERTER_CommonErrorCallback</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_CommonErrorCallback</definition>
+        <argsstring>(char *error_message)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_CommonErrorCallback</name>
+        <param>
+          <type>char *</type>
+          <declname>error_message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" line="337" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c" bodystart="337" bodyend="346"/>
+        <referencedby refid="boost__converter_8c_1a5b06ee28ef220cf3771247cc65b9120d" compoundref="boost__converter_8c" startline="296" endline="299">EVERT_BOOST_CONVERTER_hal_error</referencedby>
+        <referencedby refid="boost__converter_8c_1adea1a55c5199d5cb4cfc1fdcd32be1b2" compoundref="boost__converter_8c" startline="301" endline="305">HAL_ADC_ErrorCallback</referencedby>
+        <referencedby refid="boost__converter_8c_1a54fa82723126f06e24a65e0afdbb9db4" compoundref="boost__converter_8c" startline="307" endline="311">HAL_DMA_ErrorCallback</referencedby>
+        <referencedby refid="boost__converter_8c_1a778a484ceadc26552fd553c8dbf005d0" compoundref="boost__converter_8c" startline="313" endline="317">HAL_FDCAN_ErrorCallback</referencedby>
+        <referencedby refid="boost__converter_8c_1a237e17bd9b1d257bd8e2880227b8484e" compoundref="boost__converter_8c" startline="319" endline="323">HAL_FLASH_OperationErrorCallback</referencedby>
+        <referencedby refid="boost__converter_8c_1a4d5338cd64a656dfdc4154773bc4f05d" compoundref="boost__converter_8c" startline="325" endline="329">HAL_I2C_ErrorCallback</referencedby>
+        <referencedby refid="boost__converter_8c_1a6f0868af383d592940700dbb52fac016" compoundref="boost__converter_8c" startline="331" endline="335">HAL_TIM_ErrorCallback</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions and control loops for the boost converter. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Evert Firmware Team<itemizedlist>
+<listitem><para>Config: <ref refid="__conf__evert__boost__converter_8h" kindref="compound">_conf_evert_boost_converter.h</ref></para>
+</listitem><listitem><para>Related:<itemizedlist>
+<listitem><para><ref refid="boost__converter__alarms_8h" kindref="compound">boost_converter_alarms.h</ref> (alarms) | <ref refid="boost__converter__alarms_8c" kindref="compound">boost_converter_alarms.c</ref></para>
+</listitem><listitem><para><ref refid="boost__converter__calibration_8h" kindref="compound">boost_converter_calibration.h</ref></para>
+</listitem><listitem><para><ref refid="boost__converter__constraints_8h" kindref="compound">boost_converter_constraints.h</ref></para>
+</listitem><listitem><para><ref refid="boost__converter__mppt_8h" kindref="compound">boost_converter_mppt.h</ref> (MPPT) | <ref refid="boost__converter__mppt_8c" kindref="compound">boost_converter_mppt.c</ref></para>
+</listitem><listitem><para><ref refid="boost__converter__readings_8h" kindref="compound">boost_converter_readings.h</ref> (readings) | <ref refid="boost__converter__readings_8c" kindref="compound">boost_converter_readings.c</ref> </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>std/ST<sp/>includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32g4xx_hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32g4xx_hal_hrtim.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Evert<sp/>lib<sp/>includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gpio_definition.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;status_register.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Boost<sp/>Converter<sp/>includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="boost__converter_8h" kindref="compound">boost_converter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Calibrations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="boost__converter_8c_1af671f4f913dde825f2789e079e398494" refkind="member"><highlight class="normal"><ref refid="structEVERT__BOOST__CONVERTER__ConfigCurrentCalibrationTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef</ref><sp/><ref refid="boost__converter_8c_1af671f4f913dde825f2789e079e398494" kindref="member">calibration_current</ref>;</highlight></codeline>
+<codeline lineno="30" refid="boost__converter_8c_1a1ef692420461fcb824132901edc1b04e" refkind="member"><highlight class="normal"><ref refid="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef</ref><sp/><ref refid="boost__converter_8c_1a1ef692420461fcb824132901edc1b04e" kindref="member">calibration_voltage</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Calibrations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="boost__converter_8c_1a89e90f1d12cebc72591f734ca64fd8e4" refkind="member"><highlight class="normal"><ref refid="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef</ref><sp/><ref refid="boost__converter_8c_1a89e90f1d12cebc72591f734ca64fd8e4" kindref="member">constraints_current</ref>;</highlight></codeline>
+<codeline lineno="34" refid="boost__converter_8c_1ae3c1b2950d99b8bce0bf213f0c032cb2" refkind="member"><highlight class="normal"><ref refid="structEVERT__BOOST__CONVERTER__ConfigTemperatureConstraintsTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigTemperatureConstraintsTypeDef</ref><sp/><ref refid="boost__converter_8c_1ae3c1b2950d99b8bce0bf213f0c032cb2" kindref="member">constraints_temperature</ref>;</highlight></codeline>
+<codeline lineno="35" refid="boost__converter_8c_1a1b9519f3662f0c89e3bd72266b69a080" refkind="member"><highlight class="normal"><ref refid="structEVERT__BOOST__CONVERTER__ConfigVoltageConstraintsTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_ConfigVoltageConstraintsTypeDef</ref><sp/><ref refid="boost__converter_8c_1a1b9519f3662f0c89e3bd72266b69a080" kindref="member">constraints_voltage</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="boost__converter_8c_1afdd7a664bd794bb1286d565d71d42dbe" refkind="member"><highlight class="normal">EVERT_HAL_GpioDefinitionTypeDef<sp/><ref refid="boost__converter_8c_1afdd7a664bd794bb1286d565d71d42dbe" kindref="member">EVERT_BOOST_CONVERTER_GPIO_DEF_ID_SELECTION</ref><sp/>=<sp/>{GPIOB,<sp/>GPIO_PIN_5};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BOOST<sp/>CONVERTER<sp/>Objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" refkind="member"><highlight class="normal"><ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_TimeTypeDef</ref><sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>;</highlight></codeline>
+<codeline lineno="41" refid="boost__converter_8c_1aeb8494ca7fb92be83676bcf524050c8c" refkind="member"><highlight class="normal"><ref refid="structEVERT__BOOST__CONVERTER__IoStateTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_IoStateTypeDef</ref><sp/><ref refid="boost__converter_8c_1aeb8494ca7fb92be83676bcf524050c8c" kindref="member">io_state</ref><sp/>=<sp/>{GPIO_PIN_RESET};</highlight></codeline>
+<codeline lineno="42" refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef" kindref="compound">EVERT_BOOST_CONVERTER_MpptStateTypeDef</ref><sp/><ref refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" kindref="member">mppt_state</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CAN<sp/>Handler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="boost__converter_8c_1a6206b4b9ef01aab88e62332a6e308d16" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CONSTRAINT_CAN_BUFFER_SIZE<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" refkind="member"><highlight class="normal">EVERT_CAN_HandlerTypeDef<sp/><ref refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" kindref="member">can_handler</ref>;</highlight></codeline>
+<codeline lineno="47" refid="boost__converter_8c_1ad9b9ddaa8a38b96ca81c684f453f8322" refkind="member"><highlight class="normal">EVERT_CAN_FifoBufferItemTypeDef<sp/><ref refid="boost__converter_8c_1ad9b9ddaa8a38b96ca81c684f453f8322" kindref="member">rx_fifo_items</ref>[<ref refid="boost__converter_8c_1a6206b4b9ef01aab88e62332a6e308d16" kindref="member">EVERT_CONSTRAINT_CAN_BUFFER_SIZE</ref>];</highlight></codeline>
+<codeline lineno="48" refid="boost__converter_8c_1af79a006e98b49bdc96b154b2722f52cf" refkind="member"><highlight class="normal">EVERT_CAN_FifoBufferItemTypeDef<sp/><ref refid="boost__converter_8c_1af79a006e98b49bdc96b154b2722f52cf" kindref="member">tx_fifo_items</ref>[<ref refid="boost__converter_8c_1a6206b4b9ef01aab88e62332a6e308d16" kindref="member">EVERT_CONSTRAINT_CAN_BUFFER_SIZE</ref>];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>External<sp/>Peripherals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADC_HandleTypeDef<sp/><ref refid="boost__converter_8c_1a22b804736f5648d52f639b2647d4ed13" kindref="member">hadc1</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>DMA_HandleTypeDef<sp/><ref refid="boost__converter_8c_1a1c126854bb1813d31ab4776b21dcc51f" kindref="member">hdma_adc1</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>FDCAN_HandleTypeDef<sp/><ref refid="boost__converter_8c_1a7e870132380038c7b0e226a8c78d3461" kindref="member">hfdcan1</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>HRTIM_HandleTypeDef<sp/><ref refid="boost__converter_8c_1a44943263f7e1cd04f86903320b61859b" kindref="member">hhrtim1</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/><ref refid="boost__converter_8c_1a2c80fd5510e2990a59a5c90d745c716c" kindref="member">htim2</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/><ref refid="boost__converter_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>adc_completed[1]<sp/>=<sp/>{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="boost__converter_8c_1a549452f780cdc6fb2a2a0883fb5c27ff" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1a549452f780cdc6fb2a2a0883fb5c27ff" kindref="member">EVERT_BOOST_CONVERTER_main</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_DMA_RegisterCallback(&amp;<ref refid="boost__converter_8c_1a1c126854bb1813d31ab4776b21dcc51f" kindref="member">hdma_adc1</ref>,<sp/>HAL_DMA_XFER_ERROR_CB_ID,<sp/><ref refid="boost__converter_8c_1a54fa82723126f06e24a65e0afdbb9db4" kindref="member">HAL_DMA_ErrorCallback</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>ID<sp/>selection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1aeb8494ca7fb92be83676bcf524050c8c" kindref="member">io_state</ref>.<ref refid="structEVERT__BOOST__CONVERTER__IoStateTypeDef_1a8a5ef59c1c82e0113e1068a23aac308e" kindref="member">id_selection</ref><sp/>=<sp/>HAL_GPIO_ReadPin(<ref refid="boost__converter_8c_1afdd7a664bd794bb1286d565d71d42dbe" kindref="member">EVERT_BOOST_CONVERTER_GPIO_DEF_ID_SELECTION</ref>.port,<sp/><ref refid="boost__converter_8c_1afdd7a664bd794bb1286d565d71d42dbe" kindref="member">EVERT_BOOST_CONVERTER_GPIO_DEF_ID_SELECTION</ref>.pin);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>the<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ad34ff7ee472675da37c924d061fbf078" kindref="member">start_time</ref><sp/>=<sp/>HAL_GetTick();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>sub-systems</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_BOOST_CONVERTER_InitCalibrations();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_BOOST_CONVERTER_InitConstraints();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter__readings_8c_1a8a6e2bf6a5784a2560f470ceec41e2b4" kindref="member">EVERT_BOOST_CONVERTER_InitFilters</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8c_1aa6ce1f4a12e54326fc93086576d41790" kindref="member">EVERT_BOOST_CONVERTER_InitAlarmRegister</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_DEVICE_SetVersionInfo(<ref refid="boost__converter_8h_1a61597dbfbda8133df775d6830893cc16" kindref="member">DEVICE_VERSION_MAJOR</ref>,<sp/><ref refid="boost__converter_8h_1a2019997aedeec5f1d97c8b65e8a0579b" kindref="member">DEVICE_VERSION_MINOR</ref>,<sp/><ref refid="boost__converter_8h_1abd80e2fa8bcb8c6fc6a5c6384ceb6827" kindref="member">DEVICE_VERSION_PATCH</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_DEVICE_Init();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>the<sp/>ADCs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_HAL_ADC_Start(&amp;<ref refid="boost__converter_8c_1a22b804736f5648d52f639b2647d4ed13" kindref="member">hadc1</ref>,<sp/>(uint16_t<sp/>*)<ref refid="boost__converter__readings_8c_1a5f20ab1faad53cf3a899ef2df5421d05" kindref="member">adc1_buffer</ref>,<sp/><ref refid="__conf__evert__boost__converter_8h_1a7b80a881c0743220fb3102596f1b50a9" kindref="member">EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>the<sp/>timers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_TIM_Base_Start_IT(&amp;<ref refid="boost__converter_8c_1a2c80fd5510e2990a59a5c90d745c716c" kindref="member">htim2</ref>);<sp/></highlight><highlight class="comment">//<sp/>10<sp/>kHz<sp/>(HF<sp/>ISR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_TIM_Base_Start_IT(&amp;<ref refid="boost__converter_8c_1aac3d2c59ee0e3bbae1b99529a154eb62" kindref="member">htim3</ref>);<sp/></highlight><highlight class="comment">//<sp/>100<sp/>Hz<sp/>(LF<sp/>ISR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>PWM<sp/>output/timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_HRTIM_WaveformOutputStart(&amp;<ref refid="boost__converter_8c_1a44943263f7e1cd04f86903320b61859b" kindref="member">hhrtim1</ref>,<sp/>HRTIM_OUTPUT_TA1);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_HRTIM_WaveformCounterStart(&amp;<ref refid="boost__converter_8c_1a44943263f7e1cd04f86903320b61859b" kindref="member">hhrtim1</ref>,<sp/>HRTIM_TIMERID_TIMER_A);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>the<sp/>mppt-control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" kindref="member">EVERT_BOOST_CONVERTER_SetDutyCycle</ref>(0.0f);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" kindref="member">EVERT_BOOST_CONVERTER_MpptInit</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_CAN_DeviceIdentifierTypeDef<sp/>device_id<sp/>=<sp/><ref refid="boost__converter_8c_1aeb8494ca7fb92be83676bcf524050c8c" kindref="member">io_state</ref>.<ref refid="structEVERT__BOOST__CONVERTER__IoStateTypeDef_1a8a5ef59c1c82e0113e1068a23aac308e" kindref="member">id_selection</ref><sp/>==<sp/>GPIO_PIN_RESET<sp/>?<sp/>CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER1<sp/>:<sp/>CAN_DEVICE_IDENTIFIER_BOOST_CONVERTER2;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_CAN_Handler_Init(&amp;<ref refid="boost__converter_8c_1a7e870132380038c7b0e226a8c78d3461" kindref="member">hfdcan1</ref>,<sp/>&amp;<ref refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" kindref="member">can_handler</ref>,<sp/>device_id,<sp/><ref refid="boost__converter_8c_1ad9b9ddaa8a38b96ca81c684f453f8322" kindref="member">rx_fifo_items</ref>,<sp/><ref refid="boost__converter_8c_1af79a006e98b49bdc96b154b2722f52cf" kindref="member">tx_fifo_items</ref>,<sp/><ref refid="boost__converter_8c_1a6206b4b9ef01aab88e62332a6e308d16" kindref="member">EVERT_CONSTRAINT_CAN_BUFFER_SIZE</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="boost__converter_8c_1ac47ee3b6d47949914c07c3f55417d206" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1ac47ee3b6d47949914c07c3f55417d206" kindref="member">EVERT_BOOST_CONVERTER_loop</ref>()</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ab4670aa8b0ce46a87b1f1d1ca1a0166e" kindref="member">current_time</ref><sp/>=<sp/>HAL_GetTick();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1afe184626b788b62088703f2f819c87d7" kindref="member">elapsed_time</ref><sp/>=<sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ab4670aa8b0ce46a87b1f1d1ca1a0166e" kindref="member">current_time</ref><sp/>-<sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ad34ff7ee472675da37c924d061fbf078" kindref="member">start_time</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1a42b708c7b3b8b08850cc95e92abc08e3" kindref="member">delta_time</ref><sp/>=<sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ab4670aa8b0ce46a87b1f1d1ca1a0166e" kindref="member">current_time</ref><sp/>-<sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1a706c35c83fa1d2607808ad16d8cf8716" kindref="member">last_time</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_DEVICE_Update(<ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1afe184626b788b62088703f2f819c87d7" kindref="member">elapsed_time</ref>,<sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1a42b708c7b3b8b08850cc95e92abc08e3" kindref="member">delta_time</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>the<sp/>CAN<sp/>messages</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_CAN_ProcessBufferStatusTypeDef<sp/>rxStatus<sp/>=<sp/>EVERT_CAN_Handler_ProcessRxBuffer(&amp;<ref refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" kindref="member">can_handler</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rxStatus<sp/>!=<sp/>CAN_PBS_OK<sp/>&amp;&amp;<sp/>rxStatus<sp/>!=<sp/>CAN_PBS_IDLE<sp/>&amp;&amp;<sp/>rxStatus<sp/>!=<sp/>CAN_PBS_PROCESSING_RECEIVED_DATA)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EVERT_HAL_BreakPoint(</highlight><highlight class="stringliteral">&quot;Error<sp/>processing<sp/>RX<sp/>buffer\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_CAN_ProcessBufferStatusTypeDef<sp/>txStatus<sp/>=<sp/>EVERT_CAN_Handler_ProcessTxBuffer(&amp;<ref refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" kindref="member">can_handler</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(txStatus<sp/>!=<sp/>CAN_PBS_OK<sp/>&amp;&amp;<sp/>txStatus<sp/>!=<sp/>CAN_PBS_IDLE<sp/>&amp;&amp;<sp/>txStatus<sp/>!=<sp/>CAN_PBS_WAITING_FOR_INTERNAL_BUFFER)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EVERT_HAL_BreakPoint(</highlight><highlight class="stringliteral">&quot;Error<sp/>processing<sp/>TX<sp/>buffer\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1a706c35c83fa1d2607808ad16d8cf8716" kindref="member">last_time</ref><sp/>=<sp/><ref refid="boost__converter_8c_1ace82a68195f7b3bcb630b2b88b8a08ae" kindref="member">time</ref>.<ref refid="structEVERT__BOOST__CONVERTER__TimeTypeDef_1ab4670aa8b0ce46a87b1f1d1ca1a0166e" kindref="member">current_time</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" kindref="member">EVERT_BOOST_CONVERTER_SetDutyCycle</ref>(float32_t<sp/>duty_cycle)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>constraints<sp/>for<sp/>duty<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(duty_cycle<sp/>&gt;<sp/><ref refid="__conf__evert__boost__converter_8h_1a4a455cf9e1e5516804fb480a94bf6808" kindref="member">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MAX</ref>)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>duty_cycle<sp/>=<sp/><ref refid="__conf__evert__boost__converter_8h_1a4a455cf9e1e5516804fb480a94bf6808" kindref="member">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MAX</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(duty_cycle<sp/>&lt;<sp/><ref refid="__conf__evert__boost__converter_8h_1a4c701e5b84152e38a9dc155ae9f2941c" kindref="member">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MIN</ref>)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>duty_cycle<sp/>=<sp/><ref refid="__conf__evert__boost__converter_8h_1a4c701e5b84152e38a9dc155ae9f2941c" kindref="member">EVERT_CONSTRAINT_BC_DUTY_CYCLE_MIN</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>new<sp/>duty<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" kindref="member">mppt_state</ref>.<ref refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ac1fdc481c2092319c14f5a3a7ee5077c" kindref="member">duty_cycle</ref><sp/>=<sp/>duty_cycle;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Constant<sp/>timer<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>HRTIMER_PERIOD<sp/>=<sp/>HRTIM1-&gt;sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].PERxR;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>HRTIMER_COMPARE_MIN<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>HRTIMER_COMPARE_MAX<sp/>=<sp/>HRTIMER_PERIOD;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>New<sp/>compare<sp/>value<sp/>based<sp/>on<sp/>duty<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>compare_value<sp/>=<sp/>(uint32_t)(HRTIMER_PERIOD<sp/>*<sp/>duty_cycle);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clamp<sp/>the<sp/>compare<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(compare_value<sp/>&lt;<sp/>HRTIMER_COMPARE_MIN)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compare_value<sp/>=<sp/>HRTIMER_COMPARE_MIN;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(compare_value<sp/>&gt;<sp/>HRTIMER_COMPARE_MAX)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compare_value<sp/>=<sp/>HRTIMER_COMPARE_MAX;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>new<sp/>compare<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_HRTIM_SETCOMPARE(&amp;<ref refid="boost__converter_8c_1a44943263f7e1cd04f86903320b61859b" kindref="member">hhrtim1</ref>,<sp/>HRTIM_TIMERINDEX_TIMER_A,<sp/>HRTIM_COMPAREUNIT_1,<sp/>compare_value);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1a44943263f7e1cd04f86903320b61859b" kindref="member">hhrtim1</ref>.Instance-&gt;sTimerxRegs[HRTIM_TIMERINDEX_TIMER_A].CNTxR<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//<sp/>__weak<sp/>Callbacks<sp/>-<sp/>Alarms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="boost__converter_8c_1a4c572f884f8239ad55ece449ec1f953d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1a4c572f884f8239ad55ece449ec1f953d" kindref="member">EVERT_BOOST_CONVERTER_AlarmChangedState</ref>(<ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_set)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(alarm_index);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(is_set);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>there<sp/>are<sp/>no<sp/>alarms<sp/>set,<sp/>the<sp/>device<sp/>is<sp/>running</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_GetBitOnCount(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" kindref="member">mppt_state</ref>.<ref refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" kindref="member">status</ref><sp/>=<sp/><ref refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820baf71834617eecbcf65aab3a1ffed61d21" kindref="member">BCS_RUNNING</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>there<sp/>are<sp/>any<sp/>warning<sp/>alarms<sp/>set,<sp/>the<sp/>device<sp/>should<sp/>throttle<sp/>down</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_IsAnyBitSet(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>,<sp/>BOOST_CONVERTER_ALARMS_ThrottleDown,<sp/>7))</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" kindref="member">mppt_state</ref>.<ref refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" kindref="member">status</ref><sp/>=<sp/><ref refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820ba27e6f12478bf220c22b278d1818f7156" kindref="member">BCS_THROTTLE_DOWN</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>there<sp/>are<sp/>any<sp/>critical<sp/>alarms<sp/>set,<sp/>the<sp/>device<sp/>should<sp/>be<sp/>in<sp/>standby</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_IsAnyBitSet(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>,<sp/>BOOST_CONVERTER_ALARMS_Standby,<sp/>7))</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" kindref="member">mppt_state</ref>.<ref refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" kindref="member">status</ref><sp/>=<sp/><ref refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820ba78ce83213aef9e7336b40c33b89207a2" kindref="member">BCS_STANDBY</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//<sp/>__weak<sp/>Callbacks<sp/>-<sp/>CAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="boost__converter_8c_1a743d2481e17055c63c2dcd95fa0f2db1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1a743d2481e17055c63c2dcd95fa0f2db1" kindref="member">EVERT_CAN_OnMessageReceived</ref>(EVERT_CAN_HandlerTypeDef<sp/>*handler,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EVERT_CAN_FrameTypeDef<sp/>frame)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(handler);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(frame);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(frame.data.length<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>method<sp/>=<sp/>frame.data.data[0];</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>param1<sp/>=<sp/>frame.data.data[1];</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(method<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" kindref="member">mppt_state</ref>.<ref refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" kindref="member">status</ref><sp/>=<sp/>param1<sp/>==<sp/>0<sp/>?<sp/><ref refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820ba78ce83213aef9e7336b40c33b89207a2" kindref="member">BCS_STANDBY</ref><sp/>:<sp/><ref refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820baf71834617eecbcf65aab3a1ffed61d21" kindref="member">BCS_RUNNING</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(frame.identifier.target_id<sp/>==<sp/>&amp;handler-&gt;identifier)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>EVERT_HAL_BreakPoint(&quot;CAN<sp/>Message<sp/>Received\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="boost__converter_8c_1ab2ee62b9bb7cfb443747de046cf75a17" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1ab2ee62b9bb7cfb443747de046cf75a17" kindref="member">EVERT_CAN_OnErrorReceived</ref>(EVERT_CAN_HandlerTypeDef<sp/>*handler)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(handler);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_HAL_BreakPoint(</highlight><highlight class="stringliteral">&quot;CAN<sp/>Error<sp/>Received\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//<sp/>__weak<sp/>Callbacks<sp/>-<sp/>State</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="boost__converter_8c_1af10d97892d8e74a32604474a09e2ab39" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1af10d97892d8e74a32604474a09e2ab39" kindref="member">EVERT_DEVICE_Derived_OnDeviceStateChange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EVERT_DEVICE_StateTypeDef<sp/>new_state,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EVERT_DEVICE_StateTypeDef<sp/>old_state)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(new_state);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(old_state);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="boost__converter_8c_1a78595f7eb043517735afc6b712a3963c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1a78595f7eb043517735afc6b712a3963c" kindref="member">EVERT_DEVICE_Derived_OnEnterState_BootingComms</ref>()</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_DEVICE_State_Set(SS_INTERNAL,<sp/>DS_HANDSHAKE_ACKNOWLEDGED);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">//<sp/>__weak<sp/>Callbacks<sp/>-<sp/>Task<sp/>Scheduler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="boost__converter_8c_1ac4dc571095d6cf4226b0abf48fb923f7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1ac4dc571095d6cf4226b0abf48fb923f7" kindref="member">EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237" refid="boost__converter_8c_1a3de365472b80a014b6b03ad450ac6d36" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1a3de365472b80a014b6b03ad450ac6d36" kindref="member">EVERT_TASK_SCHEDULER_OnTaskSendData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240" refid="boost__converter_8c_1a1c79b46de524d93eafac400b8731a3dc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1a1c79b46de524d93eafac400b8731a3dc" kindref="member">EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243" refid="boost__converter_8c_1aa894c6a73ce22318ac9e83a40fc2f7c0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1aa894c6a73ce22318ac9e83a40fc2f7c0" kindref="member">EVERT_TASK_SCHEDULER_OnTaskSendPing</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>EVERT_CAN_Identifier_SetMessageId(&amp;handler-&gt;identifier,<sp/>MI_PING);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>EVERT_CAN_Identifier_SetPriority(&amp;handler-&gt;identifier,<sp/>MP_HIGH);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>EVERT_CAN_Handler_Transmit(handler,<sp/>sizeof(EVERT_CAN_PingMessageTypeDef),<sp/>(uint8_t<sp/>*)message);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>a<sp/>ping<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>data[7]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_CAN_FifoStatusTypeDef<sp/>status<sp/>=<sp/>EVERT_CAN_Handler_Transmit(&amp;<ref refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" kindref="member">can_handler</ref>,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data),<sp/>&amp;data);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/>CAN_FS_OK)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EVERT_HAL_BreakPoint(</highlight><highlight class="stringliteral">&quot;CAN<sp/>Error:<sp/>Ping\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Peripheral<sp/>Callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="boost__converter_8c_1a7da2e3db107fb1b653328017b8390a95" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1a7da2e3db107fb1b653328017b8390a95" kindref="member">EVERT_BOOST_CONVERTER_ISR_10KHZ_IRQHandler</ref>()</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!adc_completed[0])</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" kindref="member">EVERT_BOOST_CONVERTER_Readings</ref>();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>ADC<sp/>conversion<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>adc_completed[0]<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="boost__converter_8c_1ae7aba523008dd9c1d22dfe3fbf4ec04c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1ae7aba523008dd9c1d22dfe3fbf4ec04c" kindref="member">EVERT_BOOST_CONVERTER_ISR_100HZ_IRQHandler</ref>()</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>alarms/constraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8c_1acc1383dfcd8bde283188c38898068761" kindref="member">EVERT_BOOST_CONVERTER_AlarmCheck</ref>();</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Run<sp/>the<sp/>MPPT<sp/>algorithm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" kindref="member">EVERT_BOOST_CONVERTER_MpptRun</ref>();</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="boost__converter_8c_1a5d70e6c586583a61f870041852eb6fff" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1a5d70e6c586583a61f870041852eb6fff" kindref="member">HAL_ADC_ConvCpltCallback</ref>(ADC_HandleTypeDef<sp/>*hadc)</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hadc<sp/>==<sp/>&amp;<ref refid="boost__converter_8c_1a22b804736f5648d52f639b2647d4ed13" kindref="member">hadc1</ref>)</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_completed[0]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="boost__converter_8c_1a2ef6cdb96128b36ddbf5418b436d6e2f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" kindref="member">__overrides</ref><sp/><ref refid="boost__converter_8c_1a2ef6cdb96128b36ddbf5418b436d6e2f" kindref="member">EVERT_INVERTER_FDCAN_RxFifo0Callback</ref>(FDCAN_HandleTypeDef<sp/>*hfdcan,<sp/>uint32_t<sp/>RxFifo0ITs)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(hfdcan);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_CAN_Handler_Receive(&amp;<ref refid="boost__converter_8c_1a2d3a3289d9b9be317c689aaa5b319457" kindref="member">can_handler</ref>,<sp/>RxFifo0ITs);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Error<sp/>Callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="boost__converter_8c_1a5b06ee28ef220cf3771247cc65b9120d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1a5b06ee28ef220cf3771247cc65b9120d" kindref="member">EVERT_BOOST_CONVERTER_hal_error</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*error_message)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" kindref="member">EVERT_BOOST_CONVERTER_CommonErrorCallback</ref>(error_message);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="boost__converter_8c_1adea1a55c5199d5cb4cfc1fdcd32be1b2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1adea1a55c5199d5cb4cfc1fdcd32be1b2" kindref="member">HAL_ADC_ErrorCallback</ref>(ADC_HandleTypeDef<sp/>*hadc)</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(hadc);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" kindref="member">EVERT_BOOST_CONVERTER_CommonErrorCallback</ref>(</highlight><highlight class="stringliteral">&quot;ADC<sp/>Error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="boost__converter_8c_1a54fa82723126f06e24a65e0afdbb9db4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1a54fa82723126f06e24a65e0afdbb9db4" kindref="member">HAL_DMA_ErrorCallback</ref>(DMA_HandleTypeDef<sp/>*hdma)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(hdma);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" kindref="member">EVERT_BOOST_CONVERTER_CommonErrorCallback</ref>(</highlight><highlight class="stringliteral">&quot;DMA<sp/>Error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="boost__converter_8c_1a778a484ceadc26552fd553c8dbf005d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1a778a484ceadc26552fd553c8dbf005d0" kindref="member">HAL_FDCAN_ErrorCallback</ref>(FDCAN_HandleTypeDef<sp/>*hfdcan)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(hfdcan);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" kindref="member">EVERT_BOOST_CONVERTER_CommonErrorCallback</ref>(</highlight><highlight class="stringliteral">&quot;FDCAN<sp/>Error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="boost__converter_8c_1a237e17bd9b1d257bd8e2880227b8484e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1a237e17bd9b1d257bd8e2880227b8484e" kindref="member">HAL_FLASH_OperationErrorCallback</ref>(uint32_t<sp/>ReturnValue)</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(ReturnValue);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" kindref="member">EVERT_BOOST_CONVERTER_CommonErrorCallback</ref>(</highlight><highlight class="stringliteral">&quot;FLASH<sp/>Error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="boost__converter_8c_1a4d5338cd64a656dfdc4154773bc4f05d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1a4d5338cd64a656dfdc4154773bc4f05d" kindref="member">HAL_I2C_ErrorCallback</ref>(I2C_HandleTypeDef<sp/>*hi2c)</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(hi2c);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" kindref="member">EVERT_BOOST_CONVERTER_CommonErrorCallback</ref>(</highlight><highlight class="stringliteral">&quot;I2C<sp/>Error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="boost__converter_8c_1a6f0868af383d592940700dbb52fac016" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1a6f0868af383d592940700dbb52fac016" kindref="member">HAL_TIM_ErrorCallback</ref>(TIM_HandleTypeDef<sp/>*htim)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(htim);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" kindref="member">EVERT_BOOST_CONVERTER_CommonErrorCallback</ref>(</highlight><highlight class="stringliteral">&quot;TIM<sp/>Error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter_8c_1addd56fc27d60db1bd01a42454abf09be" kindref="member">EVERT_BOOST_CONVERTER_CommonErrorCallback</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*error_message)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_HAL_BreakPoint(error_message);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>__disable_irq();</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c"/>
+  </compounddef>
+</doxygen>

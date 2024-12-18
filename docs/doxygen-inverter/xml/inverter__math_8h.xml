@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="inverter__math_8h" kind="file" language="C++">
+    <compoundname>inverter_math.h</compoundname>
+    <includedby refid="__conf__evert__inverter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h</includedby>
+    <includedby refid="inverter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</includedby>
+    <includedby refid="inverter__transforms_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_transforms.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/_conf_evert_inverter.h</label>
+        <link refid="__conf__evert__inverter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c</label>
+        <link refid="inverter_8c"/>
+      </node>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</label>
+        <link refid="inverter_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_grid.c</label>
+        <link refid="inverter__grid_8c"/>
+      </node>
+      <node id="8">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_grid.h</label>
+        <link refid="inverter__grid_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h</label>
+        <link refid="inverter__math_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_readings.c</label>
+        <link refid="inverter__readings_8c"/>
+      </node>
+      <node id="6">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_readings.h</label>
+        <link refid="inverter__readings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_transforms.h</label>
+        <link refid="inverter__transforms_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="inverter__math_8h_1af723639894e6379ec53e86eab970439b" prot="public" static="no">
+        <name>EVERT_INVERTER_MATH_K_INDUCTOR_VALUE</name>
+        <initializer>(0.000340f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" line="5" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="inverter__math_8h_1abfb90ad352ccb76df3d8b98259873016" prot="public" static="no">
+        <name>EVERT_INVERTER_MATH_K_2_OVER_3</name>
+        <initializer>(2.0f / 3.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" line="8" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="inverter__math_8h_1a7c1810779e37ee16fedbf5793e51aa08" prot="public" static="no">
+        <name>EVERT_INVERTER_MATH_K_1_OVER_3</name>
+        <initializer>(1.0f / 3.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" line="9" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="inverter__math_8h_1aa90740b2cf39b1cff1e3cb997bceda9a" prot="public" static="no">
+        <name>EVERT_INVERTER_MATH_K_1_OVER_SQRT3</name>
+        <initializer>(1.0f / 1.7320508075688772f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" line="10" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="inverter__math_8h_1ac0f1d7d0c288f57bb8897bfd06e8ab43" prot="public" static="no">
+        <name>EVERT_INVERTER_MATH_CLAMP</name>
+        <param><defname>value</defname></param>
+        <param><defname>min</defname></param>
+        <param><defname>max</defname></param>
+        <initializer>((value) = (((value) &gt; (max)) ? (max) : (((value) &lt; (min)) ? (min) : (value))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" line="13" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="inverter__math_8h_1abe6b25170ded107901c95e7eb94ed4cf" prot="public" static="no">
+        <name>EVERT_INVERTER_MATH_NORMALIZED_CLAMP</name>
+        <param><defname>value</defname></param>
+        <initializer>(value &gt; 1.0f ? 1.0f : (value &lt; -1.0f ? -1.0f : value))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" line="14" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="inverter__math_8h_1ad5b54faecaab196fdf695595162fe903" prot="public" static="no">
+        <name>EVERT_INVERTER_MATH_EMA</name>
+        <param><defname>new_value</defname></param>
+        <param><defname>prev_value</defname></param>
+        <param><defname>multiplier</defname></param>
+        <initializer>(prev_value = ((new_value * (1.0f - multiplier)) + (prev_value * multiplier)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" line="15" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_INVERTER_MATH_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_MATH_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Inverter<sp/>Constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="inverter__math_8h_1af723639894e6379ec53e86eab970439b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_MATH_K_INDUCTOR_VALUE<sp/>(0.000340f)<sp/></highlight><highlight class="comment">//<sp/>340uH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Math<sp/>Constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="inverter__math_8h_1abfb90ad352ccb76df3d8b98259873016" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_MATH_K_2_OVER_3<sp/>(2.0f<sp/>/<sp/>3.0f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="inverter__math_8h_1a7c1810779e37ee16fedbf5793e51aa08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_MATH_K_1_OVER_3<sp/>(1.0f<sp/>/<sp/>3.0f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="inverter__math_8h_1aa90740b2cf39b1cff1e3cb997bceda9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_MATH_K_1_OVER_SQRT3<sp/>(1.0f<sp/>/<sp/>1.7320508075688772f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Math<sp/>Functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="inverter__math_8h_1ac0f1d7d0c288f57bb8897bfd06e8ab43" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_MATH_CLAMP(value,<sp/>min,<sp/>max)<sp/>((value)<sp/>=<sp/>(((value)<sp/>&gt;<sp/>(max))<sp/>?<sp/>(max)<sp/>:<sp/>(((value)<sp/>&lt;<sp/>(min))<sp/>?<sp/>(min)<sp/>:<sp/>(value))))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="inverter__math_8h_1abe6b25170ded107901c95e7eb94ed4cf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_MATH_NORMALIZED_CLAMP(value)<sp/>(value<sp/>&gt;<sp/>1.0f<sp/>?<sp/>1.0f<sp/>:<sp/>(value<sp/>&lt;<sp/>-1.0f<sp/>?<sp/>-1.0f<sp/>:<sp/>value))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="inverter__math_8h_1ad5b54faecaab196fdf695595162fe903" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_MATH_EMA(new_value,<sp/>prev_value,<sp/>multiplier)<sp/>(prev_value<sp/>=<sp/>((new_value<sp/>*<sp/>(1.0f<sp/>-<sp/>multiplier))<sp/>+<sp/>(prev_value<sp/>*<sp/>multiplier)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_INVERTER_MATH_H_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_math.h"/>
+  </compounddef>
+</doxygen>

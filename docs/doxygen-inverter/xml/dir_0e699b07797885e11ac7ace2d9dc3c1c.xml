@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_0e699b07797885e11ac7ace2d9dc3c1c" kind="dir">
+    <compoundname>/mnt/c/dev/evert-firmware-pmu/inverter/src</compoundname>
+    <innerfile refid="__conf__evert__device_8h">_conf_evert_device.h</innerfile>
+    <innerfile refid="__conf__evert__hal_8h">_conf_evert_hal.h</innerfile>
+    <innerfile refid="__conf__evert__inverter_8h">_conf_evert_inverter.h</innerfile>
+    <innerfile refid="inverter_8c">inverter.c</innerfile>
+    <innerfile refid="inverter_8h">inverter.h</innerfile>
+    <innerfile refid="inverter__alarm__index_8h">inverter_alarm_index.h</innerfile>
+    <innerfile refid="inverter__calibration_8h">inverter_calibration.h</innerfile>
+    <innerfile refid="inverter__constraints_8h">inverter_constraints.h</innerfile>
+    <innerfile refid="inverter__grid_8c">inverter_grid.c</innerfile>
+    <innerfile refid="inverter__grid_8h">inverter_grid.h</innerfile>
+    <innerfile refid="inverter__math_8h">inverter_math.h</innerfile>
+    <innerfile refid="inverter__readings_8c">inverter_readings.c</innerfile>
+    <innerfile refid="inverter__readings_8h">inverter_readings.h</innerfile>
+    <innerfile refid="inverter__transforms_8h">inverter_transforms.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/"/>
+  </compounddef>
+</doxygen>

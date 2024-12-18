@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="status__register_8c" kind="file" language="C++">
+    <compoundname>status_register.c</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="status__register_8h" local="yes">status_register.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c</label>
+        <link refid="status__register_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>status_register.h</label>
+        <link refid="status__register_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="status__register_8c_1a61089ea52693de3dbeba4b6c0a360957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_SR_Init</definition>
+        <argsstring>(EVERT_SR_RegisterTypeDefinitionTypeDef *status_reg)</argsstring>
+        <name>EVERT_SR_Init</name>
+        <param>
+          <type><ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref> *</type>
+          <declname>status_reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" line="5" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" bodystart="5" bodyend="8"/>
+        <references refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" compoundref="status__register_8h" startline="9">EVERT_SR_RegisterTypeDefinitionTypeDef::reg</references>
+      </memberdef>
+      <memberdef kind="function" id="status__register_8c_1a2fe0466e16f66e81069c99bd44504f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_SR_GetRegister</definition>
+        <argsstring>(const EVERT_SR_RegisterTypeDefinitionTypeDef *status_reg)</argsstring>
+        <name>EVERT_SR_GetRegister</name>
+        <param>
+          <type>const <ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref> *</type>
+          <declname>status_reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" line="11" column="10" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" bodystart="11" bodyend="14"/>
+        <references refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" compoundref="status__register_8h" startline="9">EVERT_SR_RegisterTypeDefinitionTypeDef::reg</references>
+      </memberdef>
+      <memberdef kind="function" id="status__register_8c_1ac4ef96041b3c653dbe558840752bb835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EVERT_SR_GetBitOnCount</definition>
+        <argsstring>(const EVERT_SR_RegisterTypeDefinitionTypeDef *status_reg)</argsstring>
+        <name>EVERT_SR_GetBitOnCount</name>
+        <param>
+          <type>const <ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref> *</type>
+          <declname>status_reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" line="17" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" bodystart="17" bodyend="30"/>
+        <references refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" compoundref="status__register_8h" startline="9">EVERT_SR_RegisterTypeDefinitionTypeDef::reg</references>
+      </memberdef>
+      <memberdef kind="function" id="status__register_8c_1a6d59da94eea3ca0cdb5e086d69fe3fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EVERT_SR_SetBit</definition>
+        <argsstring>(EVERT_SR_RegisterTypeDefinitionTypeDef *status_reg, uint8_t index)</argsstring>
+        <name>EVERT_SR_SetBit</name>
+        <param>
+          <type><ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref> *</type>
+          <declname>status_reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" line="33" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" bodystart="33" bodyend="43"/>
+        <references refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" compoundref="status__register_8h" startline="9">EVERT_SR_RegisterTypeDefinitionTypeDef::reg</references>
+      </memberdef>
+      <memberdef kind="function" id="status__register_8c_1a66e91fd3873081d79e9a8a90ce8e8383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EVERT_SR_ClearBit</definition>
+        <argsstring>(EVERT_SR_RegisterTypeDefinitionTypeDef *status_reg, uint8_t index)</argsstring>
+        <name>EVERT_SR_ClearBit</name>
+        <param>
+          <type><ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref> *</type>
+          <declname>status_reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" line="46" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" bodystart="46" bodyend="56"/>
+        <references refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" compoundref="status__register_8h" startline="9">EVERT_SR_RegisterTypeDefinitionTypeDef::reg</references>
+      </memberdef>
+      <memberdef kind="function" id="status__register_8c_1a16b28f4e2b1b4c2f835832e79775470e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EVERT_SR_IsBitSet</definition>
+        <argsstring>(const EVERT_SR_RegisterTypeDefinitionTypeDef *status_reg, uint8_t index)</argsstring>
+        <name>EVERT_SR_IsBitSet</name>
+        <param>
+          <type>const <ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref> *</type>
+          <declname>status_reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" line="59" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" bodystart="59" bodyend="62"/>
+        <references refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" compoundref="status__register_8h" startline="9">EVERT_SR_RegisterTypeDefinitionTypeDef::reg</references>
+        <referencedby refid="status__register_8c_1a029afc2fd258d43650652a9a4ff418b5" compoundref="status__register_8c" startline="65" endline="75">EVERT_SR_IsAnyBitSet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="status__register_8c_1a029afc2fd258d43650652a9a4ff418b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EVERT_SR_IsAnyBitSet</definition>
+        <argsstring>(const EVERT_SR_RegisterTypeDefinitionTypeDef *status_reg, const uint8_t *indexes, const uint8_t size)</argsstring>
+        <name>EVERT_SR_IsAnyBitSet</name>
+        <param>
+          <type>const <ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref> *</type>
+          <declname>status_reg</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>indexes</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" line="65" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c" bodystart="65" bodyend="75"/>
+        <references refid="status__register_8c_1a16b28f4e2b1b4c2f835832e79775470e" compoundref="status__register_8c" startline="59" endline="62">EVERT_SR_IsBitSet</references>
+        <referencedby refid="evert__device_8c_1ac020ac712f319675a678f2c22e00384d" compoundref="evert__device_8c" startline="154" endline="176">EVERT_DEVICE_Alarm_Check</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="status__register_8h" kindref="compound">status_register.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Constructor<sp/>(initialize<sp/>the<sp/>register)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="status__register_8c_1a61089ea52693de3dbeba4b6c0a360957" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="status__register_8c_1a61089ea52693de3dbeba4b6c0a360957" kindref="member">EVERT_SR_Init</ref>(<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref><sp/>*status_reg)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>value<sp/>of<sp/>the<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="status__register_8c_1a2fe0466e16f66e81069c99bd44504f65" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="status__register_8c_1a2fe0466e16f66e81069c99bd44504f65" kindref="member">EVERT_SR_GetRegister</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref><sp/>*status_reg)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>count<sp/>of<sp/>bits<sp/>set<sp/>to<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="status__register_8c_1ac4ef96041b3c653dbe558840752bb835" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="status__register_8c_1ac4ef96041b3c653dbe558840752bb835" kindref="member">EVERT_SR_GetBitOnCount</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref><sp/>*status_reg)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref>)<sp/>*<sp/>8;<sp/>i++)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref><sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>i))</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Set<sp/>a<sp/>bit<sp/>at<sp/>the<sp/>specified<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="status__register_8c_1a6d59da94eea3ca0cdb5e086d69fe3fd7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="status__register_8c_1a6d59da94eea3ca0cdb5e086d69fe3fd7" kindref="member">EVERT_SR_SetBit</ref>(<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref><sp/>*status_reg,<sp/>uint8_t<sp/>index)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref><sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>index))</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>is<sp/>already<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref><sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>index);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Clear<sp/>a<sp/>bit<sp/>at<sp/>the<sp/>specified<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="status__register_8c_1a66e91fd3873081d79e9a8a90ce8e8383" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="status__register_8c_1a66e91fd3873081d79e9a8a90ce8e8383" kindref="member">EVERT_SR_ClearBit</ref>(<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref><sp/>*status_reg,<sp/>uint8_t<sp/>index)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref><sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>index)))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>is<sp/>not<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref><sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>index);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>a<sp/>bit<sp/>at<sp/>the<sp/>specified<sp/>index<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="status__register_8c_1a16b28f4e2b1b4c2f835832e79775470e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="status__register_8c_1a16b28f4e2b1b4c2f835832e79775470e" kindref="member">EVERT_SR_IsBitSet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref><sp/>*status_reg,<sp/>uint8_t<sp/>index)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(status_reg-&gt;<ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef_1ac570497f9d237b408becee8557c6da1d" kindref="member">reg</ref><sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>index))<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>any<sp/>bit<sp/>in<sp/>the<sp/>given<sp/>array<sp/>of<sp/>indexes<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="status__register_8c_1a029afc2fd258d43650652a9a4ff418b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="status__register_8c_1a029afc2fd258d43650652a9a4ff418b5" kindref="member">EVERT_SR_IsAnyBitSet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structEVERT__SR__RegisterTypeDefinitionTypeDef" kindref="compound">EVERT_SR_RegisterTypeDefinitionTypeDef</ref><sp/>*status_reg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*indexes,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>size)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="status__register_8c_1a16b28f4e2b1b4c2f835832e79775470e" kindref="member">EVERT_SR_IsBitSet</ref>(status_reg,<sp/>indexes[i]))</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/evert-firmware-core-c/src/status_register.c"/>
+  </compounddef>
+</doxygen>

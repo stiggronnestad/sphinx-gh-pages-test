@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="__conf__evert__hal_8h" kind="file" language="C++">
+    <compoundname>_conf_evert_hal.h</compoundname>
+    <includedby refid="boost__converter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h</label>
+        <link refid="__conf__evert__hal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c</label>
+        <link refid="boost__converter_8c"/>
+      </node>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h</label>
+        <link refid="boost__converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c</label>
+        <link refid="boost__converter__alarms_8c"/>
+      </node>
+      <node id="7">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.h</label>
+        <link refid="boost__converter__alarms_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.c</label>
+        <link refid="boost__converter__mppt_8c"/>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h</label>
+        <link refid="boost__converter__mppt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c</label>
+        <link refid="boost__converter__readings_8c"/>
+      </node>
+      <node id="6">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h</label>
+        <link refid="boost__converter__readings_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" prot="public" static="no">
+        <name>__overrides</name>
+        <initializer><ref refid="__conf__evert__hal_8h_1adbf7c034448e6114f52003d7f06de0ee" kindref="member">__noopt</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" line="4" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__hal_8h_1adbf7c034448e6114f52003d7f06de0ee" prot="public" static="no">
+        <name>__noopt</name>
+        <initializer>__attribute__((used))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" line="5" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__hal_8h_1a8723735ca98bbc4ab015821448209e25" prot="public" static="no">
+        <name>EVERT_HAL_CONF_DEBUGGING</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" line="8" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__hal_8h_1a97d509d4cf8149dbb2500211cb39d525" prot="public" static="no">
+        <name>EVERT_HAL_CONF_EMC230X_ENABLE</name>
+        <initializer>(false)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" line="11" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__hal_8h_1a8e439510dd8cfdb59403cbc34a1296ac" prot="public" static="no">
+        <name>EVERT_HAL_CONF_EMC230X_ADDRESS</name>
+        <initializer>(0x002C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" line="12" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__hal_8h_1a1ddedde8c962f6d3832435d7e6bda9d8" prot="public" static="no">
+        <name>EVERT_HAL_CONF_EMC230x_TYPE</name>
+        <initializer>(2303)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" line="13" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__hal_8h_1af38961605c0bcf66b776133338c7d873" prot="public" static="no">
+        <name>EVERT_HAL_CONF_FZ2812_ENABLE</name>
+        <initializer>(false)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" line="16" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="__conf__evert__hal_8h_1a30be3c45606a6621ba15a2ac01911e34" prot="public" static="no">
+        <name>EVERT_HAL_CONF_FZ2812_COUNT</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" line="17" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_HAL_CONF_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_CONF_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="__conf__evert__hal_8h_1ac2965250c904152b0b05489b9b165010" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__overrides<sp/>__noopt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="__conf__evert__hal_8h_1adbf7c034448e6114f52003d7f06de0ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__noopt<sp/>__attribute__((used))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>COMMUNICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="__conf__evert__hal_8h_1a8723735ca98bbc4ab015821448209e25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_CONF_DEBUGGING<sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EMC230X</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="__conf__evert__hal_8h_1a97d509d4cf8149dbb2500211cb39d525" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_CONF_EMC230X_ENABLE<sp/>(false)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="__conf__evert__hal_8h_1a8e439510dd8cfdb59403cbc34a1296ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_CONF_EMC230X_ADDRESS<sp/>(0x002C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="__conf__evert__hal_8h_1a1ddedde8c962f6d3832435d7e6bda9d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_CONF_EMC230x_TYPE<sp/>(2303)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FZ2812</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="__conf__evert__hal_8h_1af38961605c0bcf66b776133338c7d873" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_CONF_FZ2812_ENABLE<sp/>(false)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="__conf__evert__hal_8h_1a30be3c45606a6621ba15a2ac01911e34" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_HAL_CONF_FZ2812_COUNT<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_HAL_CONF_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/_conf_evert_hal.h"/>
+  </compounddef>
+</doxygen>

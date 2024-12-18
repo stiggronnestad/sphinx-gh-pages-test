@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="boost__converter__readings_8h" kind="file" language="C++">
+    <compoundname>boost_converter_readings.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">stm32g4xx_hal.h</includes>
+    <includes local="yes">arm_math.h</includes>
+    <includes refid="__conf__evert__boost__converter_8h" local="yes">_conf_evert_boost_converter.h</includes>
+    <includes refid="boost__converter_8h" local="yes">boost_converter.h</includes>
+    <includedby refid="boost__converter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h</includedby>
+    <includedby refid="boost__converter__alarms_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.h</includedby>
+    <includedby refid="boost__converter__mppt_8c" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.c</includedby>
+    <includedby refid="boost__converter__readings_8c" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>_conf_evert_boost_converter.h</label>
+        <link refid="__conf__evert__boost__converter_8h"/>
+      </node>
+      <node id="23">
+        <label>_conf_evert_device.h</label>
+        <link refid="__conf__evert__device_8h"/>
+      </node>
+      <node id="24">
+        <label>_conf_evert_hal.h</label>
+        <link refid="__conf__evert__hal_8h"/>
+      </node>
+      <node id="6">
+        <label>boost_converter.h</label>
+        <link refid="boost__converter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>boost_converter_alarms.h</label>
+        <link refid="boost__converter__alarms_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>boost_converter_calibration.h</label>
+        <link refid="boost__converter__calibration_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>boost_converter_constraints.h</label>
+        <link refid="boost__converter__constraints_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>boost_converter_mppt.h</label>
+        <link refid="boost__converter__mppt_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h</label>
+        <link refid="boost__converter__readings_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>adc.h</label>
+      </node>
+      <node id="4">
+        <label>arm_math.h</label>
+      </node>
+      <node id="18">
+        <label>can_handler.h</label>
+      </node>
+      <node id="10">
+        <label>cordic.h</label>
+      </node>
+      <node id="11">
+        <label>dma.h</label>
+      </node>
+      <node id="19">
+        <label>evert_device.h</label>
+      </node>
+      <node id="20">
+        <label>evert_hal.h</label>
+      </node>
+      <node id="12">
+        <label>fdcan.h</label>
+      </node>
+      <node id="13">
+        <label>gpio.h</label>
+      </node>
+      <node id="21">
+        <label>gpio_definition.h</label>
+      </node>
+      <node id="14">
+        <label>hrtim.h</label>
+      </node>
+      <node id="15">
+        <label>i2c.h</label>
+      </node>
+      <node id="26">
+        <label>status_register.h</label>
+      </node>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stm32g4xx_hal.h</label>
+      </node>
+      <node id="7">
+        <label>stm32g4xx_hal_hrtim.h</label>
+      </node>
+      <node id="8">
+        <label>stm32g4xx_ll_cordic.h</label>
+      </node>
+      <node id="22">
+        <label>task_scheduler.h</label>
+      </node>
+      <node id="16">
+        <label>tim.h</label>
+      </node>
+      <node id="17">
+        <label>usart.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c</label>
+        <link refid="boost__converter_8c"/>
+      </node>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h</label>
+        <link refid="boost__converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c</label>
+        <link refid="boost__converter__alarms_8c"/>
+      </node>
+      <node id="6">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.h</label>
+        <link refid="boost__converter__alarms_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.c</label>
+        <link refid="boost__converter__mppt_8c"/>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h</label>
+        <link refid="boost__converter__mppt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c</label>
+        <link refid="boost__converter__readings_8c"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h</label>
+        <link refid="boost__converter__readings_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="boost__converter__readings_8h_1a4d21dc287cdb0661fa4137bb08a004c8" prot="public" static="no">
+        <name>FIR_NUM_TAPS</name>
+        <initializer>51</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="10" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="boost__converter__readings_8h_1a81ae9a726b73b4d8a139a7fab252e230" prot="public" static="no">
+        <name>FIR_BLOCK_SIZE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="11" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="boost__converter__readings_8h_1a5f20ab1faad53cf3a899ef2df5421d05" prot="public" static="no" mutable="no">
+        <type>volatile uint16_t</type>
+        <definition>volatile uint16_t adc1_buffer[EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT]</definition>
+        <argsstring>[EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT]</argsstring>
+        <name>adc1_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="14" column="26" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="11" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="14" declcolumn="26"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1a1efe29602e522dddbfc1b720ceeb400a" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t adc_mcu_temperature</definition>
+        <argsstring></argsstring>
+        <name>adc_mcu_temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="17" column="26" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="14" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="17" declcolumn="26"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1aa27d012776be05aeee7ef3d53445a38e" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t adc_mcu_vref_int</definition>
+        <argsstring></argsstring>
+        <name>adc_mcu_vref_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="18" column="26" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="15" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="18" declcolumn="26"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1acf510012be7b09bc553f32a792beedec" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t adc_voltage_in</definition>
+        <argsstring></argsstring>
+        <name>adc_voltage_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="19" column="26" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="16" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="19" declcolumn="26"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1ad54cc60a8122bbf66d26a8cd6b0bbf82" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t adc_voltage_out</definition>
+        <argsstring></argsstring>
+        <name>adc_voltage_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="20" column="26" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="17" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="20" declcolumn="26"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1a981585c676e493d6dcbd82933f9bed4f" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t adc_current_in</definition>
+        <argsstring></argsstring>
+        <name>adc_current_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="21" column="26" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="18" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="21" declcolumn="26"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1ae95bfbd1682841eba5045c799e6eb711" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t uf_mcu_temperature</definition>
+        <argsstring></argsstring>
+        <name>uf_mcu_temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="24" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="21" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="24" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1a900cec7b237219e599dbff5d8fc20672" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t uf_mcu_vref_int</definition>
+        <argsstring></argsstring>
+        <name>uf_mcu_vref_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="25" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="22" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="25" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1ac1d5c73dbb7dea06a8aa53706274e1f0" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t uf_voltage_in</definition>
+        <argsstring></argsstring>
+        <name>uf_voltage_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="26" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="23" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="26" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1af2fbf08a94de3b22f62d6f9f9975cd45" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t uf_voltage_out</definition>
+        <argsstring></argsstring>
+        <name>uf_voltage_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="27" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="24" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="27" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1a74a3a53a69acb8bf4b8cdc80529d6744" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t uf_current_in</definition>
+        <argsstring></argsstring>
+        <name>uf_current_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="28" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="25" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="28" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1af41d80652ee335b39548f38b345d2e79" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_mcu_temperature</definition>
+        <argsstring></argsstring>
+        <name>fi_mcu_temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="31" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="36" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="31" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1af5785c6dc468e3b09838a66e32fbf69a" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_mcu_vref_int</definition>
+        <argsstring></argsstring>
+        <name>fi_mcu_vref_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="32" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="37" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="32" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1af61b6af9e488d93a1ec95c8e3f5a7cfd" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_voltage_in</definition>
+        <argsstring></argsstring>
+        <name>fi_voltage_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="33" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="38" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="33" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1a05aa48cb325d02a499cfb2a0a0025317" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_voltage_out</definition>
+        <argsstring></argsstring>
+        <name>fi_voltage_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="34" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="39" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="34" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1a4f11ea4411e41fa79a74c8413f79c6b3" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_current_in</definition>
+        <argsstring></argsstring>
+        <name>fi_current_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="35" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="40" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="35" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__readings_8h_1a4c818f8538f60e7a17cba08d5865745e" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_power_in</definition>
+        <argsstring></argsstring>
+        <name>fi_power_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="36" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="41" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="36" declcolumn="27"/>
+        <referencedby refid="boost__converter__readings_8c_1a1afe244c945db4a660f75fa220a2c2c7" compoundref="boost__converter__readings_8c" startline="50" endline="76">EVERT_BOOST_CONVERTER_Readings</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="boost__converter__readings_8h_1a8a6e2bf6a5784a2560f470ceec41e2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_InitFilters</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_InitFilters</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="38" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="43" bodyend="48" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="38" declcolumn="6"/>
+        <references refid="boost__converter__readings_8h_1a4d21dc287cdb0661fa4137bb08a004c8" compoundref="boost__converter__readings_8h" startline="10">FIR_NUM_TAPS</references>
+        <references refid="boost__converter__readings_8c_1a397c2b989f3b375f852f4043cd6883ba" compoundref="boost__converter__readings_8c" startline="28">fir_voltage_in</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter__readings_8h_1a1afe244c945db4a660f75fa220a2c2c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_Readings</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_Readings</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" line="39" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="50" bodyend="76" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h" declline="39" declcolumn="6"/>
+        <references refid="boost__converter__readings_8c_1a5f20ab1faad53cf3a899ef2df5421d05" compoundref="boost__converter__readings_8c" startline="11">adc1_buffer</references>
+        <references refid="boost__converter__readings_8c_1a981585c676e493d6dcbd82933f9bed4f" compoundref="boost__converter__readings_8c" startline="18">adc_current_in</references>
+        <references refid="boost__converter__readings_8c_1a1efe29602e522dddbfc1b720ceeb400a" compoundref="boost__converter__readings_8c" startline="14">adc_mcu_temperature</references>
+        <references refid="boost__converter__readings_8c_1aa27d012776be05aeee7ef3d53445a38e" compoundref="boost__converter__readings_8c" startline="15">adc_mcu_vref_int</references>
+        <references refid="boost__converter__readings_8c_1acf510012be7b09bc553f32a792beedec" compoundref="boost__converter__readings_8c" startline="16">adc_voltage_in</references>
+        <references refid="boost__converter__readings_8c_1ad54cc60a8122bbf66d26a8cd6b0bbf82" compoundref="boost__converter__readings_8c" startline="17">adc_voltage_out</references>
+        <references refid="boost__converter_8c_1af671f4f913dde825f2789e079e398494" compoundref="boost__converter_8c" startline="29">calibration_current</references>
+        <references refid="boost__converter_8c_1a1ef692420461fcb824132901edc1b04e" compoundref="boost__converter_8c" startline="30">calibration_voltage</references>
+        <references refid="structEVERT__BOOST__CONVERTER__ConfigCurrentCalibrationTypeDef_1a0934e07eb68e86fc2f9a788272b48e76" compoundref="boost__converter__calibration_8h" startline="10">EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef::current_in_intercept</references>
+        <references refid="structEVERT__BOOST__CONVERTER__ConfigCurrentCalibrationTypeDef_1a11cf85f4c300ccb8f4034c9165765b5f" compoundref="boost__converter__calibration_8h" startline="9">EVERT_BOOST_CONVERTER_ConfigCurrentCalibrationTypeDef::current_in_slope</references>
+        <references refid="boost__converter_8h_1a8925f7997b7c9e43f52f5f0f18343b92" compoundref="boost__converter_8h" startline="60">EVERT_BOOST_CONVERTER_CLAMP</references>
+        <references refid="boost__converter_8h_1acdd6ccab0ebc18de0d1437159485f499" compoundref="boost__converter_8h" startline="59">EVERT_BOOST_CONVERTER_EMA</references>
+        <references refid="__conf__evert__boost__converter_8h_1af279693f99b4ba4d9ca6b50cd8f6c4fa" compoundref="__conf__evert__boost__converter_8h" startline="9">EVERT_CONSTANT_BC_ADC1_RANK_CURRENT_IN</references>
+        <references refid="__conf__evert__boost__converter_8h_1ae0f0bc42d8ee92e3b03dc01921f92535" compoundref="__conf__evert__boost__converter_8h" startline="5">EVERT_CONSTANT_BC_ADC1_RANK_MCU_TEMPERATURE</references>
+        <references refid="__conf__evert__boost__converter_8h_1aa36e2238781a685a1b3b8852062ab471" compoundref="__conf__evert__boost__converter_8h" startline="6">EVERT_CONSTANT_BC_ADC1_RANK_MCU_VREF_INT</references>
+        <references refid="__conf__evert__boost__converter_8h_1a1cf81531c0591a8260d66868cfa65bcb" compoundref="__conf__evert__boost__converter_8h" startline="7">EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_IN</references>
+        <references refid="__conf__evert__boost__converter_8h_1a84a0a034adfa5563bfff6333f8a7f6de" compoundref="__conf__evert__boost__converter_8h" startline="8">EVERT_CONSTANT_BC_ADC1_RANK_VOLTAGE_OUT</references>
+        <references refid="__conf__evert__device_8h_1aa9aaae8d9f6bcbff48bc877744af286d" compoundref="__conf__evert__device_8h" startline="6">EVERT_CONSTANT_DEVICE_MCU_VOLTAGE</references>
+        <references refid="boost__converter__readings_8c_1a4f11ea4411e41fa79a74c8413f79c6b3" compoundref="boost__converter__readings_8c" startline="40">fi_current_in</references>
+        <references refid="boost__converter__readings_8c_1a4c818f8538f60e7a17cba08d5865745e" compoundref="boost__converter__readings_8c" startline="41">fi_power_in</references>
+        <references refid="boost__converter__readings_8c_1af61b6af9e488d93a1ec95c8e3f5a7cfd" compoundref="boost__converter__readings_8c" startline="38">fi_voltage_in</references>
+        <references refid="boost__converter__readings_8c_1a05aa48cb325d02a499cfb2a0a0025317" compoundref="boost__converter__readings_8c" startline="39">fi_voltage_out</references>
+        <references refid="boost__converter__readings_8c_1a4e725629ed757e90a53647acdbfa92dd" compoundref="boost__converter__readings_8c" startline="30">fir_current_in</references>
+        <references refid="boost__converter__readings_8c_1a397c2b989f3b375f852f4043cd6883ba" compoundref="boost__converter__readings_8c" startline="28">fir_voltage_in</references>
+        <references refid="boost__converter__readings_8c_1ac8faf97c821cba35cd364fe47339cbf8" compoundref="boost__converter__readings_8c" startline="29">fir_voltage_out</references>
+        <references refid="boost__converter__readings_8c_1a74a3a53a69acb8bf4b8cdc80529d6744" compoundref="boost__converter__readings_8c" startline="25">uf_current_in</references>
+        <references refid="boost__converter__readings_8c_1ae95bfbd1682841eba5045c799e6eb711" compoundref="boost__converter__readings_8c" startline="21">uf_mcu_temperature</references>
+        <references refid="boost__converter__readings_8c_1a900cec7b237219e599dbff5d8fc20672" compoundref="boost__converter__readings_8c" startline="22">uf_mcu_vref_int</references>
+        <references refid="boost__converter__readings_8c_1ac1d5c73dbb7dea06a8aa53706274e1f0" compoundref="boost__converter__readings_8c" startline="23">uf_voltage_in</references>
+        <references refid="boost__converter__readings_8c_1af2fbf08a94de3b22f62d6f9f9975cd45" compoundref="boost__converter__readings_8c" startline="24">uf_voltage_out</references>
+        <references refid="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef_1a726c408afc37ae85e3615426a06436db" compoundref="boost__converter__calibration_8h" startline="16">EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef::voltage_in_intercept</references>
+        <references refid="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef_1ac1dc805b348db5b1036dadafcda0550c" compoundref="boost__converter__calibration_8h" startline="15">EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef::voltage_in_slope</references>
+        <references refid="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef_1a048a90868fcf5fb2b04f10fb8d1d083d" compoundref="boost__converter__calibration_8h" startline="18">EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef::voltage_out_intercept</references>
+        <references refid="structEVERT__BOOST__CONVERTER__ConfigVoltageCalibrationTypeDef_1a0ae2527f2224948eabf4e57298a886b7" compoundref="boost__converter__calibration_8h" startline="17">EVERT_BOOST_CONVERTER_ConfigVoltageCalibrationTypeDef::voltage_out_slope</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_BOOST_CONVERTER_READINGS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_BOOST_CONVERTER_READINGS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stm32g4xx_hal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;arm_math.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="__conf__evert__boost__converter_8h" kindref="compound">_conf_evert_boost_converter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="boost__converter_8h" kindref="compound">boost_converter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="boost__converter__readings_8h_1a4d21dc287cdb0661fa4137bb08a004c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIR_NUM_TAPS<sp/>51<sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>filter<sp/>taps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="boost__converter__readings_8h_1a81ae9a726b73b4d8a139a7fab252e230" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIR_BLOCK_SIZE<sp/>1<sp/></highlight><highlight class="comment">//<sp/>Process<sp/>one<sp/>sample<sp/>at<sp/>a<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ADC<sp/>Buffers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="boost__converter__readings_8h_1a5f20ab1faad53cf3a899ef2df5421d05" kindref="member">adc1_buffer</ref>[<ref refid="__conf__evert__boost__converter_8h_1a7b80a881c0743220fb3102596f1b50a9" kindref="member">EVERT_CONSTANT_BC_ADC1_CONVERSION_COUNT</ref>];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ADC<sp/>Readings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="boost__converter__readings_8h_1a1efe29602e522dddbfc1b720ceeb400a" kindref="member">adc_mcu_temperature</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="boost__converter__readings_8h_1aa27d012776be05aeee7ef3d53445a38e" kindref="member">adc_mcu_vref_int</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="boost__converter__readings_8h_1acf510012be7b09bc553f32a792beedec" kindref="member">adc_voltage_in</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="boost__converter__readings_8h_1ad54cc60a8122bbf66d26a8cd6b0bbf82" kindref="member">adc_voltage_out</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="boost__converter__readings_8h_1a981585c676e493d6dcbd82933f9bed4f" kindref="member">adc_current_in</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ADC<sp/>Converted<sp/>&apos;unfiltered&apos;<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1ae95bfbd1682841eba5045c799e6eb711" kindref="member">uf_mcu_temperature</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1a900cec7b237219e599dbff5d8fc20672" kindref="member">uf_mcu_vref_int</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1ac1d5c73dbb7dea06a8aa53706274e1f0" kindref="member">uf_voltage_in</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1af2fbf08a94de3b22f62d6f9f9975cd45" kindref="member">uf_voltage_out</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1a74a3a53a69acb8bf4b8cdc80529d6744" kindref="member">uf_current_in</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ADC<sp/>Converted<sp/>&apos;filtered&apos;<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1af41d80652ee335b39548f38b345d2e79" kindref="member">fi_mcu_temperature</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1af5785c6dc468e3b09838a66e32fbf69a" kindref="member">fi_mcu_vref_int</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1af61b6af9e488d93a1ec95c8e3f5a7cfd" kindref="member">fi_voltage_in</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1a05aa48cb325d02a499cfb2a0a0025317" kindref="member">fi_voltage_out</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1a4f11ea4411e41fa79a74c8413f79c6b3" kindref="member">fi_current_in</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__readings_8h_1a4c818f8538f60e7a17cba08d5865745e" kindref="member">fi_power_in</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter__readings_8h_1a8a6e2bf6a5784a2560f470ceec41e2b4" kindref="member">EVERT_BOOST_CONVERTER_InitFilters</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter__readings_8h_1a1afe244c945db4a660f75fa220a2c2c7" kindref="member">EVERT_BOOST_CONVERTER_Readings</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_BOOST_CONVERTER_READINGS_H_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h"/>
+  </compounddef>
+</doxygen>

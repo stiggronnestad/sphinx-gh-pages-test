@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_f50ca8809b6c97f46bd7b5169e10c5db" kind="dir">
+    <compoundname>/mnt/c/dev/evert-firmware-pmu/inverter</compoundname>
+    <innerdir refid="dir_0e699b07797885e11ac7ace2d9dc3c1c">/mnt/c/dev/evert-firmware-pmu/inverter/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/"/>
+  </compounddef>
+</doxygen>

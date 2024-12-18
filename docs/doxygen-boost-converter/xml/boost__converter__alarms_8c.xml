@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="boost__converter__alarms_8c" kind="file" language="C++">
+    <compoundname>boost_converter_alarms.c</compoundname>
+    <includes refid="boost__converter__alarms_8h" local="yes">boost_converter_alarms.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>_conf_evert_boost_converter.h</label>
+        <link refid="__conf__evert__boost__converter_8h"/>
+      </node>
+      <node id="26">
+        <label>_conf_evert_device.h</label>
+        <link refid="__conf__evert__device_8h"/>
+      </node>
+      <node id="27">
+        <label>_conf_evert_hal.h</label>
+        <link refid="__conf__evert__hal_8h"/>
+      </node>
+      <node id="9">
+        <label>boost_converter.h</label>
+        <link refid="boost__converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c</label>
+        <link refid="boost__converter__alarms_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>boost_converter_alarms.h</label>
+        <link refid="boost__converter__alarms_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>boost_converter_calibration.h</label>
+        <link refid="boost__converter__calibration_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>boost_converter_constraints.h</label>
+        <link refid="boost__converter__constraints_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>boost_converter_mppt.h</label>
+        <link refid="boost__converter__mppt_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>boost_converter_readings.h</label>
+        <link refid="boost__converter__readings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>adc.h</label>
+      </node>
+      <node id="8">
+        <label>arm_math.h</label>
+      </node>
+      <node id="21">
+        <label>can_handler.h</label>
+      </node>
+      <node id="13">
+        <label>cordic.h</label>
+      </node>
+      <node id="14">
+        <label>dma.h</label>
+      </node>
+      <node id="22">
+        <label>evert_device.h</label>
+      </node>
+      <node id="23">
+        <label>evert_hal.h</label>
+      </node>
+      <node id="15">
+        <label>fdcan.h</label>
+      </node>
+      <node id="16">
+        <label>gpio.h</label>
+      </node>
+      <node id="24">
+        <label>gpio_definition.h</label>
+      </node>
+      <node id="17">
+        <label>hrtim.h</label>
+      </node>
+      <node id="18">
+        <label>i2c.h</label>
+      </node>
+      <node id="4">
+        <label>status_register.h</label>
+      </node>
+      <node id="3">
+        <label>stdbool.h</label>
+      </node>
+      <node id="7">
+        <label>stm32g4xx_hal.h</label>
+      </node>
+      <node id="10">
+        <label>stm32g4xx_hal_hrtim.h</label>
+      </node>
+      <node id="11">
+        <label>stm32g4xx_ll_cordic.h</label>
+      </node>
+      <node id="25">
+        <label>task_scheduler.h</label>
+      </node>
+      <node id="19">
+        <label>tim.h</label>
+      </node>
+      <node id="20">
+        <label>usart.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" prot="public" static="no" mutable="no">
+        <type>EVERT_SR_RegisterTypeDefinitionTypeDef</type>
+        <definition>EVERT_SR_RegisterTypeDefinitionTypeDef alarm_register</definition>
+        <argsstring></argsstring>
+        <name>alarm_register</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" line="3" column="40" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" bodystart="3" bodyend="-1"/>
+        <referencedby refid="boost__converter_8c_1a4c572f884f8239ad55ece449ec1f953d" compoundref="boost__converter_8c" startline="169" endline="189">EVERT_BOOST_CONVERTER_AlarmChangedState</referencedby>
+        <referencedby refid="boost__converter__alarms_8c_1aa6ce1f4a12e54326fc93086576d41790" compoundref="boost__converter__alarms_8c" startline="5" endline="8">EVERT_BOOST_CONVERTER_InitAlarmRegister</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="boost__converter__alarms_8c_1aa6ce1f4a12e54326fc93086576d41790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_InitAlarmRegister</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_BOOST_CONVERTER_InitAlarmRegister</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" line="5" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" bodystart="5" bodyend="8"/>
+        <references refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" compoundref="boost__converter__alarms_8c" startline="3">alarm_register</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__weak void</type>
+        <definition>__weak void EVERT_BOOST_CONVERTER_AlarmChangedState</definition>
+        <argsstring>(EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index, bool is_set)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_AlarmChangedState</name>
+        <param>
+          <type><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" line="10" column="13" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter__alarms_8c_1a073d7ad0fe26b0fd14324d5ca9108287" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool EVERT_BOOST_CONVERTER_CheckLowAlarm</definition>
+        <argsstring>(const float32_t value, const float32_t hysteresis, const float32_t low_warning, const float32_t low_critical, const EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index_low_warning, EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index_low_critical)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_CheckLowAlarm</name>
+        <param>
+          <type>const float32_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>hysteresis</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>low_warning</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>low_critical</declname>
+        </param>
+        <param>
+          <type>const <ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index_low_warning</declname>
+        </param>
+        <param>
+          <type><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index_low_critical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" line="16" column="13" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" bodystart="16" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter__alarms_8c_1ae4b6ddb7365bcc866223bb8aad38d69b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool EVERT_BOOST_CONVERTER_CheckHighAlarm</definition>
+        <argsstring>(const float32_t value, const float32_t hysteresis, const float32_t high_warning, const float32_t high_critical, const EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index_high_warning, EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index_high_critical)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_CheckHighAlarm</name>
+        <param>
+          <type>const float32_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>hysteresis</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>high_warning</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>high_critical</declname>
+        </param>
+        <param>
+          <type>const <ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index_high_warning</declname>
+        </param>
+        <param>
+          <type><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index_high_critical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" line="50" column="13" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" bodystart="50" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter__alarms_8c_1adb342f57638821bc7b7798411fa011f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool EVERT_BOOST_CONVERTER_Check4BandAlarm</definition>
+        <argsstring>(const float32_t value, const float32_t hysteresis, const float32_t low_warning, const float32_t low_critical, const float32_t high_warning, const float32_t high_critical, const EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index_low_warning, const EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index_low_critical, const EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index_high_warning, const EVERT_BOOST_CONVERTER_AlarmIndexTypeDef alarm_index_high_critical)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_Check4BandAlarm</name>
+        <param>
+          <type>const float32_t</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>hysteresis</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>low_warning</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>low_critical</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>high_warning</declname>
+        </param>
+        <param>
+          <type>const float32_t</type>
+          <declname>high_critical</declname>
+        </param>
+        <param>
+          <type>const <ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index_low_warning</declname>
+        </param>
+        <param>
+          <type>const <ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index_low_critical</declname>
+        </param>
+        <param>
+          <type>const <ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index_high_warning</declname>
+        </param>
+        <param>
+          <type>const <ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref></type>
+          <declname>alarm_index_high_critical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" line="84" column="13" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" bodystart="84" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter__alarms_8c_1acc1383dfcd8bde283188c38898068761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_AlarmCheck</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_BOOST_CONVERTER_AlarmCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" line="101" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c" bodystart="101" bodyend="118"/>
+        <referencedby refid="boost__converter_8c_1ae7aba523008dd9c1d22dfe3fbf4ec04c" compoundref="boost__converter_8c" startline="272" endline="279">EVERT_BOOST_CONVERTER_ISR_100HZ_IRQHandler</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="boost__converter__alarms_8h" kindref="compound">boost_converter_alarms.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" refkind="member"><highlight class="normal">EVERT_SR_RegisterTypeDefinitionTypeDef<sp/><ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="boost__converter__alarms_8c_1aa6ce1f4a12e54326fc93086576d41790" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8c_1aa6ce1f4a12e54326fc93086576d41790" kindref="member">EVERT_BOOST_CONVERTER_InitAlarmRegister</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_SR_Init(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" refkind="member"><highlight class="normal">__weak<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" kindref="member">EVERT_BOOST_CONVERTER_AlarmChangedState</ref>(<ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_set)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(alarm_index);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>UNUSED(is_set);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>EVERT_BOOST_CONVERTER_CheckLowAlarm(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>hysteresis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>low_warning,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>low_critical,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index_low_warning,<sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index_low_critical)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value<sp/>&lt;<sp/>low_critical)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_SetBit(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>,<sp/>alarm_index_low_critical))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" kindref="member">EVERT_BOOST_CONVERTER_AlarmChangedState</ref>(alarm_index_low_critical,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value<sp/>&lt;<sp/>low_warning)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_SetBit(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>,<sp/>alarm_index_low_warning))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" kindref="member">EVERT_BOOST_CONVERTER_AlarmChangedState</ref>(alarm_index_low_warning,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value<sp/>&gt;<sp/>(low_warning<sp/>+<sp/>hysteresis))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_ClearBit(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>,<sp/>alarm_index_low_warning))</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" kindref="member">EVERT_BOOST_CONVERTER_AlarmChangedState</ref>(alarm_index_low_warning,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>EVERT_BOOST_CONVERTER_CheckHighAlarm(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>hysteresis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>high_warning,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>high_critical,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index_high_warning,<sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index_high_critical)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value<sp/>&gt;<sp/>high_critical)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_SetBit(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>,<sp/>alarm_index_high_critical))</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" kindref="member">EVERT_BOOST_CONVERTER_AlarmChangedState</ref>(alarm_index_high_critical,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value<sp/>&gt;<sp/>high_warning)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_SetBit(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>,<sp/>alarm_index_high_warning))</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" kindref="member">EVERT_BOOST_CONVERTER_AlarmChangedState</ref>(alarm_index_high_warning,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value<sp/>&lt;<sp/>(high_warning<sp/>-<sp/>hysteresis))</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_SR_ClearBit(&amp;<ref refid="boost__converter__alarms_8c_1a2d67d5cd7c513aa1e5355cc68add2041" kindref="member">alarm_register</ref>,<sp/>alarm_index_high_warning))</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8c_1a80902e6dc56f1ea3fbfbb6ca656deba2" kindref="member">EVERT_BOOST_CONVERTER_AlarmChangedState</ref>(alarm_index_high_warning,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>EVERT_BOOST_CONVERTER_Check4BandAlarm(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>hysteresis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>low_warning,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>low_critical,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>high_warning,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>float32_t<sp/>high_critical,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index_low_warning,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index_low_critical,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index_high_warning,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6ed" kindref="member">EVERT_BOOST_CONVERTER_AlarmIndexTypeDef</ref><sp/>alarm_index_high_critical)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_BOOST_CONVERTER_CheckLowAlarm(value,<sp/>hysteresis,<sp/>low_warning,<sp/>low_critical,<sp/>alarm_index_low_warning,<sp/>alarm_index_low_critical))</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EVERT_BOOST_CONVERTER_CheckHighAlarm(value,<sp/>hysteresis,<sp/>high_warning,<sp/>high_critical,<sp/>alarm_index_high_warning,<sp/>alarm_index_high_critical))</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="boost__converter__alarms_8c_1acc1383dfcd8bde283188c38898068761" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter__alarms_8c_1acc1383dfcd8bde283188c38898068761" kindref="member">EVERT_BOOST_CONVERTER_AlarmCheck</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Voltage<sp/>In</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_BOOST_CONVERTER_Check4BandAlarm(<ref refid="boost__converter__alarms_8h_1af61b6af9e488d93a1ec95c8e3f5a7cfd" kindref="member">fi_voltage_in</ref>,<sp/><ref refid="__conf__evert__boost__converter_8h_1ad31a4f818d93cbe99f48a63986afbb47" kindref="member">EVERT_CONSTRAINT_BC_VOLTAGE_IN_HYSTERESIS</ref>,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="__conf__evert__boost__converter_8h_1a954ece8c087c06d0c3c7b0989dc01911" kindref="member">EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_WARNING</ref>,<sp/><ref refid="__conf__evert__boost__converter_8h_1a4609fbea6c84d6c50f93c89e1636a0c6" kindref="member">EVERT_CONSTRAINT_BC_VOLTAGE_IN_LOW_CRITICAL</ref>,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="__conf__evert__boost__converter_8h_1acd21cb9240a18666250905adafaaa822" kindref="member">EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_WARNING</ref>,<sp/><ref refid="__conf__evert__boost__converter_8h_1a7d46b06d35b6ad7cef4803433d8a8fd6" kindref="member">EVERT_CONSTRAINT_BC_VOLTAGE_IN_HIGH_CRITICAL</ref>,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda3c2711a823a271bc1a7494be69a62824" kindref="member">BCAI_UNDERVOLTAGE_IN_WARNING</ref>,<sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda6fcc758803fe640b61190c2cf5c5105f" kindref="member">BCAI_UNDERVOLTAGE_IN_CRITICAL</ref>,<sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda4adbc37a0b4d7a17812c594c8d5a433c" kindref="member">BCAI_OVERVOLTAGE_IN_WARNING</ref>,<sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6edaf4d7a42891cefc5b414352601ffb2746" kindref="member">BCAI_OVERVOLTAGE_IN_CRITICAL</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Voltage<sp/>Out</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_BOOST_CONVERTER_CheckHighAlarm(<ref refid="boost__converter__alarms_8h_1a05aa48cb325d02a499cfb2a0a0025317" kindref="member">fi_voltage_out</ref>,<sp/><ref refid="__conf__evert__boost__converter_8h_1a06163995ff54d06e5dd1977884596958" kindref="member">EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HYSTERESIS</ref>,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="__conf__evert__boost__converter_8h_1ab489d7a0155d3b146f87c6ef774aa4b3" kindref="member">EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_WARNING</ref>,<sp/><ref refid="__conf__evert__boost__converter_8h_1a31c39f280a89d471156b56438e655dab" kindref="member">EVERT_CONSTRAINT_BC_VOLTAGE_OUT_HIGH_CRITICAL</ref>,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda2cb49a53af8378646b402ab7e586c71c" kindref="member">BCAI_OVERVOLTAGE_OUT_WARNING</ref>,<sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda9aa3017e508241c9d09becfc06a234de" kindref="member">BCAI_OVERVOLTAGE_OUT_CRITICAL</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>In</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>EVERT_BOOST_CONVERTER_CheckHighAlarm(<ref refid="boost__converter__alarms_8h_1a4f11ea4411e41fa79a74c8413f79c6b3" kindref="member">fi_current_in</ref>,<sp/><ref refid="__conf__evert__boost__converter_8h_1a43f4305f593381affd642b97e92f22a6" kindref="member">EVERT_CONSTRAINT_BC_CURRENT_HYSTERESIS</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="__conf__evert__boost__converter_8h_1a704473f23c9c455e4ecbb9d8f4a39a55" kindref="member">EVERT_CONSTRAINT_BC_CURRENT_HIGH_WARNING</ref>,<sp/><ref refid="__conf__evert__boost__converter_8h_1a412a188ac62c0ada109b23f329ea4ed7" kindref="member">EVERT_CONSTRAINT_BC_CURRENT_HIGH_CRITICAL</ref>,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6eda629b10732e9bda22f90c3fa50cd5b11a" kindref="member">BCAI_OVERCURRENT_WARNING</ref>,<sp/><ref refid="boost__converter__alarms_8h_1a5cf87728af0f8f12584a9468d437c6edaaa4793369efda18a801ea58009685de5" kindref="member">BCAI_OVERCURRENT_CRITICAL</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>inverter_calibration.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=86f27845" />
+
+  
+  
+        <script src="../../_static/jquery.js?v=8dae8fb0"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="inverter_constraints.h" href="inverter_constraints.html" />
+    <link rel="prev" title="inverter_alarm_index.h" href="inverter_alarm_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/inverter/inverter-index.html">Index: inverter</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="inverter.html">inverter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_alarm_index.html">inverter_alarm_index.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">inverter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_constraints.html">inverter_constraints.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_grid.html">inverter_grid.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_math.html">inverter_math.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_readings.html">inverter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_transforms.html">inverter_transforms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_inverter.html">_conf_evert_inverter.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/inverter/inverter-api.html">API Reference: inverter</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter.html">inverter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter-index.html">Index: inverter</a></li>
+      <li class="breadcrumb-item active">inverter_calibration.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/inverter/inverter_calibration.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="inverter-calibration-h">
+<h1>inverter_calibration.h<a class="headerlink" href="#inverter-calibration-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv431EVERT_INVERTER_InitCalibrationsv">
+<span id="_CPPv331EVERT_INVERTER_InitCalibrationsv"></span><span id="_CPPv231EVERT_INVERTER_InitCalibrationsv"></span><span id="EVERT_INVERTER_InitCalibrations"></span><span class="target" id="inverter__calibration_8h_1ad65e881fa82cc2fa6d4f3814ced85a57"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_InitCalibrations</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv431EVERT_INVERTER_InitCalibrationsv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419calibration_current">
+<span id="_CPPv319calibration_current"></span><span id="_CPPv219calibration_current"></span><span id="calibration_current__EVERT_INVERTER_ConfigCalibrationCurrentTypeDef"></span><span class="target" id="inverter__calibration_8h_1a77d47db849a2a7c44ac950242137806a"></span><a class="reference internal" href="#_CPPv446EVERT_INVERTER_ConfigCalibrationCurrentTypeDef" title="EVERT_INVERTER_ConfigCalibrationCurrentTypeDef"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calibration_current</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv423calibration_temperature">
+<span id="_CPPv323calibration_temperature"></span><span id="_CPPv223calibration_temperature"></span><span id="calibration_temperature__EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef"></span><span class="target" id="inverter__calibration_8h_1aa000a9d57d3af8fefb8b5fec95b4c4f3"></span><a class="reference internal" href="#_CPPv450EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef" title="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calibration_temperature</span></span></span><a class="headerlink" href="#_CPPv423calibration_temperature" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv423calibration_voltage_bus">
+<span id="_CPPv323calibration_voltage_bus"></span><span id="_CPPv223calibration_voltage_bus"></span><span id="calibration_voltage_bus__EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef"></span><span class="target" id="inverter__calibration_8h_1a4b46b9dae3d72e144b3737a66a96305c"></span><a class="reference internal" href="#_CPPv449EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef" title="EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calibration_voltage_bus</span></span></span><a class="headerlink" href="#_CPPv423calibration_voltage_bus" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv424calibration_voltage_grid">
+<span id="_CPPv324calibration_voltage_grid"></span><span id="_CPPv224calibration_voltage_grid"></span><span id="calibration_voltage_grid__EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef"></span><span class="target" id="inverter__calibration_8h_1a072174c02f89023442a26323e190e034"></span><a class="reference internal" href="#_CPPv450EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef" title="EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calibration_voltage_grid</span></span></span><a class="headerlink" href="#_CPPv424calibration_voltage_grid" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419calibration_voltage">
+<span id="_CPPv319calibration_voltage"></span><span id="_CPPv219calibration_voltage"></span><span id="calibration_voltage__EVERT_INVERTER_ConfigCalibrationVoltageTypeDef"></span><span class="target" id="inverter__calibration_8h_1a305d0fcd99a300ecc871c14aba6dbe8d"></span><a class="reference internal" href="#_CPPv446EVERT_INVERTER_ConfigCalibrationVoltageTypeDef" title="EVERT_INVERTER_ConfigCalibrationVoltageTypeDef"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationVoltageTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calibration_voltage</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv446EVERT_INVERTER_ConfigCalibrationCurrentTypeDef">
+<span id="_CPPv346EVERT_INVERTER_ConfigCalibrationCurrentTypeDef"></span><span id="_CPPv246EVERT_INVERTER_ConfigCalibrationCurrentTypeDef"></span><span id="EVERT_INVERTER_ConfigCalibrationCurrentTypeDef"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</span></span></span><a class="headerlink" href="#_CPPv446EVERT_INVERTER_ConfigCalibrationCurrentTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#inverter__calibration_8h"><span class="std std-ref">inverter_calibration.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_u_slopeE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_u_slopeE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_u_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_u_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a8ee7b3c70a8a6dd98b0b4e76d0bb19ea"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_u_slope</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_u_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_u_interceptE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_u_interceptE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_u_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_u_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a55f0fb25ba6f19bd065e459232467939"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_u_intercept</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_u_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_v_slopeE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_v_slopeE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_v_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_v_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a259066543c7738a6df65628f6b11858b"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_v_slope</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_v_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_v_interceptE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_v_interceptE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_v_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_v_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a38190ec1617dd5f8765c7078502ded48"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_v_intercept</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_v_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_w_slopeE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_w_slopeE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_w_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_w_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1ae042b4db96b5e8baf405a55367b3a9ce"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_w_slope</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef15current_w_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_w_interceptE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_w_interceptE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_w_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_w_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a409c9c1fd437230e54b6b5157a7d95aa"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_w_intercept</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationCurrentTypeDef19current_w_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv450EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef">
+<span id="_CPPv350EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef"></span><span id="_CPPv250EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef</span></span></span><a class="headerlink" href="#_CPPv450EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#inverter__calibration_8h"><span class="std std-ref">inverter_calibration.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_u_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_u_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_u_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_heatsink_u_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1a6ebcda21f6213617654e415d23c577ca"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_heatsink_u_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_u_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_u_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_u_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_u_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_heatsink_u_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1ae222e569dff17d2eeaed95ebe8b4d593"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_heatsink_u_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_u_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_v_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_v_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_v_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_heatsink_v_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1af8123bb64c0b3fb4596771ffa294189e"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_heatsink_v_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_v_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_v_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_v_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_v_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_heatsink_v_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1ac6668fb9a2dfaa000c90015579f1b83c"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_heatsink_v_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_v_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_w_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_w_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_w_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_heatsink_w_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1a49b13bba4c9f808188feaf887760366d"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_heatsink_w_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef28temperature_heatsink_w_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_w_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_w_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_w_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_heatsink_w_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1a37ff9a99a1c0c024d71af9a6e8be486d"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_heatsink_w_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef32temperature_heatsink_w_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_u_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_u_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_u_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_filter_coil_u_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1ae37e8dc0493a07bb16e6f1b4c89be2ee"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_filter_coil_u_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_u_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_u_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_u_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_u_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_filter_coil_u_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1a3fa95fdfd2b8227f9c919e14bc66e80d"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_filter_coil_u_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_u_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_v_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_v_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_v_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_filter_coil_v_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1aeb531c5b198f610312fcc6a843edcf23"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_filter_coil_v_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_v_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_v_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_v_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_v_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_filter_coil_v_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1a8f225da3e32e9c91dc94161974c6bc65"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_filter_coil_v_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_v_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_w_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_w_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_w_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_filter_coil_w_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1a982a9f04a171dc6b07a61c33ea49b965"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_filter_coil_w_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef31temperature_filter_coil_w_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_w_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_w_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_w_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_filter_coil_w_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1ae6ae663239f250f0467fd1238af32dd5"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_filter_coil_w_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef35temperature_filter_coil_w_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef25temperature_ambient_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef25temperature_ambient_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef25temperature_ambient_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_ambient_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1a13e6d76fb8ca2f68e914b27447ade0d9"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_ambient_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef25temperature_ambient_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef29temperature_ambient_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef29temperature_ambient_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef29temperature_ambient_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef::temperature_ambient_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationTemperatureTypeDef_1a18f2caa1e7f2eeeefe3f7e6a6059e6ee"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_ambient_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationTemperatureTypeDef29temperature_ambient_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv449EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef">
+<span id="_CPPv349EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef"></span><span id="_CPPv249EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef</span></span></span><a class="headerlink" href="#_CPPv449EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#inverter__calibration_8h"><span class="std std-ref">inverter_calibration.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef17voltage_bus_slopeE">
+<span id="_CPPv3N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef17voltage_bus_slopeE"></span><span id="_CPPv2N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef17voltage_bus_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1a332838a882b27b9e51e1323d6efc8ca8"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_bus_slope</span></span></span><a class="headerlink" href="#_CPPv4N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef17voltage_bus_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef21voltage_bus_interceptE">
+<span id="_CPPv3N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef21voltage_bus_interceptE"></span><span id="_CPPv2N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef21voltage_bus_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1aa22d9fa7fcb478aeac89d9fe0be9cbcd"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_bus_intercept</span></span></span><a class="headerlink" href="#_CPPv4N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef21voltage_bus_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef24voltage_bus_middle_slopeE">
+<span id="_CPPv3N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef24voltage_bus_middle_slopeE"></span><span id="_CPPv2N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef24voltage_bus_middle_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_middle_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1af4f0467496b208d7698a771bfdf135a4"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_bus_middle_slope</span></span></span><a class="headerlink" href="#_CPPv4N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef24voltage_bus_middle_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef28voltage_bus_middle_interceptE">
+<span id="_CPPv3N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef28voltage_bus_middle_interceptE"></span><span id="_CPPv2N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef28voltage_bus_middle_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_middle_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1a00bb4ed9c0acd5eb62ec622819617a39"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_bus_middle_intercept</span></span></span><a class="headerlink" href="#_CPPv4N49EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef28voltage_bus_middle_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv450EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef">
+<span id="_CPPv350EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef"></span><span id="_CPPv250EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageGridTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef</span></span></span><a class="headerlink" href="#_CPPv450EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#inverter__calibration_8h"><span class="std std-ref">inverter_calibration.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_u_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_u_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_u_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef::voltage_grid_u_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageGridTypeDef_1a4b527b542982cdf1fd7a0bd5fac6283f"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_grid_u_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_u_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_u_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_u_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_u_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef::voltage_grid_u_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageGridTypeDef_1a3594d6e734587c3128748e9d889c95a6"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_grid_u_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_u_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_v_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_v_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_v_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef::voltage_grid_v_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageGridTypeDef_1a8d576b17376b7c820bfcfee4ecf4b664"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_grid_v_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_v_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_v_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_v_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_v_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef::voltage_grid_v_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageGridTypeDef_1a66a9453c9b272db49d33a2d5bda2f930"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_grid_v_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_v_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_w_slopeE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_w_slopeE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_w_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef::voltage_grid_w_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageGridTypeDef_1ae7f99e18b8a8d13adedf20fd30888dcb"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_grid_w_slope</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef20voltage_grid_w_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_w_interceptE">
+<span id="_CPPv3N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_w_interceptE"></span><span id="_CPPv2N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_w_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef::voltage_grid_w_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageGridTypeDef_1ac8a5693aaa0b6ed9bc8cbf2e66295c2f"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_grid_w_intercept</span></span></span><a class="headerlink" href="#_CPPv4N50EVERT_INVERTER_ConfigCalibrationVoltageGridTypeDef24voltage_grid_w_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv446EVERT_INVERTER_ConfigCalibrationVoltageTypeDef">
+<span id="_CPPv346EVERT_INVERTER_ConfigCalibrationVoltageTypeDef"></span><span id="_CPPv246EVERT_INVERTER_ConfigCalibrationVoltageTypeDef"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageTypeDef"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ConfigCalibrationVoltageTypeDef</span></span></span><a class="headerlink" href="#_CPPv446EVERT_INVERTER_ConfigCalibrationVoltageTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#inverter__calibration_8h"><span class="std std-ref">inverter_calibration.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_u_slopeE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_u_slopeE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_u_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageTypeDef::voltage_u_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageTypeDef_1a3634fb3523de55829738a8e05c57015d"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_u_slope</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_u_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_u_interceptE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_u_interceptE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_u_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageTypeDef::voltage_u_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageTypeDef_1a0741db69ed75ab29cde41ae64965a177"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_u_intercept</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_u_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_v_slopeE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_v_slopeE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_v_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageTypeDef::voltage_v_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageTypeDef_1ad0304ef5273c5ebd20e652a36eea4eb2"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_v_slope</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_v_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_v_interceptE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_v_interceptE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_v_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageTypeDef::voltage_v_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageTypeDef_1aa10d7ec246fdb05faeab0a4cb68d4a30"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_v_intercept</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_v_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_w_slopeE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_w_slopeE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_w_slopeE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageTypeDef::voltage_w_slope__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageTypeDef_1a0b5a637ae216fb177690b33026d64098"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_w_slope</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef15voltage_w_slopeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_w_interceptE">
+<span id="_CPPv3N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_w_interceptE"></span><span id="_CPPv2N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_w_interceptE"></span><span id="EVERT_INVERTER_ConfigCalibrationVoltageTypeDef::voltage_w_intercept__float32_t"></span><span class="target" id="structEVERT__INVERTER__ConfigCalibrationVoltageTypeDef_1a1c34f83c38bfc6bbadd9f9fd72ac19c7"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">voltage_w_intercept</span></span></span><a class="headerlink" href="#_CPPv4N46EVERT_INVERTER_ConfigCalibrationVoltageTypeDef19voltage_w_interceptE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="inverter_alarm_index.html" class="btn btn-neutral float-left" title="inverter_alarm_index.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="inverter_constraints.html" class="btn btn-neutral float-right" title="inverter_constraints.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

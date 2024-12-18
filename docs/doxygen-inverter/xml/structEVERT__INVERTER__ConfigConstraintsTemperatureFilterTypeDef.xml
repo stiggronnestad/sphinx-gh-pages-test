@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</compoundname>
+    <includes refid="inverter__constraints_8h" local="no">inverter_constraints.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a01d9e2471333da8aaf82232e3347263b" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_u_hysteresis</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_u_hysteresis</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_u_hysteresis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="29" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a72e7fb58aa59b3575fc9fb5f01d3527b" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_u_critical</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_u_critical</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_u_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="30" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1ae2e5ba2d25401a251383ba2a1ab7d6ef" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_u_warning</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_u_warning</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_u_warning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="31" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a465360ece80b0f1ca90ba19093cbc1d9" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_v_hysteresis</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_v_hysteresis</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_v_hysteresis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="32" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1aa51272cb65ce2042a6156dd73ea9e207" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_v_critical</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_v_critical</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_v_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="33" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a016b389603a02fbc8aba8ec8a78f8a63" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_v_warning</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_v_warning</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_v_warning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="34" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a29ebdd7bfd9093d24b9d96d159255164" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_w_hysteresis</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_w_hysteresis</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_w_hysteresis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="35" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a51d0adf64d1284dcdcccc3ee6f93cf3d" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_w_critical</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_w_critical</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_w_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="36" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a1725769bffc5336090becf423c43c61f" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_w_warning</definition>
+        <argsstring></argsstring>
+        <name>filter_coil_w_warning</name>
+        <qualifiedname>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef::filter_coil_w_warning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="37" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="27" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="28" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a72e7fb58aa59b3575fc9fb5f01d3527b" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_u_critical</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a01d9e2471333da8aaf82232e3347263b" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_u_hysteresis</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1ae2e5ba2d25401a251383ba2a1ab7d6ef" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_u_warning</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1aa51272cb65ce2042a6156dd73ea9e207" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_v_critical</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a465360ece80b0f1ca90ba19093cbc1d9" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_v_hysteresis</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a016b389603a02fbc8aba8ec8a78f8a63" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_v_warning</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a51d0adf64d1284dcdcccc3ee6f93cf3d" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_w_critical</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a29ebdd7bfd9093d24b9d96d159255164" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_w_hysteresis</name></member>
+      <member refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a1725769bffc5336090becf423c43c61f" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</scope><name>filter_coil_w_warning</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

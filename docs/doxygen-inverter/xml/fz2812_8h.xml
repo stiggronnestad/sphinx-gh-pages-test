@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="fz2812_8h" kind="file" language="C++">
+    <compoundname>fz2812.h</compoundname>
+    <includes local="no">stm32g4xx_hal.h</includes>
+    <includes refid="__conf__evert__hal_8h" local="yes">_conf_evert_hal.h</includes>
+    <includedby refid="fz2812_8c" local="yes">/mnt/c/dev/evert-firmware-pmu/libs/core/src/fz2812.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>_conf_evert_hal.h</label>
+        <link refid="__conf__evert__hal_8h"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/fz2812.h</label>
+        <link refid="fz2812_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stm32g4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/fz2812.c</label>
+        <link refid="fz2812_8c"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/libs/core/src/fz2812.h</label>
+        <link refid="fz2812_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="fz2812_8h_1a351077d48f4b9852de1b2ac5e560db7e" prot="public" static="no">
+        <name>EVERT_FZ2812_LED_COUNT</name>
+        <initializer>(<ref refid="__conf__evert__hal_8h_1a30be3c45606a6621ba15a2ac01911e34" kindref="member">EVERT_HAL_CONF_FZ2812_COUNT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/fz2812.h" line="15" column="9" bodyfile="/mnt/c/dev/evert-firmware-pmu/libs/core/src/fz2812.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:<sp/>FZ2812<sp/>LED<sp/>driver<sp/>configuration.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created:<sp/>2021.08.17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WS2812<sp/>timing<sp/>requires<sp/>a<sp/>PWM<sp/>frequency<sp/>of<sp/>around<sp/>800<sp/>kHz,<sp/>which<sp/>means<sp/>a<sp/>period<sp/>of<sp/>1.25<sp/>µs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;0&quot;<sp/>bit:<sp/>~33%<sp/>duty<sp/>cycle<sp/>(e.g.,<sp/>0.4<sp/>µs<sp/>high,<sp/>0.85<sp/>µs<sp/>low).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;1&quot;<sp/>bit:<sp/>~66%<sp/>duty<sp/>cycle<sp/>(e.g.,<sp/>0.8<sp/>µs<sp/>high,<sp/>0.45<sp/>µs<sp/>low).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EVERT_CORE_FZ2812_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_CORE_FZ2812_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stm32g4xx_hal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="__conf__evert__hal_8h" kindref="compound">_conf_evert_hal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="fz2812_8h_1a351077d48f4b9852de1b2ac5e560db7e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_LED_COUNT<sp/>(EVERT_HAL_CONF_FZ2812_COUNT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>EVERT_FZ2812_LED_COUNT<sp/>&gt;<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_RGB_DATA_LENGTH_BITS_RESET<sp/>(25)<sp/></highlight><highlight class="comment">//<sp/>n-bits<sp/>of<sp/>reset<sp/>(30<sp/>µs)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_RGB_DATA_LENGTH_BITS<sp/>(24)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>24-bits<sp/>of<sp/>data<sp/>per<sp/>LED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_RGB_DATA_LENGTH_BITS_TOTAL<sp/>((EVERT_FZ2812_RGB_DATA_LENGTH_BITS<sp/>*<sp/>EVERT_HAL_CONF_FZ2812_COUNT)<sp/>+<sp/>EVERT_FZ2812_RGB_DATA_LENGTH_BITS_RESET)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_RGB_DATA_LENGTH_BYTES<sp/>((EVERT_FZ2812_RGB_DATA_LENGTH_BITS<sp/>*<sp/>EVERT_HAL_CONF_FZ2812_COUNT)<sp/>/<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_PWM_FREQUENCY<sp/>(800000f)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>800kHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_PWM_PERIOD_TICKS<sp/>(212)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_PWM_PERIOD<sp/>(1.25f)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1.25us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_PWM_PERIOD_0BIT<sp/>(0.25f)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0.4us<sp/>+-<sp/>150ns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_PWM_PERIOD_1BIT<sp/>(0.75f)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0.85us<sp/>+-<sp/>150ns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_PWM_CCR_0BIT<sp/>((uint8_t)(EVERT_FZ2812_PWM_PERIOD_0BIT<sp/>/<sp/>EVERT_FZ2812_PWM_PERIOD<sp/>*<sp/>EVERT_FZ2812_PWM_PERIOD_TICKS))<sp/></highlight><highlight class="comment">//<sp/>33%<sp/>duty<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_PWM_CCR_1BIT<sp/>((uint8_t)(EVERT_FZ2812_PWM_PERIOD_1BIT<sp/>/<sp/>EVERT_FZ2812_PWM_PERIOD<sp/>*<sp/>EVERT_FZ2812_PWM_PERIOD_TICKS))<sp/></highlight><highlight class="comment">//<sp/>66%<sp/>duty<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_FZ2812_RGB_TO_GRB(rgb)<sp/>(uint32_t)((((rgb)<sp/>&amp;<sp/>0xFF0000)<sp/>&gt;&gt;<sp/>8)<sp/>|<sp/>(((rgb)<sp/>&amp;<sp/>0x00FF00)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((rgb)<sp/>&amp;<sp/>0x0000FF)<sp/>&lt;&lt;<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>color;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>on_time;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>off_time;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>on_counter;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>off_counter;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/>EVERT_FZ2812_LedDataTypeDef;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EVERT_FZ2812_Init(TIM_HandleTypeDef<sp/>*htim);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EVERT_FZ2812_SetBlink(uint8_t<sp/>led_index,<sp/>uint32_t<sp/>on_time,<sp/>uint32_t<sp/>off_time);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EVERT_FZ2812_SetColor(uint8_t<sp/>led_index,<sp/>uint32_t<sp/>grb);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EVERT_FZ2812_SetColorRgb(uint8_t<sp/>led_index,<sp/>uint8_t<sp/>r,<sp/>uint8_t<sp/>g,<sp/>uint8_t<sp/>b);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EVERT_FZ2812_Update(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_FZ2812_LED_COUNT<sp/>&gt;<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_CORE_FZ2812_H_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/libs/core/src/fz2812.h"/>
+  </compounddef>
+</doxygen>

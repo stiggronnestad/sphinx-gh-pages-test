@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</compoundname>
+    <includes refid="inverter__calibration_8h" local="no">inverter_calibration.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a8ee7b3c70a8a6dd98b0b4e76d0bb19ea" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_u_slope</definition>
+        <argsstring></argsstring>
+        <name>current_u_slope</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_u_slope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="8" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a55f0fb25ba6f19bd065e459232467939" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_u_intercept</definition>
+        <argsstring></argsstring>
+        <name>current_u_intercept</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_u_intercept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="9" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a259066543c7738a6df65628f6b11858b" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_v_slope</definition>
+        <argsstring></argsstring>
+        <name>current_v_slope</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_v_slope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="10" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a38190ec1617dd5f8765c7078502ded48" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_v_intercept</definition>
+        <argsstring></argsstring>
+        <name>current_v_intercept</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_v_intercept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="11" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1ae042b4db96b5e8baf405a55367b3a9ce" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_w_slope</definition>
+        <argsstring></argsstring>
+        <name>current_w_slope</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_w_slope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="12" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a409c9c1fd437230e54b6b5157a7d95aa" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_w_intercept</definition>
+        <argsstring></argsstring>
+        <name>current_w_intercept</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef::current_w_intercept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="13" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="6" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a55f0fb25ba6f19bd065e459232467939" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</scope><name>current_u_intercept</name></member>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a8ee7b3c70a8a6dd98b0b4e76d0bb19ea" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</scope><name>current_u_slope</name></member>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a38190ec1617dd5f8765c7078502ded48" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</scope><name>current_v_intercept</name></member>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a259066543c7738a6df65628f6b11858b" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</scope><name>current_v_slope</name></member>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1a409c9c1fd437230e54b6b5157a7d95aa" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</scope><name>current_w_intercept</name></member>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationCurrentTypeDef_1ae042b4db96b5e8baf405a55367b3a9ce" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationCurrentTypeDef</scope><name>current_w_slope</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

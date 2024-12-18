@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_cbee055f3f6473bdf1b8617fc295509a" kind="dir">
+    <compoundname>/mnt/c/dev/evert-firmware-pmu/boost-converter/src</compoundname>
+    <innerfile refid="__conf__evert__boost__converter_8h">_conf_evert_boost_converter.h</innerfile>
+    <innerfile refid="__conf__evert__device_8h">_conf_evert_device.h</innerfile>
+    <innerfile refid="__conf__evert__hal_8h">_conf_evert_hal.h</innerfile>
+    <innerfile refid="boost__converter_8c">boost_converter.c</innerfile>
+    <innerfile refid="boost__converter_8h">boost_converter.h</innerfile>
+    <innerfile refid="boost__converter__alarms_8c">boost_converter_alarms.c</innerfile>
+    <innerfile refid="boost__converter__alarms_8h">boost_converter_alarms.h</innerfile>
+    <innerfile refid="boost__converter__calibration_8h">boost_converter_calibration.h</innerfile>
+    <innerfile refid="boost__converter__constraints_8h">boost_converter_constraints.h</innerfile>
+    <innerfile refid="boost__converter__mppt_8c">boost_converter_mppt.c</innerfile>
+    <innerfile refid="boost__converter__mppt_8h">boost_converter_mppt.h</innerfile>
+    <innerfile refid="boost__converter__readings_8c">boost_converter_readings.c</innerfile>
+    <innerfile refid="boost__converter__readings_8h">boost_converter_readings.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/"/>
+  </compounddef>
+</doxygen>

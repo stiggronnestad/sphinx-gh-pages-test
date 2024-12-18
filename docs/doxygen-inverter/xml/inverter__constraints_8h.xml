@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="inverter__constraints_8h" kind="file" language="C++">
+    <compoundname>inverter_constraints.h</compoundname>
+    <includes local="no">arm_math.h</includes>
+    <includedby refid="inverter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h</label>
+        <link refid="inverter__constraints_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>arm_math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c</label>
+        <link refid="inverter_8c"/>
+      </node>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.h</label>
+        <link refid="inverter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h</label>
+        <link refid="inverter__constraints_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_readings.c</label>
+        <link refid="inverter__readings_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef" prot="public">EVERT_INVERTER_ConfigConstraintsCurrentTypeDef</innerclass>
+    <innerclass refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef" prot="public">EVERT_INVERTER_ConfigConstraintsDcBusTypeDef</innerclass>
+    <innerclass refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef" prot="public">EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</innerclass>
+    <innerclass refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef" prot="public">EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</innerclass>
+    <innerclass refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef" prot="public">EVERT_INVERTER_ConfigConstraintsVoltageTypeDef</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="inverter__constraints_8h_1ae834b7d65d3c7a92d3b8d46edc7d8a54" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsCurrentTypeDef</ref></type>
+        <definition>EVERT_INVERTER_ConfigConstraintsCurrentTypeDef constraints_current</definition>
+        <argsstring></argsstring>
+        <name>constraints_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="68" column="55" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c" bodystart="14" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" declline="68" declcolumn="55"/>
+      </memberdef>
+      <memberdef kind="variable" id="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsDcBusTypeDef</ref></type>
+        <definition>EVERT_INVERTER_ConfigConstraintsDcBusTypeDef constraints_dc_bus</definition>
+        <argsstring></argsstring>
+        <name>constraints_dc_bus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="69" column="53" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c" bodystart="15" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" declline="69" declcolumn="53"/>
+      </memberdef>
+      <memberdef kind="variable" id="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</ref></type>
+        <definition>EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef constraints_temperature_filter</definition>
+        <argsstring></argsstring>
+        <name>constraints_temperature_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="70" column="65" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c" bodystart="16" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" declline="70" declcolumn="65"/>
+      </memberdef>
+      <memberdef kind="variable" id="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</ref></type>
+        <definition>EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef constraints_temperature_heatsink</definition>
+        <argsstring></argsstring>
+        <name>constraints_temperature_heatsink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="71" column="67" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c" bodystart="17" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" declline="71" declcolumn="67"/>
+      </memberdef>
+      <memberdef kind="variable" id="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" prot="public" static="no" mutable="no">
+        <type><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsVoltageTypeDef</ref></type>
+        <definition>EVERT_INVERTER_ConfigConstraintsVoltageTypeDef constraints_voltage</definition>
+        <argsstring></argsstring>
+        <name>constraints_voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="72" column="55" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter.c" bodystart="18" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" declline="72" declcolumn="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="inverter__constraints_8h_1aec4392a2aacb9c3ede16f48cb72fbe5f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EVERT_INVERTER_InitConstraints</definition>
+        <argsstring>()</argsstring>
+        <name>EVERT_INVERTER_InitConstraints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" line="74" column="20" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h" bodystart="74" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_INVERTER_CONSTRAINTS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_INVERTER_CONSTRAINTS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;arm_math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1aadc74a259872d5cba51fcf537ac1bc2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1aadc74a259872d5cba51fcf537ac1bc2e" kindref="member">current_rms_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="9" refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1a044c3b221aa6f3352962a46987fe4ba7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1a044c3b221aa6f3352962a46987fe4ba7" kindref="member">current_rms_high_critical</ref>;</highlight></codeline>
+<codeline lineno="10" refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1a5477bd61a57a824b5338b1afde4cf361" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1a5477bd61a57a824b5338b1afde4cf361" kindref="member">current_rms_high_warning</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsCurrentTypeDef</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a99e2705bffb642997afdcff0baaeade6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a99e2705bffb642997afdcff0baaeade6" kindref="member">voltage_bus_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a97c81215d64b8886c65c962829a7e93b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a97c81215d64b8886c65c962829a7e93b" kindref="member">voltage_bus_high_critical</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1ab8863b505ced2297bedfb4cb2495a585" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1ab8863b505ced2297bedfb4cb2495a585" kindref="member">voltage_bus_high_warning</ref>;</highlight></codeline>
+<codeline lineno="18" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a37a7affda11d8b0d5678a876a3e59c02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a37a7affda11d8b0d5678a876a3e59c02" kindref="member">voltage_bus_low_warning</ref>;</highlight></codeline>
+<codeline lineno="19" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a40eedc776ac850bd6111a96c00576949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a40eedc776ac850bd6111a96c00576949" kindref="member">voltage_bus_low_critical</ref>;</highlight></codeline>
+<codeline lineno="20" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1abbbd60c6df0a0e4f11b801451b1c7b12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1abbbd60c6df0a0e4f11b801451b1c7b12" kindref="member">voltage_bus_middle_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="21" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a8e4bcebecbe08935d9d419894f21e51e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a8e4bcebecbe08935d9d419894f21e51e" kindref="member">voltage_bus_middle_high_critical</ref>;</highlight></codeline>
+<codeline lineno="22" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1aa1b70a2f0f0c64bdc259879cdb4287b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1aa1b70a2f0f0c64bdc259879cdb4287b7" kindref="member">voltage_bus_middle_high_warning</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a0c7fa0318a2bd6168c8afe4ef3a15c0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a0c7fa0318a2bd6168c8afe4ef3a15c0b" kindref="member">voltage_bus_middle_low_warning</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a84e60041484302e1e5d33c22e4579d75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a84e60041484302e1e5d33c22e4579d75" kindref="member">voltage_bus_middle_low_critical</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsDcBusTypeDef</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a01d9e2471333da8aaf82232e3347263b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a01d9e2471333da8aaf82232e3347263b" kindref="member">filter_coil_u_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a72e7fb58aa59b3575fc9fb5f01d3527b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a72e7fb58aa59b3575fc9fb5f01d3527b" kindref="member">filter_coil_u_critical</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1ae2e5ba2d25401a251383ba2a1ab7d6ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1ae2e5ba2d25401a251383ba2a1ab7d6ef" kindref="member">filter_coil_u_warning</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a465360ece80b0f1ca90ba19093cbc1d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a465360ece80b0f1ca90ba19093cbc1d9" kindref="member">filter_coil_v_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1aa51272cb65ce2042a6156dd73ea9e207" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1aa51272cb65ce2042a6156dd73ea9e207" kindref="member">filter_coil_v_critical</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a016b389603a02fbc8aba8ec8a78f8a63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a016b389603a02fbc8aba8ec8a78f8a63" kindref="member">filter_coil_v_warning</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a29ebdd7bfd9093d24b9d96d159255164" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a29ebdd7bfd9093d24b9d96d159255164" kindref="member">filter_coil_w_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="36" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a51d0adf64d1284dcdcccc3ee6f93cf3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a51d0adf64d1284dcdcccc3ee6f93cf3d" kindref="member">filter_coil_w_critical</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a1725769bffc5336090becf423c43c61f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a1725769bffc5336090becf423c43c61f" kindref="member">filter_coil_w_warning</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1afa80eefce37add5682bc6becb1ebf07d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1afa80eefce37add5682bc6becb1ebf07d" kindref="member">heatsink_u_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="43" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a01d22f906a8c46d8c332c0e1121125a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a01d22f906a8c46d8c332c0e1121125a8" kindref="member">heatsink_u_critical</ref>;</highlight></codeline>
+<codeline lineno="44" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ad3a927fa356029ca53e778b3f77242a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ad3a927fa356029ca53e778b3f77242a8" kindref="member">heatsink_u_warning</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ab137bc298a4f7ee585844608656c2b91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ab137bc298a4f7ee585844608656c2b91" kindref="member">heatsink_v_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a83fd58e14dff94c0b6cfde6e9b64fddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a83fd58e14dff94c0b6cfde6e9b64fddd" kindref="member">heatsink_v_critical</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1abefbcdb1cc9936f32b72921076ac7c3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1abefbcdb1cc9936f32b72921076ac7c3d" kindref="member">heatsink_v_warning</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a0b16b1bff098e3e912634b9609042d49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a0b16b1bff098e3e912634b9609042d49" kindref="member">heatsink_w_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a06952572e9064d92db44cb1f5dea6ad8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a06952572e9064d92db44cb1f5dea6ad8" kindref="member">heatsink_w_critical</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a37e0da9c17f16ca4d5e84b5049410135" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a37e0da9c17f16ca4d5e84b5049410135" kindref="member">heatsink_w_warning</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1abd5d0ce48a0f02cbe89fa31b80b50070" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1abd5d0ce48a0f02cbe89fa31b80b50070" kindref="member">voltage_ln_rms_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a612f940b79e801e60af545f165d47659" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a612f940b79e801e60af545f165d47659" kindref="member">voltage_ln_rms_high_critical</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a3e945529784b4a3131c1da94b2157cc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a3e945529784b4a3131c1da94b2157cc6" kindref="member">voltage_ln_rms_high_warning</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a1614fe18db63a67cdd8cbf273de6c7e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a1614fe18db63a67cdd8cbf273de6c7e8" kindref="member">voltage_ln_rms_low_warning</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1aff3d90a06df1d58091db525f9a28f559" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1aff3d90a06df1d58091db525f9a28f559" kindref="member">voltage_ln_rms_low_critical</ref>;</highlight></codeline>
+<codeline lineno="60" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1af50efd4f5672eb04aa804ed3722a096e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1af50efd4f5672eb04aa804ed3722a096e" kindref="member">voltage_grid_ln_rms_hysteresis</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a580ee9bd8ae1059238ea3d69c2014b62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a580ee9bd8ae1059238ea3d69c2014b62" kindref="member">voltage_grid_ln_rms_high_critical</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a2b57df0cbf7150ceabe49b4ed9cac4f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a2b57df0cbf7150ceabe49b4ed9cac4f4" kindref="member">voltage_grid_ln_rms_high_warning</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a1953957c05f8e3c6ba57d8343d14fff5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a1953957c05f8e3c6ba57d8343d14fff5" kindref="member">voltage_grid_ln_rms_low_warning</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a02ee585784009307b05b98178bc2433e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>float32_t<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a02ee585784009307b05b98178bc2433e" kindref="member">voltage_grid_ln_rms_low_critical</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsVoltageTypeDef</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Constraints</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsCurrentTypeDef</ref><sp/><ref refid="inverter__constraints_8h_1ae834b7d65d3c7a92d3b8d46edc7d8a54" kindref="member">constraints_current</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsDcBusTypeDef</ref><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsTemperatureFilterTypeDef</ref><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsTemperatureHeatsinkTypeDef</ref><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef" kindref="compound">EVERT_INVERTER_ConfigConstraintsVoltageTypeDef</ref><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EVERT_INVERTER_InitConstraints()</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1ae834b7d65d3c7a92d3b8d46edc7d8a54" kindref="member">constraints_current</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1a044c3b221aa6f3352962a46987fe4ba7" kindref="member">current_rms_high_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1ab9107d4a172885782ddf37b38e0a90d3" kindref="member">EVERT_SETTING_INVERTER_CURRENT_RMS_MAX</ref><sp/>*<sp/>1.1f;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1ae834b7d65d3c7a92d3b8d46edc7d8a54" kindref="member">constraints_current</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1a5477bd61a57a824b5338b1afde4cf361" kindref="member">current_rms_high_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1ab9107d4a172885782ddf37b38e0a90d3" kindref="member">EVERT_SETTING_INVERTER_CURRENT_RMS_MAX</ref><sp/>*<sp/>1.05f;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1ae834b7d65d3c7a92d3b8d46edc7d8a54" kindref="member">constraints_current</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsCurrentTypeDef_1aadc74a259872d5cba51fcf537ac1bc2e" kindref="member">current_rms_hysteresis</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1ab9107d4a172885782ddf37b38e0a90d3" kindref="member">EVERT_SETTING_INVERTER_CURRENT_RMS_MAX</ref><sp/>*<sp/>0.5f;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a97c81215d64b8886c65c962829a7e93b" kindref="member">voltage_bus_high_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1a5549fee284e37b6509c5770093e0b6de" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX</ref><sp/>*<sp/>1.1f;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1ab8863b505ced2297bedfb4cb2495a585" kindref="member">voltage_bus_high_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1a5549fee284e37b6509c5770093e0b6de" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MAX</ref><sp/>*<sp/>1.05f;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a40eedc776ac850bd6111a96c00576949" kindref="member">voltage_bus_low_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1a10026f58f1a997d0eb8b5f8110256b87" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MIN</ref><sp/>*<sp/>0.9f;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a37a7affda11d8b0d5678a876a3e59c02" kindref="member">voltage_bus_low_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1a10026f58f1a997d0eb8b5f8110256b87" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MIN</ref><sp/>*<sp/>0.95f;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a8e4bcebecbe08935d9d419894f21e51e" kindref="member">voltage_bus_middle_high_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1ac22290c77da663eb20b3768905d4bea9" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL</ref><sp/>*<sp/>1.1f;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1aa1b70a2f0f0c64bdc259879cdb4287b7" kindref="member">voltage_bus_middle_high_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1ac22290c77da663eb20b3768905d4bea9" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL</ref><sp/>*<sp/>1.05f;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a84e60041484302e1e5d33c22e4579d75" kindref="member">voltage_bus_middle_low_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1ac22290c77da663eb20b3768905d4bea9" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL</ref><sp/>*<sp/>0.9f;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1a0c7fa0318a2bd6168c8afe4ef3a15c0b" kindref="member">voltage_bus_middle_low_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1ac22290c77da663eb20b3768905d4bea9" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_BUS_MID_NOMINAL</ref><sp/>*<sp/>0.95f;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a8fce6e9aaa591fa677ed71c47a8612c5" kindref="member">constraints_dc_bus</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsDcBusTypeDef_1abbbd60c6df0a0e4f11b801451b1c7b12" kindref="member">voltage_bus_middle_hysteresis</ref><sp/>=<sp/>50.0f;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a72e7fb58aa59b3575fc9fb5f01d3527b" kindref="member">filter_coil_u_critical</ref><sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1ae2e5ba2d25401a251383ba2a1ab7d6ef" kindref="member">filter_coil_u_warning</ref><sp/>=<sp/>90.0f;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a01d9e2471333da8aaf82232e3347263b" kindref="member">filter_coil_u_hysteresis</ref><sp/>=<sp/>5.0f;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1aa51272cb65ce2042a6156dd73ea9e207" kindref="member">filter_coil_v_critical</ref><sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a016b389603a02fbc8aba8ec8a78f8a63" kindref="member">filter_coil_v_warning</ref><sp/>=<sp/>90.0f;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a465360ece80b0f1ca90ba19093cbc1d9" kindref="member">filter_coil_v_hysteresis</ref><sp/>=<sp/>5.0f;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a51d0adf64d1284dcdcccc3ee6f93cf3d" kindref="member">filter_coil_w_critical</ref><sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a1725769bffc5336090becf423c43c61f" kindref="member">filter_coil_w_warning</ref><sp/>=<sp/>90.0f;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a211d0c66d3b4402ff45ee04442400a10" kindref="member">constraints_temperature_filter</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureFilterTypeDef_1a29ebdd7bfd9093d24b9d96d159255164" kindref="member">filter_coil_w_hysteresis</ref><sp/>=<sp/>5.0f;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a01d22f906a8c46d8c332c0e1121125a8" kindref="member">heatsink_u_critical</ref><sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ad3a927fa356029ca53e778b3f77242a8" kindref="member">heatsink_u_warning</ref><sp/>=<sp/>90.0f;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1afa80eefce37add5682bc6becb1ebf07d" kindref="member">heatsink_u_hysteresis</ref><sp/>=<sp/>5.0f;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a83fd58e14dff94c0b6cfde6e9b64fddd" kindref="member">heatsink_v_critical</ref><sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1abefbcdb1cc9936f32b72921076ac7c3d" kindref="member">heatsink_v_warning</ref><sp/>=<sp/>90.0f;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1ab137bc298a4f7ee585844608656c2b91" kindref="member">heatsink_v_hysteresis</ref><sp/>=<sp/>5.0f;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a06952572e9064d92db44cb1f5dea6ad8" kindref="member">heatsink_w_critical</ref><sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a37e0da9c17f16ca4d5e84b5049410135" kindref="member">heatsink_w_warning</ref><sp/>=<sp/>90.0f;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a4c38d95161a34cf4adcc341610892926" kindref="member">constraints_temperature_heatsink</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsTemperatureHeatsinkTypeDef_1a0b16b1bff098e3e912634b9609042d49" kindref="member">heatsink_w_hysteresis</ref><sp/>=<sp/>5.0f;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a580ee9bd8ae1059238ea3d69c2014b62" kindref="member">voltage_grid_ln_rms_high_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1af43faee784da56070ed025b1512ce026" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX</ref><sp/>*<sp/>1.1f;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a2b57df0cbf7150ceabe49b4ed9cac4f4" kindref="member">voltage_grid_ln_rms_high_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1af43faee784da56070ed025b1512ce026" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX</ref><sp/>*<sp/>1.05f;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a02ee585784009307b05b98178bc2433e" kindref="member">voltage_grid_ln_rms_low_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1a503809023c5055ec6ab9ca1514406184" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN</ref><sp/>*<sp/>0.9f;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a1953957c05f8e3c6ba57d8343d14fff5" kindref="member">voltage_grid_ln_rms_low_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1a503809023c5055ec6ab9ca1514406184" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN</ref><sp/>*<sp/>0.95f;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a612f940b79e801e60af545f165d47659" kindref="member">voltage_ln_rms_high_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1af43faee784da56070ed025b1512ce026" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX</ref><sp/>*<sp/>1.1f;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a3e945529784b4a3131c1da94b2157cc6" kindref="member">voltage_ln_rms_high_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1af43faee784da56070ed025b1512ce026" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MAX</ref><sp/>*<sp/>1.05f;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1aff3d90a06df1d58091db525f9a28f559" kindref="member">voltage_ln_rms_low_critical</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1a503809023c5055ec6ab9ca1514406184" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN</ref><sp/>*<sp/>0.9f;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="inverter__constraints_8h_1a2f034861bbddc8b2edd49f83ddaa280e" kindref="member">constraints_voltage</ref>.<ref refid="structEVERT__INVERTER__ConfigConstraintsVoltageTypeDef_1a1614fe18db63a67cdd8cbf273de6c7e8" kindref="member">voltage_ln_rms_low_warning</ref><sp/>=<sp/><ref refid="__conf__evert__inverter_8h_1a503809023c5055ec6ab9ca1514406184" kindref="member">EVERT_SETTING_INVERTER_VOLTAGE_RMS_MIN</ref><sp/>*<sp/>0.95f;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_INVERTER_CONSTRAINTS_H_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_constraints.h"/>
+  </compounddef>
+</doxygen>

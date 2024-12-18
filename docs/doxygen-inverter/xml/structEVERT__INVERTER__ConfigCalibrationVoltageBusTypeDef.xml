@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef</compoundname>
+    <includes refid="inverter__calibration_8h" local="no">inverter_calibration.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1a332838a882b27b9e51e1323d6efc8ca8" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_slope</definition>
+        <argsstring></argsstring>
+        <name>voltage_bus_slope</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_slope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="36" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1aa22d9fa7fcb478aeac89d9fe0be9cbcd" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_intercept</definition>
+        <argsstring></argsstring>
+        <name>voltage_bus_intercept</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_intercept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="37" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1af4f0467496b208d7698a771bfdf135a4" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_middle_slope</definition>
+        <argsstring></argsstring>
+        <name>voltage_bus_middle_slope</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_middle_slope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="38" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1a00bb4ed9c0acd5eb62ec622819617a39" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_middle_intercept</definition>
+        <argsstring></argsstring>
+        <name>voltage_bus_middle_intercept</name>
+        <qualifiedname>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef::voltage_bus_middle_intercept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="39" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="inverter__readings_8c_1a459470e3625f312660783b6643da95ab" compoundref="inverter__readings_8c" startline="123" endline="156">EVERT_INVERTER_ISR_HF_Readings</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" line="34" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/inverter/src/inverter_calibration.h" bodystart="35" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1aa22d9fa7fcb478aeac89d9fe0be9cbcd" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef</scope><name>voltage_bus_intercept</name></member>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1a00bb4ed9c0acd5eb62ec622819617a39" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef</scope><name>voltage_bus_middle_intercept</name></member>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1af4f0467496b208d7698a771bfdf135a4" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef</scope><name>voltage_bus_middle_slope</name></member>
+      <member refid="structEVERT__INVERTER__ConfigCalibrationVoltageBusTypeDef_1a332838a882b27b9e51e1323d6efc8ca8" prot="public" virt="non-virtual"><scope>EVERT_INVERTER_ConfigCalibrationVoltageBusTypeDef</scope><name>voltage_bus_slope</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

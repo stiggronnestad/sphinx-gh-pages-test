@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_BOOST_CONVERTER_MpptStateTypeDef</compoundname>
+    <includes refid="boost__converter_8h" local="no">boost_converter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" prot="public" static="no" mutable="no">
+        <type><ref refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820b" kindref="member">EVERT_BOOST_CONVERTER_StatusTypeDef</ref></type>
+        <definition>EVERT_BOOST_CONVERTER_StatusTypeDef EVERT_BOOST_CONVERTER_MpptStateTypeDef::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_MpptStateTypeDef::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="93" column="41" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="boost__converter_8c_1a4c572f884f8239ad55ece449ec1f953d" compoundref="boost__converter_8c" startline="169" endline="189">EVERT_BOOST_CONVERTER_AlarmChangedState</referencedby>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+        <referencedby refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" compoundref="boost__converter__mppt_8c" startline="20" endline="44">EVERT_BOOST_CONVERTER_MpptRun</referencedby>
+        <referencedby refid="boost__converter_8c_1a743d2481e17055c63c2dcd95fa0f2db1" compoundref="boost__converter_8c" startline="192" endline="212">EVERT_CAN_OnMessageReceived</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ac1fdc481c2092319c14f5a3a7ee5077c" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_MpptStateTypeDef::duty_cycle</definition>
+        <argsstring></argsstring>
+        <name>duty_cycle</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_MpptStateTypeDef::duty_cycle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="94" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" compoundref="boost__converter__mppt_8c" startline="20" endline="44">EVERT_BOOST_CONVERTER_MpptRun</referencedby>
+        <referencedby refid="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" compoundref="boost__converter_8c" startline="130" endline="166">EVERT_BOOST_CONVERTER_SetDutyCycle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a2451d8b99e06dc2438ad887052662141" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_MpptStateTypeDef::perturb_step</definition>
+        <argsstring></argsstring>
+        <name>perturb_step</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_MpptStateTypeDef::perturb_step</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="95" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+        <referencedby refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" compoundref="boost__converter__mppt_8c" startline="20" endline="44">EVERT_BOOST_CONVERTER_MpptRun</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1acf3943eab6e33d8670e5d55477fa9de7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EVERT_BOOST_CONVERTER_MpptStateTypeDef::observe_interval</definition>
+        <argsstring></argsstring>
+        <name>observe_interval</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_MpptStateTypeDef::observe_interval</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="96" column="14" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+        <referencedby refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" compoundref="boost__converter__mppt_8c" startline="20" endline="44">EVERT_BOOST_CONVERTER_MpptRun</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ab8aebdaaa47f175afc729e36c7476c2b" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_MpptStateTypeDef::observe_timer</definition>
+        <argsstring></argsstring>
+        <name>observe_timer</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_MpptStateTypeDef::observe_timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="97" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+        <referencedby refid="boost__converter__mppt_8c_1ad0f9ec859f9e3f7b08022e9ee17832b3" compoundref="boost__converter__mppt_8c" startline="20" endline="44">EVERT_BOOST_CONVERTER_MpptRun</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a7db72b944eeb7d37a8e5d78dda4b343f" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_MpptStateTypeDef::current_perturb_step</definition>
+        <argsstring></argsstring>
+        <name>current_perturb_step</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_MpptStateTypeDef::current_perturb_step</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="98" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a6d78629e596c2ddd9b971cd740f9a6bc" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_MpptStateTypeDef::previous_duty_cycle</definition>
+        <argsstring></argsstring>
+        <name>previous_duty_cycle</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_MpptStateTypeDef::previous_duty_cycle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="99" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a325ea41c40e4f0f43209445778757b7d" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_MpptStateTypeDef::previous_power</definition>
+        <argsstring></argsstring>
+        <name>previous_power</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_MpptStateTypeDef::previous_power</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="100" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="boost__converter__mppt_8c_1a62f616fc5917d1284f771283e11b61c4" compoundref="boost__converter__mppt_8c" startline="7" endline="18">EVERT_BOOST_CONVERTER_MpptInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MPPT state structure for the boost converter. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the status, duty cycle, perturb step, observe interval, observe timer, current perturb step, previous duty cycle, and previous power </para>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" line="91" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h" bodystart="92" bodyend="101"/>
+    <listofallmembers>
+      <member refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a7db72b944eeb7d37a8e5d78dda4b343f" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_MpptStateTypeDef</scope><name>current_perturb_step</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ac1fdc481c2092319c14f5a3a7ee5077c" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_MpptStateTypeDef</scope><name>duty_cycle</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1acf3943eab6e33d8670e5d55477fa9de7" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_MpptStateTypeDef</scope><name>observe_interval</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ab8aebdaaa47f175afc729e36c7476c2b" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_MpptStateTypeDef</scope><name>observe_timer</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a2451d8b99e06dc2438ad887052662141" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_MpptStateTypeDef</scope><name>perturb_step</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a6d78629e596c2ddd9b971cd740f9a6bc" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_MpptStateTypeDef</scope><name>previous_duty_cycle</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a325ea41c40e4f0f43209445778757b7d" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_MpptStateTypeDef</scope><name>previous_power</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_MpptStateTypeDef</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

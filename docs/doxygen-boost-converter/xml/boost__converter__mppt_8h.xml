@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="boost__converter__mppt_8h" kind="file" language="C++">
+    <compoundname>boost_converter_mppt.h</compoundname>
+    <includes refid="boost__converter_8h" local="yes">boost_converter.h</includes>
+    <includedby refid="boost__converter_8h" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h</includedby>
+    <includedby refid="boost__converter__mppt_8c" local="yes">/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.c</includedby>
+    <incdepgraph>
+      <node id="23">
+        <label>_conf_evert_boost_converter.h</label>
+        <link refid="__conf__evert__boost__converter_8h"/>
+      </node>
+      <node id="21">
+        <label>_conf_evert_device.h</label>
+        <link refid="__conf__evert__device_8h"/>
+      </node>
+      <node id="22">
+        <label>_conf_evert_hal.h</label>
+        <link refid="__conf__evert__hal_8h"/>
+      </node>
+      <node id="2">
+        <label>boost_converter.h</label>
+        <link refid="boost__converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>boost_converter_alarms.h</label>
+        <link refid="boost__converter__alarms_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>boost_converter_calibration.h</label>
+        <link refid="boost__converter__calibration_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>boost_converter_constraints.h</label>
+        <link refid="boost__converter__constraints_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h</label>
+        <link refid="boost__converter__mppt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>boost_converter_readings.h</label>
+        <link refid="boost__converter__readings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>adc.h</label>
+      </node>
+      <node id="27">
+        <label>arm_math.h</label>
+      </node>
+      <node id="16">
+        <label>can_handler.h</label>
+      </node>
+      <node id="8">
+        <label>cordic.h</label>
+      </node>
+      <node id="9">
+        <label>dma.h</label>
+      </node>
+      <node id="17">
+        <label>evert_device.h</label>
+      </node>
+      <node id="18">
+        <label>evert_hal.h</label>
+      </node>
+      <node id="10">
+        <label>fdcan.h</label>
+      </node>
+      <node id="11">
+        <label>gpio.h</label>
+      </node>
+      <node id="19">
+        <label>gpio_definition.h</label>
+      </node>
+      <node id="12">
+        <label>hrtim.h</label>
+      </node>
+      <node id="13">
+        <label>i2c.h</label>
+      </node>
+      <node id="25">
+        <label>status_register.h</label>
+      </node>
+      <node id="3">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stm32g4xx_hal.h</label>
+      </node>
+      <node id="5">
+        <label>stm32g4xx_hal_hrtim.h</label>
+      </node>
+      <node id="6">
+        <label>stm32g4xx_ll_cordic.h</label>
+      </node>
+      <node id="20">
+        <label>task_scheduler.h</label>
+      </node>
+      <node id="14">
+        <label>tim.h</label>
+      </node>
+      <node id="15">
+        <label>usart.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.c</label>
+        <link refid="boost__converter_8c"/>
+      </node>
+      <node id="2">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter.h</label>
+        <link refid="boost__converter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.c</label>
+        <link refid="boost__converter__alarms_8c"/>
+      </node>
+      <node id="5">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_alarms.h</label>
+        <link refid="boost__converter__alarms_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.c</label>
+        <link refid="boost__converter__mppt_8c"/>
+      </node>
+      <node id="1">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h</label>
+        <link refid="boost__converter__mppt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c</label>
+        <link refid="boost__converter__readings_8c"/>
+      </node>
+      <node id="4">
+        <label>/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.h</label>
+        <link refid="boost__converter__readings_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="boost__converter__mppt_8h_1af61b6af9e488d93a1ec95c8e3f5a7cfd" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_voltage_in</definition>
+        <argsstring></argsstring>
+        <name>fi_voltage_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" line="6" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="38" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" declline="6" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__mppt_8h_1a05aa48cb325d02a499cfb2a0a0025317" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_voltage_out</definition>
+        <argsstring></argsstring>
+        <name>fi_voltage_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" line="7" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="39" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" declline="7" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__mppt_8h_1a4f11ea4411e41fa79a74c8413f79c6b3" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_current_in</definition>
+        <argsstring></argsstring>
+        <name>fi_current_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" line="8" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="40" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" declline="8" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="boost__converter__mppt_8h_1a4c818f8538f60e7a17cba08d5865745e" prot="public" static="no" mutable="no">
+        <type>volatile float32_t</type>
+        <definition>volatile float32_t fi_power_in</definition>
+        <argsstring></argsstring>
+        <name>fi_power_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" line="9" column="27" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_readings.c" bodystart="41" bodyend="-1" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" declline="9" declcolumn="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="boost__converter__mppt_8h_1a62f616fc5917d1284f771283e11b61c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_MpptInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_MpptInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" line="11" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.c" bodystart="7" bodyend="18" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" declline="11" declcolumn="6"/>
+        <references refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820ba78ce83213aef9e7336b40c33b89207a2" compoundref="boost__converter_8h" startline="84">BCS_STANDBY</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a7db72b944eeb7d37a8e5d78dda4b343f" compoundref="boost__converter_8h" startline="98">EVERT_BOOST_CONVERTER_MpptStateTypeDef::current_perturb_step</references>
+        <references refid="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" compoundref="boost__converter_8c" startline="130" endline="166">EVERT_BOOST_CONVERTER_SetDutyCycle</references>
+        <references refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" compoundref="boost__converter_8c" startline="42">mppt_state</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1acf3943eab6e33d8670e5d55477fa9de7" compoundref="boost__converter_8h" startline="96">EVERT_BOOST_CONVERTER_MpptStateTypeDef::observe_interval</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ab8aebdaaa47f175afc729e36c7476c2b" compoundref="boost__converter_8h" startline="97">EVERT_BOOST_CONVERTER_MpptStateTypeDef::observe_timer</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a2451d8b99e06dc2438ad887052662141" compoundref="boost__converter_8h" startline="95">EVERT_BOOST_CONVERTER_MpptStateTypeDef::perturb_step</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a6d78629e596c2ddd9b971cd740f9a6bc" compoundref="boost__converter_8h" startline="99">EVERT_BOOST_CONVERTER_MpptStateTypeDef::previous_duty_cycle</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a325ea41c40e4f0f43209445778757b7d" compoundref="boost__converter_8h" startline="100">EVERT_BOOST_CONVERTER_MpptStateTypeDef::previous_power</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" compoundref="boost__converter_8h" startline="93">EVERT_BOOST_CONVERTER_MpptStateTypeDef::status</references>
+      </memberdef>
+      <memberdef kind="function" id="boost__converter__mppt_8h_1ad0f9ec859f9e3f7b08022e9ee17832b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EVERT_BOOST_CONVERTER_MpptRun</definition>
+        <argsstring>(void)</argsstring>
+        <name>EVERT_BOOST_CONVERTER_MpptRun</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" line="12" column="6" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.c" bodystart="20" bodyend="44" declfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h" declline="12" declcolumn="6"/>
+        <references refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820ba78ce83213aef9e7336b40c33b89207a2" compoundref="boost__converter_8h" startline="84">BCS_STANDBY</references>
+        <references refid="boost__converter_8h_1a6fa775ffaddc9c7a87be2844b472820ba27e6f12478bf220c22b278d1818f7156" compoundref="boost__converter_8h" startline="86">BCS_THROTTLE_DOWN</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ac1fdc481c2092319c14f5a3a7ee5077c" compoundref="boost__converter_8h" startline="94">EVERT_BOOST_CONVERTER_MpptStateTypeDef::duty_cycle</references>
+        <references refid="boost__converter_8c_1aa99dda7134f39823909fe877c16836cd" compoundref="boost__converter_8c" startline="130" endline="166">EVERT_BOOST_CONVERTER_SetDutyCycle</references>
+        <references refid="boost__converter_8c_1a3669bb5d6a3f11a0a8a5f12986bce081" compoundref="boost__converter_8c" startline="42">mppt_state</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1acf3943eab6e33d8670e5d55477fa9de7" compoundref="boost__converter_8h" startline="96">EVERT_BOOST_CONVERTER_MpptStateTypeDef::observe_interval</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1ab8aebdaaa47f175afc729e36c7476c2b" compoundref="boost__converter_8h" startline="97">EVERT_BOOST_CONVERTER_MpptStateTypeDef::observe_timer</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a2451d8b99e06dc2438ad887052662141" compoundref="boost__converter_8h" startline="95">EVERT_BOOST_CONVERTER_MpptStateTypeDef::perturb_step</references>
+        <references refid="structEVERT__BOOST__CONVERTER__MpptStateTypeDef_1a356796c4972cf950ca92716d536f3afe" compoundref="boost__converter_8h" startline="93">EVERT_BOOST_CONVERTER_MpptStateTypeDef::status</references>
+        <referencedby refid="boost__converter_8c_1ae7aba523008dd9c1d22dfe3fbf4ec04c" compoundref="boost__converter_8c" startline="272" endline="279">EVERT_BOOST_CONVERTER_ISR_100HZ_IRQHandler</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EVERT_BOOST_CONVERTER_MPPT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EVERT_BOOST_CONVERTER_MPPT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="boost__converter_8h" kindref="compound">boost_converter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__mppt_8h_1af61b6af9e488d93a1ec95c8e3f5a7cfd" kindref="member">fi_voltage_in</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__mppt_8h_1a05aa48cb325d02a499cfb2a0a0025317" kindref="member">fi_voltage_out</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__mppt_8h_1a4f11ea4411e41fa79a74c8413f79c6b3" kindref="member">fi_current_in</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>float32_t<sp/><ref refid="boost__converter__mppt_8h_1a4c818f8538f60e7a17cba08d5865745e" kindref="member">fi_power_in</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter__mppt_8h_1a62f616fc5917d1284f771283e11b61c4" kindref="member">EVERT_BOOST_CONVERTER_MpptInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boost__converter__mppt_8h_1ad0f9ec859f9e3f7b08022e9ee17832b3" kindref="member">EVERT_BOOST_CONVERTER_MpptRun</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EVERT_BOOST_CONVERTER_MPPT_H_</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_mppt.h"/>
+  </compounddef>
+</doxygen>

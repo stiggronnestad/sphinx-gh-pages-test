@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef" kind="struct" language="C++" prot="public">
+    <compoundname>EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef</compoundname>
+    <includes refid="boost__converter__constraints_8h" local="no">boost_converter_constraints.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef_1a6e9a4457099c48831bf0d2844ba88a18" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef::current_hysteresis</definition>
+        <argsstring></argsstring>
+        <name>current_hysteresis</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef::current_hysteresis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h" line="9" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef_1a91b5480c4b3e9aeb6840babb16319fd8" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef::current_high_critical</definition>
+        <argsstring></argsstring>
+        <name>current_high_critical</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef::current_high_critical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h" line="10" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef_1ae147ec2e3ef000ec82ccc0ada7465bb8" prot="public" static="no" mutable="no">
+        <type>float32_t</type>
+        <definition>float32_t EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef::current_high_warning</definition>
+        <argsstring></argsstring>
+        <name>current_high_warning</name>
+        <qualifiedname>EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef::current_high_warning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h" line="11" column="15" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h" line="7" column="1" bodyfile="/mnt/c/dev/evert-firmware-pmu/boost-converter/src/boost_converter_constraints.h" bodystart="8" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef_1a91b5480c4b3e9aeb6840babb16319fd8" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef</scope><name>current_high_critical</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef_1ae147ec2e3ef000ec82ccc0ada7465bb8" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef</scope><name>current_high_warning</name></member>
+      <member refid="structEVERT__BOOST__CONVERTER__ConfigCurrentConstraintsTypeDef_1a6e9a4457099c48831bf0d2844ba88a18" prot="public" virt="non-virtual"><scope>EVERT_BOOST_CONVERTER_ConfigCurrentConstraintsTypeDef</scope><name>current_hysteresis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
