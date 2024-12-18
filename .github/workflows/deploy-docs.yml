@@ -1,0 +1,35 @@
+name: Deploy Sphinx Docs
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends doxygen graphviz build-essential && rm -rf /var/lib/apt/lists/*
+          pip install --no-cache-dir --upgrade pip setuptools wheel
+          pip install --no-cache-dir sphinx breathe sphinx-rtd-theme myst-parser
+      
+      - name: Build HTML
+        run: |
+          cd docs
+          ./generate.sh
+          cd ..
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/html
+          publish_branch: gh-pages
