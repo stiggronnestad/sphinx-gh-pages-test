@@ -24,6 +24,7 @@ jobs:
       - name: Build HTML
         run: |
           cd docs
+          chmod +x generate.sh
           ./generate.sh
           cd ..
 
