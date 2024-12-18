@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>task_scheduler.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=86f27845" />
+
+  
+  
+        <script src="../../_static/jquery.js?v=8dae8fb0"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="API Reference: core" href="../../_projects/core/core-api.html" />
+    <link rel="prev" title="status_register.h" href="status_register.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/core/core.html">core</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/core/core-index.html">Index: core</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="can_handler.html">can_handler.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debugging.html">debugging.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emc230x.html">emc230x.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal.html">evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal_adc.html">evert_hal_adc.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal_dwt.html">evert_hal_dwt.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fz2812.html">fz2812.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpio_definition.html">gpio_definition.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="status_register.html">status_register.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">task_scheduler.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/core/core-api.html">API Reference: core</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/core/core.html">core</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/core/core-index.html">Index: core</a></li>
+      <li class="breadcrumb-item active">task_scheduler.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/core/task_scheduler.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="task-scheduler-h">
+<h1>task_scheduler.h<a class="headerlink" href="#task-scheduler-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef">
+<span id="_CPPv332EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv232EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></span><a class="headerlink" href="#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE">
+<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7af26eb94bbc75d5a039f9a571aa4f12a8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_ANNOUNCEMENT</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE">
+<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7af1d664451f04900546e1a1e67cb73f17"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_DATA</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE">
+<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7abae80667f866cfc7652404f7071d7aa9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_DEVICE_STATUS</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE">
+<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7a4fc179186d9461a31d6c519b98703c65"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_PING</span></span></span><a class="headerlink" href="#_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_TASK_SCHEDULER_Initv">
+<span id="_CPPv325EVERT_TASK_SCHEDULER_Initv"></span><span id="_CPPv225EVERT_TASK_SCHEDULER_Initv"></span><span id="EVERT_TASK_SCHEDULER_Init"></span><span class="target" id="task__scheduler_8h_1a6b0af4ffa1f99c85545634de91c64e85"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425EVERT_TASK_SCHEDULER_Initv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_TASK_SCHEDULER_UpdateK8uint32_t">
+<span id="_CPPv327EVERT_TASK_SCHEDULER_UpdateK8uint32_t"></span><span id="_CPPv227EVERT_TASK_SCHEDULER_UpdateK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_Update__uint32_tC"></span><span class="target" id="task__scheduler_8h_1ae5ee78360ac3d1bc91352da33fba70c8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">delta_ms</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv427EVERT_TASK_SCHEDULER_UpdateK8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef">
+<span id="_CPPv330EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv230EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="EVERT_TASK_SCHEDULER_PauseTask__EVERT_TASK_SCHEDULER_TaskTypeDefC"></span><span class="target" id="task__scheduler_8h_1ae720861fbf5033f7f08c21a180a971c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_PauseTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv430EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv431EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef">
+<span id="_CPPv331EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv231EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="EVERT_TASK_SCHEDULER_ResumeTask__EVERT_TASK_SCHEDULER_TaskTypeDefC"></span><span class="target" id="task__scheduler_8h_1a570d9c417c066b4e1cddbe047ef1acea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_ResumeTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv431EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv452EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t">
+<span id="_CPPv352EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t"></span><span id="_CPPv252EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementInterval__uint32_tC"></span><span class="target" id="task__scheduler_8h_1aca83176ec3c5babf166a02e8b3a7904c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv452EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv444EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t">
+<span id="_CPPv344EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t"></span><span id="_CPPv244EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendDataInterval__uint32_tC"></span><span class="target" id="task__scheduler_8h_1a0eb585047d3a3595237e9a1bbfc10470"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDataInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv444EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv452EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t">
+<span id="_CPPv352EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t"></span><span id="_CPPv252EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusInterval__uint32_tC"></span><span class="target" id="task__scheduler_8h_1a3d3119bfb4b551aa2c2a92d4e50709c2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv452EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv444EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t">
+<span id="_CPPv344EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t"></span><span id="_CPPv244EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendPingInterval__uint32_tC"></span><span class="target" id="task__scheduler_8h_1a84d3ee2903bf4281434c49cbe15ff183"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendPingInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv444EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv443EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv">
+<span id="_CPPv343EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv"></span><span id="_CPPv243EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement__void"></span><span class="target" id="task__scheduler_8h_1a7742da8e36026ef09db90fd7007ee55f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv443EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv435EVERT_TASK_SCHEDULER_OnTaskSendDatav">
+<span id="_CPPv335EVERT_TASK_SCHEDULER_OnTaskSendDatav"></span><span id="_CPPv235EVERT_TASK_SCHEDULER_OnTaskSendDatav"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendData__void"></span><span class="target" id="task__scheduler_8h_1abb53bbd24025d1ad4490e260e96a5d94"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendData</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv435EVERT_TASK_SCHEDULER_OnTaskSendDatav" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv443EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv">
+<span id="_CPPv343EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv"></span><span id="_CPPv243EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus__void"></span><span class="target" id="task__scheduler_8h_1afb42e979d5634601b1c586c1f20e64d6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv443EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv435EVERT_TASK_SCHEDULER_OnTaskSendPingv">
+<span id="_CPPv335EVERT_TASK_SCHEDULER_OnTaskSendPingv"></span><span id="_CPPv235EVERT_TASK_SCHEDULER_OnTaskSendPingv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendPing__void"></span><span class="target" id="task__scheduler_8h_1a1a11317ed1fb9bf0dcd5fd1c5f4c9748"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendPing</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv435EVERT_TASK_SCHEDULER_OnTaskSendPingv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv435EVERT_TASK_SCHEDULER_HandlerTypeDef">
+<span id="_CPPv335EVERT_TASK_SCHEDULER_HandlerTypeDef"></span><span id="_CPPv235EVERT_TASK_SCHEDULER_HandlerTypeDef"></span><span id="EVERT_TASK_SCHEDULER_HandlerTypeDef"></span><span class="target" id="structEVERT__TASK__SCHEDULER__HandlerTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_HandlerTypeDef</span></span></span><a class="headerlink" href="#_CPPv435EVERT_TASK_SCHEDULER_HandlerTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#task__scheduler_8h"><span class="std std-ref">task_scheduler.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N35EVERT_TASK_SCHEDULER_HandlerTypeDef14OnTaskCallbackE">
+<span id="_CPPv3N35EVERT_TASK_SCHEDULER_HandlerTypeDef14OnTaskCallbackE"></span><span id="_CPPv2N35EVERT_TASK_SCHEDULER_HandlerTypeDef14OnTaskCallbackE"></span><span class="target" id="structEVERT__TASK__SCHEDULER__HandlerTypeDef_1acb19ac514a06f26e144aca2e1966915c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">OnTaskCallback</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">4</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N35EVERT_TASK_SCHEDULER_HandlerTypeDef14OnTaskCallbackE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N35EVERT_TASK_SCHEDULER_HandlerTypeDef11TaskEnabledE">
+<span id="_CPPv3N35EVERT_TASK_SCHEDULER_HandlerTypeDef11TaskEnabledE"></span><span id="_CPPv2N35EVERT_TASK_SCHEDULER_HandlerTypeDef11TaskEnabledE"></span><span id="EVERT_TASK_SCHEDULER_HandlerTypeDef::TaskEnabled__bA"></span><span class="target" id="structEVERT__TASK__SCHEDULER__HandlerTypeDef_1ac78d0ad55c36226cf8035e828293232f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TaskEnabled</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">4</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N35EVERT_TASK_SCHEDULER_HandlerTypeDef11TaskEnabledE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N35EVERT_TASK_SCHEDULER_HandlerTypeDef14TaskIntervalMsE">
+<span id="_CPPv3N35EVERT_TASK_SCHEDULER_HandlerTypeDef14TaskIntervalMsE"></span><span id="_CPPv2N35EVERT_TASK_SCHEDULER_HandlerTypeDef14TaskIntervalMsE"></span><span id="EVERT_TASK_SCHEDULER_HandlerTypeDef::TaskIntervalMs__uint32_tA"></span><span class="target" id="structEVERT__TASK__SCHEDULER__HandlerTypeDef_1ac4c3ca76cf6fd00358265e0d8c6d128b"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TaskIntervalMs</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">4</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N35EVERT_TASK_SCHEDULER_HandlerTypeDef14TaskIntervalMsE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N35EVERT_TASK_SCHEDULER_HandlerTypeDef13TaskCounterMsE">
+<span id="_CPPv3N35EVERT_TASK_SCHEDULER_HandlerTypeDef13TaskCounterMsE"></span><span id="_CPPv2N35EVERT_TASK_SCHEDULER_HandlerTypeDef13TaskCounterMsE"></span><span id="EVERT_TASK_SCHEDULER_HandlerTypeDef::TaskCounterMs__uint32_tA"></span><span class="target" id="structEVERT__TASK__SCHEDULER__HandlerTypeDef_1ab209b7e090ba4279f99efa31507b91f8"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TaskCounterMs</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">4</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv4N35EVERT_TASK_SCHEDULER_HandlerTypeDef13TaskCounterMsE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="status_register.html" class="btn btn-neutral float-left" title="status_register.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../_projects/core/core-api.html" class="btn btn-neutral float-right" title="API Reference: core" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

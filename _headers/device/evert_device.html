@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>evert_device.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=86f27845" />
+
+  
+  
+        <script src="../../_static/jquery.js?v=8dae8fb0"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="evert_device_alarm_register1_index.h" href="evert_device_alarm_register1_index.html" />
+    <link rel="prev" title="Index: device" href="../../_projects/device/device-index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/device/device.html">device</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/device/device-index.html">Index: device</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_device_alarm_register1_index.html">evert_device_alarm_register1_index.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_device_mode.html">evert_device_mode.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_device_state.html">evert_device_state.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_device_version_info.html">evert_device_version_info.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/device/device-api.html">API Reference: device</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/device/device.html">device</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/device/device-index.html">Index: device</a></li>
+      <li class="breadcrumb-item active">evert_device.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/device/evert_device.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="evert-device-h">
+<h1>evert_device.h<a class="headerlink" href="#evert-device-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_DEVICE_StateScopeTypeDef">
+<span id="_CPPv330EVERT_DEVICE_StateScopeTypeDef"></span><span id="_CPPv230EVERT_DEVICE_StateScopeTypeDef"></span><span class="target" id="evert__device_8h_1a14b03b902f21ed9f9d265535bbc016ed"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_StateScopeTypeDef</span></span></span><a class="headerlink" href="#_CPPv430EVERT_DEVICE_StateScopeTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p>STM32 HAL Library Includes. </p>
+<p>EVERT Library Includes</p>
+<p>Device State Scope Definition </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_StateScopeTypeDef11SS_INTERNALE">
+<span id="_CPPv3N30EVERT_DEVICE_StateScopeTypeDef11SS_INTERNALE"></span><span id="_CPPv2N30EVERT_DEVICE_StateScopeTypeDef11SS_INTERNALE"></span><span class="target" id="evert__device_8h_1a14b03b902f21ed9f9d265535bbc016edaf4eb8f3fe9a1de156359faa56f1d7d46"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SS_INTERNAL</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_StateScopeTypeDef11SS_INTERNALE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_StateScopeTypeDef13SS_PROPAGATEDE">
+<span id="_CPPv3N30EVERT_DEVICE_StateScopeTypeDef13SS_PROPAGATEDE"></span><span id="_CPPv2N30EVERT_DEVICE_StateScopeTypeDef13SS_PROPAGATEDE"></span><span class="target" id="evert__device_8h_1a14b03b902f21ed9f9d265535bbc016eda62cff61548627a90d752fce978af2cbc"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SS_PROPAGATED</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_StateScopeTypeDef13SS_PROPAGATEDE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_StateScopeTypeDef9SS_RESULTE">
+<span id="_CPPv3N30EVERT_DEVICE_StateScopeTypeDef9SS_RESULTE"></span><span id="_CPPv2N30EVERT_DEVICE_StateScopeTypeDef9SS_RESULTE"></span><span class="target" id="evert__device_8h_1a14b03b902f21ed9f9d265535bbc016eda9c4c82444a4b68bbfa20349d3acb605b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SS_RESULT</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_StateScopeTypeDef9SS_RESULTE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv440EVERT_DEVICE_Derived_OnDeviceStateChangeK25EVERT_DEVICE_StateTypeDefK25EVERT_DEVICE_StateTypeDef">
+<span id="_CPPv340EVERT_DEVICE_Derived_OnDeviceStateChangeK25EVERT_DEVICE_StateTypeDefK25EVERT_DEVICE_StateTypeDef"></span><span id="_CPPv240EVERT_DEVICE_Derived_OnDeviceStateChangeK25EVERT_DEVICE_StateTypeDefK25EVERT_DEVICE_StateTypeDef"></span><span id="EVERT_DEVICE_Derived_OnDeviceStateChange__EVERT_DEVICE_StateTypeDefC.EVERT_DEVICE_StateTypeDefC"></span><span class="target" id="evert__device_8h_1ae979738ef4e0bf863fd1cbe124ae5a6a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnDeviceStateChange</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">new_state</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">old_state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv440EVERT_DEVICE_Derived_OnDeviceStateChangeK25EVERT_DEVICE_StateTypeDefK25EVERT_DEVICE_StateTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv441EVERT_DEVICE_Derived_OnEnterState_Bootingv">
+<span id="_CPPv341EVERT_DEVICE_Derived_OnEnterState_Bootingv"></span><span id="_CPPv241EVERT_DEVICE_Derived_OnEnterState_Bootingv"></span><span id="EVERT_DEVICE_Derived_OnEnterState_Booting"></span><span class="target" id="evert__device_8h_1add4899aa6eb33cf440d830f5fd045f10"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_Booting</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv441EVERT_DEVICE_Derived_OnEnterState_Bootingv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv444EVERT_DEVICE_Derived_OnEnterState_BootingAdcv">
+<span id="_CPPv344EVERT_DEVICE_Derived_OnEnterState_BootingAdcv"></span><span id="_CPPv244EVERT_DEVICE_Derived_OnEnterState_BootingAdcv"></span><span id="EVERT_DEVICE_Derived_OnEnterState_BootingAdc"></span><span class="target" id="evert__device_8h_1a77d8ff9dc8d2fe584abe3b3d9da14ba2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_BootingAdc</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv444EVERT_DEVICE_Derived_OnEnterState_BootingAdcv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv446EVERT_DEVICE_Derived_OnEnterState_BootingCommsv">
+<span id="_CPPv346EVERT_DEVICE_Derived_OnEnterState_BootingCommsv"></span><span id="_CPPv246EVERT_DEVICE_Derived_OnEnterState_BootingCommsv"></span><span id="EVERT_DEVICE_Derived_OnEnterState_BootingComms"></span><span class="target" id="evert__device_8h_1a014c8dd2d9631b65284e967c70e9619e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_BootingComms</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv446EVERT_DEVICE_Derived_OnEnterState_BootingCommsv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv445EVERT_DEVICE_Derived_OnEnterState_BootingDonev">
+<span id="_CPPv345EVERT_DEVICE_Derived_OnEnterState_BootingDonev"></span><span id="_CPPv245EVERT_DEVICE_Derived_OnEnterState_BootingDonev"></span><span id="EVERT_DEVICE_Derived_OnEnterState_BootingDone"></span><span class="target" id="evert__device_8h_1a8f912227557d7178d7398b02b682b9be"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_BootingDone</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv445EVERT_DEVICE_Derived_OnEnterState_BootingDonev" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv453EVERT_DEVICE_Derived_OnEnterState_HandshakeAnnouncingv">
+<span id="_CPPv353EVERT_DEVICE_Derived_OnEnterState_HandshakeAnnouncingv"></span><span id="_CPPv253EVERT_DEVICE_Derived_OnEnterState_HandshakeAnnouncingv"></span><span id="EVERT_DEVICE_Derived_OnEnterState_HandshakeAnnouncing"></span><span class="target" id="evert__device_8h_1a7e61530d4f8707837f7ff6c60ac4c4e0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_HandshakeAnnouncing</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv453EVERT_DEVICE_Derived_OnEnterState_HandshakeAnnouncingv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv455EVERT_DEVICE_Derived_OnEnterState_HandshakeAcknowledgedK25EVERT_DEVICE_StateTypeDef">
+<span id="_CPPv355EVERT_DEVICE_Derived_OnEnterState_HandshakeAcknowledgedK25EVERT_DEVICE_StateTypeDef"></span><span id="_CPPv255EVERT_DEVICE_Derived_OnEnterState_HandshakeAcknowledgedK25EVERT_DEVICE_StateTypeDef"></span><span id="EVERT_DEVICE_Derived_OnEnterState_HandshakeAcknowledged__EVERT_DEVICE_StateTypeDefC"></span><span class="target" id="evert__device_8h_1a695cab8d3527f502868dbde710b78854"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_HandshakeAcknowledged</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">previous_state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv455EVERT_DEVICE_Derived_OnEnterState_HandshakeAcknowledgedK25EVERT_DEVICE_StateTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv445EVERT_DEVICE_Derived_OnEnterState_OperationalK25EVERT_DEVICE_StateTypeDef">
+<span id="_CPPv345EVERT_DEVICE_Derived_OnEnterState_OperationalK25EVERT_DEVICE_StateTypeDef"></span><span id="_CPPv245EVERT_DEVICE_Derived_OnEnterState_OperationalK25EVERT_DEVICE_StateTypeDef"></span><span id="EVERT_DEVICE_Derived_OnEnterState_Operational__EVERT_DEVICE_StateTypeDefC"></span><span class="target" id="evert__device_8h_1a933b5b3dc589bf513dbe12120c200a2e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_Operational</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">previous_state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv445EVERT_DEVICE_Derived_OnEnterState_OperationalK25EVERT_DEVICE_StateTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv452EVERT_DEVICE_Derived_OnEnterState_OperationalWarningK25EVERT_DEVICE_StateTypeDef">
+<span id="_CPPv352EVERT_DEVICE_Derived_OnEnterState_OperationalWarningK25EVERT_DEVICE_StateTypeDef"></span><span id="_CPPv252EVERT_DEVICE_Derived_OnEnterState_OperationalWarningK25EVERT_DEVICE_StateTypeDef"></span><span id="EVERT_DEVICE_Derived_OnEnterState_OperationalWarning__EVERT_DEVICE_StateTypeDefC"></span><span class="target" id="evert__device_8h_1ad02c187abe04fa70a67038f83adea3af"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_OperationalWarning</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">previous_state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv452EVERT_DEVICE_Derived_OnEnterState_OperationalWarningK25EVERT_DEVICE_StateTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv448EVERT_DEVICE_Derived_OnEnterState_NonOperationalK25EVERT_DEVICE_StateTypeDef">
+<span id="_CPPv348EVERT_DEVICE_Derived_OnEnterState_NonOperationalK25EVERT_DEVICE_StateTypeDef"></span><span id="_CPPv248EVERT_DEVICE_Derived_OnEnterState_NonOperationalK25EVERT_DEVICE_StateTypeDef"></span><span id="EVERT_DEVICE_Derived_OnEnterState_NonOperational__EVERT_DEVICE_StateTypeDefC"></span><span class="target" id="evert__device_8h_1a787330b3a18f0dac50a7c947e129a7ff"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_NonOperational</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">previous_state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv448EVERT_DEVICE_Derived_OnEnterState_NonOperationalK25EVERT_DEVICE_StateTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv451EVERT_DEVICE_Derived_OnEnterState_EmergencyShutdownK25EVERT_DEVICE_StateTypeDef">
+<span id="_CPPv351EVERT_DEVICE_Derived_OnEnterState_EmergencyShutdownK25EVERT_DEVICE_StateTypeDef"></span><span id="_CPPv251EVERT_DEVICE_Derived_OnEnterState_EmergencyShutdownK25EVERT_DEVICE_StateTypeDef"></span><span id="EVERT_DEVICE_Derived_OnEnterState_EmergencyShutdown__EVERT_DEVICE_StateTypeDefC"></span><span class="target" id="evert__device_8h_1a554b81c6d4a31b505885703205b23610"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Derived_OnEnterState_EmergencyShutdown</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">previous_state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv451EVERT_DEVICE_Derived_OnEnterState_EmergencyShutdownK25EVERT_DEVICE_StateTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv417EVERT_DEVICE_Initv">
+<span id="_CPPv317EVERT_DEVICE_Initv"></span><span id="_CPPv217EVERT_DEVICE_Initv"></span><span id="EVERT_DEVICE_Init"></span><span class="target" id="evert__device_8h_1a01853ddae3d9044fac613564cc486d75"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417EVERT_DEVICE_Initv" title="Link to this definition"></a><br /></dt>
+<dd><p>Initialize the Device. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_DEVICE_SetVersionInfoK7uint8_tK7uint8_tK7uint8_t">
+<span id="_CPPv327EVERT_DEVICE_SetVersionInfoK7uint8_tK7uint8_tK7uint8_t"></span><span id="_CPPv227EVERT_DEVICE_SetVersionInfoK7uint8_tK7uint8_tK7uint8_t"></span><span id="EVERT_DEVICE_SetVersionInfo__uint8_tC.uint8_tC.uint8_tC"></span><span class="target" id="evert__device_8h_1a85e0b38f57f02f571326058f4ce7a242"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_SetVersionInfo</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">major</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">minor</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">patch</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv427EVERT_DEVICE_SetVersionInfoK7uint8_tK7uint8_tK7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419EVERT_DEVICE_UpdateK8uint32_tK8uint32_t">
+<span id="_CPPv319EVERT_DEVICE_UpdateK8uint32_tK8uint32_t"></span><span id="_CPPv219EVERT_DEVICE_UpdateK8uint32_tK8uint32_t"></span><span id="EVERT_DEVICE_Update__uint32_tC.uint32_tC"></span><span class="target" id="evert__device_8h_1aecf96f339ac8704b59cb3fb7caf743f0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">elapsed_ms</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">delta_ms</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419EVERT_DEVICE_UpdateK8uint32_tK8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd><p>Update the Device. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tick_ms</strong> – Deltatime tick in milliseconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv424EVERT_DEVICE_Alarm_Checkv">
+<span id="_CPPv324EVERT_DEVICE_Alarm_Checkv"></span><span id="_CPPv224EVERT_DEVICE_Alarm_Checkv"></span><span id="EVERT_DEVICE_Alarm_Check"></span><span class="target" id="evert__device_8h_1ac020ac712f319675a678f2c22e00384d"></span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_Alarm_Check</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424EVERT_DEVICE_Alarm_Checkv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check the Device Alarm Register for any alarms. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Device State </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv422EVERT_DEVICE_State_SetK30EVERT_DEVICE_StateScopeTypeDefK25EVERT_DEVICE_StateTypeDef">
+<span id="_CPPv322EVERT_DEVICE_State_SetK30EVERT_DEVICE_StateScopeTypeDefK25EVERT_DEVICE_StateTypeDef"></span><span id="_CPPv222EVERT_DEVICE_State_SetK30EVERT_DEVICE_StateScopeTypeDefK25EVERT_DEVICE_StateTypeDef"></span><span id="EVERT_DEVICE_State_Set__EVERT_DEVICE_StateScopeTypeDefC.EVERT_DEVICE_StateTypeDefC"></span><span class="target" id="evert__device_8h_1a906ee177dbb3ea42b6ae39e4c1300d4a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_State_Set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv430EVERT_DEVICE_StateScopeTypeDef" title="EVERT_DEVICE_StateScopeTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateScopeTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">scope</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422EVERT_DEVICE_State_SetK30EVERT_DEVICE_StateScopeTypeDefK25EVERT_DEVICE_StateTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Device State. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state_group</strong> – Pointer to the Device State Group </p></li>
+<li><p><strong>scope</strong> – The scope of the state to set </p></li>
+<li><p><strong>state</strong> – The Device State to set </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv422EVERT_DEVICE_State_GetK30EVERT_DEVICE_StateScopeTypeDef">
+<span id="_CPPv322EVERT_DEVICE_State_GetK30EVERT_DEVICE_StateScopeTypeDef"></span><span id="_CPPv222EVERT_DEVICE_State_GetK30EVERT_DEVICE_StateScopeTypeDef"></span><span id="EVERT_DEVICE_State_Get__EVERT_DEVICE_StateScopeTypeDefC"></span><span class="target" id="evert__device_8h_1a80bb782dd942e8dbbb1a179764b1584b"></span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_State_Get</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv430EVERT_DEVICE_StateScopeTypeDef" title="EVERT_DEVICE_StateScopeTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateScopeTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">scope</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422EVERT_DEVICE_State_GetK30EVERT_DEVICE_StateScopeTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Device State. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state_group</strong> – Pointer to the Device State Group </p></li>
+<li><p><strong>scope</strong> – The scope of the state to get </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The Device State </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv444EVERT_DEVICE_PeripheralStatus_PopulateObjectP36EVERT_DEVICE_PeripheralStatusTypeDef">
+<span id="_CPPv344EVERT_DEVICE_PeripheralStatus_PopulateObjectP36EVERT_DEVICE_PeripheralStatusTypeDef"></span><span id="_CPPv244EVERT_DEVICE_PeripheralStatus_PopulateObjectP36EVERT_DEVICE_PeripheralStatusTypeDef"></span><span id="EVERT_DEVICE_PeripheralStatus_PopulateObject__EVERT_DEVICE_PeripheralStatusTypeDefP"></span><span class="target" id="evert__device_8h_1a70cc27c6153339227901bba03d29ec0d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_PeripheralStatus_PopulateObject</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv436EVERT_DEVICE_PeripheralStatusTypeDef" title="EVERT_DEVICE_PeripheralStatusTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_PeripheralStatusTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv444EVERT_DEVICE_PeripheralStatus_PopulateObjectP36EVERT_DEVICE_PeripheralStatusTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv438EVERT_DEVICE_PeripheralStatus_HasErrorP36EVERT_DEVICE_PeripheralStatusTypeDef">
+<span id="_CPPv338EVERT_DEVICE_PeripheralStatus_HasErrorP36EVERT_DEVICE_PeripheralStatusTypeDef"></span><span id="_CPPv238EVERT_DEVICE_PeripheralStatus_HasErrorP36EVERT_DEVICE_PeripheralStatusTypeDef"></span><span id="EVERT_DEVICE_PeripheralStatus_HasError__EVERT_DEVICE_PeripheralStatusTypeDefP"></span><span class="target" id="evert__device_8h_1aa7d6cd044fefad2bdb1aca4c566d6969"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_PeripheralStatus_HasError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv436EVERT_DEVICE_PeripheralStatusTypeDef" title="EVERT_DEVICE_PeripheralStatusTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_PeripheralStatusTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv438EVERT_DEVICE_PeripheralStatus_HasErrorP36EVERT_DEVICE_PeripheralStatusTypeDef" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_DEVICE_StateGroupTypeDef">
+<span id="_CPPv330EVERT_DEVICE_StateGroupTypeDef"></span><span id="_CPPv230EVERT_DEVICE_StateGroupTypeDef"></span><span id="EVERT_DEVICE_StateGroupTypeDef"></span><span class="target" id="structEVERT__DEVICE__StateGroupTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_StateGroupTypeDef</span></span></span><a class="headerlink" href="#_CPPv430EVERT_DEVICE_StateGroupTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#evert__device_8h"><span class="std std-ref">evert_device.h</span></a>&gt;</em></div>
+<p>Device State Group Definition. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_StateGroupTypeDef8InternalE">
+<span id="_CPPv3N30EVERT_DEVICE_StateGroupTypeDef8InternalE"></span><span id="_CPPv2N30EVERT_DEVICE_StateGroupTypeDef8InternalE"></span><span id="EVERT_DEVICE_StateGroupTypeDef::Internal__EVERT_DEVICE_StateTypeDef"></span><span class="target" id="structEVERT__DEVICE__StateGroupTypeDef_1a7f002141c5c8655d06ed9ba7301d8f41"></span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Internal</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_StateGroupTypeDef8InternalE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_StateGroupTypeDef10PropagatedE">
+<span id="_CPPv3N30EVERT_DEVICE_StateGroupTypeDef10PropagatedE"></span><span id="_CPPv2N30EVERT_DEVICE_StateGroupTypeDef10PropagatedE"></span><span id="EVERT_DEVICE_StateGroupTypeDef::Propagated__EVERT_DEVICE_StateTypeDef"></span><span class="target" id="structEVERT__DEVICE__StateGroupTypeDef_1af73c4848f514fee176a25758bc6339b7"></span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Propagated</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_StateGroupTypeDef10PropagatedE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_StateGroupTypeDef6ResultE">
+<span id="_CPPv3N30EVERT_DEVICE_StateGroupTypeDef6ResultE"></span><span id="_CPPv2N30EVERT_DEVICE_StateGroupTypeDef6ResultE"></span><span id="EVERT_DEVICE_StateGroupTypeDef::Result__EVERT_DEVICE_StateTypeDef"></span><span class="target" id="structEVERT__DEVICE__StateGroupTypeDef_1a0de28f44ab5b36bcba709b999ea447f7"></span><a class="reference internal" href="evert_device_state.html#_CPPv425EVERT_DEVICE_StateTypeDef" title="EVERT_DEVICE_StateTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Result</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_StateGroupTypeDef6ResultE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv436EVERT_DEVICE_PeripheralStatusTypeDef">
+<span id="_CPPv336EVERT_DEVICE_PeripheralStatusTypeDef"></span><span id="_CPPv236EVERT_DEVICE_PeripheralStatusTypeDef"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_PeripheralStatusTypeDef</span></span></span><a class="headerlink" href="#_CPPv436EVERT_DEVICE_PeripheralStatusTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#evert__device_8h"><span class="std std-ref">evert_device.h</span></a>&gt;</em></div>
+<p>Device Peripheral Status Definition. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc1ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc1ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc1ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Adc1ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1ad70542c51a088b3e7fd0e3539a11f8b1"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Adc1ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc1ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc2ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc2ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc2ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Adc2ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1abcc44f59fb2d00e101b7ae0ebdedd407"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Adc2ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc2ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc3ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc3ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc3ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Adc3ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1ae2742c922bfac9010d594aa776066228"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Adc3ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc3ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc4ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc4ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc4ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Adc4ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1aa807e5ffba817b8f5678800c5d9b081d"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Adc4ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc4ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc5ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc5ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc5ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Adc5ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a59c8e9334bad2912f93b792ad5e27626"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Adc5ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Adc5ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef14ClockFrequencyE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef14ClockFrequencyE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef14ClockFrequencyE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::ClockFrequency__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1ab9bf0b5e20d86ccfd01da3c658f9fc62"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ClockFrequency</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef14ClockFrequencyE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef14ClockHseStatusE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef14ClockHseStatusE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef14ClockHseStatusE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::ClockHseStatus__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a5fcc12d5f30cc3a82f0e5100aa15b78e"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ClockHseStatus</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef14ClockHseStatusE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13ClockHseReadyE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13ClockHseReadyE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13ClockHseReadyE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::ClockHseReady__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1af8606620eaad1fbe255dabdec59c3a0e"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ClockHseReady</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13ClockHseReadyE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1RecE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1RecE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1RecE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can1Rec__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a86ff2d3fc655b1b88d98870389066323"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can1Rec</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1RecE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1TecE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1TecE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1TecE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can1Tec__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a8c48717c342f3e3a269ababe4e05efcc"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can1Tec</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1TecE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1PsrE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1PsrE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1PsrE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can1Psr__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1ada8501d71e52385a1c28b8f8417ee15a"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can1Psr</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can1PsrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Can1ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13Can1ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13Can1ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can1ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a03bc01783f0e039fe769d0685f822c17"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can1ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Can1ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2RecE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2RecE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2RecE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can2Rec__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a8b38dc4744e8ba48c3fc66789e987c33"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can2Rec</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2RecE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2TecE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2TecE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2TecE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can2Tec__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a71143f963007f10caeef7c974d033e73"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can2Tec</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2TecE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2PsrE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2PsrE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2PsrE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can2Psr__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1ad7fa51849aec5ab20881b19b938d7ce9"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can2Psr</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can2PsrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Can2ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13Can2ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13Can2ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can2ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1accebe9e48fa1e5a80be283cf126c5cb9"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can2ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Can2ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3RecE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3RecE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3RecE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can3Rec__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a972aef5cdbc1ce46291dc2405ac97ed6"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can3Rec</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3RecE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3TecE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3TecE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3TecE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can3Tec__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1ad8877f854300ff97b9216ff279cf3b84"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can3Tec</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3TecE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3PsrE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3PsrE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3PsrE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can3Psr__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1aef286a7057fa8fa646a6fbd8bcf557b2"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can3Psr</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef7Can3PsrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Can3ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13Can3ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13Can3ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Can3ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1ad4127d913fdb7fb0a7b8f5c71551416e"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Can3ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13Can3ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc1ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc1ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc1ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::DmaAdc1ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1ab03b425fc415a6601e1f831ddc385a25"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DmaAdc1ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc1ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc1StateE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc1StateE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc1StateE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::DmaAdc1State__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a7192b09eea6645fd036bac89d44796a7"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DmaAdc1State</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc1StateE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc2ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc2ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc2ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::DmaAdc2ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a016aa2ba410dd6086a1180ec0f082c93"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DmaAdc2ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc2ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc2StateE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc2StateE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc2StateE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::DmaAdc2State__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a71c46d9db5185bac5152df513eed8665"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DmaAdc2State</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc2StateE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc3ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc3ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc3ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::DmaAdc3ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a0d2fe9427b8fb042f189c2027a913a5d"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DmaAdc3ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef16DmaAdc3ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc3StateE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc3StateE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc3StateE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::DmaAdc3State__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1abf7d93641f910e42a347b1c238ee7469"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DmaAdc3State</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef12DmaAdc3StateE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef14FlashErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef14FlashErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef14FlashErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::FlashErrorCode__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a2906f0e90247c004f0bdc1cf44f0a4a8"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FlashErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef14FlashErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13I2c1ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef13I2c1ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef13I2c1ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::I2c1ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1afb6ccecf4e4cbafda7ff11d1607ca121"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">I2c1ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef13I2c1ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef16Lpuart1ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef16Lpuart1ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef16Lpuart1ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Lpuart1ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a6e476fe6f8efebd3dd603341dce19076"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Lpuart1ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef16Lpuart1ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef15Huart3ErrorCodeE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef15Huart3ErrorCodeE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef15Huart3ErrorCodeE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::Huart3ErrorCode__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a0c8d68548d546c6bf6d172f15fccb96a"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Huart3ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef15Huart3ErrorCodeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef14WatchdogStatusE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef14WatchdogStatusE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef14WatchdogStatusE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::WatchdogStatus__uint8_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a61a8c55463f2d53f9855f16938b61d34"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WatchdogStatus</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef14WatchdogStatusE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef10ResetCauseE">
+<span id="_CPPv3N36EVERT_DEVICE_PeripheralStatusTypeDef10ResetCauseE"></span><span id="_CPPv2N36EVERT_DEVICE_PeripheralStatusTypeDef10ResetCauseE"></span><span id="EVERT_DEVICE_PeripheralStatusTypeDef::ResetCause__uint32_t"></span><span class="target" id="structEVERT__DEVICE__PeripheralStatusTypeDef_1a26a6123df9d418a66c73dc35f384db6b"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ResetCause</span></span></span><a class="headerlink" href="#_CPPv4N36EVERT_DEVICE_PeripheralStatusTypeDef10ResetCauseE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_DEVICE_BaseDeviceTypeDef">
+<span id="_CPPv330EVERT_DEVICE_BaseDeviceTypeDef"></span><span id="_CPPv230EVERT_DEVICE_BaseDeviceTypeDef"></span><span id="EVERT_DEVICE_BaseDeviceTypeDef"></span><span class="target" id="structEVERT__DEVICE__BaseDeviceTypeDef"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_DEVICE_BaseDeviceTypeDef</span></span></span><a class="headerlink" href="#_CPPv430EVERT_DEVICE_BaseDeviceTypeDef" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../_projects/inverter/inverter-api.html#evert__device_8h"><span class="std std-ref">evert_device.h</span></a>&gt;</em></div>
+<p>Base Device Type Definition. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_BaseDeviceTypeDef17DeviceVersionInfoE">
+<span id="_CPPv3N30EVERT_DEVICE_BaseDeviceTypeDef17DeviceVersionInfoE"></span><span id="_CPPv2N30EVERT_DEVICE_BaseDeviceTypeDef17DeviceVersionInfoE"></span><span id="EVERT_DEVICE_BaseDeviceTypeDef::DeviceVersionInfo__EVERT_DEVICE_VersionInfoTypeDef"></span><span class="target" id="structEVERT__DEVICE__BaseDeviceTypeDef_1a467bc046a4786a2224274bf68b4cde63"></span><a class="reference internal" href="evert_device_version_info.html#_CPPv431EVERT_DEVICE_VersionInfoTypeDef" title="EVERT_DEVICE_VersionInfoTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_VersionInfoTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeviceVersionInfo</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_BaseDeviceTypeDef17DeviceVersionInfoE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_BaseDeviceTypeDef14AlarmRegister1E">
+<span id="_CPPv3N30EVERT_DEVICE_BaseDeviceTypeDef14AlarmRegister1E"></span><span id="_CPPv2N30EVERT_DEVICE_BaseDeviceTypeDef14AlarmRegister1E"></span><span id="EVERT_DEVICE_BaseDeviceTypeDef::AlarmRegister1__EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span class="target" id="structEVERT__DEVICE__BaseDeviceTypeDef_1a54f1529a05fb67065166048ba7af9050"></span><a class="reference internal" href="../core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AlarmRegister1</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_BaseDeviceTypeDef14AlarmRegister1E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_BaseDeviceTypeDef16PeripheralStatusE">
+<span id="_CPPv3N30EVERT_DEVICE_BaseDeviceTypeDef16PeripheralStatusE"></span><span id="_CPPv2N30EVERT_DEVICE_BaseDeviceTypeDef16PeripheralStatusE"></span><span id="EVERT_DEVICE_BaseDeviceTypeDef::PeripheralStatus__EVERT_DEVICE_PeripheralStatusTypeDef"></span><span class="target" id="structEVERT__DEVICE__BaseDeviceTypeDef_1a5f7e03d4394e86d107de2ddf2f4bb355"></span><a class="reference internal" href="#_CPPv436EVERT_DEVICE_PeripheralStatusTypeDef" title="EVERT_DEVICE_PeripheralStatusTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_PeripheralStatusTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PeripheralStatus</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_BaseDeviceTypeDef16PeripheralStatusE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N30EVERT_DEVICE_BaseDeviceTypeDef10StateGroupE">
+<span id="_CPPv3N30EVERT_DEVICE_BaseDeviceTypeDef10StateGroupE"></span><span id="_CPPv2N30EVERT_DEVICE_BaseDeviceTypeDef10StateGroupE"></span><span id="EVERT_DEVICE_BaseDeviceTypeDef::StateGroup__EVERT_DEVICE_StateGroupTypeDef"></span><span class="target" id="structEVERT__DEVICE__BaseDeviceTypeDef_1a0f86adc7c027aa502127da19b17d3504"></span><a class="reference internal" href="#_CPPv430EVERT_DEVICE_StateGroupTypeDef" title="EVERT_DEVICE_StateGroupTypeDef"><span class="n"><span class="pre">EVERT_DEVICE_StateGroupTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StateGroup</span></span></span><a class="headerlink" href="#_CPPv4N30EVERT_DEVICE_BaseDeviceTypeDef10StateGroupE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../_projects/device/device-index.html" class="btn btn-neutral float-left" title="Index: device" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="evert_device_alarm_register1_index.html" class="btn btn-neutral float-right" title="evert_device_alarm_register1_index.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

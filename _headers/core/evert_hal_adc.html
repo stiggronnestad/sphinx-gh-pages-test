@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>evert_hal_adc.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=86f27845" />
+
+  
+  
+        <script src="../../_static/jquery.js?v=8dae8fb0"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="evert_hal_dwt.h" href="evert_hal_dwt.html" />
+    <link rel="prev" title="evert_hal.h" href="evert_hal.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/core/core.html">core</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/core/core-index.html">Index: core</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="can_handler.html">can_handler.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debugging.html">debugging.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emc230x.html">emc230x.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal.html">evert_hal.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">evert_hal_adc.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="evert_hal_dwt.html">evert_hal_dwt.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fz2812.html">fz2812.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpio_definition.html">gpio_definition.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="status_register.html">status_register.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="task_scheduler.html">task_scheduler.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/core/core-api.html">API Reference: core</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/core/core.html">core</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/core/core-index.html">Index: core</a></li>
+      <li class="breadcrumb-item active">evert_hal_adc.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/core/evert_hal_adc.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="evert-hal-adc-h">
+<h1>evert_hal_adc.h<a class="headerlink" href="#evert-hal-adc-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t">
+<span id="_CPPv319EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t"></span><span id="_CPPv219EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t"></span><span id="EVERT_HAL_ADC_Start__ADC_HandleTypeDefP.uint16_tP.uint32_t"></span><span class="target" id="evert__hal__adc_8h_1afbafd68319bff201adfd060209e04504"></span><span class="n"><span class="pre">HAL_StatusTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Start</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ADC_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hadc</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">conversion_count</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418EVERT_HAL_ADC_Lerpfff">
+<span id="_CPPv318EVERT_HAL_ADC_Lerpfff"></span><span id="_CPPv218EVERT_HAL_ADC_Lerpfff"></span><span id="EVERT_HAL_ADC_Lerp__float.float.float"></span><span class="target" id="evert__hal__adc_8h_1a57fbe99ac96221120109e442ab5b61ec"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Lerp</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">adc</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">slope</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y_intercept</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418EVERT_HAL_ADC_Lerpfff" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="evert_hal.html" class="btn btn-neutral float-left" title="evert_hal.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="evert_hal_dwt.html" class="btn btn-neutral float-right" title="evert_hal_dwt.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

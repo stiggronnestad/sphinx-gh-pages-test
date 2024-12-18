@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>inverter_readings.h &mdash; evert-firmware  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=86f27845" />
+
+  
+  
+        <script src="../../_static/jquery.js?v=8dae8fb0"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="inverter_transforms.h" href="inverter_transforms.html" />
+    <link rel="prev" title="inverter_math.h" href="inverter_math.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            evert-firmware
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/boost-converter/boost-converter.html">boost-converter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/ccu/ccu.html">ccu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/core/core.html">core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/dcdc/dcdc.html">dcdc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_projects/device/device.html">device</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../_projects/inverter/inverter.html">inverter</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../_projects/inverter/inverter-index.html">Index: inverter</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="inverter.html">inverter.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_alarm_index.html">inverter_alarm_index.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_calibration.html">inverter_calibration.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_constraints.html">inverter_constraints.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_grid.html">inverter_grid.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_math.html">inverter_math.h</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">inverter_readings.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inverter_transforms.html">inverter_transforms.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_device.html">_conf_evert_device.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_hal.html">_conf_evert_hal.h</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_conf_evert_inverter.html">_conf_evert_inverter.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../_projects/inverter/inverter-api.html">API Reference: inverter</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">evert-firmware</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter.html">inverter</a></li>
+          <li class="breadcrumb-item"><a href="../../_projects/inverter/inverter-index.html">Index: inverter</a></li>
+      <li class="breadcrumb-item active">inverter_readings.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_headers/inverter/inverter_readings.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="inverter-readings-h">
+<h1>inverter_readings.h<a class="headerlink" href="#inverter-readings-h" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.FILTER_TAP_NUM">
+<span class="target" id="inverter__readings_8h_1a3cee321a8d655472781910f72d621012"></span><span class="sig-name descname"><span class="n"><span class="pre">FILTER_TAP_NUM</span></span></span><a class="headerlink" href="#c.FILTER_TAP_NUM" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SAMPLE_BLOCK_SIZE">
+<span class="target" id="inverter__readings_8h_1a70d383081cbdb1675c5e3bf15cc3b11d"></span><span class="sig-name descname"><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span></span><a class="headerlink" href="#c.SAMPLE_BLOCK_SIZE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv426EVERT_INVERTER_InitFiltersv">
+<span id="_CPPv326EVERT_INVERTER_InitFiltersv"></span><span id="_CPPv226EVERT_INVERTER_InitFiltersv"></span><span id="EVERT_INVERTER_InitFilters__void"></span><span class="target" id="inverter__readings_8h_1af4c0e22a880ada93a61aa8d234b497aa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_InitFilters</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426EVERT_INVERTER_InitFiltersv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_INVERTER_ISR_HF_Readingsv">
+<span id="_CPPv330EVERT_INVERTER_ISR_HF_Readingsv"></span><span id="_CPPv230EVERT_INVERTER_ISR_HF_Readingsv"></span><span id="EVERT_INVERTER_ISR_HF_Readings__void"></span><span class="target" id="inverter__readings_8h_1a459470e3625f312660783b6643da95ab"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ISR_HF_Readings</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv430EVERT_INVERTER_ISR_HF_Readingsv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_INVERTER_ISR_LF_Readingsv">
+<span id="_CPPv330EVERT_INVERTER_ISR_LF_Readingsv"></span><span id="_CPPv230EVERT_INVERTER_ISR_LF_Readingsv"></span><span id="EVERT_INVERTER_ISR_LF_Readings__void"></span><span class="target" id="inverter__readings_8h_1a308b319c31ca726645c1f654a5d407e9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_INVERTER_ISR_LF_Readings</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv430EVERT_INVERTER_ISR_LF_Readingsv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411adc1_buffer">
+<span id="_CPPv311adc1_buffer"></span><span id="_CPPv211adc1_buffer"></span><span id="adc1_buffer__uint16_tVA"></span><span class="target" id="inverter__readings_8h_1ae6606515b0437885a84af9774b65696a"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc1_buffer</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC1_CONVERSION_COUNT</span></span><span class="p"><span class="pre">]</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411adc2_buffer">
+<span id="_CPPv311adc2_buffer"></span><span id="_CPPv211adc2_buffer"></span><span id="adc2_buffer__uint16_tVA"></span><span class="target" id="inverter__readings_8h_1abfa3a6f7829b24b09d4a39d0be88a132"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc2_buffer</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC2_CONVERSION_COUNT</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv411adc2_buffer" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411adc3_buffer">
+<span id="_CPPv311adc3_buffer"></span><span id="_CPPv211adc3_buffer"></span><span id="adc3_buffer__uint16_tVA"></span><span class="target" id="inverter__readings_8h_1a9d68be4e1f033a395eb63f67d0c3114b"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc3_buffer</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">EVERT_CONSTANT_INVERTER_ADC3_CONVERSION_COUNT</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv411adc3_buffer" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419adc_mcu_temperature">
+<span id="_CPPv319adc_mcu_temperature"></span><span id="_CPPv219adc_mcu_temperature"></span><span id="adc_mcu_temperature__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a1efe29602e522dddbfc1b720ceeb400a"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_mcu_temperature</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416adc_mcu_vref_int">
+<span id="_CPPv316adc_mcu_vref_int"></span><span id="_CPPv216adc_mcu_vref_int"></span><span id="adc_mcu_vref_int__uint32_tV"></span><span class="target" id="inverter__readings_8h_1aa27d012776be05aeee7ef3d53445a38e"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_mcu_vref_int</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413adc_current_u">
+<span id="_CPPv313adc_current_u"></span><span id="_CPPv213adc_current_u"></span><span id="adc_current_u__uint32_tV"></span><span class="target" id="inverter__readings_8h_1aa69d46174d07f6cbce2b2537e0d68218"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_current_u</span></span></span><a class="headerlink" href="#_CPPv413adc_current_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413adc_current_v">
+<span id="_CPPv313adc_current_v"></span><span id="_CPPv213adc_current_v"></span><span id="adc_current_v__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a5e391e49f74f4532a4bd51165363941f"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_current_v</span></span></span><a class="headerlink" href="#_CPPv413adc_current_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413adc_current_w">
+<span id="_CPPv313adc_current_w"></span><span id="_CPPv213adc_current_w"></span><span id="adc_current_w__uint32_tV"></span><span class="target" id="inverter__readings_8h_1ac2876a62ad021959886c0ca45605d49c"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_current_w</span></span></span><a class="headerlink" href="#_CPPv413adc_current_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv415adc_voltage_bus">
+<span id="_CPPv315adc_voltage_bus"></span><span id="_CPPv215adc_voltage_bus"></span><span id="adc_voltage_bus__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a7ea79c7000a5b26a86aaff9b4ddec27f"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_bus</span></span></span><a class="headerlink" href="#_CPPv415adc_voltage_bus" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422adc_voltage_bus_middle">
+<span id="_CPPv322adc_voltage_bus_middle"></span><span id="_CPPv222adc_voltage_bus_middle"></span><span id="adc_voltage_bus_middle__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a07848fdc1065d79ff154f1d39f5bf060"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_bus_middle</span></span></span><a class="headerlink" href="#_CPPv422adc_voltage_bus_middle" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413adc_voltage_u">
+<span id="_CPPv313adc_voltage_u"></span><span id="_CPPv213adc_voltage_u"></span><span id="adc_voltage_u__uint32_tV"></span><span class="target" id="inverter__readings_8h_1af3a074af168eacded394ea9c310d5f43"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_u</span></span></span><a class="headerlink" href="#_CPPv413adc_voltage_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413adc_voltage_v">
+<span id="_CPPv313adc_voltage_v"></span><span id="_CPPv213adc_voltage_v"></span><span id="adc_voltage_v__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a5d858a2800afa23ba67cd99dd975724a"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_v</span></span></span><a class="headerlink" href="#_CPPv413adc_voltage_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv413adc_voltage_w">
+<span id="_CPPv313adc_voltage_w"></span><span id="_CPPv213adc_voltage_w"></span><span id="adc_voltage_w__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a5153cdd1c160b20d6d8123db490e4c1b"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_w</span></span></span><a class="headerlink" href="#_CPPv413adc_voltage_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418adc_voltage_grid_u">
+<span id="_CPPv318adc_voltage_grid_u"></span><span id="_CPPv218adc_voltage_grid_u"></span><span id="adc_voltage_grid_u__uint32_tV"></span><span class="target" id="inverter__readings_8h_1af1d5cd7931f1c77a3d420a39ba3a8d3d"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_grid_u</span></span></span><a class="headerlink" href="#_CPPv418adc_voltage_grid_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418adc_voltage_grid_v">
+<span id="_CPPv318adc_voltage_grid_v"></span><span id="_CPPv218adc_voltage_grid_v"></span><span id="adc_voltage_grid_v__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a2d50c1c551571ecce5afff49fa23d56c"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_grid_v</span></span></span><a class="headerlink" href="#_CPPv418adc_voltage_grid_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418adc_voltage_grid_w">
+<span id="_CPPv318adc_voltage_grid_w"></span><span id="_CPPv218adc_voltage_grid_w"></span><span id="adc_voltage_grid_w__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a5e236a2cccb8b66c90895f85056b3213"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_voltage_grid_w</span></span></span><a class="headerlink" href="#_CPPv418adc_voltage_grid_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv426adc_temperature_heatsink_u">
+<span id="_CPPv326adc_temperature_heatsink_u"></span><span id="_CPPv226adc_temperature_heatsink_u"></span><span id="adc_temperature_heatsink_u__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a957d7b5c290f304bfa5f395fa7df9c7f"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_temperature_heatsink_u</span></span></span><a class="headerlink" href="#_CPPv426adc_temperature_heatsink_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv426adc_temperature_heatsink_v">
+<span id="_CPPv326adc_temperature_heatsink_v"></span><span id="_CPPv226adc_temperature_heatsink_v"></span><span id="adc_temperature_heatsink_v__uint32_tV"></span><span class="target" id="inverter__readings_8h_1ac39e616339ab3f9fd5db7588bfc279bf"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_temperature_heatsink_v</span></span></span><a class="headerlink" href="#_CPPv426adc_temperature_heatsink_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv426adc_temperature_heatsink_w">
+<span id="_CPPv326adc_temperature_heatsink_w"></span><span id="_CPPv226adc_temperature_heatsink_w"></span><span id="adc_temperature_heatsink_w__uint32_tV"></span><span class="target" id="inverter__readings_8h_1ae65539f0139d3a5a4d9c9b75d29f7ce0"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_temperature_heatsink_w</span></span></span><a class="headerlink" href="#_CPPv426adc_temperature_heatsink_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv429adc_temperature_filter_coil_u">
+<span id="_CPPv329adc_temperature_filter_coil_u"></span><span id="_CPPv229adc_temperature_filter_coil_u"></span><span id="adc_temperature_filter_coil_u__uint32_tV"></span><span class="target" id="inverter__readings_8h_1af882467138b119375095277890230ecd"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_temperature_filter_coil_u</span></span></span><a class="headerlink" href="#_CPPv429adc_temperature_filter_coil_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv429adc_temperature_filter_coil_v">
+<span id="_CPPv329adc_temperature_filter_coil_v"></span><span id="_CPPv229adc_temperature_filter_coil_v"></span><span id="adc_temperature_filter_coil_v__uint32_tV"></span><span class="target" id="inverter__readings_8h_1acc6e2adcecbae4779aa1fed64331a5be"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_temperature_filter_coil_v</span></span></span><a class="headerlink" href="#_CPPv429adc_temperature_filter_coil_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv429adc_temperature_filter_coil_w">
+<span id="_CPPv329adc_temperature_filter_coil_w"></span><span id="_CPPv229adc_temperature_filter_coil_w"></span><span id="adc_temperature_filter_coil_w__uint32_tV"></span><span class="target" id="inverter__readings_8h_1aa14db7b1210f2152899f3ea24cf0c8fc"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_temperature_filter_coil_w</span></span></span><a class="headerlink" href="#_CPPv429adc_temperature_filter_coil_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv423adc_temperature_ambient">
+<span id="_CPPv323adc_temperature_ambient"></span><span id="_CPPv223adc_temperature_ambient"></span><span id="adc_temperature_ambient__uint32_tV"></span><span class="target" id="inverter__readings_8h_1a34f49098b69685319465e24c00abab53"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adc_temperature_ambient</span></span></span><a class="headerlink" href="#_CPPv423adc_temperature_ambient" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418uf_mcu_temperature">
+<span id="_CPPv318uf_mcu_temperature"></span><span id="_CPPv218uf_mcu_temperature"></span><span id="uf_mcu_temperature__float32_tV"></span><span class="target" id="inverter__readings_8h_1ae95bfbd1682841eba5045c799e6eb711"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_mcu_temperature</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv415uf_mcu_vref_int">
+<span id="_CPPv315uf_mcu_vref_int"></span><span id="_CPPv215uf_mcu_vref_int"></span><span id="uf_mcu_vref_int__float32_tV"></span><span class="target" id="inverter__readings_8h_1a900cec7b237219e599dbff5d8fc20672"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_mcu_vref_int</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414uf_bus_voltage">
+<span id="_CPPv314uf_bus_voltage"></span><span id="_CPPv214uf_bus_voltage"></span><span id="uf_bus_voltage__float32_tV"></span><span class="target" id="inverter__readings_8h_1af8743306cfc98a4e4a29b993237946a9"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_bus_voltage</span></span></span><a class="headerlink" href="#_CPPv414uf_bus_voltage" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418uf_bus_voltage_mid">
+<span id="_CPPv318uf_bus_voltage_mid"></span><span id="_CPPv218uf_bus_voltage_mid"></span><span id="uf_bus_voltage_mid__float32_tV"></span><span class="target" id="inverter__readings_8h_1a65aada7a4539655a33d57cbdfc7adba4"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_bus_voltage_mid</span></span></span><a class="headerlink" href="#_CPPv418uf_bus_voltage_mid" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412uf_current_u">
+<span id="_CPPv312uf_current_u"></span><span id="_CPPv212uf_current_u"></span><span id="uf_current_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1a03ec7e24b1fd0476a60e4618e40b7d43"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_current_u</span></span></span><a class="headerlink" href="#_CPPv412uf_current_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412uf_current_v">
+<span id="_CPPv312uf_current_v"></span><span id="_CPPv212uf_current_v"></span><span id="uf_current_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1a944eaa94888f893c289df16b7cddcacb"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_current_v</span></span></span><a class="headerlink" href="#_CPPv412uf_current_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412uf_current_w">
+<span id="_CPPv312uf_current_w"></span><span id="_CPPv212uf_current_w"></span><span id="uf_current_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1a058777234d45603dc6cce800d3728e06"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_current_w</span></span></span><a class="headerlink" href="#_CPPv412uf_current_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412uf_voltage_u">
+<span id="_CPPv312uf_voltage_u"></span><span id="_CPPv212uf_voltage_u"></span><span id="uf_voltage_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1ae8bf56086652e9bb63167939740b8dd8"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_voltage_u</span></span></span><a class="headerlink" href="#_CPPv412uf_voltage_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412uf_voltage_v">
+<span id="_CPPv312uf_voltage_v"></span><span id="_CPPv212uf_voltage_v"></span><span id="uf_voltage_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1a009cd37c3e832469dc725c8677e716a3"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_voltage_v</span></span></span><a class="headerlink" href="#_CPPv412uf_voltage_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412uf_voltage_w">
+<span id="_CPPv312uf_voltage_w"></span><span id="_CPPv212uf_voltage_w"></span><span id="uf_voltage_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1adbba57d8c29c919d933d1d3610436651"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_voltage_w</span></span></span><a class="headerlink" href="#_CPPv412uf_voltage_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv417uf_voltage_grid_u">
+<span id="_CPPv317uf_voltage_grid_u"></span><span id="_CPPv217uf_voltage_grid_u"></span><span id="uf_voltage_grid_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1a7eff3319cec40d59de05c7b68c24d314"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_voltage_grid_u</span></span></span><a class="headerlink" href="#_CPPv417uf_voltage_grid_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv417uf_voltage_grid_v">
+<span id="_CPPv317uf_voltage_grid_v"></span><span id="_CPPv217uf_voltage_grid_v"></span><span id="uf_voltage_grid_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1a72e7df8b10d6e32e4287ddeabbf264f3"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_voltage_grid_v</span></span></span><a class="headerlink" href="#_CPPv417uf_voltage_grid_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv417uf_voltage_grid_w">
+<span id="_CPPv317uf_voltage_grid_w"></span><span id="_CPPv217uf_voltage_grid_w"></span><span id="uf_voltage_grid_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1aab3ad7f8470ac17892dbe2da90195bd2"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_voltage_grid_w</span></span></span><a class="headerlink" href="#_CPPv417uf_voltage_grid_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv425uf_temperature_heatsink_u">
+<span id="_CPPv325uf_temperature_heatsink_u"></span><span id="_CPPv225uf_temperature_heatsink_u"></span><span id="uf_temperature_heatsink_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1afbe14c288cf94f3f6c85bc8ae16acb7c"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_temperature_heatsink_u</span></span></span><a class="headerlink" href="#_CPPv425uf_temperature_heatsink_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv425uf_temperature_heatsink_v">
+<span id="_CPPv325uf_temperature_heatsink_v"></span><span id="_CPPv225uf_temperature_heatsink_v"></span><span id="uf_temperature_heatsink_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1a2be09c907aa61e94ca302feb090a8303"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_temperature_heatsink_v</span></span></span><a class="headerlink" href="#_CPPv425uf_temperature_heatsink_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv425uf_temperature_heatsink_w">
+<span id="_CPPv325uf_temperature_heatsink_w"></span><span id="_CPPv225uf_temperature_heatsink_w"></span><span id="uf_temperature_heatsink_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1a8a7dda6fbf1ff33d23312c7925c5de24"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_temperature_heatsink_w</span></span></span><a class="headerlink" href="#_CPPv425uf_temperature_heatsink_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv428uf_temperature_filter_coil_u">
+<span id="_CPPv328uf_temperature_filter_coil_u"></span><span id="_CPPv228uf_temperature_filter_coil_u"></span><span id="uf_temperature_filter_coil_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1a094277de2d43cf807980d310a4d6e288"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_temperature_filter_coil_u</span></span></span><a class="headerlink" href="#_CPPv428uf_temperature_filter_coil_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv428uf_temperature_filter_coil_v">
+<span id="_CPPv328uf_temperature_filter_coil_v"></span><span id="_CPPv228uf_temperature_filter_coil_v"></span><span id="uf_temperature_filter_coil_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1a4df096bfaaf24c82f3930c78579dd180"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_temperature_filter_coil_v</span></span></span><a class="headerlink" href="#_CPPv428uf_temperature_filter_coil_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv428uf_temperature_filter_coil_w">
+<span id="_CPPv328uf_temperature_filter_coil_w"></span><span id="_CPPv228uf_temperature_filter_coil_w"></span><span id="uf_temperature_filter_coil_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1ac48d74d1f5ff3a849d89f0545b60b013"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_temperature_filter_coil_w</span></span></span><a class="headerlink" href="#_CPPv428uf_temperature_filter_coil_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422uf_temperature_ambient">
+<span id="_CPPv322uf_temperature_ambient"></span><span id="_CPPv222uf_temperature_ambient"></span><span id="uf_temperature_ambient__float32_tV"></span><span class="target" id="inverter__readings_8h_1abb5db7f3bd38cabbffdd477e5f9643f8"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">uf_temperature_ambient</span></span></span><a class="headerlink" href="#_CPPv422uf_temperature_ambient" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416filter_current_u">
+<span id="_CPPv316filter_current_u"></span><span id="_CPPv216filter_current_u"></span><span id="filter_current_u__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1aec1f4e45a9158b30eee01392bf83857c"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_current_u</span></span></span><a class="headerlink" href="#_CPPv416filter_current_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416filter_current_v">
+<span id="_CPPv316filter_current_v"></span><span id="_CPPv216filter_current_v"></span><span id="filter_current_v__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1a1312f097b9ef12433751f3534f3675d8"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_current_v</span></span></span><a class="headerlink" href="#_CPPv416filter_current_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416filter_current_w">
+<span id="_CPPv316filter_current_w"></span><span id="_CPPv216filter_current_w"></span><span id="filter_current_w__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1a89a2b106139d528a7ab9ff446574b24f"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_current_w</span></span></span><a class="headerlink" href="#_CPPv416filter_current_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416filter_voltage_u">
+<span id="_CPPv316filter_voltage_u"></span><span id="_CPPv216filter_voltage_u"></span><span id="filter_voltage_u__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1ad5199952bf8ac5976d356e3af1d0ec93"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_u</span></span></span><a class="headerlink" href="#_CPPv416filter_voltage_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416filter_voltage_v">
+<span id="_CPPv316filter_voltage_v"></span><span id="_CPPv216filter_voltage_v"></span><span id="filter_voltage_v__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1ae3fa3ec1c9aeaf421b77155b8c963a9f"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_v</span></span></span><a class="headerlink" href="#_CPPv416filter_voltage_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv416filter_voltage_w">
+<span id="_CPPv316filter_voltage_w"></span><span id="_CPPv216filter_voltage_w"></span><span id="filter_voltage_w__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1a68b0c36d2a4530e486dc995a0cb284b4"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_w</span></span></span><a class="headerlink" href="#_CPPv416filter_voltage_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv421filter_voltage_grid_u">
+<span id="_CPPv321filter_voltage_grid_u"></span><span id="_CPPv221filter_voltage_grid_u"></span><span id="filter_voltage_grid_u__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1a60067ddbaad194859463fe80993cac47"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_grid_u</span></span></span><a class="headerlink" href="#_CPPv421filter_voltage_grid_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv421filter_voltage_grid_v">
+<span id="_CPPv321filter_voltage_grid_v"></span><span id="_CPPv221filter_voltage_grid_v"></span><span id="filter_voltage_grid_v__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1ae24ed666f88717389e3e31db3453ad2f"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_grid_v</span></span></span><a class="headerlink" href="#_CPPv421filter_voltage_grid_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv421filter_voltage_grid_w">
+<span id="_CPPv321filter_voltage_grid_w"></span><span id="_CPPv221filter_voltage_grid_w"></span><span id="filter_voltage_grid_w__arm_fir_instance_f32"></span><span class="target" id="inverter__readings_8h_1a13bc8a63eddfbca84f8cec878a708d6e"></span><span class="n"><span class="pre">arm_fir_instance_f32</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_grid_w</span></span></span><a class="headerlink" href="#_CPPv421filter_voltage_grid_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422filter_current_u_state">
+<span id="_CPPv322filter_current_u_state"></span><span id="_CPPv222filter_current_u_state"></span><span id="filter_current_u_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1a1619b04f2016b0d242bc841a58eb0559"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_current_u_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv422filter_current_u_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422filter_current_v_state">
+<span id="_CPPv322filter_current_v_state"></span><span id="_CPPv222filter_current_v_state"></span><span id="filter_current_v_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1aaa180754591f20a91ccddc912ecd1c51"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_current_v_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv422filter_current_v_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422filter_current_w_state">
+<span id="_CPPv322filter_current_w_state"></span><span id="_CPPv222filter_current_w_state"></span><span id="filter_current_w_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1a005eeab62ae4b64a8ef619021ac45bcf"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_current_w_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv422filter_current_w_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422filter_voltage_u_state">
+<span id="_CPPv322filter_voltage_u_state"></span><span id="_CPPv222filter_voltage_u_state"></span><span id="filter_voltage_u_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1ab933896bbadd43b3f12869f5a0d837cd"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_u_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv422filter_voltage_u_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422filter_voltage_v_state">
+<span id="_CPPv322filter_voltage_v_state"></span><span id="_CPPv222filter_voltage_v_state"></span><span id="filter_voltage_v_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1accfcec7910125857a798c061e965ad6f"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_v_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv422filter_voltage_v_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422filter_voltage_w_state">
+<span id="_CPPv322filter_voltage_w_state"></span><span id="_CPPv222filter_voltage_w_state"></span><span id="filter_voltage_w_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1ad197fe3879181defc677ac3637321917"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_w_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv422filter_voltage_w_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv427filter_voltage_grid_u_state">
+<span id="_CPPv327filter_voltage_grid_u_state"></span><span id="_CPPv227filter_voltage_grid_u_state"></span><span id="filter_voltage_grid_u_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1a0ab4563ff2836dd4227c03a56162b5e3"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_grid_u_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv427filter_voltage_grid_u_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv427filter_voltage_grid_v_state">
+<span id="_CPPv327filter_voltage_grid_v_state"></span><span id="_CPPv227filter_voltage_grid_v_state"></span><span id="filter_voltage_grid_v_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1aa36c109183e208f40d7929f559d75052"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_grid_v_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv427filter_voltage_grid_v_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv427filter_voltage_grid_w_state">
+<span id="_CPPv327filter_voltage_grid_w_state"></span><span id="_CPPv227filter_voltage_grid_w_state"></span><span id="filter_voltage_grid_w_state__float32_tA"></span><span class="target" id="inverter__readings_8h_1a8d864c3d6f2ae87088ffe7c006cf9af1"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filter_voltage_grid_w_state</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">FILTER_TAP_NUM</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="n"><span class="pre">SAMPLE_BLOCK_SIZE</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#_CPPv427filter_voltage_grid_w_state" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418fi_mcu_temperature">
+<span id="_CPPv318fi_mcu_temperature"></span><span id="_CPPv218fi_mcu_temperature"></span><span id="fi_mcu_temperature__float32_tV"></span><span class="target" id="inverter__readings_8h_1af41d80652ee335b39548f38b345d2e79"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_mcu_temperature</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv415fi_mcu_vref_int">
+<span id="_CPPv315fi_mcu_vref_int"></span><span id="_CPPv215fi_mcu_vref_int"></span><span id="fi_mcu_vref_int__float32_tV"></span><span class="target" id="inverter__readings_8h_1af5785c6dc468e3b09838a66e32fbf69a"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_mcu_vref_int</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414fi_bus_voltage">
+<span id="_CPPv314fi_bus_voltage"></span><span id="_CPPv214fi_bus_voltage"></span><span id="fi_bus_voltage__float32_tV"></span><span class="target" id="inverter__readings_8h_1a42385c94e30a26553ac1bb2c5c640dfa"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_bus_voltage</span></span></span><a class="headerlink" href="#_CPPv414fi_bus_voltage" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv418fi_bus_voltage_mid">
+<span id="_CPPv318fi_bus_voltage_mid"></span><span id="_CPPv218fi_bus_voltage_mid"></span><span id="fi_bus_voltage_mid__float32_tV"></span><span class="target" id="inverter__readings_8h_1ae0b6e7450a566f9b213c303a7f747861"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_bus_voltage_mid</span></span></span><a class="headerlink" href="#_CPPv418fi_bus_voltage_mid" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412fi_current_u">
+<span id="_CPPv312fi_current_u"></span><span id="_CPPv212fi_current_u"></span><span id="fi_current_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1a5632f33468c5b6d6d4f83664a0d177f0"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_current_u</span></span></span><a class="headerlink" href="#_CPPv412fi_current_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412fi_current_v">
+<span id="_CPPv312fi_current_v"></span><span id="_CPPv212fi_current_v"></span><span id="fi_current_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1a6b28ac321d4d2258d8081fcaaae2d736"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_current_v</span></span></span><a class="headerlink" href="#_CPPv412fi_current_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412fi_current_w">
+<span id="_CPPv312fi_current_w"></span><span id="_CPPv212fi_current_w"></span><span id="fi_current_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1a7f16c12ce2a0d01cdbb9a3ddb5cf0047"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_current_w</span></span></span><a class="headerlink" href="#_CPPv412fi_current_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412fi_voltage_u">
+<span id="_CPPv312fi_voltage_u"></span><span id="_CPPv212fi_voltage_u"></span><span id="fi_voltage_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1a85806ae96ceab604c2f5ee14c14109f4"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_u</span></span></span><a class="headerlink" href="#_CPPv412fi_voltage_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412fi_voltage_v">
+<span id="_CPPv312fi_voltage_v"></span><span id="_CPPv212fi_voltage_v"></span><span id="fi_voltage_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1af171db7d58352e47a2dcfb0b48be93a0"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_v</span></span></span><a class="headerlink" href="#_CPPv412fi_voltage_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv412fi_voltage_w">
+<span id="_CPPv312fi_voltage_w"></span><span id="_CPPv212fi_voltage_w"></span><span id="fi_voltage_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1a58409659e6f121ce8cf423777146f28f"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_w</span></span></span><a class="headerlink" href="#_CPPv412fi_voltage_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv417fi_voltage_grid_u">
+<span id="_CPPv317fi_voltage_grid_u"></span><span id="_CPPv217fi_voltage_grid_u"></span><span id="fi_voltage_grid_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1af8d75881300c58d3a10bc25f81786500"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_grid_u</span></span></span><a class="headerlink" href="#_CPPv417fi_voltage_grid_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv417fi_voltage_grid_v">
+<span id="_CPPv317fi_voltage_grid_v"></span><span id="_CPPv217fi_voltage_grid_v"></span><span id="fi_voltage_grid_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1ab48b4d890d1c6e093b48cc49a786fb91"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_grid_v</span></span></span><a class="headerlink" href="#_CPPv417fi_voltage_grid_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv417fi_voltage_grid_w">
+<span id="_CPPv317fi_voltage_grid_w"></span><span id="_CPPv217fi_voltage_grid_w"></span><span id="fi_voltage_grid_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1a64648683c8c0b50a4cd64c5ddccdc23e"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_voltage_grid_w</span></span></span><a class="headerlink" href="#_CPPv417fi_voltage_grid_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv425fi_temperature_heatsink_u">
+<span id="_CPPv325fi_temperature_heatsink_u"></span><span id="_CPPv225fi_temperature_heatsink_u"></span><span id="fi_temperature_heatsink_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1aae82b88c628a8c5c4ab09ae6a564a37e"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_temperature_heatsink_u</span></span></span><a class="headerlink" href="#_CPPv425fi_temperature_heatsink_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv425fi_temperature_heatsink_v">
+<span id="_CPPv325fi_temperature_heatsink_v"></span><span id="_CPPv225fi_temperature_heatsink_v"></span><span id="fi_temperature_heatsink_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1a37f562bef6a877c03a8f1fca8eb22cdd"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_temperature_heatsink_v</span></span></span><a class="headerlink" href="#_CPPv425fi_temperature_heatsink_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv425fi_temperature_heatsink_w">
+<span id="_CPPv325fi_temperature_heatsink_w"></span><span id="_CPPv225fi_temperature_heatsink_w"></span><span id="fi_temperature_heatsink_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1a7b1f738ec255c55df3f5797105c58b30"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_temperature_heatsink_w</span></span></span><a class="headerlink" href="#_CPPv425fi_temperature_heatsink_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv428fi_temperature_filter_coil_u">
+<span id="_CPPv328fi_temperature_filter_coil_u"></span><span id="_CPPv228fi_temperature_filter_coil_u"></span><span id="fi_temperature_filter_coil_u__float32_tV"></span><span class="target" id="inverter__readings_8h_1a0045de8405bc548419b3086578ba28f4"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_temperature_filter_coil_u</span></span></span><a class="headerlink" href="#_CPPv428fi_temperature_filter_coil_u" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv428fi_temperature_filter_coil_v">
+<span id="_CPPv328fi_temperature_filter_coil_v"></span><span id="_CPPv228fi_temperature_filter_coil_v"></span><span id="fi_temperature_filter_coil_v__float32_tV"></span><span class="target" id="inverter__readings_8h_1a91cf985efca239d1ea404e0a6522ab7f"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_temperature_filter_coil_v</span></span></span><a class="headerlink" href="#_CPPv428fi_temperature_filter_coil_v" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv428fi_temperature_filter_coil_w">
+<span id="_CPPv328fi_temperature_filter_coil_w"></span><span id="_CPPv228fi_temperature_filter_coil_w"></span><span id="fi_temperature_filter_coil_w__float32_tV"></span><span class="target" id="inverter__readings_8h_1aab719caa969b068dd48bca85989808e6"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_temperature_filter_coil_w</span></span></span><a class="headerlink" href="#_CPPv428fi_temperature_filter_coil_w" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv422fi_temperature_ambient">
+<span id="_CPPv322fi_temperature_ambient"></span><span id="_CPPv222fi_temperature_ambient"></span><span id="fi_temperature_ambient__float32_tV"></span><span class="target" id="inverter__readings_8h_1a5be85ebef1d8e744f4177aae865a3129"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fi_temperature_ambient</span></span></span><a class="headerlink" href="#_CPPv422fi_temperature_ambient" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414gpio_fan_fault">
+<span id="_CPPv314gpio_fan_fault"></span><span id="_CPPv214gpio_fan_fault"></span><span id="gpio_fan_fault__bV"></span><span class="target" id="inverter__readings_8h_1a7132792a8bf388507f265180e22192df"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpio_fan_fault</span></span></span><a class="headerlink" href="#_CPPv414gpio_fan_fault" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414gpio_pwm_fault">
+<span id="_CPPv314gpio_pwm_fault"></span><span id="_CPPv214gpio_pwm_fault"></span><span id="gpio_pwm_fault__bV"></span><span class="target" id="inverter__readings_8h_1a3b434cfb14400b0122204aca2049239c"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpio_pwm_fault</span></span></span><a class="headerlink" href="#_CPPv414gpio_pwm_fault" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419gpio_pwm_ready_top1">
+<span id="_CPPv319gpio_pwm_ready_top1"></span><span id="_CPPv219gpio_pwm_ready_top1"></span><span id="gpio_pwm_ready_top1__bV"></span><span class="target" id="inverter__readings_8h_1a002e07c8218ad4a9999307beb10d2ddb"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpio_pwm_ready_top1</span></span></span><a class="headerlink" href="#_CPPv419gpio_pwm_ready_top1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419gpio_pwm_ready_top2">
+<span id="_CPPv319gpio_pwm_ready_top2"></span><span id="_CPPv219gpio_pwm_ready_top2"></span><span id="gpio_pwm_ready_top2__bV"></span><span class="target" id="inverter__readings_8h_1a5dcef3774d4db1cb8b39327afebb3e8d"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpio_pwm_ready_top2</span></span></span><a class="headerlink" href="#_CPPv419gpio_pwm_ready_top2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419gpio_pwm_ready_top3">
+<span id="_CPPv319gpio_pwm_ready_top3"></span><span id="_CPPv219gpio_pwm_ready_top3"></span><span id="gpio_pwm_ready_top3__bV"></span><span class="target" id="inverter__readings_8h_1ae00f69dff785541ba3d1117a8cf88e59"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpio_pwm_ready_top3</span></span></span><a class="headerlink" href="#_CPPv419gpio_pwm_ready_top3" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419gpio_pwm_ready_bot1">
+<span id="_CPPv319gpio_pwm_ready_bot1"></span><span id="_CPPv219gpio_pwm_ready_bot1"></span><span id="gpio_pwm_ready_bot1__bV"></span><span class="target" id="inverter__readings_8h_1a3387b12af537664717c0a143a3a7632b"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpio_pwm_ready_bot1</span></span></span><a class="headerlink" href="#_CPPv419gpio_pwm_ready_bot1" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419gpio_pwm_ready_bot2">
+<span id="_CPPv319gpio_pwm_ready_bot2"></span><span id="_CPPv219gpio_pwm_ready_bot2"></span><span id="gpio_pwm_ready_bot2__bV"></span><span class="target" id="inverter__readings_8h_1a2617064b97722157babd26a2fc96ae58"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpio_pwm_ready_bot2</span></span></span><a class="headerlink" href="#_CPPv419gpio_pwm_ready_bot2" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv419gpio_pwm_ready_bot3">
+<span id="_CPPv319gpio_pwm_ready_bot3"></span><span id="_CPPv219gpio_pwm_ready_bot3"></span><span id="gpio_pwm_ready_bot3__bV"></span><span class="target" id="inverter__readings_8h_1aa46c5c384b85d609f3891514e9a84e66"></span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpio_pwm_ready_bot3</span></span></span><a class="headerlink" href="#_CPPv419gpio_pwm_ready_bot3" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="inverter_math.html" class="btn btn-neutral float-left" title="inverter_math.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="inverter_transforms.html" class="btn btn-neutral float-right" title="inverter_transforms.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Evert AS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
