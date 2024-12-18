@@ -24,7 +24,7 @@ jobs:
       - name: Build HTML
         run: |
           cd docs
-          sudo ./generate.sh
+          ./generate.sh
           cd ..
 
       - name: Deploy to gh-pages
