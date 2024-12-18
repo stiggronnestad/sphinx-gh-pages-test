@@ -14,6 +14,11 @@ def inject(projectPaths):
             print('Project path does not exist:', projectPath)
             continue
 
+        # Check if project path + src
+        if not os.path.exists(projectPath + '/src'):
+            print('Project path does not contain src directory:', projectPath)
+            continue
+
         injectProject(projectPath)
         generated_h_md.clear()
 
