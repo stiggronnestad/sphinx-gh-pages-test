@@ -1,3 +1,12 @@
+/**
+ ******************************************************************************
+ * @file    boost_converter_readings.h
+ * @author  Evert Firmware Team
+ * @brief   ADC readings and filtering for the Evert Boost Converter
+ *
+ ******************************************************************************
+ **/
+
 #ifndef EVERT_BOOST_CONVERTER_READINGS_H_
 #define EVERT_BOOST_CONVERTER_READINGS_H_
 

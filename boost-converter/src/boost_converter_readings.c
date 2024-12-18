@@ -1,3 +1,12 @@
+/**
+ ******************************************************************************
+ * @file    boost_converter_readings.h
+ * @author  Evert Firmware Team
+ * @brief   ADC readings and filtering for the Evert Boost Converter
+ *
+ ******************************************************************************
+ **/
+
 #include <arm_math.h>
 
 #include "evert_hal_adc.h"
