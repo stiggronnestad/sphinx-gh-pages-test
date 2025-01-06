@@ -34,6 +34,10 @@ def injectProject(projectPath):
     if not os.path.exists(f'source/_projects/{projectName}'):
         os.makedirs(f'source/_projects/{projectName}')
 
+    # Create _static directory if it doesn't exist
+    if not os.path.exists(f'source/_static/{projectName}'):
+        os.makedirs(f'source/_static/{projectName}')
+
     injectProjectApiReference(projectName, projectPath)
     injectProjectHeaders(projectName, projectPath)
     injectProjectSpecificDocumentation(projectName, projectPath)
@@ -57,14 +61,77 @@ def injectProjectHeaders(projectName, projectPath):
     headers = [f for f in os.listdir(projectPath+'/src') if f.endswith('.h')]
     
     for header in headers:
+        # Generate .dot files
+        doth_folder = f'source/_dot/{projectName}'
+        if not os.path.exists(doth_folder):
+            os.makedirs(doth_folder)
+        hasInc = generateDotPngInc(projectName, projectPath, header)
+        hasDepInc = generateDotPngDepInc(projectName, projectPath, header)
+
         # Switch .h to .md
         fn = header.replace('.h', '.md')
         with open(f'source/_headers/{projectName}/' + fn, 'w+') as file:
             generated_h_md.append(fn)
-            file.write(f'''# {header}
-```{{doxygenfile}} {header}
+            file.write(f'''# {header}\n''')
+   
+            if hasInc:
+                file.write(f'''## Include Graph\n''')
+                inc_fn = f'../../_static/{projectName}/' + header.replace('.h', '') + '-inc.png'
+                file.write(f'''```{{image}} {inc_fn}
+:alt: A description of the image
+:align: center
+```\n\n''')
+                file.write(f'***\n\n')
+
+            if hasDepInc:
+                file.write(f'''## Dependency Graph\n''')
+                dep_inc_fn = f'../../_static/{projectName}/' + header.replace('.h', '') + '-dep-inc.png'
+                file.write(f'''```{{image}} {dep_inc_fn}
+:alt: A description of the image
+:align: center
+```\n\n''')
+                file.write(f'***\n\n')
+
+            file.write(f'''## API\n''')
+            file.write(f'''```{{doxygenfile}} {header}
 :project: doxygen-{projectName}
-```''' % (locals()))
+```\n\n''')
+            
+#             file.write (f"```")
+
+def generateDotPngInc(projectName, projectPath, header):
+    doxygen_path = f'doxygen-{projectName}'
+    dependency_fn = header.replace('_', '__').replace('.h', '_8h') + '__incl.dot'
+    dependency_fn_path = doxygen_path + '/latex/' + dependency_fn
+    
+    # Check if dependency file exists
+    if not os.path.exists(dependency_fn_path):
+        print('Dependency dot file does not exist:', dependency_fn_path)
+        return False
+    else:
+        print('Dependency dot file exists:', dependency_fn_path)
+        # Copy dependcy_fn_path to source/_projects/<projectName>/<header>.dot
+        with open(f'source/_dot/{projectName}/' + header.replace('.h', '') + '-inc.dot', 'w+') as file:
+            with open(dependency_fn_path, 'r') as dependency_file:
+                file.write(dependency_file.read())
+    return True
+
+def generateDotPngDepInc(projectName, projectPath, header):
+    doxygen_path = f'doxygen-{projectName}'
+    dependency_fn = header.replace('_', '__').replace('.h', '_8h') + '__dep__incl.dot'
+    dependency_fn_path = doxygen_path + '/latex/' + dependency_fn
+    
+    # Check if dependency file exists
+    if not os.path.exists(dependency_fn_path):
+        print('Dependency dot file does not exist:', dependency_fn_path)
+        return False
+    else:
+        print('Dependency dot file exists:', dependency_fn_path)
+        # Copy dependcy_fn_path to source/_projects/<projectName>/<header>.dot
+        with open(f'source/_dot/{projectName}/' + header.replace('.h', '') + '-dep-inc.dot', 'w+') as file:
+            with open(dependency_fn_path, 'r') as dependency_file:
+                file.write(dependency_file.read())
+    return True
 
 def injectProjectSpecificDocumentation(projectName, projectPath):
     print('Injecting project specific documentation:', projectName)
