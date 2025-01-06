@@ -1,4 +1,6 @@
 # fz2812.h
+## API
 ```{doxygenfile} fz2812.h
 :project: doxygen-core
 ```
+

@@ -1,4 +1,6 @@
 # gpio_definition.h
+## API
 ```{doxygenfile} gpio_definition.h
 :project: doxygen-core
 ```
+

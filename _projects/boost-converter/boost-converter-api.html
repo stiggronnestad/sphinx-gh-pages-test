@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>API Reference: boost-converter &mdash; evert-firmware  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
 
   
@@ -3265,493 +3265,6 @@
 
 <dl>
 <dt class="sig sig-object cpp">
-<span class="target" id="evert__hal_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal.c</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stdio.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdarg.h&gt;</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal_8h"><span class="std std-ref">evert_hal.h</span></a>”</em></div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal.h</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;arm_math.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdlib.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdio.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdarg.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdint.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdbool.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#__conf__evert__hal_8h"><span class="std std-ref">_conf_evert_hal.h</span></a>”</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal__adc_8h"><span class="std std-ref">evert_hal_adc.h</span></a>”</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal__dwt_8h"><span class="std std-ref">evert_hal_dwt.h</span></a>”</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#debugging_8h"><span class="std std-ref">debugging.h</span></a>”</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#task__scheduler_8h"><span class="std std-ref">task_scheduler.h</span></a>”</em></div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__adc_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal_adc.c</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;arm_math.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal__adc_8h"><span class="std std-ref">evert_hal_adc.h</span></a>”</em></div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv419EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t">
-<span id="_CPPv319EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t"></span><span id="_CPPv219EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t"></span><span id="EVERT_HAL_ADC_Start__ADC_HandleTypeDefP.uint16_tP.uint32_t"></span><span class="target" id="evert__hal__adc_8c_1afbafd68319bff201adfd060209e04504"></span><span class="n"><span class="pre">HAL_StatusTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Start</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ADC_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hadc</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">conversion_count</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv418EVERT_HAL_ADC_Lerpfff">
-<span id="_CPPv318EVERT_HAL_ADC_Lerpfff"></span><span id="_CPPv218EVERT_HAL_ADC_Lerpfff"></span><span id="EVERT_HAL_ADC_Lerp__float.float.float"></span><span class="target" id="evert__hal__adc_8c_1a57fbe99ac96221120109e442ab5b61ec"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Lerp</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">adc</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">slope</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y_intercept</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__adc_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal_adc.h</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;arm_math.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__adc_8h_1afbafd68319bff201adfd060209e04504"></span><span class="n"><span class="pre">HAL_StatusTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Start</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ADC_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hadc</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">conversion_count</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__adc_8h_1a57fbe99ac96221120109e442ab5b61ec"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Lerp</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">adc</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">slope</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y_intercept</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__dwt_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal_dwt.c</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal__dwt_8h"><span class="std std-ref">evert_hal_dwt.h</span></a>”</em></div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv432EVERT_HAL_DWT_EnableCycleCounterv">
-<span id="_CPPv332EVERT_HAL_DWT_EnableCycleCounterv"></span><span id="_CPPv232EVERT_HAL_DWT_EnableCycleCounterv"></span><span id="EVERT_HAL_DWT_EnableCycleCounter__void"></span><span class="target" id="evert__hal__dwt_8c_1a6db7c112b407b7af5fbbcd0f64b84f5b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_EnableCycleCounter</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv419EVERT_HAL_DWT_Startv">
-<span id="_CPPv319EVERT_HAL_DWT_Startv"></span><span id="_CPPv219EVERT_HAL_DWT_Startv"></span><span id="EVERT_HAL_DWT_Start__void"></span><span class="target" id="evert__hal__dwt_8c_1af344ef72842c285ad92b34c60fb0d127"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_Start</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv418EVERT_HAL_DWT_Stopv">
-<span id="_CPPv318EVERT_HAL_DWT_Stopv"></span><span id="_CPPv218EVERT_HAL_DWT_Stopv"></span><span id="EVERT_HAL_DWT_Stop__void"></span><span class="target" id="evert__hal__dwt_8c_1a8eae88cbcd9953bc14ec9a6dc4affbf9"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_Stop</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv421DwtCycleCounterResult">
-<span id="_CPPv321DwtCycleCounterResult"></span><span id="_CPPv221DwtCycleCounterResult"></span><span id="DwtCycleCounterResult__uint32_t"></span><span class="target" id="evert__hal__dwt_8c_1a9fe596701a280fcc2f37f999eac6752f"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DwtCycleCounterResult</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv410_dwt_start">
-<span id="_CPPv310_dwt_start"></span><span id="_CPPv210_dwt_start"></span><span id="_dwt_start__uint32_t"></span><span class="target" id="evert__hal__dwt_8c_1a4fb1f66a8f0c9d8011c0a4b9de679e33"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_dwt_start</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv410_dwt_start" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__dwt_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal_dwt.h</span></span></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__dwt_8h_1a6db7c112b407b7af5fbbcd0f64b84f5b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_EnableCycleCounter</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__dwt_8h_1af344ef72842c285ad92b34c60fb0d127"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_Start</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__dwt_8h_1a8eae88cbcd9953bc14ec9a6dc4affbf9"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_Stop</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="evert__hal__dwt_8h_1a9fe596701a280fcc2f37f999eac6752f"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DwtCycleCounterResult</span></span></span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="fz2812_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">fz2812.c</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stdbool.h&gt;</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#fz2812_8h"><span class="std std-ref">fz2812.h</span></a>”</em></div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="fz2812_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">fz2812.h</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#__conf__evert__hal_8h"><span class="std std-ref">_conf_evert_hal.h</span></a>”</em></div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
-<dl class="cpp macro">
-<dt class="sig sig-object cpp" id="c.EVERT_FZ2812_LED_COUNT">
-<span class="target" id="fz2812_8h_1a351077d48f4b9852de1b2ac5e560db7e"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_FZ2812_LED_COUNT</span></span></span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="gpio__definition_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">gpio_definition.h</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">status_register.c</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stdbool.h&gt;</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#status__register_8h"><span class="std std-ref">status_register.h</span></a>”</em></div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv413EVERT_SR_InitP38EVERT_SR_RegisterTypeDefinitionTypeDef">
-<span id="_CPPv313EVERT_SR_InitP38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="_CPPv213EVERT_SR_InitP38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="EVERT_SR_Init__EVERT_SR_RegisterTypeDefinitionTypeDefP"></span><span class="target" id="status__register_8c_1a61089ea52693de3dbeba4b6c0a360957"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_Init</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv420EVERT_SR_GetRegisterPK38EVERT_SR_RegisterTypeDefinitionTypeDef">
-<span id="_CPPv320EVERT_SR_GetRegisterPK38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="_CPPv220EVERT_SR_GetRegisterPK38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="EVERT_SR_GetRegister__EVERT_SR_RegisterTypeDefinitionTypeDefCP"></span><span class="target" id="status__register_8c_1a2fe0466e16f66e81069c99bd44504f65"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_GetRegister</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv422EVERT_SR_GetBitOnCountPK38EVERT_SR_RegisterTypeDefinitionTypeDef">
-<span id="_CPPv322EVERT_SR_GetBitOnCountPK38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="_CPPv222EVERT_SR_GetBitOnCountPK38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="EVERT_SR_GetBitOnCount__EVERT_SR_RegisterTypeDefinitionTypeDefCP"></span><span class="target" id="status__register_8c_1ac4ef96041b3c653dbe558840752bb835"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_GetBitOnCount</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv415EVERT_SR_SetBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t">
-<span id="_CPPv315EVERT_SR_SetBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="_CPPv215EVERT_SR_SetBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="EVERT_SR_SetBit__EVERT_SR_RegisterTypeDefinitionTypeDefP.uint8_t"></span><span class="target" id="status__register_8c_1a6d59da94eea3ca0cdb5e086d69fe3fd7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_SetBit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv417EVERT_SR_ClearBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t">
-<span id="_CPPv317EVERT_SR_ClearBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="_CPPv217EVERT_SR_ClearBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="EVERT_SR_ClearBit__EVERT_SR_RegisterTypeDefinitionTypeDefP.uint8_t"></span><span class="target" id="status__register_8c_1a66e91fd3873081d79e9a8a90ce8e8383"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_ClearBit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv417EVERT_SR_IsBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t">
-<span id="_CPPv317EVERT_SR_IsBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="_CPPv217EVERT_SR_IsBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="EVERT_SR_IsBitSet__EVERT_SR_RegisterTypeDefinitionTypeDefCP.uint8_t"></span><span class="target" id="status__register_8c_1a16b28f4e2b1b4c2f835832e79775470e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_IsBitSet</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv420EVERT_SR_IsAnyBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDefPK7uint8_tK7uint8_t">
-<span id="_CPPv320EVERT_SR_IsAnyBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDefPK7uint8_tK7uint8_t"></span><span id="_CPPv220EVERT_SR_IsAnyBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDefPK7uint8_tK7uint8_t"></span><span id="EVERT_SR_IsAnyBitSet__EVERT_SR_RegisterTypeDefinitionTypeDefCP.uint8_tCP.uint8_tC"></span><span class="target" id="status__register_8c_1a029afc2fd258d43650652a9a4ff418b5"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_IsAnyBitSet</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">indexes</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">status_register.h</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stdint.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdbool.h&gt;</em></div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
-<dl class="cpp macro">
-<dt class="sig sig-object cpp" id="c.StatusRegister">
-<span class="target" id="status__register_8h_1acda516aca361386a87975a62eba267d7"></span><span class="sig-name descname"><span class="n"><span class="pre">StatusRegister</span></span></span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp macro">
-<dt class="sig sig-object cpp" id="c.SR_TypeDefinition">
-<span class="target" id="status__register_8h_1afaaee4a6fd5bb240fbdd2bd424258784"></span><span class="sig-name descname"><span class="n"><span class="pre">SR_TypeDefinition</span></span></span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp macro">
-<dt class="sig sig-object cpp" id="c.E_SR">
-<span class="target" id="status__register_8h_1abfe498c9918279c759cdc8ac5bdc8998"></span><span class="sig-name descname"><span class="n"><span class="pre">E_SR</span></span></span><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8h_1a61089ea52693de3dbeba4b6c0a360957"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_Init</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8h_1a2fe0466e16f66e81069c99bd44504f65"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_GetRegister</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8h_1ac4ef96041b3c653dbe558840752bb835"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_GetBitOnCount</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8h_1a6d59da94eea3ca0cdb5e086d69fe3fd7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_SetBit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8h_1a66e91fd3873081d79e9a8a90ce8e8383"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_ClearBit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8h_1a16b28f4e2b1b4c2f835832e79775470e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_IsBitSet</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="status__register_8h_1a029afc2fd258d43650652a9a4ff418b5"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_IsAnyBitSet</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">indexes</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">task_scheduler.c</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stdlib.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdint.h&gt;</em></div>
-<div class="docutils container">
-<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#task__scheduler_8h"><span class="std std-ref">task_scheduler.h</span></a>”</em></div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv425EVERT_TASK_SCHEDULER_Initv">
-<span id="_CPPv325EVERT_TASK_SCHEDULER_Initv"></span><span id="_CPPv225EVERT_TASK_SCHEDULER_Initv"></span><span id="EVERT_TASK_SCHEDULER_Init"></span><span class="target" id="task__scheduler_8c_1a6b0af4ffa1f99c85545634de91c64e85"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv427EVERT_TASK_SCHEDULER_UpdateK8uint32_t">
-<span id="_CPPv327EVERT_TASK_SCHEDULER_UpdateK8uint32_t"></span><span id="_CPPv227EVERT_TASK_SCHEDULER_UpdateK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_Update__uint32_tC"></span><span class="target" id="task__scheduler_8c_1ae5ee78360ac3d1bc91352da33fba70c8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">delta_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv430EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef">
-<span id="_CPPv330EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv230EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="EVERT_TASK_SCHEDULER_PauseTask__EVERT_TASK_SCHEDULER_TaskTypeDefC"></span><span class="target" id="task__scheduler_8c_1ae720861fbf5033f7f08c21a180a971c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_PauseTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv431EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef">
-<span id="_CPPv331EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv231EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="EVERT_TASK_SCHEDULER_ResumeTask__EVERT_TASK_SCHEDULER_TaskTypeDefC"></span><span class="target" id="task__scheduler_8c_1a570d9c417c066b4e1cddbe047ef1acea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_ResumeTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv452EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t">
-<span id="_CPPv352EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t"></span><span id="_CPPv252EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementInterval__uint32_tC"></span><span class="target" id="task__scheduler_8c_1aca83176ec3c5babf166a02e8b3a7904c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv444EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t">
-<span id="_CPPv344EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t"></span><span id="_CPPv244EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendDataInterval__uint32_tC"></span><span class="target" id="task__scheduler_8c_1a0eb585047d3a3595237e9a1bbfc10470"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDataInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv452EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t">
-<span id="_CPPv352EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t"></span><span id="_CPPv252EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusInterval__uint32_tC"></span><span class="target" id="task__scheduler_8c_1a3d3119bfb4b551aa2c2a92d4e50709c2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv444EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t">
-<span id="_CPPv344EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t"></span><span id="_CPPv244EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendPingInterval__uint32_tC"></span><span class="target" id="task__scheduler_8c_1a84d3ee2903bf4281434c49cbe15ff183"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendPingInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8c_1a690334774a756ba32b0c784e29a1f50c"></span><span class="sig-name descname"><span class="pre">__weak</span> <span class="pre">void</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</span> <span class="pre">(void)</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8c_1a81c4b91ef13a28079845bbd6b64c0a9e"></span><span class="sig-name descname"><span class="pre">__weak</span> <span class="pre">void</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendData</span> <span class="pre">(void)</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8c_1a0101cf6784bea128cea8cae8d8efa91c"></span><span class="sig-name descname"><span class="pre">__weak</span> <span class="pre">void</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</span> <span class="pre">(void)</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8c_1a44c69e91dc535c0494ce3218a6f82ddd"></span><span class="sig-name descname"><span class="pre">__weak</span> <span class="pre">void</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendPing</span> <span class="pre">(void)</span></span></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv414task_scheduler">
-<span id="_CPPv314task_scheduler"></span><span id="_CPPv214task_scheduler"></span><span id="task_scheduler__EVERT_TASK_SCHEDULER_HandlerTypeDef"></span><span class="target" id="task__scheduler_8c_1ad96a42679da4509b3f26df710be3c1b5"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv435EVERT_TASK_SCHEDULER_HandlerTypeDef" title="EVERT_TASK_SCHEDULER_HandlerTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_HandlerTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">task_scheduler</span></span></span><a class="headerlink" href="#_CPPv414task_scheduler" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">task_scheduler.h</span></span></dt>
-<dd><div class="docutils container">
-<em>#include &lt;stdint.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stdbool.h&gt;</em></div>
-<div class="docutils container">
-<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
-<dl class="cpp enum">
-<dt class="sig sig-object cpp" id="_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef">
-<span id="_CPPv332EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv232EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></span><br /></dt>
-<dd><p><em>Values:</em></p>
-<dl class="cpp enumerator">
-<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE">
-<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7af26eb94bbc75d5a039f9a571aa4f12a8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_ANNOUNCEMENT</span></span></span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp enumerator">
-<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE">
-<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7af1d664451f04900546e1a1e67cb73f17"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_DATA</span></span></span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp enumerator">
-<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE">
-<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7abae80667f866cfc7652404f7071d7aa9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_DEVICE_STATUS</span></span></span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp enumerator">
-<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE">
-<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7a4fc179186d9461a31d6c519b98703c65"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_PING</span></span></span><br /></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h_1a6b0af4ffa1f99c85545634de91c64e85"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h_1ae5ee78360ac3d1bc91352da33fba70c8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">delta_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h_1ae720861fbf5033f7f08c21a180a971c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_PauseTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h_1a570d9c417c066b4e1cddbe047ef1acea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_ResumeTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h_1aca83176ec3c5babf166a02e8b3a7904c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h_1a0eb585047d3a3595237e9a1bbfc10470"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDataInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h_1a3d3119bfb4b551aa2c2a92d4e50709c2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp">
-<span class="target" id="task__scheduler_8h_1a84d3ee2903bf4281434c49cbe15ff183"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendPingInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv443EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv">
-<span id="_CPPv343EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv"></span><span id="_CPPv243EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement__void"></span><span class="target" id="task__scheduler_8h_1a7742da8e36026ef09db90fd7007ee55f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv435EVERT_TASK_SCHEDULER_OnTaskSendDatav">
-<span id="_CPPv335EVERT_TASK_SCHEDULER_OnTaskSendDatav"></span><span id="_CPPv235EVERT_TASK_SCHEDULER_OnTaskSendDatav"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendData__void"></span><span class="target" id="task__scheduler_8h_1abb53bbd24025d1ad4490e260e96a5d94"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendData</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv443EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv">
-<span id="_CPPv343EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv"></span><span id="_CPPv243EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus__void"></span><span class="target" id="task__scheduler_8h_1afb42e979d5634601b1c586c1f20e64d6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv435EVERT_TASK_SCHEDULER_OnTaskSendPingv">
-<span id="_CPPv335EVERT_TASK_SCHEDULER_OnTaskSendPingv"></span><span id="_CPPv235EVERT_TASK_SCHEDULER_OnTaskSendPingv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendPing__void"></span><span class="target" id="task__scheduler_8h_1a1a11317ed1fb9bf0dcd5fd1c5f4c9748"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendPing</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl>
-<dt class="sig sig-object cpp">
 <span class="target" id="evert__device_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_device.c</span></span></dt>
 <dd><div class="docutils container">
 <em>#include “adc.h”</em></div>
@@ -4376,6 +3889,493 @@
 
 <dl>
 <dt class="sig sig-object cpp">
+<span class="target" id="evert__hal_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal.c</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stdio.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdarg.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal_8h"><span class="std std-ref">evert_hal.h</span></a>”</em></div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal.h</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;arm_math.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdlib.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdio.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdarg.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdint.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdbool.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#__conf__evert__hal_8h"><span class="std std-ref">_conf_evert_hal.h</span></a>”</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal__adc_8h"><span class="std std-ref">evert_hal_adc.h</span></a>”</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal__dwt_8h"><span class="std std-ref">evert_hal_dwt.h</span></a>”</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#debugging_8h"><span class="std std-ref">debugging.h</span></a>”</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#task__scheduler_8h"><span class="std std-ref">task_scheduler.h</span></a>”</em></div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__adc_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal_adc.c</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;arm_math.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal__adc_8h"><span class="std std-ref">evert_hal_adc.h</span></a>”</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t">
+<span id="_CPPv319EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t"></span><span id="_CPPv219EVERT_HAL_ADC_StartP17ADC_HandleTypeDefP8uint16_t8uint32_t"></span><span id="EVERT_HAL_ADC_Start__ADC_HandleTypeDefP.uint16_tP.uint32_t"></span><span class="target" id="evert__hal__adc_8c_1afbafd68319bff201adfd060209e04504"></span><span class="n"><span class="pre">HAL_StatusTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Start</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ADC_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hadc</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">conversion_count</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418EVERT_HAL_ADC_Lerpfff">
+<span id="_CPPv318EVERT_HAL_ADC_Lerpfff"></span><span id="_CPPv218EVERT_HAL_ADC_Lerpfff"></span><span id="EVERT_HAL_ADC_Lerp__float.float.float"></span><span class="target" id="evert__hal__adc_8c_1a57fbe99ac96221120109e442ab5b61ec"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Lerp</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">adc</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">slope</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y_intercept</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__adc_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal_adc.h</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;arm_math.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__adc_8h_1afbafd68319bff201adfd060209e04504"></span><span class="n"><span class="pre">HAL_StatusTypeDef</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Start</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ADC_HandleTypeDef</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">hadc</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">conversion_count</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__adc_8h_1a57fbe99ac96221120109e442ab5b61ec"></span><span class="n"><span class="pre">float32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_ADC_Lerp</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">adc</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">slope</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y_intercept</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__dwt_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal_dwt.c</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#evert__hal__dwt_8h"><span class="std std-ref">evert_hal_dwt.h</span></a>”</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_HAL_DWT_EnableCycleCounterv">
+<span id="_CPPv332EVERT_HAL_DWT_EnableCycleCounterv"></span><span id="_CPPv232EVERT_HAL_DWT_EnableCycleCounterv"></span><span id="EVERT_HAL_DWT_EnableCycleCounter__void"></span><span class="target" id="evert__hal__dwt_8c_1a6db7c112b407b7af5fbbcd0f64b84f5b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_EnableCycleCounter</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419EVERT_HAL_DWT_Startv">
+<span id="_CPPv319EVERT_HAL_DWT_Startv"></span><span id="_CPPv219EVERT_HAL_DWT_Startv"></span><span id="EVERT_HAL_DWT_Start__void"></span><span class="target" id="evert__hal__dwt_8c_1af344ef72842c285ad92b34c60fb0d127"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_Start</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418EVERT_HAL_DWT_Stopv">
+<span id="_CPPv318EVERT_HAL_DWT_Stopv"></span><span id="_CPPv218EVERT_HAL_DWT_Stopv"></span><span id="EVERT_HAL_DWT_Stop__void"></span><span class="target" id="evert__hal__dwt_8c_1a8eae88cbcd9953bc14ec9a6dc4affbf9"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_Stop</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv421DwtCycleCounterResult">
+<span id="_CPPv321DwtCycleCounterResult"></span><span id="_CPPv221DwtCycleCounterResult"></span><span id="DwtCycleCounterResult__uint32_t"></span><span class="target" id="evert__hal__dwt_8c_1a9fe596701a280fcc2f37f999eac6752f"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DwtCycleCounterResult</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv410_dwt_start">
+<span id="_CPPv310_dwt_start"></span><span id="_CPPv210_dwt_start"></span><span id="_dwt_start__uint32_t"></span><span class="target" id="evert__hal__dwt_8c_1a4fb1f66a8f0c9d8011c0a4b9de679e33"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_dwt_start</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv410_dwt_start" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__dwt_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">evert_hal_dwt.h</span></span></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__dwt_8h_1a6db7c112b407b7af5fbbcd0f64b84f5b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_EnableCycleCounter</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__dwt_8h_1af344ef72842c285ad92b34c60fb0d127"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_Start</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__dwt_8h_1a8eae88cbcd9953bc14ec9a6dc4affbf9"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_HAL_DWT_Stop</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="evert__hal__dwt_8h_1a9fe596701a280fcc2f37f999eac6752f"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DwtCycleCounterResult</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="fz2812_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">fz2812.c</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stdbool.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#fz2812_8h"><span class="std std-ref">fz2812.h</span></a>”</em></div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="fz2812_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">fz2812.h</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#__conf__evert__hal_8h"><span class="std std-ref">_conf_evert_hal.h</span></a>”</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.EVERT_FZ2812_LED_COUNT">
+<span class="target" id="fz2812_8h_1a351077d48f4b9852de1b2ac5e560db7e"></span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_FZ2812_LED_COUNT</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="gpio__definition_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">gpio_definition.h</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">status_register.c</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stdbool.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#status__register_8h"><span class="std std-ref">status_register.h</span></a>”</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413EVERT_SR_InitP38EVERT_SR_RegisterTypeDefinitionTypeDef">
+<span id="_CPPv313EVERT_SR_InitP38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="_CPPv213EVERT_SR_InitP38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="EVERT_SR_Init__EVERT_SR_RegisterTypeDefinitionTypeDefP"></span><span class="target" id="status__register_8c_1a61089ea52693de3dbeba4b6c0a360957"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_Init</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv420EVERT_SR_GetRegisterPK38EVERT_SR_RegisterTypeDefinitionTypeDef">
+<span id="_CPPv320EVERT_SR_GetRegisterPK38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="_CPPv220EVERT_SR_GetRegisterPK38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="EVERT_SR_GetRegister__EVERT_SR_RegisterTypeDefinitionTypeDefCP"></span><span class="target" id="status__register_8c_1a2fe0466e16f66e81069c99bd44504f65"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_GetRegister</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv422EVERT_SR_GetBitOnCountPK38EVERT_SR_RegisterTypeDefinitionTypeDef">
+<span id="_CPPv322EVERT_SR_GetBitOnCountPK38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="_CPPv222EVERT_SR_GetBitOnCountPK38EVERT_SR_RegisterTypeDefinitionTypeDef"></span><span id="EVERT_SR_GetBitOnCount__EVERT_SR_RegisterTypeDefinitionTypeDefCP"></span><span class="target" id="status__register_8c_1ac4ef96041b3c653dbe558840752bb835"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_GetBitOnCount</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv415EVERT_SR_SetBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t">
+<span id="_CPPv315EVERT_SR_SetBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="_CPPv215EVERT_SR_SetBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="EVERT_SR_SetBit__EVERT_SR_RegisterTypeDefinitionTypeDefP.uint8_t"></span><span class="target" id="status__register_8c_1a6d59da94eea3ca0cdb5e086d69fe3fd7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_SetBit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv417EVERT_SR_ClearBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t">
+<span id="_CPPv317EVERT_SR_ClearBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="_CPPv217EVERT_SR_ClearBitP38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="EVERT_SR_ClearBit__EVERT_SR_RegisterTypeDefinitionTypeDefP.uint8_t"></span><span class="target" id="status__register_8c_1a66e91fd3873081d79e9a8a90ce8e8383"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_ClearBit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv417EVERT_SR_IsBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t">
+<span id="_CPPv317EVERT_SR_IsBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="_CPPv217EVERT_SR_IsBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDef7uint8_t"></span><span id="EVERT_SR_IsBitSet__EVERT_SR_RegisterTypeDefinitionTypeDefCP.uint8_t"></span><span class="target" id="status__register_8c_1a16b28f4e2b1b4c2f835832e79775470e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_IsBitSet</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv420EVERT_SR_IsAnyBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDefPK7uint8_tK7uint8_t">
+<span id="_CPPv320EVERT_SR_IsAnyBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDefPK7uint8_tK7uint8_t"></span><span id="_CPPv220EVERT_SR_IsAnyBitSetPK38EVERT_SR_RegisterTypeDefinitionTypeDefPK7uint8_tK7uint8_t"></span><span id="EVERT_SR_IsAnyBitSet__EVERT_SR_RegisterTypeDefinitionTypeDefCP.uint8_tCP.uint8_tC"></span><span class="target" id="status__register_8c_1a029afc2fd258d43650652a9a4ff418b5"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_IsAnyBitSet</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">indexes</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">status_register.h</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stdint.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdbool.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.StatusRegister">
+<span class="target" id="status__register_8h_1acda516aca361386a87975a62eba267d7"></span><span class="sig-name descname"><span class="n"><span class="pre">StatusRegister</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SR_TypeDefinition">
+<span class="target" id="status__register_8h_1afaaee4a6fd5bb240fbdd2bd424258784"></span><span class="sig-name descname"><span class="n"><span class="pre">SR_TypeDefinition</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.E_SR">
+<span class="target" id="status__register_8h_1abfe498c9918279c759cdc8ac5bdc8998"></span><span class="sig-name descname"><span class="n"><span class="pre">E_SR</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8h_1a61089ea52693de3dbeba4b6c0a360957"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_Init</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8h_1a2fe0466e16f66e81069c99bd44504f65"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_GetRegister</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8h_1ac4ef96041b3c653dbe558840752bb835"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_GetBitOnCount</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8h_1a6d59da94eea3ca0cdb5e086d69fe3fd7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_SetBit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8h_1a66e91fd3873081d79e9a8a90ce8e8383"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_ClearBit</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8h_1a16b28f4e2b1b4c2f835832e79775470e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_IsBitSet</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="status__register_8h_1a029afc2fd258d43650652a9a4ff418b5"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_SR_IsAnyBitSet</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/status_register.html#_CPPv438EVERT_SR_RegisterTypeDefinitionTypeDef" title="EVERT_SR_RegisterTypeDefinitionTypeDef"><span class="n"><span class="pre">EVERT_SR_RegisterTypeDefinitionTypeDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">status_reg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">indexes</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8c"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">task_scheduler.c</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stdlib.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdint.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “<a class="reference internal" href="../inverter/inverter-api.html#task__scheduler_8h"><span class="std std-ref">task_scheduler.h</span></a>”</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv425EVERT_TASK_SCHEDULER_Initv">
+<span id="_CPPv325EVERT_TASK_SCHEDULER_Initv"></span><span id="_CPPv225EVERT_TASK_SCHEDULER_Initv"></span><span id="EVERT_TASK_SCHEDULER_Init"></span><span class="target" id="task__scheduler_8c_1a6b0af4ffa1f99c85545634de91c64e85"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv427EVERT_TASK_SCHEDULER_UpdateK8uint32_t">
+<span id="_CPPv327EVERT_TASK_SCHEDULER_UpdateK8uint32_t"></span><span id="_CPPv227EVERT_TASK_SCHEDULER_UpdateK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_Update__uint32_tC"></span><span class="target" id="task__scheduler_8c_1ae5ee78360ac3d1bc91352da33fba70c8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">delta_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv430EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef">
+<span id="_CPPv330EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv230EVERT_TASK_SCHEDULER_PauseTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="EVERT_TASK_SCHEDULER_PauseTask__EVERT_TASK_SCHEDULER_TaskTypeDefC"></span><span class="target" id="task__scheduler_8c_1ae720861fbf5033f7f08c21a180a971c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_PauseTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv431EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef">
+<span id="_CPPv331EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv231EVERT_TASK_SCHEDULER_ResumeTaskK32EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="EVERT_TASK_SCHEDULER_ResumeTask__EVERT_TASK_SCHEDULER_TaskTypeDefC"></span><span class="target" id="task__scheduler_8c_1a570d9c417c066b4e1cddbe047ef1acea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_ResumeTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv452EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t">
+<span id="_CPPv352EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t"></span><span id="_CPPv252EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementInterval__uint32_tC"></span><span class="target" id="task__scheduler_8c_1aca83176ec3c5babf166a02e8b3a7904c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv444EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t">
+<span id="_CPPv344EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t"></span><span id="_CPPv244EVERT_TASK_SCHEDULER_SetTaskSendDataIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendDataInterval__uint32_tC"></span><span class="target" id="task__scheduler_8c_1a0eb585047d3a3595237e9a1bbfc10470"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDataInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv452EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t">
+<span id="_CPPv352EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t"></span><span id="_CPPv252EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusInterval__uint32_tC"></span><span class="target" id="task__scheduler_8c_1a3d3119bfb4b551aa2c2a92d4e50709c2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv444EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t">
+<span id="_CPPv344EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t"></span><span id="_CPPv244EVERT_TASK_SCHEDULER_SetTaskSendPingIntervalK8uint32_t"></span><span id="EVERT_TASK_SCHEDULER_SetTaskSendPingInterval__uint32_tC"></span><span class="target" id="task__scheduler_8c_1a84d3ee2903bf4281434c49cbe15ff183"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendPingInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8c_1a690334774a756ba32b0c784e29a1f50c"></span><span class="sig-name descname"><span class="pre">__weak</span> <span class="pre">void</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</span> <span class="pre">(void)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8c_1a81c4b91ef13a28079845bbd6b64c0a9e"></span><span class="sig-name descname"><span class="pre">__weak</span> <span class="pre">void</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendData</span> <span class="pre">(void)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8c_1a0101cf6784bea128cea8cae8d8efa91c"></span><span class="sig-name descname"><span class="pre">__weak</span> <span class="pre">void</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</span> <span class="pre">(void)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8c_1a44c69e91dc535c0494ce3218a6f82ddd"></span><span class="sig-name descname"><span class="pre">__weak</span> <span class="pre">void</span> <span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendPing</span> <span class="pre">(void)</span></span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414task_scheduler">
+<span id="_CPPv314task_scheduler"></span><span id="_CPPv214task_scheduler"></span><span id="task_scheduler__EVERT_TASK_SCHEDULER_HandlerTypeDef"></span><span class="target" id="task__scheduler_8c_1ad96a42679da4509b3f26df710be3c1b5"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv435EVERT_TASK_SCHEDULER_HandlerTypeDef" title="EVERT_TASK_SCHEDULER_HandlerTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_HandlerTypeDef</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">task_scheduler</span></span></span><a class="headerlink" href="#_CPPv414task_scheduler" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">task_scheduler.h</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stdint.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdbool.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stm32g4xx_hal.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef">
+<span id="_CPPv332EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span id="_CPPv232EVERT_TASK_SCHEDULER_TaskTypeDef"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></span><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE">
+<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef28EVERT_TASK_SEND_ANNOUNCEMENTE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7af26eb94bbc75d5a039f9a571aa4f12a8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_ANNOUNCEMENT</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE">
+<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_DATAE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7af1d664451f04900546e1a1e67cb73f17"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_DATA</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE">
+<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef29EVERT_TASK_SEND_DEVICE_STATUSE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7abae80667f866cfc7652404f7071d7aa9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_DEVICE_STATUS</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE">
+<span id="_CPPv3N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE"></span><span id="_CPPv2N32EVERT_TASK_SCHEDULER_TaskTypeDef20EVERT_TASK_SEND_PINGE"></span><span class="target" id="task__scheduler_8h_1a46a07a16a1f1513536ffc8bf466dc9e7a4fc179186d9461a31d6c519b98703c65"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SEND_PING</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h_1a6b0af4ffa1f99c85545634de91c64e85"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h_1ae5ee78360ac3d1bc91352da33fba70c8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_Update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">delta_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h_1ae720861fbf5033f7f08c21a180a971c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_PauseTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h_1a570d9c417c066b4e1cddbe047ef1acea"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_ResumeTask</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../../_headers/core/task_scheduler.html#_CPPv432EVERT_TASK_SCHEDULER_TaskTypeDef" title="EVERT_TASK_SCHEDULER_TaskTypeDef"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_TaskTypeDef</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h_1aca83176ec3c5babf166a02e8b3a7904c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendAnnouncementInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h_1a0eb585047d3a3595237e9a1bbfc10470"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDataInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h_1a3d3119bfb4b551aa2c2a92d4e50709c2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendDeviceStatusInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="task__scheduler_8h_1a84d3ee2903bf4281434c49cbe15ff183"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_SetTaskSendPingInterval</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval_ms</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv443EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv">
+<span id="_CPPv343EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv"></span><span id="_CPPv243EVERT_TASK_SCHEDULER_OnTaskSendAnnouncementv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement__void"></span><span class="target" id="task__scheduler_8h_1a7742da8e36026ef09db90fd7007ee55f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendAnnouncement</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv435EVERT_TASK_SCHEDULER_OnTaskSendDatav">
+<span id="_CPPv335EVERT_TASK_SCHEDULER_OnTaskSendDatav"></span><span id="_CPPv235EVERT_TASK_SCHEDULER_OnTaskSendDatav"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendData__void"></span><span class="target" id="task__scheduler_8h_1abb53bbd24025d1ad4490e260e96a5d94"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendData</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv443EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv">
+<span id="_CPPv343EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv"></span><span id="_CPPv243EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatusv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus__void"></span><span class="target" id="task__scheduler_8h_1afb42e979d5634601b1c586c1f20e64d6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendDeviceStatus</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv435EVERT_TASK_SCHEDULER_OnTaskSendPingv">
+<span id="_CPPv335EVERT_TASK_SCHEDULER_OnTaskSendPingv"></span><span id="_CPPv235EVERT_TASK_SCHEDULER_OnTaskSendPingv"></span><span id="EVERT_TASK_SCHEDULER_OnTaskSendPing__void"></span><span class="target" id="task__scheduler_8h_1a1a11317ed1fb9bf0dcd5fd1c5f4c9748"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EVERT_TASK_SCHEDULER_OnTaskSendPing</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
 <span class="target" id="group__EVERT"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">EVERT</span></span></dt>
 <dd><p>EVERT CAN Extended Identifier Type Definition Functions. </p>
 <p>EVERT CAN Frame Data Type Definition Functions.</p>
@@ -4591,37 +4591,37 @@
 
 <dl>
 <dt class="sig sig-object cpp">
-<span class="target" id="dir_3f4a233f0f503d0068db321be5cbc17d"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">/home/runner/work/sphinx-gh-pages-test/sphinx-gh-pages-test/boost-converter</span></span></dt>
+<span class="target" id="dir_3f4a233f0f503d0068db321be5cbc17d"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">boost-converter</span></span></dt>
 <dd></dd></dl>
 
 <dl>
 <dt class="sig sig-object cpp">
-<span class="target" id="dir_6f77a39b07c019ccd7492ea87272f732"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">/home/runner/work/sphinx-gh-pages-test/sphinx-gh-pages-test/libs/core</span></span></dt>
+<span class="target" id="dir_6f77a39b07c019ccd7492ea87272f732"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">core</span></span></dt>
 <dd></dd></dl>
 
 <dl>
 <dt class="sig sig-object cpp">
-<span class="target" id="dir_ceaf82c8129b3cf0211f202c53804135"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">/home/runner/work/sphinx-gh-pages-test/sphinx-gh-pages-test/libs/device</span></span></dt>
+<span class="target" id="dir_ceaf82c8129b3cf0211f202c53804135"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">device</span></span></dt>
 <dd></dd></dl>
 
 <dl>
 <dt class="sig sig-object cpp">
-<span class="target" id="dir_6719ab1f1f7655efc2fa43f7eb574fd1"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">/home/runner/work/sphinx-gh-pages-test/sphinx-gh-pages-test/libs</span></span></dt>
+<span class="target" id="dir_6719ab1f1f7655efc2fa43f7eb574fd1"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">libs</span></span></dt>
 <dd></dd></dl>
 
 <dl>
 <dt class="sig sig-object cpp">
-<span class="target" id="dir_cbee055f3f6473bdf1b8617fc295509a"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">/home/runner/work/sphinx-gh-pages-test/sphinx-gh-pages-test/boost-converter/src</span></span></dt>
+<span class="target" id="dir_cbee055f3f6473bdf1b8617fc295509a"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">src</span></span></dt>
 <dd></dd></dl>
 
 <dl>
 <dt class="sig sig-object cpp">
-<span class="target" id="dir_232ab8dc75117fda122ab855789b1b2c"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">/home/runner/work/sphinx-gh-pages-test/sphinx-gh-pages-test/libs/core/src</span></span></dt>
+<span class="target" id="dir_232ab8dc75117fda122ab855789b1b2c"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">src</span></span></dt>
 <dd></dd></dl>
 
 <dl>
 <dt class="sig sig-object cpp">
-<span class="target" id="dir_a598699c8d41fe3d5d2879cbb9f04099"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">/home/runner/work/sphinx-gh-pages-test/sphinx-gh-pages-test/libs/device/src</span></span></dt>
+<span class="target" id="dir_a598699c8d41fe3d5d2879cbb9f04099"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">src</span></span></dt>
 <dd></dd></dl>
 
 </section>

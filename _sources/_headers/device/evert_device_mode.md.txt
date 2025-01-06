@@ -1,4 +1,6 @@
 # evert_device_mode.h
+## API
 ```{doxygenfile} evert_device_mode.h
 :project: doxygen-device
 ```
+

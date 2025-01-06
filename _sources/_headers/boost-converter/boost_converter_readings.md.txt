@@ -1,4 +1,6 @@
 # boost_converter_readings.h
+## API
 ```{doxygenfile} boost_converter_readings.h
 :project: doxygen-boost-converter
 ```
+

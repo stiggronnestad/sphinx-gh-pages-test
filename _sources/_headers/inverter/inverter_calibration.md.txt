@@ -1,4 +1,6 @@
 # inverter_calibration.h
+## API
 ```{doxygenfile} inverter_calibration.h
 :project: doxygen-inverter
 ```
+

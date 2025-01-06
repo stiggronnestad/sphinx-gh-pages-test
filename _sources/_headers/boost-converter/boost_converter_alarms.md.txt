@@ -1,4 +1,6 @@
 # boost_converter_alarms.h
+## API
 ```{doxygenfile} boost_converter_alarms.h
 :project: doxygen-boost-converter
 ```
+

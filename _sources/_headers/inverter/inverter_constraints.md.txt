@@ -1,4 +1,6 @@
 # inverter_constraints.h
+## API
 ```{doxygenfile} inverter_constraints.h
 :project: doxygen-inverter
 ```
+

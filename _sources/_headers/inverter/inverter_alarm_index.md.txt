@@ -1,4 +1,6 @@
 # inverter_alarm_index.h
+## API
 ```{doxygenfile} inverter_alarm_index.h
 :project: doxygen-inverter
 ```
+

@@ -1,4 +1,6 @@
 # evert_hal.h
+## API
 ```{doxygenfile} evert_hal.h
 :project: doxygen-core
 ```
+

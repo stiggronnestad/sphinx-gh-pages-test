@@ -1,4 +1,6 @@
 # can_handler.h
+## API
 ```{doxygenfile} can_handler.h
 :project: doxygen-core
 ```
+

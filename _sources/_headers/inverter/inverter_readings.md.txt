@@ -1,4 +1,6 @@
 # inverter_readings.h
+## API
 ```{doxygenfile} inverter_readings.h
 :project: doxygen-inverter
 ```
+

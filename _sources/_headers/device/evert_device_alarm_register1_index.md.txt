@@ -1,4 +1,6 @@
 # evert_device_alarm_register1_index.h
+## API
 ```{doxygenfile} evert_device_alarm_register1_index.h
 :project: doxygen-device
 ```
+

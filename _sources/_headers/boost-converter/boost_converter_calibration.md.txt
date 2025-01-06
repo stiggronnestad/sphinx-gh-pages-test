@@ -1,4 +1,6 @@
 # boost_converter_calibration.h
+## API
 ```{doxygenfile} boost_converter_calibration.h
 :project: doxygen-boost-converter
 ```
+

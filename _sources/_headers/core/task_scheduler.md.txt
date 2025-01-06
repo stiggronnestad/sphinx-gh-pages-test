@@ -1,4 +1,6 @@
 # task_scheduler.h
+## API
 ```{doxygenfile} task_scheduler.h
 :project: doxygen-core
 ```
+

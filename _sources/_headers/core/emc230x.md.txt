@@ -1,4 +1,6 @@
 # emc230x.h
+## API
 ```{doxygenfile} emc230x.h
 :project: doxygen-core
 ```
+

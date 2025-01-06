@@ -1,4 +1,6 @@
 # status_register.h
+## API
 ```{doxygenfile} status_register.h
 :project: doxygen-core
 ```
+

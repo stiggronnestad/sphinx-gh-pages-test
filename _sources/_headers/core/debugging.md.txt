@@ -1,4 +1,6 @@
 # debugging.h
+## API
 ```{doxygenfile} debugging.h
 :project: doxygen-core
 ```
+
