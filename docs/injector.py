@@ -105,7 +105,7 @@ def generateDotPngInc(projectName, projectPath, header):
     doxygen_path = f'doxygen-{projectName}'
     dependency_fn = header.replace('_', '__').replace('.h', '_8h') + '__incl.dot'
     dependency_fn_path = doxygen_path + '/latex/' + dependency_fn
-    
+
     # Check if dependency file exists
     if not os.path.exists(dependency_fn_path):
         print('Dependency dot file does not exist:', dependency_fn_path)

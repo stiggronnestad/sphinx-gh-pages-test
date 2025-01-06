@@ -45,4 +45,3 @@ generatePngFromDot inverter source/_dot/inverter
 echo "Generating HTML documentation..."
 make clean
 make html
-
