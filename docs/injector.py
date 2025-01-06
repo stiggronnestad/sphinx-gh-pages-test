@@ -23,8 +23,10 @@ def inject(projectPaths):
         generated_h_md.clear()
 
 def injectProject(projectPath):
+    # Get project name
     projectName = os.path.basename(projectPath)
     projectNames.append(projectName)
+    print ('Project name:', projectName)
 
     # Create _headers directory if it doesn't exist
     if not os.path.exists(f'source/_headers/{projectName}'):
@@ -186,21 +188,23 @@ if __name__ == '__main__':
     if len(sys.argv) < 2:
         print('Usage: python injector.py <project>')
         exit(1)
-        
-    # Read first argument from command line
+
+    # Get project paths as list from param 1
     projectPaths = sys.argv[1:]
+    
     inject(projectPaths)
 
     # Create index.md
     with open('source/index.md', 'w+') as file:
-        file.write(f'''# Evert PMU Firmware Documentation
+        file.write(f'''# Evert PMU Firmware Documentation\n
 ```{{toctree}}
 :titlesonly:
 :glob:\n''')
 
         for projectName in projectNames:
+            print (f'''_projects/{projectName}/{projectName}\n''')
             file.write(f'''_projects/{projectName}/{projectName}\n''')
 
-        file.write(f'''```''')
+        file.write(f'''```\n''')
 
     print('Injection complete:', projectNames)

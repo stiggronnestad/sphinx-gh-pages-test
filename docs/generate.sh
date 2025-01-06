@@ -30,6 +30,7 @@ generatePngFromDot() {
     done
 }
 
+# Generate png from dot files
 generatePngFromDot boost-converter source/_dot/boost-converter
 generatePngFromDot ccu source/_dot/ccu
 generatePngFromDot core source/_dot/core
