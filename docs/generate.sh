@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Generate doxygen documentation (XML)
+echo "Generating documentation..."
 doxygen doxyfile-boost-converter
 doxygen doxyfile-ccu
 doxygen doxyfile-core
@@ -9,6 +10,7 @@ doxygen doxyfile-device
 doxygen doxyfile-inverter
 
 # Run python injector
+echo "Injecting doxygen XML files..."
 python3 injector.py ../boost-converter ../ccu ../libs/core ../dcdc ../libs/device ../inverter
 
 # Generate .png from .dot files
@@ -31,6 +33,7 @@ generatePngFromDot() {
 }
 
 # Generate png from dot files
+echo "Generating .png files from .dot files..."
 generatePngFromDot boost-converter source/_dot/boost-converter
 generatePngFromDot ccu source/_dot/ccu
 generatePngFromDot core source/_dot/core
@@ -39,5 +42,6 @@ generatePngFromDot device source/_dot/device
 generatePngFromDot inverter source/_dot/inverter
 
 # Generate HTML documentation
+echo "Generating HTML documentation..."
 make clean
 make html
