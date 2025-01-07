@@ -1,4 +1,12 @@
 # gpio_definition.h
+## Include Graph
+```{image} ../../_static/core/gpio_definition-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} gpio_definition.h
 :project: doxygen-core

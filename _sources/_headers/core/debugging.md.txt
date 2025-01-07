@@ -1,4 +1,20 @@
 # debugging.h
+## Include Graph
+```{image} ../../_static/core/debugging-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
+## Dependency Graph
+```{image} ../../_static/core/debugging-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} debugging.h
 :project: doxygen-core

@@ -1,4 +1,20 @@
 # fz2812.h
+## Include Graph
+```{image} ../../_static/core/fz2812-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
+## Dependency Graph
+```{image} ../../_static/core/fz2812-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} fz2812.h
 :project: doxygen-core

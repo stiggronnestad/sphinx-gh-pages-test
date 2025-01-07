@@ -1,4 +1,12 @@
 # evert_device_alarm_register1_index.h
+## Dependency Graph
+```{image} ../../_static/device/evert_device_alarm_register1_index-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} evert_device_alarm_register1_index.h
 :project: doxygen-device

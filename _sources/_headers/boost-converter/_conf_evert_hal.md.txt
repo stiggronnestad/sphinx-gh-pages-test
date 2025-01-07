@@ -1,4 +1,12 @@
 # _conf_evert_hal.h
+## Dependency Graph
+```{image} ../../_static/boost-converter/_conf_evert_hal-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} _conf_evert_hal.h
 :project: doxygen-boost-converter

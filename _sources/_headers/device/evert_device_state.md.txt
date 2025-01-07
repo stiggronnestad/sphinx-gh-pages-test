@@ -1,4 +1,12 @@
 # evert_device_state.h
+## Dependency Graph
+```{image} ../../_static/device/evert_device_state-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} evert_device_state.h
 :project: doxygen-device

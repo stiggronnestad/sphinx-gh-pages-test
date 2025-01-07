@@ -1,4 +1,12 @@
 # inverter_alarm_index.h
+## Dependency Graph
+```{image} ../../_static/inverter/inverter_alarm_index-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} inverter_alarm_index.h
 :project: doxygen-inverter

@@ -1,4 +1,20 @@
 # task_scheduler.h
+## Include Graph
+```{image} ../../_static/core/task_scheduler-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
+## Dependency Graph
+```{image} ../../_static/core/task_scheduler-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} task_scheduler.h
 :project: doxygen-core

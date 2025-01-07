@@ -1,4 +1,20 @@
 # can_handler.h
+## Include Graph
+```{image} ../../_static/core/can_handler-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
+## Dependency Graph
+```{image} ../../_static/core/can_handler-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} can_handler.h
 :project: doxygen-core

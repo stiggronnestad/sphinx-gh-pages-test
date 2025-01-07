@@ -1,4 +1,20 @@
 # boost_converter_calibration.h
+## Include Graph
+```{image} ../../_static/boost-converter/boost_converter_calibration-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
+## Dependency Graph
+```{image} ../../_static/boost-converter/boost_converter_calibration-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} boost_converter_calibration.h
 :project: doxygen-boost-converter

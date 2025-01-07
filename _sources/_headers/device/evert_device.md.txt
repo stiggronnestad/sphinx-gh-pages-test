@@ -1,4 +1,20 @@
 # evert_device.h
+## Include Graph
+```{image} ../../_static/device/evert_device-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
+## Dependency Graph
+```{image} ../../_static/device/evert_device-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} evert_device.h
 :project: doxygen-device

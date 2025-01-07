@@ -1,4 +1,20 @@
 # inverter.h
+## Include Graph
+```{image} ../../_static/inverter/inverter-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
+## Dependency Graph
+```{image} ../../_static/inverter/inverter-dep-inc.png
+:alt: A description of the image
+:align: center
+```
+
+***
+
 ## API
 ```{doxygenfile} inverter.h
 :project: doxygen-inverter
