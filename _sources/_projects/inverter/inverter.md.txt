@@ -2,6 +2,7 @@
 ```{toctree}
 :caption: Contents:
 :maxdepth: 5
+readme.md
 inverter-index
 inverter-api
 ```
