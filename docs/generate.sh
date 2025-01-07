@@ -10,7 +10,7 @@ doxygen doxyfile-device
 doxygen doxyfile-inverter
 
 # Run python injector
-echo "Injecting doxygen XML files..."
+#echo "Injecting doxygen XML files..."
 python3 injector.py ../boost-converter ../ccu ../libs/core ../dcdc ../libs/device ../inverter
 
 # Generate .png from .dot files
