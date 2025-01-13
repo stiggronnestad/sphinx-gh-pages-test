@@ -14,3 +14,8 @@ Firmware for all devices in the Power Management Unit (PMU).
 | [/documentation](documentation/README.md)     | Documentation              | Documentation for the PMU.                                    |
 | [/inverter](inverter/README.md)               | Inverter                   | Inverter for the PMU.                                         |
 | [/libs](libs/README.md)                       | Libraries/includes         | Libraries/include files for the different devices of the PMU. |
+
+
+:x: Never ignore source code, documentation and build-configurations that are platform agnostic.
+
+:white_check_mark: Always ignore files produced by the build-process itself.
