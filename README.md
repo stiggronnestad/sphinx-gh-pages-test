@@ -13,9 +13,9 @@
 
 ## Personal Access Tokens
 
-| Name                   | Type         | Scopes                                    | Useage                                  |
-| ---------------------- | ------------ | ----------------------------------------- | --------------------------------------- |
-| PAT_FIRMWARE_LIBRARIES | Fine-grained | Repository acces to everything firmware-* | Github actions for recursive checkouts. |
+| Name                   | Type         | Scopes                                     | Useage                                  |
+| ---------------------- | ------------ | ------------------------------------------ | --------------------------------------- |
+| PAT_FIRMWARE_LIBRARIES | Fine-grained | Repository access to everything firmware-* | Github actions for recursive checkouts. |
 
 
 ## Packages
@@ -28,18 +28,18 @@
 
 ### Descriptions
 
-| Name                   | Description                             | Initiator            | Container                           |
-| ---------------------- | --------------------------------------- | -------------------- | ----------------------------------- |
-| build.yaml             | Build firmware, used for status checks. | PR -> main           | firmware-docker-images/stm32cubeclt |
-| build-and-release.yaml | Build and create releases.              | Tag: v*              | firmware-docker-images/stm32cubeclt |
-| stm32cubeclt.yaml      | Build stm32cubeclt package.             | Tag: stm32cubeclt-v* |                                     |
+| Name                           | Description                             | Initiator            | Container                           |
+| ------------------------------ | --------------------------------------- | -------------------- | ----------------------------------- |
+| build.yaml (STM32)             | Build firmware, used for status checks. | PR -> main           | firmware-docker-images/stm32cubeclt |
+| build-and-release.yaml (STM32) | Build and create releases.              | Tag: v*              | firmware-docker-images/stm32cubeclt |
+| stm32cubeclt.yaml              | Build stm32cubeclt package.             | Tag: stm32cubeclt-v* |                                     |
 
 ### Usage
 
-| Name                   | ccu | cm-esp32 | cm-stm32 | dcdc | doc-gen | docker-images      | inverter           | libraries | mppt               |
-| ---------------------- | --- | -------- | -------- | ---- | ------- | ------------------ | ------------------ | --------- | ------------------ |
-| build.yaml             |     |          |          |      |         |                    | :white_check_mark: | :one:     | :white_check_mark: |
-| build-and-release.yaml |     |          |          |      |         |                    | :white_check_mark: | :one:     | :white_check_mark: |
-| stm32cubeclt.yaml      |     |          |          |      |         | :white_check_mark: |                    |           |                    |
+| Name                           | ccu                | cm-esp32           | cm-stm32 | dcdc | doc-gen | docker-images      | inverter           | libraries | mppt               |
+| ------------------------------ | ------------------ | ------------------ | -------- | ---- | ------- | ------------------ | ------------------ | --------- | ------------------ |
+| build.yaml (STM32)             | :white_check_mark: | :white_check_mark: |          |      |         |                    | :white_check_mark: | :one:     | :white_check_mark: |
+| build-and-release.yaml (STM32) | :white_check_mark: | :white_check_mark: |          |      |         |                    | :white_check_mark: | :one:     | :white_check_mark: |
+| stm32cubeclt.yaml              |                    |                    |          |      |         | :white_check_mark: |                    |           |                    |
 
-:one: - Libraries are built as part of the firmware build (sub-module).
+:one: Libraries are built as part of the firmware build (sub-module).
