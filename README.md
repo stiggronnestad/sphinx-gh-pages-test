@@ -121,7 +121,6 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     libs/firmware-libraries/task_scheduler/src/task_scheduler.c
 )
 ```
-
 # GitOps
 
 ## Quick References
@@ -150,8 +149,18 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 
 ## Workflows
 
-| Name                   | Description                             | Container                           | ccu | cm-esp32 | cm-stm32 | dcdc | doc-gen | docker-images      | inverter           | libraries | mppt               |
-| ---------------------- | --------------------------------------- | ----------------------------------- | --- | -------- | -------- | ---- | ------- | ------------------ | ------------------ | --------- | ------------------ |
-| build.yaml             | Build firmware, used for status checks. | firmware-docker-images/stm32cubeclt |     |          |          |      |         |                    | :white_check_mark: |           | :white_check_mark: |
-| build-and-release.yaml | Build and create releases.              | firmware-docker-images/stm32cubeclt |     |          |          |      |         |                    | :white_check_mark: |           | :white_check_mark: |
-| stm32cubeclt.yaml      | Build stm32cubeclt package.             |                                     |     |          |          |      |         | :white_check_mark: |                    |           |                    |
+### Descriptions
+
+| Name                   | Description                             | Initiator            | Container                           |
+| ---------------------- | --------------------------------------- | -------------------- | ----------------------------------- |
+| build.yaml             | Build firmware, used for status checks. | PR -> main           | firmware-docker-images/stm32cubeclt |
+| build-and-release.yaml | Build and create releases.              | Tag: v*              | firmware-docker-images/stm32cubeclt |
+| stm32cubeclt.yaml      | Build stm32cubeclt package.             | Tag: stm32cubeclt-v* |                                     |
+
+### Usage
+
+| Name                   | ccu | cm-esp32 | cm-stm32 | dcdc | doc-gen | docker-images      | inverter           | libraries | mppt               |
+| ---------------------- | --- | -------- | -------- | ---- | ------- | ------------------ | ------------------ | --------- | ------------------ |
+| build.yaml             |     |          |          |      |         |                    | :white_check_mark: |           | :white_check_mark: |
+| build-and-release.yaml |     |          |          |      |         |                    | :white_check_mark: |           | :white_check_mark: |
+| stm32cubeclt.yaml      |     |          |          |      |         | :white_check_mark: |                    |           |                    |
