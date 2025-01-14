@@ -161,6 +161,8 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 
 | Name                   | ccu | cm-esp32 | cm-stm32 | dcdc | doc-gen | docker-images      | inverter           | libraries | mppt               |
 | ---------------------- | --- | -------- | -------- | ---- | ------- | ------------------ | ------------------ | --------- | ------------------ |
-| build.yaml             |     |          |          |      |         |                    | :white_check_mark: |           | :white_check_mark: |
-| build-and-release.yaml |     |          |          |      |         |                    | :white_check_mark: |           | :white_check_mark: |
+| build.yaml             |     |          |          |      |         |                    | :white_check_mark: | :one:     | :white_check_mark: |
+| build-and-release.yaml |     |          |          |      |         |                    | :white_check_mark: | :one:     | :white_check_mark: |
 | stm32cubeclt.yaml      |     |          |          |      |         | :white_check_mark: |                    |           |                    |
+
+:one: - Libraries are built as part of the firmware build (sub-module).
