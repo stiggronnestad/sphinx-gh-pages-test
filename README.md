@@ -121,3 +121,37 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     libs/firmware-libraries/task_scheduler/src/task_scheduler.c
 )
 ```
+
+# GitOps
+
+## Quick References
+
+[Github/Evert/Firmware-*](https://github.com/orgs/InSol-Tech/repositories?language=&q=firmware-&sort=&type=all)
+
+## Status
+
+| Repository                                                           | Build                                                                                                                                                                            | Release                                                                                                                                                                                                    |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [firmware-inverter](https://github.com/InSol-Tech/firmware-inverter) | [![Build](https://github.com/InSol-Tech/firmware-inverter/actions/workflows/build.yaml/badge.svg)](https://github.com/InSol-Tech/firmware-inverter/actions/workflows/build.yaml) | [![Release](https://github.com/InSol-Tech/firmware-inverter/actions/workflows/build-and-release.yaml/badge.svg)](https://github.com/InSol-Tech/firmware-inverter/actions/workflows/build-and-release.yaml) |
+| [firmware-mppt](https://github.com/InSol-Tech/firmware-mppt)         | [![Build](https://github.com/InSol-Tech/firmware-mppt/actions/workflows/build.yaml/badge.svg)](https://github.com/InSol-Tech/firmware-mppt/actions/workflows/build.yaml)         | [![Release](https://github.com/InSol-Tech/firmware-mppt/actions/workflows/build-and-release.yaml/badge.svg)](https://github.com/InSol-Tech/firmware-mppt/actions/workflows/build-and-release.yaml)         |
+
+## Personal Access Tokens
+
+| Name                   | Type         | Scopes                                    | Useage                                  |
+| ---------------------- | ------------ | ----------------------------------------- | --------------------------------------- |
+| PAT_FIRMWARE_LIBRARIES | Fine-grained | Repository acces to everything firmware-* | Github actions for recursive checkouts. |
+
+
+## Packages
+
+| Name                                | Description                          | Actions Access    | Useage                                |
+| ----------------------------------- | ------------------------------------ | ----------------- | ------------------------------------- |
+| firmware-docker-images/stm32cubeclt | Docker image for STM32CubeProgrammer | firmware-* (Read) | Github actions for building firmware. |
+
+## Workflows
+
+| Name                   | Description                             | Container                           | ccu | cm-esp32 | cm-stm32 | dcdc | doc-gen | docker-images      | inverter           | libraries | mppt               |
+| ---------------------- | --------------------------------------- | ----------------------------------- | --- | -------- | -------- | ---- | ------- | ------------------ | ------------------ | --------- | ------------------ |
+| build.yaml             | Build firmware, used for status checks. | firmware-docker-images/stm32cubeclt |     |          |          |      |         |                    | :white_check_mark: |           | :white_check_mark: |
+| build-and-release.yaml | Build and create releases.              | firmware-docker-images/stm32cubeclt |     |          |          |      |         |                    | :white_check_mark: |           | :white_check_mark: |
+| stm32cubeclt.yaml      | Build stm32cubeclt package.             |                                     |     |          |          |      |         | :white_check_mark: |                    |           |                    |
